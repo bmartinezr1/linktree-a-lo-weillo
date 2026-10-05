@@ -1,0 +1,42 @@
+---
+import { site } from '../data/site';
+import '../styles/global.css';
+
+const icons = {
+  instagram: '◎',
+  review: '★',
+  location: '⌖',
+} as const;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={site.description} />
+    <link rel="icon" type="image/png" href={site.logo} />
+    <title>{site.name}</title>
+  </head>
+  <body>
+    <main class="page-shell">
+      <article class="profile" aria-labelledby="business-name">
+        <img class="logo" src={site.logo} alt={`Logo de ${site.name}`} width="512" height="512" />
+        <h1 id="business-name">{site.name}</h1>
+        <p class="tagline">{site.tagline}</p>
+        <p class="description">{site.description}</p>
+
+        <nav class="links" aria-label={`Enlaces de ${site.name}`}>
+          {site.links.map((link) => (
+            <a class="link-button" href={link.href} target="_blank" rel="noopener noreferrer">
+              <span class="link-icon" aria-hidden="true">{icons[link.icon]}</span>
+              <span>{link.label}</span>
+            </a>
+          ))}
+        </nav>
+
+        <p class="footer">Tu estilo es nuestra prioridad.</p>
+      </article>
+    </main>
+  </body>
+</html>

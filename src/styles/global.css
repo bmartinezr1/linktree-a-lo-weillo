@@ -123,6 +123,21 @@ h1 {
   font-size: 1.1rem;
 }
 
+.link-icon svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.link-icon .icon-dot {
+  fill: currentColor;
+  stroke: none;
+}
+
 .footer {
   margin-top: 2.25rem;
   color: rgba(200, 194, 182, 0.72);

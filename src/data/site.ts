@@ -8,7 +8,7 @@ export const site = {
   name: '7E Barber Shop',
   tagline: 'Barbería · Concepción',
   description:
-    'Bienvenido a 7E Barber Shop, ubicada en Ejército 1282, Concepción. Somos una barbería especializada en cortes de cabello modernos y clásicos, fades, perfilado y arreglo de barba, con atención personalizada y un ambiente cómodo y profesional. Trabajamos con productos de calidad para garantizar los mejores resultados en cada servicio. Atendemos exclusivamente con agenda para ofrecer puntualidad y una experiencia personalizada a cada cliente. Reserva tu cita y descubre por qué en 7E Barber Shop tu estilo es nuestra prioridad.',
+    'Barbería en Ejército 1282, Concepción, especializada en cortes modernos y clásicos, fades y arreglo de barba. Atención personalizada solo con agenda.',
   logo: '/logo-7e-barber-shop.png',
   links: [
     {
@@ -23,7 +23,7 @@ export const site = {
     },
     {
       label: 'Cómo llegar',
-      href: 'https://www.google.com/maps/place/7E+Barber+Shop/data=!4m2!3m1!1s0x0:0xffd7f644b5740c48?sa=X&ved=1t:2428&ictx=111',
+      href: 'https://share.google/c8CL7NE4vXPv9ftCl',
       icon: 'location',
     },
   ] satisfies SiteLink[],

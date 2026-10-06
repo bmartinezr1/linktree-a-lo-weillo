@@ -11,9 +11,8 @@ export type InfoHighlight = {
   value: string;
 };
 
-// 📞 Teléfono / WhatsApp del Barbero para agendar citas
-// Reemplazar este número de prueba cuando tengas el número real (formato internacional sin "+", ej: "56912345678")
-const WHATSAPP_NUMBER = '56900000000';
+// Teléfono de WhatsApp en formato internacional, sin espacios ni el signo "+".
+const WHATSAPP_NUMBER = '56957422166';
 const BOOKING_MESSAGE = 'Hola, quisiera agendar una cita en 7E Barber Shop 💈✂️';
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(BOOKING_MESSAGE)}`;
 

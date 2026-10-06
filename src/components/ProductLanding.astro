@@ -9,78 +9,188 @@ import '../styles/global.css';
     <meta name="viewport" content="width=device-width" />
     <meta
       name="description"
-      content="ClickTap reúne los enlaces de tu negocio en una página personalizada conectada a NFC y QR."
+      content="ClickTap crea placas NFC personalizadas y páginas de enlaces para que tus clientes encuentren todo tu negocio con un toque."
     />
+    <meta name="theme-color" content="#071525" />
     <title>ClickTap | Tu negocio en un toque</title>
   </head>
-  <body>
+  <body class="product-body">
     <header class="product-header">
       <a class="brand" href="/" aria-label="ClickTap inicio">
-        <span class="brand-mark" aria-hidden="true">C</span>
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="presentation">
+            <path d="M8.2 8.2a5.4 5.4 0 0 1 7.6 0M5.2 5.2a9.7 9.7 0 0 1 13.6 0M11 11a1.4 1.4 0 1 1 2 2l-1 6.3" />
+          </svg>
+        </span>
         <span>ClickTap</span>
       </a>
-      <a class="header-link" href="/7E-barber-shop">Ver ejemplo</a>
+      <nav class="product-nav" aria-label="Navegación principal">
+        <a href="#producto">Producto</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a class="nav-example" href="/7E-barber-shop">Ver demo</a>
+      </nav>
     </header>
 
     <main>
       <section class="product-hero" aria-labelledby="product-title">
-        <p class="eyebrow">Tu negocio, en un toque</p>
-        <h1 id="product-title">Todos tus enlaces en un solo lugar.</h1>
-        <p class="product-lead">
-          Una página personalizada para que tus clientes encuentren tus redes, reservas, ubicación y contacto desde un
-          QR o una tarjeta NFC.
-        </p>
-        <div class="product-actions">
-          <a class="primary-action" href="/7E-barber-shop">Ver una página de ejemplo</a>
-          <a class="secondary-action" href="#como-funciona">Cómo funciona</a>
+        <div class="hero-copy">
+          <p class="eyebrow"><span aria-hidden="true"></span> NFC + QR para negocios</p>
+          <h1 id="product-title">Tu negocio, a un toque de distancia.</h1>
+          <p class="product-lead">
+            Una placa NFC personalizada que reúne tus redes, ubicación, reseñas y contacto en una página hecha para tu
+            marca.
+          </p>
+          <div class="product-actions">
+            <a class="primary-action" href="#producto">Conocer la tarjeta</a>
+            <a class="secondary-action" href="/7E-barber-shop">Ver página demo</a>
+          </div>
+          <ul class="hero-points" aria-label="Características principales">
+            <li><span aria-hidden="true">✓</span> Sin aplicaciones</li>
+            <li><span aria-hidden="true">✓</span> Lista para usar</li>
+            <li><span aria-hidden="true">✓</span> Diseñada para tu marca</li>
+          </ul>
         </div>
-        <div class="hero-card" aria-label="Vista previa de ClickTap">
-          <span class="hero-card-dot" aria-hidden="true"></span>
-          <span class="hero-card-label">clicktap.app</span>
-          <strong>Un toque. Todos tus canales.</strong>
-          <span class="hero-card-nfc">NFC + QR</span>
+
+        <div class="acrylic-scene" aria-label="Vista conceptual de un letrero ClickTap personalizado">
+          <div class="glow glow-one" aria-hidden="true"></div>
+          <div class="glow glow-two" aria-hidden="true"></div>
+          <div class="showcase-sign">
+            <span class="sign-gloss" aria-hidden="true"></span>
+            <div class="sign-brand">
+              <span class="sign-logo">TU<br />LOGO</span>
+              <span>Tu negocio</span>
+            </div>
+            <div class="sign-title">
+              <strong>Conecta con<br />tu negocio</strong>
+              <span>Redes · Contacto · Ubicación · Reservas</span>
+            </div>
+
+            <div class="sign-qr-wrap">
+              <svg class="sign-qr" viewBox="0 0 84 84" role="presentation" aria-hidden="true">
+                <rect width="84" height="84" rx="5" />
+                <path d="M7 7h22v22H7zM55 7h22v22H55zM7 55h22v22H7z" />
+                <path class="qr-cut" d="M12 12h12v12H12zM60 12h12v12H60zM12 60h12v12H12z" />
+                <path d="M35 7h7v7h-7zM44 7h6v13h-6zM33 18h7v7h-7zM42 24h8v7h-8zM34 34h8v8h-8zM47 34h7v15h-7zM57 35h7v7h-7zM68 34h9v8h-9zM7 35h8v8H7zM19 34h10v7H19zM7 46h7v6H7zM17 44h8v8h-8zM28 46h7v13h-7zM37 45h7v8h-7zM35 57h8v7h-8zM33 68h8v9h-8zM46 55h7v7h-7zM56 48h7v13h-7zM66 45h11v7H66zM68 56h9v8h-9zM47 66h7v11h-7zM58 67h7v10h-7zM68 68h9v9h-9z" />
+              </svg>
+            </div>
+
+            <div class="sign-tap">
+              <div class="nfc-ripple" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <strong>Acerca tu celular<br />o escanea el QR</strong>
+            </div>
+
+            <span class="sign-url">clicktap.app/tu-negocio</span>
+          </div>
+          <div class="acrylic-stand" aria-hidden="true"></div>
+          <span class="scene-label">Tu logo · Tus colores · Tus enlaces</span>
         </div>
       </section>
 
-      <section class="product-section" id="como-funciona" aria-labelledby="benefits-title">
-        <p class="eyebrow">Simple para ti, fácil para tus clientes</p>
-        <h2 id="benefits-title">Tu presencia digital, siempre lista.</h2>
-        <div class="benefit-grid">
-          <article class="benefit-card">
-            <span class="benefit-icon" aria-hidden="true">↗</span>
-            <h3>Un solo enlace</h3>
-            <p>Reúne Instagram, reservas, WhatsApp, ubicación y cualquier canal importante.</p>
+      <section class="trust-strip" aria-label="Resumen del producto">
+        <div><strong>NFC</strong><span>Acceso con un toque</span></div>
+        <div><strong>QR</strong><span>Compatible con cualquier cámara</span></div>
+        <div><strong>Tu diseño</strong><span>Logo y colores de tu negocio</span></div>
+        <div><strong>Tu página</strong><span>Todos tus enlaces juntos</span></div>
+      </section>
+
+      <section class="nfc-product" id="producto" aria-labelledby="nfc-title">
+        <div class="section-heading">
+          <p class="eyebrow"><span aria-hidden="true"></span> Producto físico + página digital</p>
+          <h2 id="nfc-title">Una placa que trabaja por tu negocio.</h2>
+          <p>La colocas en tu mostrador y tus clientes acceden al instante desde su teléfono.</p>
+        </div>
+
+        <div class="product-detail-grid">
+          <article class="physical-card">
+            <span class="detail-number">01</span>
+            <div class="detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 4h14v14H5zM8 21h8M12 18v3" /></svg>
+            </div>
+            <h3>Hecha para tu local</h3>
+            <p>Acrílico transparente con soporte, logo impreso, código QR y tecnología NFC.</p>
           </article>
-          <article class="benefit-card">
-            <span class="benefit-icon" aria-hidden="true">⌁</span>
-            <h3>NFC y QR</h3>
-            <p>Entrega una tarjeta física y facilita el acceso con un toque o un escaneo.</p>
+          <article class="physical-card">
+            <span class="detail-number">02</span>
+            <div class="detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2ZM9 7h6M9 11h6M9 15h4" /></svg>
+            </div>
+            <h3>Tu página personalizada</h3>
+            <p>Reunimos Instagram, WhatsApp, reservas, reseñas, ubicación y los enlaces que necesites.</p>
           </article>
-          <article class="benefit-card">
-            <span class="benefit-icon" aria-hidden="true">✦</span>
-            <h3>Personalizado</h3>
-            <p>Tu página usa el nombre, logo y estilo de tu negocio para mantener tu identidad.</p>
+          <article class="physical-card">
+            <span class="detail-number">03</span>
+            <div class="detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 12a7 7 0 0 1 7-7M8 12a4 4 0 0 1 4-4M12 12h.01M16 12a4 4 0 0 0-4-4M19 12a7 7 0 0 0-7-7" /></svg>
+            </div>
+            <h3>Siempre conectada</h3>
+            <p>El NFC y el QR conservan la misma dirección aunque después actualicemos tus enlaces.</p>
           </article>
         </div>
       </section>
 
-      <section class="steps-section" aria-labelledby="steps-title">
-        <p class="eyebrow">Así de fácil</p>
-        <h2 id="steps-title">Empieza en tres pasos.</h2>
+      <section class="experience-section" aria-labelledby="experience-title">
+        <div class="phone-preview" aria-label="Vista previa de una página ClickTap">
+          <div class="phone-screen">
+            <span class="phone-camera" aria-hidden="true"></span>
+            <div class="preview-logo">TU</div>
+            <strong>Tu negocio</strong>
+            <small>Todo en un solo lugar</small>
+            <span class="preview-button">Instagram</span>
+            <span class="preview-button">Escribir una reseña</span>
+            <span class="preview-button">Cómo llegar</span>
+          </div>
+        </div>
+        <div class="experience-copy">
+          <p class="eyebrow"><span aria-hidden="true"></span> La experiencia ClickTap</p>
+          <h2 id="experience-title">Tu identidad también vive en la página.</h2>
+          <p>
+            Cada negocio recibe una dirección propia dentro de clicktap.app. La página se adapta al celular y muestra
+            solo la información que tus clientes necesitan.
+          </p>
+          <a class="text-link" href="/7E-barber-shop">Explorar una página de muestra <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <section class="steps-section" id="como-funciona" aria-labelledby="steps-title">
+        <div class="section-heading">
+          <p class="eyebrow"><span aria-hidden="true"></span> Así de simple</p>
+          <h2 id="steps-title">Del diseño a tu mostrador.</h2>
+        </div>
         <ol class="steps-list">
-          <li><strong>1</strong><span>Definimos tus enlaces y el estilo de tu página.</span></li>
-          <li><strong>2</strong><span>Recibes tu tarjeta ClickTap con NFC y QR.</span></li>
-          <li><strong>3</strong><span>La colocas en tu local y tus clientes te encuentran.</span></li>
+          <li><strong>1</strong><div><h3>Nos envías tu información</h3><p>Logo, colores, redes y enlaces de tu negocio.</p></div></li>
+          <li><strong>2</strong><div><h3>Preparamos tu ClickTap</h3><p>Diseñamos la placa y construimos tu página personalizada.</p></div></li>
+          <li><strong>3</strong><div><h3>La instalas en tu local</h3><p>Tu cliente toca o escanea y encuentra todo al instante.</p></div></li>
         </ol>
       </section>
 
-      <section class="product-cta" aria-labelledby="cta-title">
-        <h2 id="cta-title">Haz que encontrarte sea más fácil.</h2>
-        <p>Conoce cómo se ve una página ClickTap en un negocio real.</p>
-        <a class="primary-action" href="/7E-barber-shop">Ver ejemplo de 7E Barber Shop</a>
+      <section class="offer-section" aria-labelledby="offer-title">
+        <div class="offer-copy">
+          <p class="eyebrow"><span aria-hidden="true"></span> Lanza tu presencia digital</p>
+          <h2 id="offer-title">Una forma simple de conectar con tus clientes.</h2>
+          <p>Recibe una placa personalizada y tu propia página ClickTap lista para compartir.</p>
+        </div>
+        <div class="price-card">
+          <span class="price-label">ClickTap para tu negocio</span>
+          <div class="price"><small>Desde</small><strong>$12.990</strong><span>pago único</span></div>
+          <ul>
+            <li><span aria-hidden="true">✓</span> Placa acrílica con soporte</li>
+            <li><span aria-hidden="true">✓</span> Logo, NFC y código QR</li>
+            <li><span aria-hidden="true">✓</span> Página personalizada inicial</li>
+          </ul>
+          <p class="update-price">Actualizaciones posteriores desde <strong>$2.990</strong> por cambio.</p>
+          <a class="primary-action" href="/7E-barber-shop">Ver página demo</a>
+        </div>
       </section>
     </main>
 
-    <footer class="product-footer">ClickTap · Páginas digitales para negocios</footer>
+    <footer class="product-footer">
+      <a class="brand" href="/" aria-label="ClickTap inicio">
+        <span class="brand-mark" aria-hidden="true">C</span><span>ClickTap</span>
+      </a>
+      <p>Tarjetas NFC y páginas digitales para negocios.</p>
+      <span>clicktap.app</span>
+    </footer>
   </body>
 </html>

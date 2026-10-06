@@ -682,14 +682,19 @@ h1 {
 
 .scene-label {
   position: absolute;
-  right: 0;
-  bottom: 2rem;
+  z-index: 5;
+  right: auto;
+  bottom: 0.15rem;
+  left: 50%;
   padding: 0.55rem 0.75rem;
   border: 1px solid var(--product-border);
   border-radius: 99px;
-  background: rgba(7, 21, 37, 0.78);
+  background: rgba(7, 21, 37, 0.94);
   color: var(--product-muted);
   font-size: 0.68rem;
+  pointer-events: none;
+  transform: translateX(-50%);
+  white-space: nowrap;
   backdrop-filter: blur(10px);
 }
 
@@ -1280,9 +1285,9 @@ h1 {
   }
 
   .scene-label {
-    right: 50%;
-    transform: translateX(50%);
-    white-space: nowrap;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .trust-strip {

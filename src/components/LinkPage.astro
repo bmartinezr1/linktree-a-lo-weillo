@@ -8,20 +8,95 @@ import '../styles/global.css';
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={site.description} />
-    <link rel="icon" type="image/png" href={site.logo} />
+    <meta name="theme-color" content="#080808" />
+    <link rel="icon" type="image/png" href={site.favicon} />
+    <meta property="og:title" content={site.name} />
+    <meta property="og:description" content={site.description} />
+    <meta property="og:image" content={site.logo} />
+    <meta property="og:type" content="website" />
     <title>{site.name}</title>
   </head>
   <body>
     <main class="page-shell">
       <article class="profile" aria-labelledby="business-name">
-        <img class="logo" src={site.logo} alt={`Logo de ${site.name}`} width="512" height="512" />
-        <h1 id="business-name">{site.name}</h1>
-        <p class="tagline">{site.tagline}</p>
-        <p class="description">{site.description}</p>
+        <header class="profile-header">
+          <img
+            class="logo"
+            src={site.logo}
+            alt={`Logo de ${site.name}`}
+            width="512"
+            height="512"
+            loading="eager"
+            decoding="async"
+          />
+          <h1 id="business-name">{site.name}</h1>
+          <p class="tagline">{site.tagline}</p>
+        </header>
 
-        <nav class="links" aria-label={`Enlaces de ${site.name}`}>
+        <section class="info-showcase" aria-label="Información de la barbería">
+          {site.highlights.map((item) => (
+            <div class={`info-item info-item-${item.id}`}>
+              <span class="info-icon" aria-hidden="true">
+                {item.id === 'location' && (
+                  <svg viewBox="0 0 24 24" role="presentation">
+                    <path d="M20 10c0 5.2-8 11-8 11S4 15.2 4 10a8 8 0 1 1 16 0Z" />
+                    <circle cx="12" cy="10" r="2.8" />
+                  </svg>
+                )}
+                {item.id === 'cuts' && (
+                  <svg viewBox="0 0 24 24" role="presentation">
+                    <circle cx="6" cy="6" r="3" />
+                    <circle cx="6" cy="18" r="3" />
+                    <line x1="20" y1="4" x2="8.12" y2="15.88" />
+                    <line x1="14.8" y1="14.8" x2="20" y2="20" />
+                    <line x1="8.12" y1="8.12" x2="12" y2="12" />
+                    <circle class="icon-dot" cx="12" cy="12" r="1.3" />
+                  </svg>
+                )}
+                {item.id === 'booking' && (
+                  <svg viewBox="0 0 24 24" role="presentation">
+                    <rect x="3" y="4" width="18" height="17" rx="3" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="9.5" x2="21" y2="9.5" />
+                    <circle cx="12" cy="15" r="3.2" />
+                    <polyline points="12 13.5 12 15 13.4 15" />
+                  </svg>
+                )}
+              </span>
+              <div class="info-content">
+                <span class="info-label">{item.label}</span>
+                <p class="info-value">{item.value}</p>
+              </div>
+            </div>
+          ))}
+        </section>
+
+        <nav class="links" aria-label={`Enlaces y acciones de ${site.name}`}>
+          {/* Botón Principal: Agendar Cita */}
+          <button
+            type="button"
+            class="link-button link-button-primary"
+            id="open-booking-btn"
+            aria-haspopup="dialog"
+            aria-expanded="false"
+          >
+            <span class="link-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <rect x="3" y="4" width="18" height="17" rx="3" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="9.5" x2="21" y2="9.5" />
+                <circle cx="12" cy="15" r="3.2" />
+                <polyline points="12 13.5 12 15 13.4 15" />
+              </svg>
+            </span>
+            <span class="btn-text">Agendar Cita</span>
+          </button>
+
+          {/* Enlaces secundarios */}
           {site.links.map((link) => (
             <a class="link-button" href={link.href} target="_blank" rel="noopener noreferrer">
               <span class="link-icon" aria-hidden="true">
@@ -52,5 +127,242 @@ import '../styles/global.css';
         <p class="footer">Tu estilo es nuestra prioridad.</p>
       </article>
     </main>
+
+    {/* Modal para Agendar Cita */}
+    <div id="booking-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+      <div class="modal-backdrop" id="modal-backdrop"></div>
+      <div class="modal-container">
+        <header class="modal-header">
+          <div>
+            <span class="modal-badge">Atención Personalizada</span>
+            <h2 id="modal-title">Agendar Cita</h2>
+            <p class="modal-subtitle">Reserva tu horario exclusivo en {site.name}</p>
+          </div>
+          <button type="button" class="modal-close-btn" id="close-modal-btn" aria-label="Cerrar ventana">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </header>
+
+        {/* Formulario */}
+        <form id="booking-form" class="booking-form" novalidate>
+          <div class="form-group">
+            <label for="booking-name">Tu Nombre <span class="required">*</span></label>
+            <input
+              type="text"
+              id="booking-name"
+              name="name"
+              required
+              placeholder="Ej. Matías González"
+              autocomplete="name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="booking-phone">Tu Teléfono / WhatsApp <span class="required">*</span></label>
+            <input
+              type="tel"
+              id="booking-phone"
+              name="phone"
+              required
+              placeholder="Ej. +56 9 1234 5678"
+              autocomplete="tel"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="booking-service">Servicio deseado</label>
+            <div class="select-wrapper">
+              <select id="booking-service" name="service">
+                {site.services.map((srv) => (
+                  <option value={srv}>{srv}</option>
+                ))}
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="booking-datetime">Día y horario preferido <span class="required">*</span></label>
+            <input
+              type="text"
+              id="booking-datetime"
+              name="datetime"
+              required
+              placeholder="Ej. Este viernes a las 17:00"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="booking-notes">Notas adicionales (opcional)</label>
+            <textarea
+              id="booking-notes"
+              name="notes"
+              rows="2"
+              placeholder="Ej. Primera vez en la barbería, diseño especial, etc."
+            ></textarea>
+          </div>
+
+          <div id="form-error-msg" class="form-error-msg" hidden role="alert"></div>
+
+          <div class="form-actions">
+            <button type="submit" class="submit-btn" id="submit-booking-btn">
+              <span class="btn-spinner" id="btn-spinner" hidden aria-hidden="true"></span>
+              <span id="btn-text-content">Confirmar Solicitud de Cita</span>
+            </button>
+          </div>
+        </form>
+
+        {/* Pantalla de Éxito */}
+        <div id="booking-success" class="booking-success" hidden>
+          <div class="success-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <path d="m8.5 12.5 2.5 2.5 5-5" />
+            </svg>
+          </div>
+          <h3>¡Solicitud Registrada!</h3>
+          <p id="success-message-text">
+            Tu solicitud de cita ha sido guardada en el sistema.
+          </p>
+
+          <div class="whatsapp-prompt" id="whatsapp-prompt">
+            {/* Se inyecta botón de WhatsApp si está configurado o instrucciones */}
+          </div>
+
+          <button type="button" class="secondary-btn" id="reset-modal-btn">Cerrar</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const modal = document.getElementById('booking-modal') as HTMLElement | null;
+      const openBtn = document.getElementById('open-booking-btn') as HTMLButtonElement | null;
+      const closeBtn = document.getElementById('close-modal-btn') as HTMLButtonElement | null;
+      const backdrop = document.getElementById('modal-backdrop') as HTMLElement | null;
+      const form = document.getElementById('booking-form') as HTMLFormElement | null;
+      const successBlock = document.getElementById('booking-success') as HTMLElement | null;
+      const submitBtn = document.getElementById('submit-booking-btn') as HTMLButtonElement | null;
+      const spinner = document.getElementById('btn-spinner') as HTMLElement | null;
+      const btnText = document.getElementById('btn-text-content') as HTMLElement | null;
+      const errorMsg = document.getElementById('form-error-msg') as HTMLElement | null;
+      const resetBtn = document.getElementById('reset-modal-btn') as HTMLButtonElement | null;
+      const whatsappPrompt = document.getElementById('whatsapp-prompt') as HTMLElement | null;
+
+      function openModal() {
+        if (!modal) return;
+        modal.hidden = false;
+        openBtn?.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+        const firstInput = document.getElementById('booking-name') as HTMLInputElement | null;
+        setTimeout(() => firstInput?.focus(), 100);
+      }
+
+      function closeModal() {
+        if (!modal) return;
+        modal.hidden = true;
+        openBtn?.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+        if (form && successBlock) {
+          form.hidden = false;
+          successBlock.hidden = true;
+          if (errorMsg) errorMsg.hidden = true;
+        }
+      }
+
+      openBtn?.addEventListener('click', openModal);
+      closeBtn?.addEventListener('click', closeModal);
+      backdrop?.addEventListener('click', closeModal);
+      resetBtn?.addEventListener('click', closeModal);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal && !modal.hidden) {
+          closeModal();
+        }
+      });
+
+      form?.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        if (errorMsg) errorMsg.hidden = true;
+
+        const nameInput = document.getElementById('booking-name') as HTMLInputElement | null;
+        const phoneInput = document.getElementById('booking-phone') as HTMLInputElement | null;
+        const serviceInput = document.getElementById('booking-service') as HTMLSelectElement | null;
+        const datetimeInput = document.getElementById('booking-datetime') as HTMLInputElement | null;
+        const notesInput = document.getElementById('booking-notes') as HTMLTextAreaElement | null;
+
+        const name = (nameInput?.value || '').trim();
+        const phone = (phoneInput?.value || '').trim();
+        const service = serviceInput?.value || '';
+        const datetime = (datetimeInput?.value || '').trim();
+        const notes = (notesInput?.value || '').trim();
+
+        if (!name || !phone || !datetime) {
+          if (errorMsg) {
+            errorMsg.textContent = 'Por favor completa tu nombre, teléfono y horario preferido.';
+            errorMsg.hidden = false;
+          }
+          return;
+        }
+
+        if (submitBtn) submitBtn.disabled = true;
+        if (spinner) spinner.hidden = false;
+        if (btnText) btnText.textContent = 'Procesando...';
+
+        try {
+          const response = await fetch('/api/agendar', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, phone, service, datetime, notes }),
+          });
+
+          const data = await response.json();
+
+          if (!response.ok || !data.success) {
+            throw new Error(data.error || 'No se pudo enviar la solicitud.');
+          }
+
+          // Éxito: Mostrar pantalla de confirmación
+          if (form && successBlock) {
+            form.hidden = true;
+            successBlock.hidden = false;
+
+            if (whatsappPrompt) {
+              if (data.hasPhoneConfigured && data.whatsappUrl) {
+                whatsappPrompt.innerHTML = `
+                  <a href="${data.whatsappUrl}" target="_blank" rel="noopener noreferrer" class="whatsapp-btn">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                      <path d="M12 2C6.477 2 2 6.477 2 12c0 1.892.524 3.662 1.433 5.178L2 22l4.98-1.405A9.957 9.957 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.2a8.163 8.163 0 0 1-4.172-1.144l-.299-.178-3.085.87.828-3.003-.195-.312A8.17 8.17 0 0 1 3.8 12c0-4.522 3.678-8.2 8.2-8.2s8.2 3.678 8.2 8.2-3.678 8.2-8.2 8.2z"/>
+                    </svg>
+                    <span>Enviar confirmación por WhatsApp</span>
+                  </a>
+                  <p class="whatsapp-hint">Toca el botón para enviar el detalle directamente a la barbería.</p>
+                `;
+              } else {
+                whatsappPrompt.innerHTML = `
+                  <div class="pending-notice">
+                    <p class="notice-title">✓ Solicitud guardada en el sistema</p>
+                    <p class="notice-desc">
+                      Tu solicitud con servicio <strong>${service}</strong> para el horario <strong>${datetime}</strong> quedó registrada. Nos pondremos en contacto a tu teléfono <strong>${phone}</strong>.
+                    </p>
+                  </div>
+                `;
+              }
+            }
+          }
+        } catch (err: any) {
+          if (errorMsg) {
+            errorMsg.textContent = err?.message || 'Ocurrió un error al enviar la solicitud. Intenta nuevamente.';
+            errorMsg.hidden = false;
+          }
+        } finally {
+          if (submitBtn) submitBtn.disabled = false;
+          if (spinner) spinner.hidden = true;
+          if (btnText) btnText.textContent = 'Confirmar Solicitud de Cita';
+        }
+      });
+    </script>
   </body>
 </html>

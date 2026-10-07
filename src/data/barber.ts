@@ -3,8 +3,8 @@ import type { LinkPageData, SiteLink, TransferDetails } from './site';
 // Completar si Ignacio habilita WhatsApp. Nunca usar un número de ejemplo.
 const WHATSAPP_NUMBER = '';
 const BOOKING_MESSAGE = 'Hola Ignacio, quiero agendar un corte contigo. ¿Qué horarios tienes disponibles?';
-// Enlace a reseñas de Barbería CJ en Google Maps.
-const SHOP_REVIEWS_URL = 'https://www.google.com/maps/search/?api=1&query=Barber%C3%ADa%20CJ%2C%20Janequeo%201501%2C%20Concepci%C3%B3n%2C%20Chile';
+// Enlace directo a reseñas de Barbería CJ en Google Maps (Place ID).
+const SHOP_REVIEWS_URL = 'https://search.google.com/local/writereview?placeid=ChIJtbLkBgO1aZYRV61ZwUhdp1A';
 
 // RUT facilitado por el usuario exclusivamente para demostrar la copia.
 // Reemplazar por los datos reales de Ignacio antes de publicar esta página.

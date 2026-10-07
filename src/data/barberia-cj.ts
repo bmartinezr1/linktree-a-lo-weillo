@@ -44,7 +44,7 @@ export const barberiaCJ: LinkPageData = {
     },
     {
       label: 'Escribir una reseña en Google',
-      href: 'https://www.google.com/maps/search/?api=1&query=Barber%C3%ADa%20CJ%2C%20Janequeo%201501%2C%20Concepci%C3%B3n%2C%20Chile',
+      href: 'https://search.google.com/local/writereview?placeid=ChIJtbLkBgO1aZYRV61ZwUhdp1A',
       icon: 'review',
     },
     {

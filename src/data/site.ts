@@ -1,37 +1,56 @@
 export type SiteLink = {
   label: string;
   href: string;
-  icon: 'whatsapp' | 'instagram' | 'review' | 'location';
+  icon: 'whatsapp' | 'instagram' | 'facebook' | 'review' | 'location' | 'team' | 'contact';
   isPrimary?: boolean;
 };
 
 export type InfoHighlight = {
   id: string;
-  icon: 'location' | 'scissors' | 'calendar' | 'flower';
+  icon?: 'location' | 'scissors' | 'calendar' | 'flower' | 'schedule' | 'payments';
   label: string;
   value: string;
+};
+
+export type BarberMember = {
+  name: string;
+  role: string;
+  avatar: string;
+  href: string;
+  badge?: string;
+};
+
+export type TransferDetails = {
+  text: string;
+  note?: string;
 };
 
 export type SiteProfile = {
   name: string;
   tagline: string;
   description: string;
-  theme: 'barber' | 'floral';
+  theme?: 'barber' | 'floral' | string;
   logo?: string;
+  logoAlt?: string;
   monogram?: string;
   favicon: string;
-  footer: string;
-  whatsappNumber: string;
-  bookingMessage: string;
-  highlights: InfoHighlight[];
-  links: SiteLink[];
+  footer?: string;
+  whatsappNumber?: string;
+  bookingMessage?: string;
+  highlights: readonly InfoHighlight[] | InfoHighlight[];
+  links: readonly SiteLink[] | SiteLink[];
+  barbers?: readonly BarberMember[];
+  transfer?: TransferDetails;
 };
+
+// Alias de compatibilidad
+export type LinkPageData = SiteProfile;
 
 const BARBER_WHATSAPP_NUMBER = '56957422166';
 const BARBER_BOOKING_MESSAGE = 'Hola, quisiera agendar una cita en 7E Barber Shop 💈✂️';
 const BARBER_WHATSAPP_URL = `https://wa.me/${BARBER_WHATSAPP_NUMBER}?text=${encodeURIComponent(BARBER_BOOKING_MESSAGE)}`;
 
-export const site = {
+export const site: SiteProfile = {
   name: '7E Barber Shop',
   tagline: 'Barbería · Concepción',
   description:
@@ -85,13 +104,13 @@ export const site = {
       icon: 'location',
     },
   ],
-} satisfies SiteProfile;
+};
 
 const FLORIST_WHATSAPP_NUMBER = '56936870591';
 const FLORIST_MESSAGE = 'Hola, quisiera hacer una consulta en Flores de Frida 🌸';
 const FLORIST_WHATSAPP_URL = `https://wa.me/${FLORIST_WHATSAPP_NUMBER}?text=${encodeURIComponent(FLORIST_MESSAGE)}`;
 
-export const floresDeFridaSite = {
+export const floresDeFridaSite: SiteProfile = {
   name: 'Flores de Frida',
   tagline: 'Florería · Concepción',
   description:
@@ -145,4 +164,4 @@ export const floresDeFridaSite = {
       icon: 'location',
     },
   ],
-} satisfies SiteProfile;
+};

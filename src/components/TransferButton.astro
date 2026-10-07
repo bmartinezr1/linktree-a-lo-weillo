@@ -1,0 +1,76 @@
+---
+import type { TransferDetails } from '../data/site';
+
+interface Props {
+  details: TransferDetails;
+}
+
+const { details } = Astro.props;
+const transferText = details.text.trim();
+const ready = transferText.length > 0;
+---
+
+<div class="transfer-action" data-transfer-action>
+  <button
+    class="link-button transfer-button"
+    type="button"
+    disabled={!ready}
+    data-transfer-copy
+    data-transfer-text={transferText}
+    aria-describedby="transfer-status"
+  >
+    <span class="link-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" class="transfer-icon" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="8" y="8" width="12" height="13" rx="2" />
+        <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3" />
+      </svg>
+    </span>
+    <span>Copiar datos de transferencia</span>
+  </button>
+  {details.note && <p class="transfer-note">{details.note}</p>}
+  <p class="transfer-status" id="transfer-status" role="status" aria-live="polite" aria-atomic="true">{ready ? '' : 'Datos de transferencia por confirmar.'}</p>
+  <label class="transfer-manual" data-transfer-manual hidden>
+    Datos de transferencia
+    <textarea readonly rows="6" aria-label="Datos de transferencia para copiar manualmente">{transferText}</textarea>
+  </label>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-transfer-action]').forEach((container) => {
+    const button = container.querySelector<HTMLButtonElement>('[data-transfer-copy]');
+    const status = container.querySelector<HTMLElement>('[role="status"]');
+    const manual = container.querySelector<HTMLElement>('[data-transfer-manual]');
+    const textarea = manual?.querySelector('textarea');
+    if (!button || !status || !manual || !textarea) return;
+
+    button.addEventListener('click', async () => {
+      const text = button.dataset.transferText;
+      if (!text || button.disabled) return;
+      button.disabled = true;
+      status.textContent = '';
+      try {
+        await navigator.clipboard.writeText(text);
+        manual.hidden = true;
+        status.textContent = '¡Datos de transferencia copiados!';
+      } catch {
+        manual.hidden = false;
+        status.textContent = 'No se pudo copiar automáticamente. Mantén presionado el texto o usa Ctrl+C para copiarlo.';
+        textarea.focus();
+        textarea.select();
+      } finally {
+        button.disabled = false;
+      }
+    });
+  });
+</script>
+
+<style>
+  .transfer-button { width: 100%; padding: .75rem 1rem; }
+  .transfer-icon { display: block; width: 1.35rem; height: 1.35rem; color: var(--gold-light); }
+  .transfer-button:disabled { cursor: not-allowed; opacity: .6; transform: none; }
+  .transfer-status, .transfer-note { margin: .65rem .25rem 0; color: var(--muted); font-size: .8rem; line-height: 1.5; }
+  .transfer-status:empty { margin: 0; }
+  .transfer-manual { display: block; margin-top: .75rem; color: var(--muted); font-size: .85rem; text-align: left; }
+  .transfer-manual textarea { display: block; width: 100%; min-height: 10rem; margin-top: .4rem; padding: .75rem; border: 1px solid var(--border); border-radius: .7rem; background: var(--surface); color: var(--text); font-family: inherit; font-size: 1rem; line-height: 1.6; resize: vertical; }
+  .transfer-manual textarea:focus-visible { outline: 3px solid var(--gold-light); outline-offset: 3px; }
+</style>

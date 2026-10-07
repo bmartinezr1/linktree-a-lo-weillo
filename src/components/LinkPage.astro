@@ -1,9 +1,17 @@
 ---
-import type { SiteProfile } from '../data/site';
+import { site as defaultSite, type SiteProfile } from '../data/site';
+import TransferButton from './TransferButton.astro';
 import '../styles/global.css';
 
-const { site } = Astro.props as { site: SiteProfile };
-const faviconType = site.favicon.endsWith('.jpg') || site.favicon.endsWith('.jpeg') ? 'image/jpeg' : 'image/png';
+interface Props {
+  site?: SiteProfile;
+  profile?: SiteProfile;
+}
+
+const site: SiteProfile = Astro.props.site ?? Astro.props.profile ?? defaultSite;
+const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.jpeg')
+  ? 'image/jpeg'
+  : (site.favicon?.endsWith('.svg') ? 'image/svg+xml' : 'image/png');
 ---
 
 <!doctype html>
@@ -20,7 +28,7 @@ const faviconType = site.favicon.endsWith('.jpg') || site.favicon.endsWith('.jpe
     <meta property="og:type" content="website" />
     <title>{site.name}</title>
   </head>
-  <body class={`business-page theme-${site.theme}`}>
+  <body class={`business-page theme-${site.theme ?? 'barber'}`}>
     <main class="page-shell">
       <article class="profile" aria-labelledby="business-name">
         <header class="profile-header">
@@ -28,7 +36,7 @@ const faviconType = site.favicon.endsWith('.jpg') || site.favicon.endsWith('.jpe
             <img
               class="logo"
               src={site.logo}
-              alt={`Logo de ${site.name}`}
+              alt={site.logoAlt ?? `Logo de ${site.name}`}
               width="512"
               height="512"
               loading="eager"
@@ -56,17 +64,17 @@ const faviconType = site.favicon.endsWith('.jpg') || site.favicon.endsWith('.jpe
           <p class="tagline">{site.tagline}</p>
         </header>
 
-        <section class="info-showcase" aria-label="Información de la barbería">
+        <section class="info-showcase" aria-label={`Información de ${site.name}`}>
           {site.highlights.map((item) => (
             <div class={`info-item info-item-${item.id}`}>
               <span class="info-icon" aria-hidden="true">
-                {item.icon === 'location' && (
+                {(item.icon === 'location' || item.id === 'location') && (
                   <svg viewBox="0 0 24 24" role="presentation">
                     <path d="M20 10c0 5.2-8 11-8 11S4 15.2 4 10a8 8 0 1 1 16 0Z" />
                     <circle cx="12" cy="10" r="2.8" />
                   </svg>
                 )}
-                {item.icon === 'scissors' && (
+                {(item.icon === 'scissors' || item.id === 'cuts') && (
                   <svg viewBox="0 0 24 24" role="presentation">
                     <circle cx="6" cy="6" r="3" />
                     <circle cx="6" cy="18" r="3" />
@@ -76,7 +84,7 @@ const faviconType = site.favicon.endsWith('.jpg') || site.favicon.endsWith('.jpe
                     <circle class="icon-dot" cx="12" cy="12" r="1.3" />
                   </svg>
                 )}
-                {item.icon === 'calendar' && (
+                {(item.icon === 'calendar' || item.id === 'booking') && (
                   <svg viewBox="0 0 24 24" role="presentation">
                     <rect x="3" y="4" width="18" height="17" rx="3" />
                     <line x1="16" y1="2" x2="16" y2="6" />
@@ -93,6 +101,19 @@ const faviconType = site.favicon.endsWith('.jpg') || site.favicon.endsWith('.jpe
                     <path d="M12 12.4v8M12 17c-2.4-2-4.1-1.8-5.2-.8M12 18.6c2.1-1.8 3.9-1.5 5-.5" />
                   </svg>
                 )}
+                {(item.icon === 'schedule' || item.id === 'schedule') && (
+                  <svg viewBox="0 0 24 24" role="presentation">
+                    <circle cx="12" cy="12" r="9" />
+                    <polyline points="12 7 12 12 15.5 14" />
+                  </svg>
+                )}
+                {(item.icon === 'payments' || item.id === 'payments') && (
+                  <svg viewBox="0 0 24 24" role="presentation">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                    <line x1="7" y1="15" x2="10" y2="15" />
+                  </svg>
+                )}
               </span>
               <div class="info-content">
                 <span class="info-label">{item.label}</span>
@@ -105,7 +126,7 @@ const faviconType = site.favicon.endsWith('.jpg') || site.favicon.endsWith('.jpe
         <nav class="links" aria-label={`Enlaces y acciones de ${site.name}`}>
           {site.links.map((link) => (
             <a
-              class={`link-button ${link.icon === 'whatsapp' ? 'link-button-whatsapp' : ''}`}
+              class={`link-button ${link.icon === 'whatsapp' ? 'link-button-whatsapp' : ''} ${link.icon === 'facebook' ? 'link-button-facebook' : ''}`}
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
@@ -139,6 +160,14 @@ const faviconType = site.favicon.endsWith('.jpg') || site.favicon.endsWith('.jpe
                     <circle cx="16.2" cy="7.8" r="0.8" fill="#FFFFFF" />
                   </svg>
                 )}
+                {link.icon === 'facebook' && (
+                  <svg viewBox="0 0 24 24" class="brand-svg" role="presentation">
+                    <path
+                      fill="#1877F2"
+                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                    />
+                  </svg>
+                )}
                 {link.icon === 'review' && (
                   <svg viewBox="0 0 24 24" class="brand-svg" role="presentation">
                     <path
@@ -157,13 +186,52 @@ const faviconType = site.favicon.endsWith('.jpg') || site.favicon.endsWith('.jpe
                     <circle cx="12" cy="9" r="1.8" fill="#1A73E8" />
                   </svg>
                 )}
+                {(link.icon === 'team' || link.icon === 'contact') && (
+                  <svg viewBox="0 0 24 24" class="brand-svg" role="presentation" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                )}
               </span>
               <span>{link.label}</span>
             </a>
           ))}
+          {site.transfer && <TransferButton details={site.transfer} />}
         </nav>
 
-        <p class="footer">{site.footer}</p>
+        {site.barbers && site.barbers.length > 0 && (
+          <section class="team-showcase" aria-label="Equipo de barberos">
+            <h2 class="team-heading">💈 Conoce a nuestros Barberos</h2>
+            <div class="team-list">
+              {site.barbers.map((barber) => (
+                <a class="barber-card" href={barber.href}>
+                  <img
+                    class="barber-avatar"
+                    src={barber.avatar}
+                    alt={`Foto de ${barber.name}`}
+                    width="64"
+                    height="64"
+                    loading="lazy"
+                  />
+                  <div class="barber-info">
+                    <span class="barber-name">{barber.name}</span>
+                    <span class="barber-role">{barber.role}</span>
+                  </div>
+                  <span class="barber-action" aria-hidden="true">
+                    {barber.badge && <span class="barber-badge">{barber.badge}</span>}
+                    <svg viewBox="0 0 24 24" class="barber-chevron" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="9 18 15 12 9 6" />
+                    </svg>
+                  </span>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+
+        <p class="footer">{site.footer ?? 'Tu estilo es nuestra prioridad.'}</p>
       </article>
     </main>
   </body>

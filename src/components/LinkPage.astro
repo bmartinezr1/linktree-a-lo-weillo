@@ -215,6 +215,29 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
           {site.transfer && <TransferButton details={site.transfer} />}
         </nav>
 
+        {site.productShowcase && (
+          <section class="product-showcase" aria-labelledby="product-showcase-heading">
+            <h2 id="product-showcase-heading">{site.productShowcase.heading}</h2>
+            {site.productShowcase.description && <p class="product-showcase-description">{site.productShowcase.description}</p>}
+            <div class="product-showcase-grid">
+              {site.productShowcase.items.map((item) => (
+                <figure class="product-showcase-card">
+                  <img
+                    src={item.image}
+                    alt={item.imageAlt}
+                    width="700"
+                    height="500"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption>{item.title}</figcaption>
+                </figure>
+              ))}
+            </div>
+            {site.productShowcase.note && <p class="product-showcase-note">{site.productShowcase.note}</p>}
+          </section>
+        )}
+
         {site.barbers && site.barbers.length > 0 && (
           <section class="team-showcase" aria-label="Equipo de barberos">
             <h2 class="team-heading">💈 Conoce a nuestros Barberos</h2>

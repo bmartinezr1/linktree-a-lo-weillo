@@ -26,6 +26,17 @@ export type TransferDetails = {
   note?: string;
 };
 
+export type ProductShowcase = {
+  heading: string;
+  description?: string;
+  items: Array<{
+    title: string;
+    image: string;
+    imageAlt: string;
+  }>;
+  note?: string;
+};
+
 export type SiteProfile = {
   name: string;
   tagline: string;
@@ -42,6 +53,7 @@ export type SiteProfile = {
   links: readonly SiteLink[] | SiteLink[];
   barbers?: readonly BarberMember[];
   transfer?: TransferDetails;
+  productShowcase?: ProductShowcase;
 };
 
 // Alias de compatibilidad
@@ -220,4 +232,65 @@ export const laDinastiaChinaSite: SiteProfile = {
       icon: 'contact',
     },
   ],
+};
+
+const FULL_DRINK_INSTAGRAM = 'https://www.instagram.com/fulldrink.licores/';
+const FULL_DRINK_REVIEWS_URL = 'https://search.google.com/local/writereview?placeid=ChIJQQP_Y_W1aZYRJLhvrcY8_h0';
+
+export const fullDrinkSite: SiteProfile = {
+  name: 'Full Drink',
+  tagline: 'Sucursal Concepción',
+  description:
+    'Full Drink, tienda de vinos, cervezas y licores en Juan de Dios Rivera 1235, Concepción. Martes a sábado de 12:00 a 22:00. Lunes y domingo cerrado.',
+  theme: 'fulldrink',
+  logo: '/full-drink.jpg',
+  logoAlt: 'Logo de Full Drink',
+  favicon: '/full-drink.jpg',
+  footer: 'Full Drink · Juan de Dios Rivera 1235, Concepción.',
+  highlights: [
+    {
+      id: 'location',
+      label: 'Dirección',
+      value: 'Juan de Dios Rivera 1235, Concepción',
+    },
+    {
+      id: 'schedule',
+      label: 'Horario',
+      value: 'Martes a sábado: 12:00–22:00\nDomingo y lunes: cerrado',
+    },
+  ],
+  links: [
+    {
+      label: 'Consultar por Instagram',
+      href: FULL_DRINK_INSTAGRAM,
+      icon: 'instagram',
+      isPrimary: true,
+    },
+    {
+      label: 'Escribir una reseña en Google',
+      href: FULL_DRINK_REVIEWS_URL,
+      icon: 'review',
+    },
+  ],
+  productShowcase: {
+    heading: 'Consulta disponibilidad',
+    items: [
+      {
+        title: 'Cócteles listos',
+        image: '/full-drink-destacado-whisky.png',
+        imageAlt: 'Latas de cóctel de whisky con bebida cola',
+      },
+      {
+        title: 'Cervezas',
+        image: '/full-drink-cervezas.png',
+        imageAlt: 'Selección de latas de cerveza',
+      },
+      {
+        title: 'Gin',
+        image: '/full-drink-gin.png',
+        imageAlt: 'Latas de gin Kantal en tres variedades',
+      },
+    ],
+    note: 'También contamos con vinos. Consulta en tienda por disponibilidad y precios.',
+  },
 };

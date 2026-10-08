@@ -13,6 +13,91 @@
   color: var(--text);
 }
 
+body.theme-fulldrink {
+  --gold: #e2a51f;
+  --gold-light: #f2bd39;
+  --surface-hover: #241e12;
+  --border: rgba(226, 165, 31, 0.72);
+}
+
+body.theme-fulldrink {
+  background:
+    radial-gradient(circle at 50% -12%, rgba(226, 165, 31, 0.15), transparent 34rem),
+    var(--background);
+}
+
+.theme-fulldrink .logo {
+  object-fit: contain;
+  border-radius: 1rem;
+  background: #000;
+  box-shadow: 0 0 0 1px rgba(226, 165, 31, 0.55), 0 0 2.5rem rgba(226, 165, 31, 0.15);
+}
+
+.theme-fulldrink h1,
+.theme-fulldrink .info-label,
+.theme-fulldrink .info-icon {
+  color: var(--gold-light);
+}
+
+.theme-fulldrink .product-showcase {
+  margin: 2rem 0 1.75rem;
+  text-align: left;
+}
+
+.theme-fulldrink .product-showcase h2 {
+  margin: 0;
+  color: var(--gold-light);
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.theme-fulldrink .product-showcase-description,
+.theme-fulldrink .product-showcase-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.theme-fulldrink .product-showcase-description {
+  margin: 0.4rem 0 1rem;
+}
+
+.theme-fulldrink .product-showcase-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.theme-fulldrink .product-showcase-card {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  background: var(--surface);
+}
+
+.theme-fulldrink .product-showcase-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: #0b0b0b;
+}
+
+.theme-fulldrink .product-showcase-card figcaption {
+  padding: 0.6rem 0.5rem;
+  color: var(--text);
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.theme-fulldrink .product-showcase-note {
+  margin: 0.8rem 0 0;
+}
+
 * {
   box-sizing: border-box;
 }

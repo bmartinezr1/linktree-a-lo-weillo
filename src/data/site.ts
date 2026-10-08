@@ -256,12 +256,6 @@ export const fullDrinkSite: SiteProfile = {
   ],
   links: [
     {
-      label: 'Ver promociones',
-      href: FULL_DRINK_INSTAGRAM,
-      icon: 'promotions',
-      isPrimary: true,
-    },
-    {
       label: 'Consultar por Instagram',
       href: FULL_DRINK_INSTAGRAM,
       icon: 'instagram',
@@ -270,6 +264,12 @@ export const fullDrinkSite: SiteProfile = {
       label: 'Escribir una reseña en Google',
       href: FULL_DRINK_REVIEWS_URL,
       icon: 'review',
+    },
+    {
+      label: 'Ver promociones',
+      href: FULL_DRINK_INSTAGRAM,
+      icon: 'promotions',
+      isPrimary: true,
     },
   ],
   productShowcase: {

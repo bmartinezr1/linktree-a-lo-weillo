@@ -215,7 +215,7 @@ export const laDinastiaChinaSite: SiteProfile = {
       icon: 'review',
     },
     {
-      label: 'Menú · Próximamente',
+      label: 'Menú',
       href: '/menu',
       icon: 'contact',
       isDisabled: true,

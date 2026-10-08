@@ -3,6 +3,7 @@ export type SiteLink = {
   href: string;
   icon: 'whatsapp' | 'instagram' | 'facebook' | 'review' | 'location' | 'team' | 'contact';
   isPrimary?: boolean;
+  isDisabled?: boolean;
 };
 
 export type InfoHighlight = {
@@ -162,6 +163,62 @@ export const floresDeFridaSite: SiteProfile = {
       label: 'Cómo llegar',
       href: 'https://www.google.com/maps/search/?api=1&query=Ej%C3%A9rcito%201286%2C%20Concepci%C3%B3n',
       icon: 'location',
+    },
+  ],
+};
+
+const DINASTIA_WHATSAPP_NUMBER = '56945668297';
+const DINASTIA_MESSAGE = 'Hola, quisiera hacer un pedido en La Dinastía China 🥡';
+const DINASTIA_WHATSAPP_URL = `https://wa.me/${DINASTIA_WHATSAPP_NUMBER}?text=${encodeURIComponent(DINASTIA_MESSAGE)}`;
+
+export const laDinastiaChinaSite: SiteProfile = {
+  name: 'La Dinastía China',
+  tagline: 'Comida china · Pedidos por WhatsApp',
+  description:
+    'La Dinastía China: sabores de la cocina china para disfrutar en casa. Haz tu pedido directamente por WhatsApp.',
+  theme: 'china',
+  logo: '/logo-la-dinastia-china.png',
+  logoAlt: 'Logo de La Dinastía China',
+  favicon: '/logo-la-dinastia-china.png',
+  footer: 'Sabores que reúnen a la familia.',
+  whatsappNumber: DINASTIA_WHATSAPP_NUMBER,
+  bookingMessage: DINASTIA_MESSAGE,
+  highlights: [
+    {
+      id: 'orders',
+      icon: 'payments',
+      label: 'Pedidos',
+      value: 'Encarga directamente por WhatsApp',
+    },
+    {
+      id: 'specialty',
+      icon: 'flower',
+      label: 'Nuestra cocina',
+      value: 'Sabores de la cocina china para compartir',
+    },
+  ],
+  links: [
+    {
+      label: 'Hacer un pedido por WhatsApp',
+      href: DINASTIA_WHATSAPP_URL,
+      icon: 'whatsapp',
+      isPrimary: true,
+    },
+    {
+      label: 'Instagram',
+      href: 'https://www.instagram.com/la_dinastia_china/?hl=es-la',
+      icon: 'instagram',
+    },
+    {
+      label: 'Escribir una reseña',
+      href: 'https://search.google.com/local/writereview?placeid=ChIJ_fFzTsi1aZYRiCLQE5g2p2E',
+      icon: 'review',
+    },
+    {
+      label: 'Menú · Próximamente',
+      href: '/menu',
+      icon: 'contact',
+      isDisabled: true,
     },
   ],
 };

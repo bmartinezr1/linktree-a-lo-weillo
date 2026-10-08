@@ -209,6 +209,15 @@ h1 {
   outline-offset: 3px;
 }
 
+.link-button-disabled {
+  cursor: default;
+  opacity: 0.64;
+}
+
+.link-button-disabled:hover {
+  transform: none;
+}
+
 .link-icon {
   display: inline-flex;
   width: 1.4rem;
@@ -429,6 +438,65 @@ h1 {
 
 .theme-floral .footer {
   color: rgba(213, 175, 206, 0.66);
+}
+
+.theme-china {
+  --background: #050505;
+  --surface: #11100d;
+  --surface-hover: #21140f;
+  --gold: #b89036;
+  --gold-light: #e2bd5a;
+  --text: #fff4d6;
+  --muted: #c9bda2;
+  --border: rgba(184, 144, 54, 0.74);
+  color-scheme: dark;
+  background:
+    radial-gradient(circle at 50% 4%, rgba(184, 144, 54, 0.2), transparent 22rem),
+    radial-gradient(circle at 50% 72%, rgba(166, 24, 24, 0.12), transparent 25rem),
+    linear-gradient(180deg, #090909 0%, #050505 68%, #0d0605 100%);
+  color: var(--text);
+}
+
+.theme-china .page-shell {
+  background: radial-gradient(circle at 50% 5%, rgba(216, 40, 29, 0.08), transparent 19rem), transparent;
+}
+
+.theme-china .logo {
+  box-shadow:
+    0 0 0 1px rgba(226, 189, 90, 0.72),
+    0 0 2.4rem rgba(184, 144, 54, 0.22),
+    0 0 4.5rem rgba(171, 28, 21, 0.12);
+}
+
+.theme-china .link-button {
+  background: linear-gradient(135deg, rgba(26, 22, 15, 0.96), #0d0c0b 82%);
+  box-shadow: 0 0.45rem 1.4rem rgba(184, 144, 54, 0.08);
+}
+
+.theme-china .link-button:hover {
+  background: linear-gradient(135deg, #2a1912, #15100d 82%);
+  box-shadow: 0 0.65rem 1.7rem rgba(184, 144, 54, 0.18);
+}
+
+.theme-china .link-button-whatsapp {
+  border-color: rgba(37, 211, 102, 0.48);
+  background: linear-gradient(135deg, rgba(20, 72, 43, 0.5), #110d0b 82%);
+}
+
+.theme-china .link-button-whatsapp:hover {
+  border-color: #25d366;
+  background: linear-gradient(135deg, rgba(24, 101, 56, 0.56), #1d120e 82%);
+}
+
+.theme-china .link-button-disabled,
+.theme-china .link-button-disabled:hover {
+  background: linear-gradient(135deg, rgba(28, 25, 19, 0.8), #0e0d0c 82%);
+  border-style: dashed;
+  box-shadow: none;
+}
+
+.theme-china .footer {
+  color: rgba(201, 189, 162, 0.7);
 }
 
 .product-header,

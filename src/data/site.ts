@@ -274,7 +274,8 @@ export const fullDrinkSite: SiteProfile = {
     },
   ],
   productShowcase: {
-    heading: 'Consulta disponibilidad',
+    heading: 'Encuentra en Full Drink',
+    description: 'Vinos, cervezas y licores para elegir en tienda.',
     items: [
       {
         title: 'Cócteles listos',

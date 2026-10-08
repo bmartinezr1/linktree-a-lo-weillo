@@ -219,6 +219,7 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
           <section class="product-showcase" aria-labelledby="product-showcase-heading">
             <h2 id="product-showcase-heading">{site.productShowcase.heading}</h2>
             {site.productShowcase.description && <p class="product-showcase-description">{site.productShowcase.description}</p>}
+            <p class="product-showcase-availability">Consulta disponibilidad</p>
             <div class="product-showcase-grid">
               {site.productShowcase.items.map((item) => (
                 <figure class="product-showcase-card">

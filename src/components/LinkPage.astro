@@ -141,8 +141,8 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
             <a
               class={`link-button ${link.icon === 'whatsapp' ? 'link-button-whatsapp' : ''} ${link.icon === 'facebook' ? 'link-button-facebook' : ''}`}
               href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={link.href.startsWith('/') ? undefined : '_blank'}
+              rel={link.href.startsWith('/') ? undefined : 'noopener noreferrer'}
             >
               <span class="link-icon" aria-hidden="true">
                 {link.icon === 'whatsapp' && (

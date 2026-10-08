@@ -139,7 +139,7 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
               </span>
             ) : (
             <a
-              class={`link-button ${link.icon === 'whatsapp' ? 'link-button-whatsapp' : ''} ${link.icon === 'facebook' ? 'link-button-facebook' : ''}`}
+              class={`link-button ${link.icon === 'whatsapp' ? 'link-button-whatsapp' : ''} ${link.icon === 'facebook' ? 'link-button-facebook' : ''} ${link.icon === 'promotions' ? 'link-button-promotions' : ''}`}
               href={link.href}
               target={link.href.startsWith('/') ? undefined : '_blank'}
               rel={link.href.startsWith('/') ? undefined : 'noopener noreferrer'}
@@ -189,6 +189,12 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
                     />
                   </svg>
                 )}
+                {link.icon === 'promotions' && (
+                  <svg viewBox="0 0 24 24" class="brand-svg" role="presentation" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 7.5V4h16v3.5a2.5 2.5 0 0 0 0 5V16H4v-3.5a2.5 2.5 0 0 0 0-5Z" />
+                    <path d="m14.5 7.5-5 6M9.2 7.5h.01M14.8 13.5h.01" />
+                  </svg>
+                )}
                 {link.icon === 'location' && (
                   <svg viewBox="0 0 24 24" class="brand-svg" role="presentation">
                     <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z" fill="#EA4335" />
@@ -218,24 +224,11 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
         {site.productShowcase && (
           <section class="product-showcase" aria-labelledby="product-showcase-heading">
             <h2 id="product-showcase-heading">{site.productShowcase.heading}</h2>
-            {site.productShowcase.description && <p class="product-showcase-description">{site.productShowcase.description}</p>}
-            <p class="product-showcase-availability">Consulta disponibilidad</p>
-            <div class="product-showcase-grid">
+            <ul class="product-showcase-list">
               {site.productShowcase.items.map((item) => (
-                <figure class="product-showcase-card">
-                  <img
-                    src={item.image}
-                    alt={item.imageAlt}
-                    width="700"
-                    height="500"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <figcaption>{item.title}</figcaption>
-                </figure>
+                <li>{item}</li>
               ))}
-            </div>
-            {site.productShowcase.note && <p class="product-showcase-note">{site.productShowcase.note}</p>}
+            </ul>
           </section>
         )}
 

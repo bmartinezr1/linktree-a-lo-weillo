@@ -1,7 +1,7 @@
 export type SiteLink = {
   label: string;
   href: string;
-  icon: 'whatsapp' | 'instagram' | 'facebook' | 'review' | 'location' | 'team' | 'contact';
+  icon: 'whatsapp' | 'instagram' | 'facebook' | 'review' | 'location' | 'team' | 'contact' | 'promotions';
   isPrimary?: boolean;
   isDisabled?: boolean;
 };
@@ -28,13 +28,7 @@ export type TransferDetails = {
 
 export type ProductShowcase = {
   heading: string;
-  description?: string;
-  items: Array<{
-    title: string;
-    image: string;
-    imageAlt: string;
-  }>;
-  note?: string;
+  items: string[];
 };
 
 export type SiteProfile = {
@@ -261,10 +255,15 @@ export const fullDrinkSite: SiteProfile = {
   ],
   links: [
     {
+      label: 'Ver promociones',
+      href: FULL_DRINK_INSTAGRAM,
+      icon: 'promotions',
+      isPrimary: true,
+    },
+    {
       label: 'Consultar por Instagram',
       href: FULL_DRINK_INSTAGRAM,
       icon: 'instagram',
-      isPrimary: true,
     },
     {
       label: 'Escribir una reseña en Google',
@@ -274,24 +273,6 @@ export const fullDrinkSite: SiteProfile = {
   ],
   productShowcase: {
     heading: 'Encuentra en Full Drink',
-    description: 'Vinos, cervezas y licores para elegir en tienda.',
-    items: [
-      {
-        title: 'Cócteles listos',
-        image: '/full-drink-destacado-whisky.png',
-        imageAlt: 'Latas de cóctel de whisky con bebida cola',
-      },
-      {
-        title: 'Cervezas',
-        image: '/full-drink-cervezas.png',
-        imageAlt: 'Selección de latas de cerveza',
-      },
-      {
-        title: 'Gin',
-        image: '/full-drink-gin.png',
-        imageAlt: 'Latas de gin Kantal en tres variedades',
-      },
-    ],
-    note: 'También contamos con vinos. Consulta en tienda por disponibilidad y precios.',
+    items: ['Vinos', 'Cervezas', 'Licores'],
   },
 };

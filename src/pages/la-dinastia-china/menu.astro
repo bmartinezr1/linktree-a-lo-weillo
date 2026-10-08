@@ -12,7 +12,6 @@ const menuImages = [
   },
 ];
 
-const whatsappLink = laDinastiaChinaSite.links.find((link) => link.icon === 'whatsapp')?.href;
 ---
 
 <!doctype html>
@@ -49,12 +48,6 @@ const whatsappLink = laDinastiaChinaSite.links.find((link) => link.icon === 'wha
           </figure>
         ))}
       </section>
-
-      {whatsappLink && (
-        <a class="order-button" href={whatsappLink} target="_blank" rel="noopener noreferrer">
-          Pedir por WhatsApp
-        </a>
-      )}
     </main>
   </body>
 </html>
@@ -163,16 +156,7 @@ const whatsappLink = laDinastiaChinaSite.links.find((link) => link.icon === 'wha
     text-align: center;
   }
 
-  .order-button {
-    width: min(100%, 360px);
-    margin: 28px auto 0;
-    padding: 16px 22px;
-    background: linear-gradient(135deg, #e2b24b, #b01122);
-    box-shadow: 0 20px 42px rgba(176, 17, 34, 0.28);
-  }
-
   .back-link:focus-visible,
-  .order-button:focus-visible,
   .menu-card a:focus-visible {
     outline: 3px solid #ffd36a;
     outline-offset: 4px;

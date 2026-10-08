@@ -52,6 +52,7 @@ body.theme-fulldrink {
 }
 
 .theme-fulldrink .product-showcase-description,
+.theme-fulldrink .product-showcase-availability,
 .theme-fulldrink .product-showcase-note {
   color: var(--muted);
   font-size: 0.9rem;
@@ -60,6 +61,13 @@ body.theme-fulldrink {
 
 .theme-fulldrink .product-showcase-description {
   margin: 0.4rem 0 1rem;
+}
+
+.theme-fulldrink .product-showcase-availability {
+  margin: 0 0 0.7rem;
+  color: var(--gold-light);
+  font-size: 0.88rem;
+  font-weight: 700;
 }
 
 .theme-fulldrink .product-showcase-grid {

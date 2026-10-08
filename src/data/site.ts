@@ -216,9 +216,8 @@ export const laDinastiaChinaSite: SiteProfile = {
     },
     {
       label: 'Menú',
-      href: '/menu',
+      href: '/la-dinastia-china/menu',
       icon: 'contact',
-      isDisabled: true,
     },
   ],
 };

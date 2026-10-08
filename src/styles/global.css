@@ -51,59 +51,50 @@ body.theme-fulldrink {
   line-height: 1.25;
 }
 
-.theme-fulldrink .product-showcase-description,
-.theme-fulldrink .product-showcase-availability,
-.theme-fulldrink .product-showcase-note {
-  color: var(--muted);
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-.theme-fulldrink .product-showcase-description {
-  margin: 0.4rem 0 1rem;
-}
-
-.theme-fulldrink .product-showcase-availability {
-  margin: 0 0 0.7rem;
-  color: var(--gold-light);
-  font-size: 0.88rem;
-  font-weight: 700;
-}
-
-.theme-fulldrink .product-showcase-grid {
+.theme-fulldrink .product-showcase-list {
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 1rem;
+  gap: 0.55rem;
+  margin: 0.9rem 0 0;
+  padding: 0;
+  list-style: none;
 }
 
-.theme-fulldrink .product-showcase-card {
-  min-width: 0;
-  margin: 0;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: 0.8rem;
-  background: var(--surface);
-}
-
-.theme-fulldrink .product-showcase-card img {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-}
-
-.theme-fulldrink .product-showcase-card figcaption {
-  padding: 0.6rem 0.5rem;
+.theme-fulldrink .product-showcase-list li {
+  display: flex;
+  min-height: 3rem;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid rgba(226, 165, 31, 0.35);
+  border-radius: 0.7rem;
+  background: linear-gradient(110deg, rgba(226, 165, 31, 0.08), rgba(21, 21, 21, 0.96) 55%);
   color: var(--text);
-  font-size: 0.8rem;
-  font-weight: 700;
-  line-height: 1.3;
-  text-align: center;
+  font-size: 0.96rem;
+  font-weight: 650;
+  letter-spacing: 0.015em;
 }
 
-.theme-fulldrink .product-showcase-note {
-  margin: 0.8rem 0 0;
+.theme-fulldrink .product-showcase-list li::before {
+  width: 0.55rem;
+  height: 0.55rem;
+  flex: 0 0 auto;
+  border: 1.5px solid var(--gold-light);
+  border-radius: 2px;
+  box-shadow: 0 0 0.6rem rgba(242, 189, 57, 0.25);
+  content: '';
+  transform: rotate(45deg);
+}
+
+.theme-fulldrink .link-button-promotions {
+  border-color: var(--gold-light);
+  background: linear-gradient(135deg, #e2a51f, #f2bd39);
+  color: #111;
+  box-shadow: 0 4px 18px rgba(226, 165, 31, 0.18);
+}
+
+.theme-fulldrink .link-button-promotions:hover {
+  border-color: #ffe080;
+  background: linear-gradient(135deg, #f2bd39, #ffd966);
 }
 
 * {

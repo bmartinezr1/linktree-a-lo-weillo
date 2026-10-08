@@ -64,10 +64,7 @@ body.theme-fulldrink {
   min-height: 3rem;
   align-items: center;
   gap: 0.8rem;
-  padding: 0.7rem 0.9rem;
-  border: 1px solid rgba(226, 165, 31, 0.35);
-  border-radius: 0.7rem;
-  background: linear-gradient(110deg, rgba(226, 165, 31, 0.08), rgba(21, 21, 21, 0.96) 55%);
+  padding: 0.45rem 0.25rem;
   color: var(--text);
   font-size: 0.96rem;
   font-weight: 650;

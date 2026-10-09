@@ -262,7 +262,7 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
           </section>
         )}
 
-        <p class="footer">{site.footer ?? 'Tu estilo es nuestra prioridad.'}</p>
+        {site.footer !== '' && <p class="footer">{site.footer ?? 'Tu estilo es nuestra prioridad.'}</p>}
       </article>
     </main>
   </body>

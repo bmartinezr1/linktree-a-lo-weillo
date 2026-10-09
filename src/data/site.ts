@@ -287,3 +287,170 @@ export const fullDrinkSite: SiteProfile = {
     items: ['Vinos', 'Cervezas', 'Licores'],
   },
 };
+
+const DONA_FLOR_INSTAGRAM = 'https://www.instagram.com/donaflor.supermercado/';
+const DONA_FLOR_REVIEWS_URL = 'https://search.google.com/local/writereview?placeid=ChIJAQgpIwC1aZYR8bhIeN5ohSs';
+
+export const donaFlorSite: SiteProfile = {
+  name: 'Doña Flor Supermercado',
+  tagline: 'Supermercado · Concepción',
+  description:
+    'Doña Flor Supermercado en Concepción. Encuentra sus horarios, ubicaciones, Instagram y enlace para dejar una reseña en Google.',
+  theme: 'dona-flor',
+  logo: '/logo-dona-flor-supermercado.png',
+  logoAlt: 'Logo de Doña Flor Supermercado',
+  favicon: '/logo-dona-flor-supermercado.png',
+  footer: 'Doña Flor Supermercado · Concepción.',
+  highlights: [
+    {
+      id: 'location',
+      icon: 'location',
+      label: 'Sucursal Janequeo',
+      value: 'Janequeo 1559, Concepción',
+    },
+    {
+      id: 'bandera',
+      icon: 'location',
+      label: 'Sucursal Bandera',
+      value: 'Bandera #1321, Concepción',
+    },
+    {
+      id: 'schedule',
+      icon: 'schedule',
+      label: 'Horarios',
+      value: 'Lunes a jueves: 19:00 - 01:00\nViernes a sábado: hasta las 03:00\nDomingos y festivos: 20:00 - 00:00',
+    },
+  ],
+  links: [
+    {
+      label: 'Instagram',
+      href: DONA_FLOR_INSTAGRAM,
+      icon: 'instagram',
+      isPrimary: true,
+    },
+    {
+      label: 'Escribir una reseña',
+      href: DONA_FLOR_REVIEWS_URL,
+      icon: 'review',
+    },
+  ],
+  transfer: {
+    text: 'RUT: 21.586.890-7',
+  },
+};
+
+const MARLEY_WHATSAPP_NUMBER = '56990238871';
+const MARLEY_MESSAGE = 'Hola, quiero hacer un pedido en El Bajón del Marley 🍔🍟';
+const MARLEY_WHATSAPP_URL = `https://wa.me/${MARLEY_WHATSAPP_NUMBER}?text=${encodeURIComponent(MARLEY_MESSAGE)}`;
+
+export const elBajonDelMarleySite: SiteProfile = {
+  name: 'El Bajón Del Marley',
+  tagline: 'Restaurante · Concepción',
+  description:
+    'El Bajón Del Marley en Ejército 1238, Concepción. Comida rápida, reparto a domicilio y pedidos directos por WhatsApp.',
+  theme: 'marley',
+  logo: '/logo-el-bajon-del-marley.png',
+  logoAlt: 'Logo de El Bajón Del Marley',
+  favicon: '/logo-el-bajon-del-marley.png',
+  footer: '',
+  whatsappNumber: MARLEY_WHATSAPP_NUMBER,
+  bookingMessage: MARLEY_MESSAGE,
+  highlights: [
+    {
+      id: 'location',
+      icon: 'location',
+      label: 'Ubicación',
+      value: 'Ejército #1238, entre Ongolmo y Paicaví, Concepción',
+    },
+    {
+      id: 'delivery',
+      icon: 'payments',
+      label: 'Reparto',
+      value: 'Pedidos con reparto a domicilio',
+    },
+    {
+      id: 'schedule',
+      icon: 'schedule',
+      label: 'Horario',
+      value:
+        'Lunes a jueves: 09:00 - 23:30\nViernes: 09:00 - 00:30\nSábado: 10:00 - 00:30\nDomingo: 12:00 - 20:30',
+    },
+  ],
+  links: [
+    {
+      label: 'Pedir por WhatsApp',
+      href: MARLEY_WHATSAPP_URL,
+      icon: 'whatsapp',
+      isPrimary: true,
+    },
+    {
+      label: 'Instagram',
+      href: 'https://www.instagram.com/el_bajon_del_marley/?hl=es',
+      icon: 'instagram',
+    },
+    {
+      label: 'Escribir una reseña',
+      href: 'https://search.google.com/local/writereview?placeid=ChIJm755RgC1aZYRkD0An946IvE',
+      icon: 'review',
+    },
+  ],
+  transfer: {
+    text: '',
+  },
+};
+
+const BRONTO_WHATSAPP_URL = 'https://api.whatsapp.com/message/J464646QPBI2A1?autoload=1&app_absent=0';
+
+export const brontoPizzaSite: SiteProfile = {
+  name: 'Bronto Pizza',
+  tagline: 'Tradicionales y veganas · Delivery',
+  description:
+    'Bronto Pizza en Ejército 1238, Local 3, Concepción. Pizzas tradicionales y veganas con delivery y pedidos directos por WhatsApp.',
+  theme: 'bronto',
+  logo: '/logo-bronto-pizza.png',
+  logoAlt: 'Logo de Bronto Pizza',
+  favicon: '/logo-bronto-pizza.png',
+  footer: '',
+  highlights: [
+    {
+      id: 'location',
+      icon: 'location',
+      label: 'Ubicación',
+      value: 'Ejército 1238, Local 3, Concepción',
+    },
+    {
+      id: 'delivery',
+      icon: 'payments',
+      label: 'Delivery',
+      value: 'Pide directo por WhatsApp',
+    },
+    {
+      id: 'schedule',
+      icon: 'schedule',
+      label: 'Horario',
+      value:
+        'Lunes a jueves: 12:30 - 22:45\nViernes: 12:30 - 23:45\nSábado: 12:00 - 23:45\nDomingo: 12:00 - 21:45',
+    },
+  ],
+  links: [
+    {
+      label: 'Pedir por WhatsApp',
+      href: BRONTO_WHATSAPP_URL,
+      icon: 'whatsapp',
+      isPrimary: true,
+    },
+    {
+      label: 'Instagram',
+      href: 'https://www.instagram.com/brontopizza/?hl=es',
+      icon: 'instagram',
+    },
+    {
+      label: 'Escribir una reseña',
+      href: 'https://search.google.com/local/writereview?placeid=ChIJv-K0_M21aZYRhQkY3igQSXg',
+      icon: 'review',
+    },
+  ],
+  transfer: {
+    text: '',
+  },
+};

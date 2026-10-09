@@ -26,6 +26,207 @@ body.theme-fulldrink {
     var(--background);
 }
 
+body.theme-marley {
+  --background: #060606;
+  --surface: #14110b;
+  --surface-hover: #211809;
+  --gold: #d9a21f;
+  --gold-light: #ffe173;
+  --text: #fff7df;
+  --muted: #d8c89a;
+  --border: rgba(255, 213, 78, 0.58);
+  background:
+    linear-gradient(180deg, rgba(255, 204, 45, 0.09) 0%, rgba(6, 6, 6, 0) 21rem),
+    radial-gradient(circle at 50% -11%, rgba(255, 224, 99, 0.22), transparent 28rem),
+    #060606;
+}
+
+body.theme-bronto {
+  --background: #070707;
+  --surface: #151515;
+  --surface-hover: #24140f;
+  --gold: #e02020;
+  --gold-light: #ff3838;
+  --text: #fff8f0;
+  --muted: #d7cbc0;
+  --border: rgba(255, 56, 56, 0.52);
+  background:
+    radial-gradient(circle at 50% -12%, rgba(255, 56, 56, 0.2), transparent 27rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(7, 7, 7, 0) 19rem),
+    #070707;
+}
+
+.theme-bronto .logo {
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.78);
+  background: #000;
+  box-shadow:
+    0 0 0 1px rgba(255, 56, 56, 0.55),
+    0 1rem 2.8rem rgba(0, 0, 0, 0.45),
+    0 0 2.7rem rgba(255, 56, 56, 0.2);
+}
+
+.theme-bronto h1,
+.theme-bronto .info-label,
+.theme-bronto .info-icon,
+.theme-bronto .product-showcase h2 {
+  color: var(--gold-light);
+}
+
+.theme-bronto h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.theme-bronto .tagline {
+  color: #ffffff;
+}
+
+.theme-bronto .link-button {
+  background: linear-gradient(135deg, #171717, #0b0b0b);
+}
+
+.theme-bronto .link-button:hover {
+  border-color: #ffffff;
+  background: linear-gradient(135deg, #26110e, #111);
+}
+
+.theme-bronto .link-button-whatsapp {
+  border-color: rgba(37, 211, 102, 0.62);
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.2), #111 78%);
+}
+
+.theme-bronto .product-showcase-list li {
+  border-color: rgba(255, 56, 56, 0.38);
+  background: rgba(255, 56, 56, 0.1);
+}
+
+.theme-marley .logo {
+  object-fit: contain;
+  border: 3px solid rgba(255, 225, 115, 0.82);
+  background: #000;
+  box-shadow:
+    0 0 0 1px rgba(255, 225, 115, 0.22),
+    0 1.1rem 3rem rgba(0, 0, 0, 0.45),
+    0 0 2.4rem rgba(255, 213, 78, 0.18);
+}
+
+.theme-marley h1,
+.theme-marley .info-label,
+.theme-marley .info-icon,
+.theme-marley .product-showcase h2 {
+  color: var(--gold-light);
+}
+
+.theme-marley .tagline {
+  color: #f3c84a;
+}
+
+.theme-marley .link-button {
+  background: linear-gradient(135deg, #15110a, #0d0d0b);
+}
+
+.theme-marley .link-button:hover {
+  border-color: var(--gold-light);
+  background: linear-gradient(135deg, #241a08, #12100a);
+}
+
+.theme-marley .link-button-whatsapp {
+  border-color: rgba(37, 211, 102, 0.65);
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.2), #12110a 78%);
+}
+
+.theme-marley .product-showcase {
+  margin: 1.9rem 0 1.7rem;
+  text-align: left;
+}
+
+.theme-marley .product-showcase h2 {
+  margin: 0 0 0.85rem;
+  font-size: 1.12rem;
+  line-height: 1.25;
+}
+
+.theme-marley .product-showcase-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.theme-marley .product-showcase-list li {
+  padding: 0.45rem 0.7rem;
+  border: 1px solid rgba(255, 225, 115, 0.34);
+  border-radius: 999px;
+  background: rgba(255, 225, 115, 0.08);
+  color: var(--text);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.theme-dona-flor {
+  --background: #f8fbf5;
+  --surface: #ffffff;
+  --surface-hover: #eef7ed;
+  --gold: #0f6358;
+  --gold-light: #177366;
+  --text: #123832;
+  --muted: #52716a;
+  --border: rgba(15, 99, 88, 0.28);
+  background:
+    radial-gradient(circle at 50% -10%, rgba(23, 115, 102, 0.18), transparent 32rem),
+    linear-gradient(180deg, #ffffff 0%, #f4faf3 44%, #eef7ed 100%);
+}
+
+.theme-dona-flor .profile {
+  border-color: rgba(15, 99, 88, 0.24);
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 1.5rem 4rem rgba(18, 56, 50, 0.12);
+}
+
+.theme-dona-flor .logo {
+  object-fit: contain;
+  border-color: rgba(15, 99, 88, 0.28);
+  background: #ffffff;
+  box-shadow: 0 0 0 1px rgba(15, 99, 88, 0.15), 0 1rem 2.4rem rgba(15, 99, 88, 0.16);
+}
+
+.theme-dona-flor h1,
+.theme-dona-flor .info-label,
+.theme-dona-flor .info-icon {
+  color: var(--gold);
+}
+
+.theme-dona-flor .links {
+  width: min(100% - 2rem, 23rem);
+  margin-inline: auto;
+}
+
+.theme-dona-flor .link-button {
+  background: linear-gradient(135deg, #ffffff, #f2f8f1);
+  box-shadow: 0 0.65rem 1.6rem rgba(18, 56, 50, 0.08);
+}
+
+.theme-dona-flor .link-button:hover {
+  border-color: var(--gold-light);
+  background: var(--surface-hover);
+}
+
+.theme-dona-flor .link-button:first-child {
+  border-color: var(--gold);
+  background: linear-gradient(135deg, #0f6358, #1e8475);
+  color: #ffffff;
+}
+
+.theme-dona-flor .link-button:first-child:hover {
+  border-color: #1e8475;
+  background: linear-gradient(135deg, #177366, #259482);
+}
+
 .theme-fulldrink .logo {
   object-fit: contain;
   border-radius: 1rem;

@@ -230,27 +230,29 @@ export const laDinastiaChinaSite: SiteProfile = {
 
 const FULL_DRINK_INSTAGRAM = 'https://www.instagram.com/fulldrink.licores/';
 const FULL_DRINK_REVIEWS_URL = 'https://search.google.com/local/writereview?placeid=ChIJQQP_Y_W1aZYRJLhvrcY8_h0';
+const FULL_DRINK_SAN_PEDRO_REVIEWS_URL = 'https://search.google.com/local/writereview?placeid=ChIJk3_OHADJaZYRQeRKKtVx7v8';
 
 export const fullDrinkSite: SiteProfile = {
   name: 'Full Drink',
-  tagline: 'Sucursal Concepción',
+  tagline: '',
   description:
-    'Full Drink, tienda de vinos, cervezas y licores en Juan de Dios Rivera 1235, Concepción. Martes a sábado de 12:00 a 22:00. Lunes y domingo cerrado.',
+    'Full Drink, tienda de vinos, cervezas y licores con sucursales en Concepción y San Pedro de la Paz. Encuentra direcciones y horarios en esta página.',
   theme: 'fulldrink',
   logo: '/full-drink.jpg',
   logoAlt: 'Logo de Full Drink',
   favicon: '/full-drink.jpg',
-  footer: 'Full Drink · Juan de Dios Rivera 1235, Concepción.',
+  footer: 'Full Drink · Vinos, cervezas y licores.',
   highlights: [
     {
       id: 'location',
-      label: 'Dirección',
-      value: 'Juan de Dios Rivera 1235, Concepción',
+      label: 'Sucursal Concepción',
+      value: 'Juan de Dios Rivera 1235\nHorario: Martes a sábado 12:00–22:00 · domingo y lunes cerrado',
     },
     {
-      id: 'schedule',
-      label: 'Horario',
-      value: 'Martes a sábado: 12:00–22:00\nDomingo y lunes: cerrado',
+      id: 'san-pedro',
+      icon: 'location',
+      label: 'Sucursal San Pedro de la Paz',
+      value: 'Los Aromos #1465\nHorario: 12:00–01:00 hrs.',
     },
   ],
   links: [
@@ -260,8 +262,13 @@ export const fullDrinkSite: SiteProfile = {
       icon: 'instagram',
     },
     {
-      label: 'Escribir una reseña en Google',
+      label: 'Reseña Google · Sucursal Concepción',
       href: FULL_DRINK_REVIEWS_URL,
+      icon: 'review',
+    },
+    {
+      label: 'Reseña Google · Sucursal San Pedro de la Paz',
+      href: FULL_DRINK_SAN_PEDRO_REVIEWS_URL,
       icon: 'review',
     },
     {

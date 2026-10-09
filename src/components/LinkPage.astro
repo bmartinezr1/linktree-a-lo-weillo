@@ -61,7 +61,7 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
             </div>
           )}
           <h1 id="business-name">{site.name}</h1>
-          <p class="tagline">{site.tagline}</p>
+          {site.tagline && <p class="tagline">{site.tagline}</p>}
         </header>
 
         <section class="info-showcase" aria-label={`Información de ${site.name}`}>

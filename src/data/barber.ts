@@ -1,17 +1,10 @@
-import type { LinkPageData, SiteLink, TransferDetails } from './site';
+import type { LinkPageData, SiteLink } from './site';
 
 // Completar si Ignacio habilita WhatsApp. Nunca usar un número de ejemplo.
 const WHATSAPP_NUMBER = '';
 const BOOKING_MESSAGE = 'Hola Ignacio, quiero agendar un corte contigo. ¿Qué horarios tienes disponibles?';
 // Enlace directo a reseñas de Barbería CJ en Google Maps (Place ID).
 const SHOP_REVIEWS_URL = 'https://search.google.com/local/writereview?placeid=ChIJtbLkBgO1aZYRV61ZwUhdp1A';
-
-// RUT facilitado por el usuario exclusivamente para demostrar la copia.
-// Reemplazar por los datos reales de Ignacio antes de publicar esta página.
-const TRANSFER_DETAILS: TransferDetails = {
-  text: '21.586.890-7',
-  note: 'Toca el botón para copiar datos bancarios o propina.',
-};
 
 const links: SiteLink[] = [
   ...(WHATSAPP_NUMBER ? [{
@@ -63,6 +56,5 @@ export const barber: LinkPageData = {
     },
   ],
   links,
-  transfer: TRANSFER_DETAILS,
   footer: 'Tu estilo es mi prioridad.',
 };

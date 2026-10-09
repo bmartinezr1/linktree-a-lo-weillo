@@ -295,19 +295,13 @@ export const donaFlorSite: SiteProfile = {
   name: 'Doña Flor Supermercado',
   tagline: 'Supermercado · Concepción',
   description:
-    'Doña Flor Supermercado en Concepción. Encuentra sus horarios, ubicaciones, Instagram y enlace para dejar una reseña en Google.',
+    'Doña Flor Supermercado en Concepción. Encuentra su ubicación, horarios, Instagram y enlace para dejar una reseña en Google.',
   theme: 'dona-flor',
   logo: '/logo-dona-flor-supermercado.png',
   logoAlt: 'Logo de Doña Flor Supermercado',
   favicon: '/logo-dona-flor-supermercado.png',
   footer: 'Doña Flor Supermercado · Concepción.',
   highlights: [
-    {
-      id: 'location',
-      icon: 'location',
-      label: 'Sucursal Janequeo',
-      value: 'Janequeo 1559, Concepción',
-    },
     {
       id: 'bandera',
       icon: 'location',
@@ -335,7 +329,13 @@ export const donaFlorSite: SiteProfile = {
     },
   ],
   transfer: {
-    text: 'RUT: 21.586.890-7',
+    text: [
+      'Doña Flor SPA',
+      'RUT: 77.912.132-1',
+      'Banco Santander',
+      'Cuenta Corriente',
+      'N° 94053447',
+    ].join('\n'),
   },
 };
 

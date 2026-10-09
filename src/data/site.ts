@@ -451,6 +451,12 @@ export const brontoPizzaSite: SiteProfile = {
     },
   ],
   transfer: {
-    text: '',
+    text: [
+      'LUIS RODRIGO VILUNIR RIVAS',
+      '21586890-7',
+      'Banco Estado',
+      'CuentaRUT',
+      '00021586890',
+    ].join('\n'),
   },
 };

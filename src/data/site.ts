@@ -271,13 +271,17 @@ export const fullDrinkSite: SiteProfile = {
       href: FULL_DRINK_SAN_PEDRO_REVIEWS_URL,
       icon: 'review',
     },
-    {
-      label: 'Ver promociones',
-      href: FULL_DRINK_INSTAGRAM,
-      icon: 'promotions',
-      isPrimary: true,
-    },
   ],
+  transfer: {
+    text: [
+      'Inversiones DYV SPA',
+      'RUT: 77.306.791-0',
+      'Banco Santander',
+      'Cuenta Corriente',
+      'N°83900997',
+      'ventas@fulldrink.cl',
+    ].join('\n'),
+  },
   productShowcase: {
     heading: 'Encuentra en Full Drink',
     items: ['Vinos', 'Cervezas', 'Licores'],

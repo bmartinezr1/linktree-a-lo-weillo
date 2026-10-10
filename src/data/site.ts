@@ -1,8 +1,7 @@
 export type SiteLink = {
   label: string;
   href: string;
-  icon: 'whatsapp' | 'instagram' | 'facebook' | 'review' | 'location' | 'team' | 'contact' | 'promotions';
-  isPrimary?: boolean;
+  icon: 'whatsapp' | 'instagram' | 'facebook' | 'review' | 'location' | 'team' | 'contact' | 'promotions' | 'calendar';
   isDisabled?: boolean;
 };
 
@@ -41,8 +40,6 @@ export type SiteProfile = {
   monogram?: string;
   favicon: string;
   footer?: string;
-  whatsappNumber?: string;
-  bookingMessage?: string;
   highlights: readonly InfoHighlight[] | InfoHighlight[];
   links: readonly SiteLink[] | SiteLink[];
   barbers?: readonly BarberMember[];
@@ -53,10 +50,6 @@ export type SiteProfile = {
 // Alias de compatibilidad
 export type LinkPageData = SiteProfile;
 
-const BARBER_WHATSAPP_NUMBER = '56957422166';
-const BARBER_BOOKING_MESSAGE = 'Hola, quisiera agendar una cita en 7E Barber Shop 💈✂️';
-const BARBER_WHATSAPP_URL = `https://wa.me/${BARBER_WHATSAPP_NUMBER}?text=${encodeURIComponent(BARBER_BOOKING_MESSAGE)}`;
-
 export const site: SiteProfile = {
   name: '7E Barber Shop',
   tagline: 'Barbería · Concepción',
@@ -66,8 +59,6 @@ export const site: SiteProfile = {
   logo: '/logo-7e-barber-shop.webp',
   favicon: '/favicon.png',
   footer: 'Tu estilo es nuestra prioridad.',
-  whatsappNumber: BARBER_WHATSAPP_NUMBER,
-  bookingMessage: BARBER_BOOKING_MESSAGE,
   highlights: [
     {
       id: 'location',
@@ -90,10 +81,9 @@ export const site: SiteProfile = {
   ],
   links: [
     {
-      label: 'Agendar Cita',
-      href: BARBER_WHATSAPP_URL,
-      icon: 'whatsapp',
-      isPrimary: true,
+      label: 'agenda tu hora aqui',
+      href: 'https://7ebarbershop.setmore.com/',
+      icon: 'calendar',
     },
     {
       label: 'Instagram',
@@ -111,6 +101,15 @@ export const site: SiteProfile = {
       icon: 'location',
     },
   ],
+  transfer: {
+    text: [
+      'Barbero Studio Eisler',
+      '78264147-6',
+      'BancoEstado',
+      'Cuenta Vista',
+      '90279983075',
+    ].join('\n'),
+  },
 };
 
 const FLORIST_WHATSAPP_NUMBER = '56936870591';
@@ -126,8 +125,6 @@ export const floresDeFridaSite: SiteProfile = {
   logo: '/logo-flores-de-frida.jpg',
   favicon: '/logo-flores-de-frida.jpg',
   footer: 'Detalles que florecen con cariño.',
-  whatsappNumber: FLORIST_WHATSAPP_NUMBER,
-  bookingMessage: FLORIST_MESSAGE,
   highlights: [
     {
       id: 'location',
@@ -153,7 +150,6 @@ export const floresDeFridaSite: SiteProfile = {
       label: 'Consultar por WhatsApp',
       href: FLORIST_WHATSAPP_URL,
       icon: 'whatsapp',
-      isPrimary: true,
     },
     {
       label: 'Instagram',
@@ -187,8 +183,6 @@ export const laDinastiaChinaSite: SiteProfile = {
   logoAlt: 'Logo de La Dinastía China',
   favicon: '/logo-la-dinastia-china.png',
   footer: 'Sabores que reúnen a la familia.',
-  whatsappNumber: DINASTIA_WHATSAPP_NUMBER,
-  bookingMessage: DINASTIA_MESSAGE,
   highlights: [
     {
       id: 'orders',
@@ -208,7 +202,6 @@ export const laDinastiaChinaSite: SiteProfile = {
       label: 'Hacer un pedido por WhatsApp',
       href: DINASTIA_WHATSAPP_URL,
       icon: 'whatsapp',
-      isPrimary: true,
     },
     {
       label: 'Instagram',
@@ -297,9 +290,9 @@ export const donaFlorSite: SiteProfile = {
   description:
     'Doña Flor Supermercado en Concepción. Encuentra su ubicación, horarios, Instagram y enlace para dejar una reseña en Google.',
   theme: 'dona-flor',
-  logo: '/logo-dona-flor-supermercado.png',
+  logo: '/logo-dona-flor-supermercado.webp',
   logoAlt: 'Logo de Doña Flor Supermercado',
-  favicon: '/logo-dona-flor-supermercado.png',
+  favicon: '/favicon-dona-flor-supermercado.png',
   footer: 'Doña Flor Supermercado · Concepción.',
   highlights: [
     {
@@ -320,7 +313,6 @@ export const donaFlorSite: SiteProfile = {
       label: 'Instagram',
       href: DONA_FLOR_INSTAGRAM,
       icon: 'instagram',
-      isPrimary: true,
     },
     {
       label: 'Escribir una reseña',
@@ -349,12 +341,10 @@ export const elBajonDelMarleySite: SiteProfile = {
   description:
     'El Bajón Del Marley en Ejército 1238, Concepción. Comida rápida, reparto a domicilio y pedidos directos por WhatsApp.',
   theme: 'marley',
-  logo: '/logo-el-bajon-del-marley.png',
+  logo: '/logo-el-bajon-del-marley.webp',
   logoAlt: 'Logo de El Bajón Del Marley',
-  favicon: '/logo-el-bajon-del-marley.png',
+  favicon: '/favicon-el-bajon-del-marley.png',
   footer: '',
-  whatsappNumber: MARLEY_WHATSAPP_NUMBER,
-  bookingMessage: MARLEY_MESSAGE,
   highlights: [
     {
       id: 'location',
@@ -381,7 +371,6 @@ export const elBajonDelMarleySite: SiteProfile = {
       label: 'Pedir por WhatsApp',
       href: MARLEY_WHATSAPP_URL,
       icon: 'whatsapp',
-      isPrimary: true,
     },
     {
       label: 'Instagram',
@@ -396,67 +385,5 @@ export const elBajonDelMarleySite: SiteProfile = {
   ],
   transfer: {
     text: '',
-  },
-};
-
-const BRONTO_WHATSAPP_URL = 'https://api.whatsapp.com/message/J464646QPBI2A1?autoload=1&app_absent=0';
-
-export const brontoPizzaSite: SiteProfile = {
-  name: 'Bronto Pizza',
-  tagline: 'Tradicionales y veganas · Delivery',
-  description:
-    'Bronto Pizza en Ejército 1238, Local 3, Concepción. Pizzas tradicionales y veganas con delivery y pedidos directos por WhatsApp.',
-  theme: 'bronto',
-  logo: '/logo-bronto-pizza.png',
-  logoAlt: 'Logo de Bronto Pizza',
-  favicon: '/logo-bronto-pizza.png',
-  footer: '',
-  highlights: [
-    {
-      id: 'location',
-      icon: 'location',
-      label: 'Ubicación',
-      value: 'Ejército 1238, Local 3, Concepción',
-    },
-    {
-      id: 'delivery',
-      icon: 'payments',
-      label: 'Delivery',
-      value: 'Pide directo por WhatsApp',
-    },
-    {
-      id: 'schedule',
-      icon: 'schedule',
-      label: 'Horario',
-      value:
-        'Lunes a jueves: 12:30 - 22:45\nViernes: 12:30 - 23:45\nSábado: 12:00 - 23:45\nDomingo: 12:00 - 21:45',
-    },
-  ],
-  links: [
-    {
-      label: 'Pedir por WhatsApp',
-      href: BRONTO_WHATSAPP_URL,
-      icon: 'whatsapp',
-      isPrimary: true,
-    },
-    {
-      label: 'Instagram',
-      href: 'https://www.instagram.com/brontopizza/?hl=es',
-      icon: 'instagram',
-    },
-    {
-      label: 'Escribir una reseña',
-      href: 'https://search.google.com/local/writereview?placeid=ChIJv-K0_M21aZYRhQkY3igQSXg',
-      icon: 'review',
-    },
-  ],
-  transfer: {
-    text: [
-      'LUIS RODRIGO VILUNIR RIVAS',
-      '21586890-7',
-      'Banco Estado',
-      'CuentaRUT',
-      '00021586890',
-    ].join('\n'),
   },
 };

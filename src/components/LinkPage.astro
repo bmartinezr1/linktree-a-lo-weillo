@@ -1,5 +1,6 @@
 ---
 import { site as defaultSite, type SiteProfile } from '../data/site';
+import { validateSite } from '../data/validate-site';
 import TransferButton from './TransferButton.astro';
 import '../styles/global.css';
 
@@ -9,9 +10,12 @@ interface Props {
 }
 
 const site: SiteProfile = Astro.props.site ?? Astro.props.profile ?? defaultSite;
+validateSite(site);
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
+const imageUrl = site.logo ? new URL(site.logo, Astro.site ?? Astro.url) : undefined;
 const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.jpeg')
   ? 'image/jpeg'
-  : (site.favicon?.endsWith('.svg') ? 'image/svg+xml' : 'image/png');
+  : (site.favicon?.endsWith('.svg') ? 'image/svg+xml' : (site.favicon?.endsWith('.webp') ? 'image/webp' : 'image/png'));
 ---
 
 <!doctype html>
@@ -22,9 +26,12 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
     <meta name="description" content={site.description} />
     <meta name="theme-color" content="#080808" />
     <link rel="icon" type={faviconType} href={site.favicon} />
+    <link rel="canonical" href={canonicalUrl} />
     <meta property="og:title" content={site.name} />
     <meta property="og:description" content={site.description} />
-    <meta property="og:image" content={site.logo} />
+    <meta property="og:url" content={canonicalUrl} />
+    {imageUrl && <meta property="og:image" content={imageUrl} />}
+    {imageUrl && <meta property="og:image:alt" content={site.logoAlt ?? `Logo de ${site.name}`} />}
     <meta property="og:type" content="website" />
     <title>{site.name}</title>
   </head>
@@ -123,7 +130,7 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
           ))}
         </section>
 
-        <nav class="links" aria-label={`Enlaces y acciones de ${site.name}`}>
+        <nav class:list={['links', { 'links-7e': site === defaultSite }]} aria-label={`Enlaces y acciones de ${site.name}`}>
           {site.links.map((link) => (
             link.isDisabled ? (
               <span
@@ -145,6 +152,14 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
               rel={link.href.startsWith('/') ? undefined : 'noopener noreferrer'}
             >
               <span class="link-icon" aria-hidden="true">
+                {link.icon === 'calendar' && (
+                  <svg viewBox="0 0 24 24" class="brand-svg" role="presentation" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="17" rx="3" />
+                    <path d="M16 2v4M8 2v4M3 9.5h18" />
+                    <circle cx="12" cy="15" r="3.2" />
+                    <path d="M12 13.5V15l1.4 1" />
+                  </svg>
+                )}
                 {link.icon === 'whatsapp' && (
                   <svg viewBox="0 0 24 24" class="brand-svg" role="presentation">
                     <path

@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro check && astro build",
+    "build": "npm test && astro check && astro build && node --test tests/build.test.mjs",
+    "test": "node --experimental-strip-types --test tests/site-validation.test.mjs",
     "preview": "astro preview"
   },
   "dependencies": {

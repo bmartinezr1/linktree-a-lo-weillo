@@ -30,7 +30,6 @@ export const barberiaCJ: LinkPageData = {
       label: 'Agendar Hora por WhatsApp',
       href: 'https://api.whatsapp.com/send?phone=56972082844&text=hola%20buenas%20nesesitas%20agendar%20alguna%20hora%20%3F',
       icon: 'whatsapp',
-      isPrimary: true,
     },
     {
       label: 'Instagram (@barberia_cj_)',

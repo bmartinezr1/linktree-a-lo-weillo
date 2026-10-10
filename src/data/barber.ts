@@ -11,13 +11,11 @@ const links: SiteLink[] = [
     label: 'Agendar por WhatsApp',
     href: `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(BOOKING_MESSAGE)}`,
     icon: 'whatsapp' as const,
-    isPrimary: true,
   }] : []),
   {
     label: 'Agendar por Instagram',
     href: 'https://www.instagram.com/ignaciobarberoo0/',
     icon: 'instagram',
-    isPrimary: !WHATSAPP_NUMBER,
   },
   ...(SHOP_REVIEWS_URL ? [{
     label: 'Reseñas de Barbería CJ',

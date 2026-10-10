@@ -1,5 +1,9 @@
 ---
 import '../styles/global.css';
+const title = 'ClickTap | Tu negocio en un toque';
+const description = 'ClickTap crea placas NFC personalizadas y páginas de enlaces para que tus clientes encuentren todo tu negocio con un toque.';
+const canonicalUrl = new URL('/', Astro.site ?? Astro.url);
+const imageUrl = new URL('/clicktap-social.png', Astro.site ?? Astro.url);
 ---
 
 <!doctype html>
@@ -7,12 +11,16 @@ import '../styles/global.css';
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta
-      name="description"
-      content="ClickTap crea placas NFC personalizadas y páginas de enlaces para que tus clientes encuentren todo tu negocio con un toque."
-    />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:alt" content="ClickTap: tu negocio en un toque. NFC y QR para negocios." />
+    <meta property="og:type" content="website" />
     <meta name="theme-color" content="#071525" />
-    <title>ClickTap | Tu negocio en un toque</title>
+    <title>{title}</title>
   </head>
   <body class="product-body">
     <header class="product-header">

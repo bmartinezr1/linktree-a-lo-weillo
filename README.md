@@ -1,8 +1,10 @@
 # Linktree espejo
 
-Primera página pública para 7E Barber Shop, construida con Astro y TypeScript.
+Sitio público de ClickTap y páginas de enlaces para negocios, construido con Astro y TypeScript.
 
 ## Desarrollo local
+
+Requiere Node.js 22.12 o superior.
 
 ```bash
 npm install
@@ -16,7 +18,22 @@ npm run build
 npm run preview
 ```
 
-El contenido de la página vive en `src/data/site.ts`. La imagen del logo está en `public/logo-7e-barber-shop.png`.
+La compilación ejecuta las pruebas de datos, la comprobación de tipos y las pruebas de las páginas generadas.
+Rechaza títulos vacíos, direcciones inválidas, protocolos distintos de HTTPS, credenciales en enlaces y recursos internos inexistentes.
+Para ejecutar solo las pruebas de datos: `npm test`.
+
+El contenido de los negocios vive en `src/data/site.ts`. El logo que usa 7E Barber Shop es `public/logo-7e-barber-shop.webp`.
+Los botones de WhatsApp se construyen con las constantes de teléfono y mensaje de cada negocio; los demás destinos se editan en `links`.
+
+La dirección principal de 7E es `/7E-barber-shop`. Cloudflare Pages aplica `public/_redirects` para llevar
+`/7e-barber-shop` y `/7e-barber-shop/` a la dirección principal. En desarrollo y en `npm run preview`, usar `/7E-barber-shop`;
+las redirecciones de `_redirects` se aplican en Cloudflare. Así la compilación local evita rutas que solo difieren en mayúsculas.
+
+La página 404 evita que Cloudflare muestre la portada para direcciones de negocios inexistentes.
+Los logos de Marley y Doña Flor usan WebP y favicons pequeños. El menú de La Dinastía China muestra
+versiones livianas; al tocar cada imagen se abre el JPG original en tamaño completo.
+
+Las especificaciones y decisiones del proyecto se mantienen en `C:\Users\murde\Desktop\SecondBrain\Proyectos\Linktree espejo`.
 
 ## Página de Barbería CJ
 
@@ -38,4 +55,3 @@ La página de Ignacio Parada está disponible en `/ignacio-parada` y `/barbero`.
 - WhatsApp abre un chat con un mensaje para consultar horarios. No crea ni confirma reservas.
 - Instagram es el canal activo y abre el perfil `ignaciobarberoo0` para enviarle un DM desde el botón Mensaje.
 - La ubicación y las reseñas corresponden a la barbería, con enlaces independientes.
-- Botón de transferencia bancaria / propina configurable en `TRANSFER_DETAILS`.

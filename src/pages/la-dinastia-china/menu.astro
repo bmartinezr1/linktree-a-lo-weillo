@@ -3,15 +3,22 @@ import { laDinastiaChinaSite } from '../../data/site';
 
 const menuImages = [
   {
-    src: '/50325.jpg',
+    src: '/50325-preview.webp',
+    original: '/50325.jpg',
+    width: 1600,
+    height: 1154,
     alt: 'Primera página del menú de La Dinastía China',
   },
   {
-    src: '/50327.jpg',
+    src: '/50327-preview.webp',
+    original: '/50327.jpg',
+    width: 1600,
+    height: 1114,
     alt: 'Segunda página del menú de La Dinastía China',
   },
 ];
-
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
+const imageUrl = new URL(menuImages[0].src, Astro.site ?? Astro.url);
 ---
 
 <!doctype html>
@@ -22,6 +29,13 @@ const menuImages = [
     <title>Menú | La Dinastía China</title>
     <meta name="description" content="Menú de La Dinastía China" />
     <link rel="icon" type="image/png" href={laDinastiaChinaSite.favicon} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:title" content="Menú | La Dinastía China" />
+    <meta property="og:description" content="Consulta el menú de La Dinastía China." />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:alt" content={menuImages[0].alt} />
+    <meta property="og:type" content="website" />
   </head>
   <body>
     <main class="menu-page">
@@ -37,10 +51,13 @@ const menuImages = [
       <section class="menu-images" aria-label="Imágenes del menú">
         {menuImages.map((image, index) => (
           <figure class="menu-card">
-            <a href={image.src} target="_blank" rel="noopener noreferrer">
+            <a href={image.original} target="_blank" rel="noopener noreferrer">
               <img
                 src={image.src}
                 alt={image.alt}
+                width={image.width}
+                height={image.height}
+                decoding="async"
                 loading={index === 0 ? 'eager' : 'lazy'}
               />
             </a>

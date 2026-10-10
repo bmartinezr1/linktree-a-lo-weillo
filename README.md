@@ -25,7 +25,7 @@ Para ejecutar solo las pruebas de datos: `npm test`.
 El contenido de los negocios vive en `src/data/site.ts`. El logo que usa 7E Barber Shop es `public/logo-7e-barber-shop.webp`.
 Los botones de WhatsApp se construyen con las constantes de teléfono y mensaje de cada negocio; los demás destinos se editan en `links`.
 
-La dirección principal de 7E es `/7E-barber-shop`. Cloudflare Pages aplica `public/_redirects` para llevar
+La dirección principal de 7E es `/7E-barber-shop`. Cloudflare aplica `public/_redirects` para llevar
 `/7e-barber-shop` y `/7e-barber-shop/` a la dirección principal. En desarrollo y en `npm run preview`, usar `/7E-barber-shop`;
 las redirecciones de `_redirects` se aplican en Cloudflare. Así la compilación local evita rutas que solo difieren en mayúsculas.
 
@@ -34,6 +34,13 @@ Los logos de Marley y Doña Flor usan WebP y favicons pequeños. El menú de La 
 versiones livianas; al tocar cada imagen se abre el JPG original en tamaño completo.
 
 Las especificaciones y decisiones del proyecto se mantienen en `C:\Users\murde\Desktop\SecondBrain\Proyectos\Linktree espejo`.
+
+## Publicación en Cloudflare Workers
+
+En Workers Builds, usar `npm run build` como comando de compilación y `npx wrangler deploy` como comando de publicación.
+`wrangler.jsonc` publica los archivos estáticos de `dist` y configura la página 404.
+Esta configuración evita que Wrangler agregue automáticamente el adaptador de Cloudflare y vuelva a compilar en otra estructura.
+El sitio estático no necesita ese adaptador.
 
 ## Página de Barbería CJ
 

@@ -31,6 +31,10 @@ test('rechaza títulos vacíos y valida también los enlaces deshabilitados', ()
   assert.throws(() => validateSite({ ...profiles.site, name: '  ' }));
 });
 
+test('valida los colores del contrato público', () => {
+  assert.throws(() => validateSite({ ...profiles.site, colors: { background: 'red', text: '#000000', button: '#111111', buttonText: '#ffffff' } }));
+});
+
 test('valida los enlaces del equipo y los recursos de la página', () => {
   assert.throws(() => validateSite({ ...barberiaCJ, barbers: [{ ...barberiaCJ.barbers[0], href: '//example.com' }] }));
   assert.throws(() => validateSite({ ...barberiaCJ, barbers: [{ ...barberiaCJ.barbers[0], avatar: 'javascript:alert(1)' }] }));

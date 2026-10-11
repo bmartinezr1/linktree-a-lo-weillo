@@ -13,6 +13,9 @@ const site: SiteProfile = Astro.props.site ?? Astro.props.profile ?? defaultSite
 validateSite(site);
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
 const imageUrl = site.logo ? new URL(site.logo, Astro.site ?? Astro.url) : undefined;
+const customStyle = site.colors
+  ? `--background:${site.colors.background};--surface:${site.colors.background};--surface-hover:${site.colors.button};--gold:${site.colors.button};--gold-light:${site.colors.button};--text:${site.colors.text};--muted:${site.colors.text};--button-text:${site.colors.buttonText};`
+  : undefined;
 const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.jpeg')
   ? 'image/jpeg'
   : (site.favicon?.endsWith('.svg') ? 'image/svg+xml' : (site.favicon?.endsWith('.webp') ? 'image/webp' : 'image/png'));
@@ -24,7 +27,7 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={site.description} />
-    <meta name="theme-color" content="#080808" />
+    <meta name="theme-color" content={site.colors?.background ?? '#080808'} />
     <link rel="icon" type={faviconType} href={site.favicon} />
     <link rel="canonical" href={canonicalUrl} />
     <meta property="og:title" content={site.name} />
@@ -35,7 +38,7 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
     <meta property="og:type" content="website" />
     <title>{site.name}</title>
   </head>
-  <body class={`business-page theme-${site.theme ?? 'barber'}`}>
+  <body class={`business-page theme-${site.theme ?? 'barber'}`} style={customStyle}>
     <main class="page-shell">
       <article class="profile" aria-labelledby="business-name">
         <header class="profile-header">
@@ -121,6 +124,12 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
                     <line x1="7" y1="15" x2="10" y2="15" />
                   </svg>
                 )}
+                {(item.icon === 'contact' || item.id === 'contact') && (
+                  <svg viewBox="0 0 24 24" role="presentation">
+                    <path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-5l-3 3v-3H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
+                    <path d="M7 8h10M7 12h6" />
+                  </svg>
+                )}
               </span>
               <div class="info-content">
                 <span class="info-label">{item.label}</span>
@@ -132,7 +141,9 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
 
         <nav class:list={['links', { 'links-7e': site === defaultSite }]} aria-label={`Enlaces y acciones de ${site.name}`}>
           {site.links.map((link) => (
-            link.isDisabled ? (
+            link.copyText ? (
+              <TransferButton details={{ text: link.copyText }} label={link.label} />
+            ) : link.isDisabled ? (
               <span
                 class={`link-button link-button-disabled ${link.icon === 'whatsapp' ? 'link-button-whatsapp' : ''} ${link.icon === 'facebook' ? 'link-button-facebook' : ''}`}
                 aria-disabled="true"
@@ -148,8 +159,8 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
             <a
               class={`link-button ${link.icon === 'whatsapp' ? 'link-button-whatsapp' : ''} ${link.icon === 'facebook' ? 'link-button-facebook' : ''} ${link.icon === 'promotions' ? 'link-button-promotions' : ''}`}
               href={link.href}
-              target={link.href.startsWith('/') ? undefined : '_blank'}
-              rel={link.href.startsWith('/') ? undefined : 'noopener noreferrer'}
+              target={link.href?.startsWith('/') ? undefined : '_blank'}
+              rel={link.href?.startsWith('/') ? undefined : 'noopener noreferrer'}
             >
               <span class="link-icon" aria-hidden="true">
                 {link.icon === 'calendar' && (

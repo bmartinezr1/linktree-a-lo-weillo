@@ -1,13 +1,14 @@
 export type SiteLink = {
   label: string;
-  href: string;
+  href?: string | null;
   icon: 'whatsapp' | 'instagram' | 'facebook' | 'review' | 'location' | 'team' | 'contact' | 'promotions' | 'calendar';
   isDisabled?: boolean;
+  copyText?: string | null;
 };
 
 export type InfoHighlight = {
   id: string;
-  icon?: 'location' | 'scissors' | 'calendar' | 'flower' | 'schedule' | 'payments';
+  icon?: 'location' | 'scissors' | 'calendar' | 'flower' | 'schedule' | 'payments' | 'contact';
   label: string;
   value: string;
 };
@@ -31,20 +32,27 @@ export type ProductShowcase = {
 };
 
 export type SiteProfile = {
+  slug?: string;
   name: string;
-  tagline: string;
+  tagline?: string | null;
   description: string;
   theme?: 'barber' | 'floral' | string;
-  logo?: string;
+  logo?: string | null;
   logoAlt?: string;
   monogram?: string;
   favicon: string;
-  footer?: string;
+  footer?: string | null;
   highlights: readonly InfoHighlight[] | InfoHighlight[];
   links: readonly SiteLink[] | SiteLink[];
   barbers?: readonly BarberMember[];
   transfer?: TransferDetails;
   productShowcase?: ProductShowcase;
+  colors?: {
+    background: string;
+    text: string;
+    button: string;
+    buttonText: string;
+  };
 };
 
 // Alias de compatibilidad

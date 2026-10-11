@@ -3,9 +3,10 @@ import type { TransferDetails } from '../data/site';
 
 interface Props {
   details: TransferDetails;
+  label?: string;
 }
 
-const { details } = Astro.props;
+const { details, label = 'Copiar datos de transferencia' } = Astro.props;
 const transferText = details.text.trim();
 const ready = transferText.length > 0;
 ---
@@ -25,7 +26,7 @@ const ready = transferText.length > 0;
         <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3" />
       </svg>
     </span>
-    <span>Copiar datos de transferencia</span>
+    <span>{label}</span>
   </button>
   {details.note && <p class="transfer-note">{details.note}</p>}
   <p class="transfer-status" id="transfer-status" role="status" aria-live="polite" aria-atomic="true">{ready ? '' : 'Datos de transferencia por confirmar.'}</p>

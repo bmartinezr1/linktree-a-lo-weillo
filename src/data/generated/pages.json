@@ -1,64 +1,115 @@
 {
-  "version": 1,
-  "pages": [
-    {
-      "slug": "zona-mechada",
-      "name": "Zona Mechada",
-      "tagline": null,
-      "description": "",
-      "theme": "default",
-      "logo": "/generated/logos/zona-mechada.jpg",
-      "logoAlt": "Logo de Zona Mechada",
-      "favicon": "/generated/logos/zona-mechada.jpg",
-      "footer": null,
-      "highlights": [
+    "version": 1,
+    "pages": [
         {
-          "id": "location",
-          "icon": "location",
-          "label": "Ubicación",
-          "value": "Tucapel 1736"
+            "slug": "clinica-opb",
+            "name": "Clínica OPB",
+            "tagline": null,
+            "description": "Clinica dental OPB\nLunes a viernes\n9:30 a.m.–1:30 p.m., 3–7 p.m.",
+            "theme": "default",
+            "logo": "/generated/logos/clinica-opb.jpg",
+            "logoAlt": "Logo de Clínica OPB",
+            "favicon": "/generated/logos/clinica-opb.jpg",
+            "footer": null,
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Ejército 1370"
+                }
+            ],
+            "links": [
+                {
+                    "type": "instagram",
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/clinicaopb/",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "icon": "review",
+                    "label": "Deja tu reseña aquí",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJ4UtAH461aZYRQmkgzLJXMbI",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "icon": "contact",
+                    "label": "Copia los datos de transferencia",
+                    "href": null,
+                    "copyText": null,
+                    "isDisabled": true
+                }
+            ],
+            "colors": {
+                "background": "#ffffff",
+                "text": "#111827",
+                "button": "#b09070",
+                "buttonText": "#111827"
+            }
+        },
+        {
+            "slug": "zona-mechada",
+            "name": "Zona Mechada",
+            "tagline": null,
+            "description": "",
+            "theme": "default",
+            "logo": "/generated/logos/zona-mechada.jpg",
+            "logoAlt": "Logo de Zona Mechada",
+            "favicon": "/generated/logos/zona-mechada.jpg",
+            "footer": null,
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Tucapel 1736"
+                }
+            ],
+            "links": [
+                {
+                    "type": "whatsapp",
+                    "icon": "whatsapp",
+                    "label": "Agenda tu pedido aqui",
+                    "href": "https://api.whatsapp.com/send/?phone=56936106266",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/zonamechada1/",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "icon": "review",
+                    "label": "Deja tu reseña aqui ⭐",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJ2X-Wyc-1aZYR_WcsD3vn9vM",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "icon": "contact",
+                    "label": "Copia los datos de transferencia!",
+                    "href": null,
+                    "copyText": null,
+                    "isDisabled": true
+                }
+            ],
+            "colors": {
+                "background": "#f8dede",
+                "text": "#111827",
+                "button": "#d01010",
+                "buttonText": "#ffffff"
+            }
         }
-      ],
-      "links": [
-        {
-          "type": "whatsapp",
-          "icon": "whatsapp",
-          "label": "Agenda tu pedido aqui",
-          "href": "https://api.whatsapp.com/send/?phone=56936106266",
-          "copyText": null,
-          "isDisabled": false
-        },
-        {
-          "type": "instagram",
-          "icon": "instagram",
-          "label": "Instagram",
-          "href": "https://www.instagram.com/zonamechada1/",
-          "copyText": null,
-          "isDisabled": false
-        },
-        {
-          "type": "review",
-          "icon": "review",
-          "label": "Deja tu reseña aqui ⭐",
-          "href": "https://search.google.com/local/writereview?placeid=ChIJ2X-Wyc-1aZYR_WcsD3vn9vM",
-          "copyText": null,
-          "isDisabled": false
-        },
-        {
-          "type": "transferencia",
-          "icon": "contact",
-          "label": "Copia los datos de transferencia!",
-          "href": null,
-          "copyText": null,
-          "isDisabled": true
-        }
-      ],
-      "colors": {
-        "background": "#ffffff",
-        "text": "#000000",
-        "button": "#111827",
-        "buttonText": "#ffffff"
-      }
-    }
-  ]
+    ]
 }

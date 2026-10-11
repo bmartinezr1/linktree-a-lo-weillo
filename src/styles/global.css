@@ -730,6 +730,27 @@ h1 {
   color: rgba(201, 189, 162, 0.7);
 }
 
+/* Las páginas administradas usan colores sólidos configurados en el panel. */
+.generated-page,
+.generated-page .page-shell {
+  background: var(--background);
+}
+
+.generated-page .link-button,
+.generated-page .link-button-whatsapp,
+.generated-page .link-button-facebook,
+.generated-page .link-button-disabled {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+.generated-page .link-button:hover,
+.generated-page .link-button-whatsapp:hover,
+.generated-page .link-button-facebook:hover,
+.generated-page .link-button-disabled:hover {
+  background: var(--surface-hover);
+}
+
 .product-header,
 .product-hero,
 .steps-section,

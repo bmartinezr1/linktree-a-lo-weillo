@@ -14,7 +14,7 @@ validateSite(site);
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
 const imageUrl = site.logo ? new URL(site.logo, Astro.site ?? Astro.url) : undefined;
 const customStyle = site.colors
-  ? `--background:${site.colors.background};--surface:${site.colors.background};--surface-hover:${site.colors.button};--gold:${site.colors.button};--gold-light:${site.colors.button};--text:${site.colors.text};--muted:${site.colors.text};--button-text:${site.colors.buttonText};`
+  ? `--background:${site.colors.background};--surface:${site.colors.button};--surface-hover:${site.colors.button};--gold:${site.colors.button};--gold-light:${site.colors.button};--border:${site.colors.button};--text:${site.colors.text};--muted:${site.colors.text};--button-text:${site.colors.buttonText};`
   : undefined;
 const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.jpeg')
   ? 'image/jpeg'
@@ -38,7 +38,7 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
     <meta property="og:type" content="website" />
     <title>{site.name}</title>
   </head>
-  <body class={`business-page theme-${site.theme ?? 'barber'}`} style={customStyle}>
+  <body class={`business-page ${site.colors ? 'generated-page' : ''} theme-${site.theme ?? 'barber'}`} style={customStyle}>
     <main class="page-shell">
       <article class="profile" aria-labelledby="business-name">
         <header class="profile-header">

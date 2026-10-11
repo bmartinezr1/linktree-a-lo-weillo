@@ -10,6 +10,7 @@ interface Props {
 }
 
 const site: SiteProfile = Astro.props.site ?? Astro.props.profile ?? defaultSite;
+const transfers = site.transfer ? (Array.isArray(site.transfer) ? site.transfer : [site.transfer]) : [];
 validateSite(site);
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
 const imageUrl = site.logo ? new URL(site.logo, Astro.site ?? Astro.url) : undefined;
@@ -244,7 +245,9 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
             </a>
             )
           ))}
-          {site.transfer && <TransferButton details={site.transfer} />}
+          {transfers.map((details, index) => (
+            <TransferButton details={details} statusId={`transfer-status-${index}`} />
+          ))}
         </nav>
 
         {site.productShowcase && (

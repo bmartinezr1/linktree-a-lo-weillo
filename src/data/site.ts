@@ -23,6 +23,8 @@ export type BarberMember = {
 
 export type TransferDetails = {
   text: string;
+  label?: string;
+  logo?: string;
   note?: string;
 };
 
@@ -45,7 +47,7 @@ export type SiteProfile = {
   highlights: readonly InfoHighlight[] | InfoHighlight[];
   links: readonly SiteLink[] | SiteLink[];
   barbers?: readonly BarberMember[];
-  transfer?: TransferDetails;
+  transfer?: TransferDetails | readonly TransferDetails[];
   productShowcase?: ProductShowcase;
   colors?: {
     background: string;
@@ -391,7 +393,30 @@ export const elBajonDelMarleySite: SiteProfile = {
       icon: 'review',
     },
   ],
-  transfer: {
-    text: '',
-  },
+  transfer: [
+    {
+      label: 'Copiar datos de Banco de Chile',
+      logo: '/logo-banco-de-chile.png',
+      text: [
+        'Bajon Del Marley',
+        'RUT: 76.994.773-6',
+        'Banco de Chile',
+        'Cuenta Corriente',
+        'Número de cuenta: 9981109104',
+        'MORAM9544@GMAIL.COM',
+      ].join('\n'),
+    },
+    {
+      label: 'Copiar datos de Mercado Pago',
+      logo: '/logo-mercado-pago.png',
+      text: [
+        'Bajón del Marley',
+        'RUT: 76.994.773-6',
+        'Mercado Pago',
+        'Cuenta Vista',
+        'Número de cuenta: 1085285221',
+        'Bajon.redelcom@gmail.com',
+      ].join('\n'),
+    },
+  ],
 };

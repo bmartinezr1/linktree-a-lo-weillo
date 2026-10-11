@@ -1,4 +1,64 @@
 {
   "version": 1,
-  "pages": []
+  "pages": [
+    {
+      "slug": "zona-mechada",
+      "name": "Zona Mechada",
+      "tagline": null,
+      "description": "",
+      "theme": "default",
+      "logo": "/generated/logos/zona-mechada.jpg",
+      "logoAlt": "Logo de Zona Mechada",
+      "favicon": "/generated/logos/zona-mechada.jpg",
+      "footer": null,
+      "highlights": [
+        {
+          "id": "location",
+          "icon": "location",
+          "label": "Ubicación",
+          "value": "Tucapel 1736"
+        }
+      ],
+      "links": [
+        {
+          "type": "whatsapp",
+          "icon": "whatsapp",
+          "label": "Agenda tu pedido aqui",
+          "href": "https://api.whatsapp.com/send/?phone=56936106266",
+          "copyText": null,
+          "isDisabled": false
+        },
+        {
+          "type": "instagram",
+          "icon": "instagram",
+          "label": "Instagram",
+          "href": "https://www.instagram.com/zonamechada1/",
+          "copyText": null,
+          "isDisabled": false
+        },
+        {
+          "type": "review",
+          "icon": "review",
+          "label": "Deja tu reseña aqui ⭐",
+          "href": "https://search.google.com/local/writereview?placeid=ChIJ2X-Wyc-1aZYR_WcsD3vn9vM",
+          "copyText": null,
+          "isDisabled": false
+        },
+        {
+          "type": "transferencia",
+          "icon": "contact",
+          "label": "Copia los datos de transferencia!",
+          "href": null,
+          "copyText": null,
+          "isDisabled": true
+        }
+      ],
+      "colors": {
+        "background": "#ffffff",
+        "text": "#000000",
+        "button": "#111827",
+        "buttonText": "#ffffff"
+      }
+    }
+  ]
 }

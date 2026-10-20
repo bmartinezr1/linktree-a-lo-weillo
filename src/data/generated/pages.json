@@ -2,10 +2,187 @@
     "version": 1,
     "pages": [
         {
+            "slug": "7e-barber-shop",
+            "name": "7E Barber Shop",
+            "tagline": null,
+            "description": "Barbería en Ejército 1282, Concepción, especializada en cortes modernos y clásicos, fades y arreglo de barba. Atención personalizada solo con agenda.",
+            "theme": "barber",
+            "logo": "/generated/logos/7e-barber-shop.webp",
+            "logoAlt": "Logo de 7E Barber Shop",
+            "favicon": "/generated/logos/7e-barber-shop.webp",
+            "footer": null,
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Ejército 1282, Concepción"
+                }
+            ],
+            "links": [
+                {
+                    "type": "whatsapp",
+                    "icon": "whatsapp",
+                    "label": "Agendar Cita",
+                    "href": "https://wa.me/56957422166?text=Hola%2C%20quisiera%20agendar%20una%20cita%20en%207E%20Barber%20Shop%20%F0%9F%92%88%E2%9C%82%EF%B8%8F",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/7ebarber.shop/",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "icon": "review",
+                    "label": "Escribir una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJXUBOt-W1aZYRSAx0tUT21_8",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "location",
+                    "icon": "location",
+                    "label": "Cómo llegar",
+                    "href": "https://share.google/c8CL7NE4vXPv9ftCl",
+                    "copyText": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#ffffff",
+                "text": "#000000",
+                "button": "#111827",
+                "buttonText": "#ffffff"
+            }
+        },
+        {
+            "slug": "barberia-cj",
+            "name": "Barbería CJ",
+            "tagline": null,
+            "description": "Barbería CJ en Janequeo 1501, 2do piso, Concepción. Cortes modernos y clásicos, perfilado de barba y el mejor estilo. Agenda tu hora por WhatsApp o visítanos.",
+            "theme": "default",
+            "logo": "/generated/logos/barberia-cj.png",
+            "logoAlt": "Logo de Barbería CJ",
+            "favicon": "/generated/logos/barberia-cj.png",
+            "footer": null,
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Janequeo 1501, 2do piso, Concepción"
+                }
+            ],
+            "links": [
+                {
+                    "type": "whatsapp",
+                    "icon": "whatsapp",
+                    "label": "Agendar Hora por WhatsApp",
+                    "href": "https://api.whatsapp.com/send?phone=56972082844&text=hola%20buenas%20nesesitas%20agendar%20alguna%20hora%20%3F",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "icon": "instagram",
+                    "label": "Instagram (@barberia_cj_)",
+                    "href": "https://www.instagram.com/barberia_cj_/#",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "icon": "facebook",
+                    "label": "Facebook Oficial",
+                    "href": "https://www.facebook.com/barberiamoacj?mibextid=LQQJ4d&utm_source=ig&utm_medium=social&utm_content=link_in_bio",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "icon": "review",
+                    "label": "Escribir una reseña en Google",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJtbLkBgO1aZYRV61ZwUhdp1A",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "location",
+                    "icon": "location",
+                    "label": "Cómo llegar (Google Maps)",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Barber%C3%ADa%20CJ%2C%20Janequeo%201501%2C%20Concepci%C3%B3n%2C%20Chile",
+                    "copyText": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#ffffff",
+                "text": "#000000",
+                "button": "#111827",
+                "buttonText": "#ffffff"
+            }
+        },
+        {
+            "slug": "bronto-pizza",
+            "name": "Bronto Pizza",
+            "tagline": null,
+            "description": "Bronto Pizza en Ejército 1238, Local 3, Concepción. Pizzas tradicionales y veganas con delivery y pedidos directos por WhatsApp.",
+            "theme": "bronto",
+            "logo": "/generated/logos/bronto-pizza.png",
+            "logoAlt": "Logo de Bronto Pizza",
+            "favicon": "/generated/logos/bronto-pizza.png",
+            "footer": null,
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Ejército 1238, Local 3, Concepción"
+                }
+            ],
+            "links": [
+                {
+                    "type": "whatsapp",
+                    "icon": "whatsapp",
+                    "label": "Pedir por WhatsApp",
+                    "href": "https://api.whatsapp.com/message/J464646QPBI2A1?autoload=1&app_absent=0",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/brontopizza/?hl=es",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "icon": "review",
+                    "label": "Escribir una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJv-K0_M21aZYRhQkY3igQSXg",
+                    "copyText": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#ffffff",
+                "text": "#000000",
+                "button": "#111827",
+                "buttonText": "#ffffff"
+            }
+        },
+        {
             "slug": "clinica-opb",
             "name": "Clínica OPB",
             "tagline": null,
-            "description": "Clinica dental OPB\nLunes a viernes\n9:30 a.m.–1:30 p.m., 3–7 p.m.",
+            "description": "Clinica dental OPB\nLunes a viernes\n9:30 a.m.–1:30 p.m., 3–7 p.m.",
             "theme": "default",
             "logo": "/generated/logos/clinica-opb.jpg",
             "logoAlt": "Logo de Clínica OPB",
@@ -50,6 +227,365 @@
                 "text": "#111827",
                 "button": "#b09070",
                 "buttonText": "#111827"
+            }
+        },
+        {
+            "slug": "dona-flor-supermercado",
+            "name": "Doña Flor Supermercado",
+            "tagline": null,
+            "description": "Doña Flor Supermercado en Concepción. Encuentra su ubicación, horarios, Instagram y enlace para dejar una reseña en Google.",
+            "theme": "dona-flor",
+            "logo": "/generated/logos/dona-flor-supermercado.png",
+            "logoAlt": "Logo de Doña Flor Supermercado",
+            "favicon": "/generated/logos/dona-flor-supermercado.png",
+            "footer": null,
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Bandera #1321, Concepción"
+                }
+            ],
+            "links": [
+                {
+                    "type": "instagram",
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/donaflor.supermercado/",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "icon": "review",
+                    "label": "Escribir una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJAQgpIwC1aZYR8bhIeN5ohSs",
+                    "copyText": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#ffffff",
+                "text": "#000000",
+                "button": "#111827",
+                "buttonText": "#ffffff"
+            }
+        },
+        {
+            "slug": "el-bajon-del-marley",
+            "name": "El Bajón Del Marley",
+            "tagline": null,
+            "description": "El Bajón Del Marley en Ejército 1238, Concepción. Comida rápida, reparto a domicilio y pedidos directos por WhatsApp.",
+            "theme": "marley",
+            "logo": "/generated/logos/el-bajon-del-marley.png",
+            "logoAlt": "Logo de El Bajón Del Marley",
+            "favicon": "/generated/logos/el-bajon-del-marley.png",
+            "footer": null,
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Ejército #1238, entre Ongolmo y Paicaví, Concepción"
+                }
+            ],
+            "links": [
+                {
+                    "type": "whatsapp",
+                    "icon": "whatsapp",
+                    "label": "Pedir por WhatsApp",
+                    "href": "https://wa.me/56990238871?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20El%20Baj%C3%B3n%20del%20Marley%20%F0%9F%8D%94%F0%9F%8D%9F",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/el_bajon_del_marley/?hl=es",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "icon": "review",
+                    "label": "Escribir una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJm755RgC1aZYRkD0An946IvE",
+                    "copyText": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#ffffff",
+                "text": "#000000",
+                "button": "#111827",
+                "buttonText": "#ffffff"
+            }
+        },
+        {
+            "slug": "flores-de-frida",
+            "name": "Flores de Frida",
+            "tagline": null,
+            "description": "Florería ubicada en Ejército 1286, Concepción. Consulta por disponibilidad, pedidos y arreglos florales a través de WhatsApp.",
+            "theme": "floral",
+            "logo": "/generated/logos/flores-de-frida.jpg",
+            "logoAlt": "Logo de Flores de Frida",
+            "favicon": "/generated/logos/flores-de-frida.jpg",
+            "footer": null,
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Ejército 1286, Concepción"
+                }
+            ],
+            "links": [
+                {
+                    "type": "whatsapp",
+                    "icon": "whatsapp",
+                    "label": "Consultar por WhatsApp",
+                    "href": "https://wa.me/56936870591?text=Hola%2C%20quisiera%20hacer%20una%20consulta%20en%20Flores%20de%20Frida%20%F0%9F%8C%B8",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/floreria.floresdefrida.cl/",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "icon": "review",
+                    "label": "Escribir una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJWSCZJEa1aZYREZ_DalijKGE",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "location",
+                    "icon": "location",
+                    "label": "Cómo llegar",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Ej%C3%A9rcito%201286%2C%20Concepci%C3%B3n",
+                    "copyText": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#ffffff",
+                "text": "#000000",
+                "button": "#111827",
+                "buttonText": "#ffffff"
+            }
+        },
+        {
+            "slug": "full-drink",
+            "name": "Full Drink",
+            "tagline": null,
+            "description": "Full Drink: distribuidora de cervezas, vinos y licores. Conoce nuestras sucursales en Concepción y San Pedro de la Paz, horarios y promociones.",
+            "theme": "fulldrink",
+            "logo": "/generated/logos/full-drink.jpg",
+            "logoAlt": "Logo de Full Drink",
+            "favicon": "/generated/logos/full-drink.jpg",
+            "footer": null,
+            "highlights": [],
+            "links": [
+                {
+                    "type": "instagram",
+                    "icon": "instagram",
+                    "label": "Consultar por Instagram",
+                    "href": "https://www.instagram.com/fulldrink.licores/",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "icon": "review",
+                    "label": "Reseña Google · Sucursal Concepción",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJQQP_Y_W1aZYRJLhvrcY8_h0",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "icon": "review",
+                    "label": "Reseña Google · Sucursal San Pedro de la Paz",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJk3_OHADJaZYRQeRKKtVx7v8",
+                    "copyText": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#ffffff",
+                "text": "#000000",
+                "button": "#111827",
+                "buttonText": "#ffffff"
+            }
+        },
+        {
+            "slug": "ignacio-parada",
+            "name": "Ignacio Parada",
+            "tagline": null,
+            "description": "Ignacio Parada, barbero profesional en Barbería CJ, Janequeo 1501, segundo piso, Concepción. Agenda por DM en Instagram. Débito, crédito y efectivo.",
+            "theme": "default",
+            "logo": "/generated/logos/ignacio-parada.jpg",
+            "logoAlt": "Logo de Ignacio Parada",
+            "favicon": "/generated/logos/ignacio-parada.jpg",
+            "footer": null,
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Barbería CJ · Janequeo 1501, 2do piso, Concepción"
+                }
+            ],
+            "links": [
+                {
+                    "type": "instagram",
+                    "icon": "instagram",
+                    "label": "Agendar por Instagram",
+                    "href": "https://www.instagram.com/ignaciobarberoo0/",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "icon": "review",
+                    "label": "Reseñas de Barbería CJ",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJtbLkBgO1aZYRV61ZwUhdp1A",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "location",
+                    "icon": "location",
+                    "label": "Cómo llegar a la Barbería",
+                    "href": "https://www.google.com/maps/search/?api=1&query=Barber%C3%ADa%20CJ%2C%20Janequeo%201501%2C%20Concepci%C3%B3n%2C%20Chile",
+                    "copyText": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#ffffff",
+                "text": "#000000",
+                "button": "#111827",
+                "buttonText": "#ffffff"
+            }
+        },
+        {
+            "slug": "jesushi",
+            "name": "Jesushi",
+            "tagline": null,
+            "description": "Horario de atención\n\nLunes a sábado: 12:00–21:00\nDomingo: Cerrado",
+            "theme": "default",
+            "logo": "/generated/logos/jesushi.jpg",
+            "logoAlt": "Logo de Jesushi",
+            "favicon": "/generated/logos/jesushi.jpg",
+            "footer": null,
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Ejercito 1798"
+                }
+            ],
+            "links": [
+                {
+                    "type": "whatsapp",
+                    "icon": "whatsapp",
+                    "label": "Agenda tu pedido!",
+                    "href": "https://api.whatsapp.com/send/?phone=56966821552&text&type=phone_number&app_absent=0",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "icon": "instagram",
+                    "label": "Visita nuestro perfil",
+                    "href": "https://www.instagram.com/jesushi.concepcion/?hl=es",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "icon": "review",
+                    "label": "Deja tu reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJaVDqXbe1aZYR3bV0RNoqqnA",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "icon": "contact",
+                    "label": "Copia los datos de transferencia",
+                    "href": null,
+                    "copyText": null,
+                    "isDisabled": true
+                }
+            ],
+            "colors": {
+                "background": "#fae9c7",
+                "text": "#111827",
+                "button": "#f7a602",
+                "buttonText": "#111827"
+            }
+        },
+        {
+            "slug": "la-dinastia-china",
+            "name": "La Dinastía China",
+            "tagline": null,
+            "description": "La Dinastía China: sabores de la cocina china para disfrutar en casa. Haz tu pedido directamente por WhatsApp.",
+            "theme": "china",
+            "logo": "/generated/logos/la-dinastia-china.png",
+            "logoAlt": "Logo de La Dinastía China",
+            "favicon": "/generated/logos/la-dinastia-china.png",
+            "footer": null,
+            "highlights": [],
+            "links": [
+                {
+                    "type": "whatsapp",
+                    "icon": "whatsapp",
+                    "label": "Hacer un pedido por WhatsApp",
+                    "href": "https://wa.me/56945668297?text=Hola%2C%20quisiera%20hacer%20un%20pedido%20en%20La%20Dinast%C3%ADa%20China%20%F0%9F%A5%A1",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/la_dinastia_china/?hl=es-la",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "icon": "review",
+                    "label": "Escribir una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJ_fFzTsi1aZYRiCLQE5g2p2E",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "contact",
+                    "icon": "contact",
+                    "label": "Menú",
+                    "href": "/la-dinastia-china/menu",
+                    "copyText": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#ffffff",
+                "text": "#000000",
+                "button": "#111827",
+                "buttonText": "#ffffff"
             }
         },
         {

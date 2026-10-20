@@ -281,7 +281,8 @@ a {
   object-fit: cover;
   margin: 0 auto 1.25rem;
   border-radius: 50%;
-  background: #080808;
+  background: #ffffff;
+  opacity: 1;
   box-shadow: 0 0 0 1px rgba(214, 163, 49, 0.45), 0 0 2.5rem rgba(214, 163, 49, 0.15);
 }
 
@@ -292,6 +293,15 @@ h1 {
   font-size: clamp(2rem, 8vw, 2.65rem);
   letter-spacing: 0.025em;
   line-height: 1.05;
+}
+
+.profile-description {
+  margin: 1rem auto 1.35rem;
+  max-width: 34rem;
+  color: var(--muted);
+  line-height: 1.5;
+  text-align: center;
+  white-space: pre-line;
 }
 
 .tagline {

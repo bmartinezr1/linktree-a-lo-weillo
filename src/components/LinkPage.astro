@@ -75,6 +75,10 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
           {site.tagline && <p class="tagline">{site.tagline}</p>}
         </header>
 
+        {site.description && (
+          <p class="profile-description">{site.description}</p>
+        )}
+
         <section class="info-showcase" aria-label={`Información de ${site.name}`}>
           {site.highlights.map((item) => (
             <div class={`info-item info-item-${item.id}`}>

@@ -8,9 +8,10 @@ export type SiteLink = {
 
 export type InfoHighlight = {
   id: string;
-  icon?: 'location' | 'scissors' | 'calendar' | 'flower' | 'schedule' | 'payments';
+  icon?: 'location' | 'scissors' | 'calendar' | 'flower' | 'schedule' | 'payments' | 'wrench';
   label: string;
   value: string;
+  items?: readonly string[];
 };
 
 export type BarberMember = {
@@ -23,12 +24,30 @@ export type BarberMember = {
 
 export type TransferDetails = {
   text: string;
+  label?: string;
+  logo?: string;
   note?: string;
 };
 
 export type ProductShowcase = {
   heading: string;
   items: string[];
+};
+
+export type ContactDetail = {
+  label: string;
+  href: string;
+};
+
+export type BranchInfo = {
+  id: string;
+  name: string;
+  image?: string;
+  imageAlt?: string;
+  address: string;
+  schedule: string;
+  locationUrl: string;
+  reviewUrl: string;
 };
 
 export type SiteProfile = {
@@ -38,6 +57,11 @@ export type SiteProfile = {
   theme?: 'barber' | 'floral' | string;
   logo?: string;
   logoAlt?: string;
+  logoLayout?: 'round' | 'poster';
+  logoWidth?: number;
+  logoHeight?: number;
+  heroBanner?: string;
+  heroBannerAlt?: string;
   monogram?: string;
   favicon: string;
   footer?: string;
@@ -46,8 +70,10 @@ export type SiteProfile = {
   highlights: readonly InfoHighlight[] | InfoHighlight[];
   links: readonly SiteLink[] | SiteLink[];
   barbers?: readonly BarberMember[];
-  transfer?: TransferDetails;
+  branches?: readonly BranchInfo[];
+  transfer?: TransferDetails | readonly TransferDetails[];
   productShowcase?: ProductShowcase;
+  contactDetails?: readonly ContactDetail[];
 };
 
 // Alias de compatibilidad
@@ -231,28 +257,38 @@ export const laDinastiaChinaSite: SiteProfile = {
 const FULL_DRINK_INSTAGRAM = 'https://www.instagram.com/fulldrink.licores/';
 const FULL_DRINK_REVIEWS_URL = 'https://search.google.com/local/writereview?placeid=ChIJQQP_Y_W1aZYRJLhvrcY8_h0';
 const FULL_DRINK_SAN_PEDRO_REVIEWS_URL = 'https://search.google.com/local/writereview?placeid=ChIJk3_OHADJaZYRQeRKKtVx7v8';
+const FULL_DRINK_CONCEPCION_LOCATION_URL = 'https://www.google.com/maps/search/?api=1&query=Juan+de+Dios+Rivera+1235%2C+Concepci%C3%B3n';
+const FULL_DRINK_SAN_PEDRO_LOCATION_URL = 'https://www.google.com/maps/search/?api=1&query=Los+Aromos+1465%2C+San+Pedro+de+la+Paz';
 
 export const fullDrinkSite: SiteProfile = {
   name: 'Full Drink',
-  tagline: '',
+  tagline: 'Distribuidora de cervezas, vinos y licores',
   description:
-    'Full Drink, tienda de vinos, cervezas y licores con sucursales en Concepción y San Pedro de la Paz. Encuentra direcciones y horarios en esta página.',
+    'Full Drink: distribuidora de cervezas, vinos y licores. Conoce nuestras sucursales en Concepción y San Pedro de la Paz, horarios y promociones.',
   theme: 'fulldrink',
   logo: '/full-drink.jpg',
   logoAlt: 'Logo de Full Drink',
+  heroBanner: '/full-drink-concepcion.jpg',
+  heroBannerAlt: 'Fachada con letrero de Full Drink sucursal Concepción',
   favicon: '/full-drink.jpg',
   footer: 'Full Drink · Vinos, cervezas y licores.',
-  highlights: [
+  highlights: [],
+  branches: [
     {
-      id: 'location',
-      label: 'Sucursal Concepción',
-      value: 'Juan de Dios Rivera 1235\nHorario: Martes a sábado 12:00–22:00 · domingo y lunes cerrado',
+      id: 'concepcion',
+      name: 'Sucursal Concepción',
+      address: 'Juan de Dios Rivera 1235',
+      schedule: 'Martes a sábado: 12:00–22:00\nDomingo y lunes: cerrado',
+      locationUrl: FULL_DRINK_CONCEPCION_LOCATION_URL,
+      reviewUrl: FULL_DRINK_REVIEWS_URL,
     },
     {
       id: 'san-pedro',
-      icon: 'location',
-      label: 'Sucursal San Pedro de la Paz',
-      value: 'Los Aromos #1465\nHorario: 12:00–01:00 hrs.',
+      name: 'Sucursal San Pedro de la Paz',
+      address: 'Los Aromos #1465',
+      schedule: '12:00–01:00 hrs.',
+      locationUrl: FULL_DRINK_SAN_PEDRO_LOCATION_URL,
+      reviewUrl: FULL_DRINK_SAN_PEDRO_REVIEWS_URL,
     },
   ],
   links: [
@@ -284,7 +320,17 @@ export const fullDrinkSite: SiteProfile = {
   },
   productShowcase: {
     heading: 'Encuentra en Full Drink',
-    items: ['Vinos', 'Cervezas', 'Licores'],
+    items: [
+      'Vinos',
+      'Cervezas',
+      'Pisco',
+      'Whisky',
+      'Gin',
+      'Ramazzotti',
+      'Tequilas',
+      'Ron',
+      'Y más...',
+    ],
   },
 };
 
@@ -394,9 +440,32 @@ export const elBajonDelMarleySite: SiteProfile = {
       icon: 'review',
     },
   ],
-  transfer: {
-    text: '',
-  },
+  transfer: [
+    {
+      label: 'Copiar datos de Banco de Chile',
+      logo: '/logo-banco-de-chile.png',
+      text: [
+        'Bajon Del Marley',
+        'RUT: 76.994.773-6',
+        'Banco de Chile',
+        'Cuenta Corriente',
+        'Número de cuenta: 9981109104',
+        'MORAM9544@GMAIL.COM',
+      ].join('\n'),
+    },
+    {
+      label: 'Copiar datos de Mercado Pago',
+      logo: '/logo-mercado-pago.png',
+      text: [
+        'Bajón del Marley',
+        'RUT: 76.994.773-6',
+        'Mercado Pago',
+        'Cuenta Vista',
+        'Número de cuenta: 1085285221',
+        'Bajon.redelcom@gmail.com',
+      ].join('\n'),
+    },
+  ],
 };
 
 const BRONTO_WHATSAPP_URL = 'https://api.whatsapp.com/message/J464646QPBI2A1?autoload=1&app_absent=0';
@@ -457,6 +526,92 @@ export const brontoPizzaSite: SiteProfile = {
       'Banco Estado',
       'CuentaRUT',
       '00021586890',
+    ].join('\n'),
+  },
+};
+
+const RECARGAS_AC_WHATSAPP = '56942224861';
+const RECARGAS_AC_MESSAGE = 'Hola, quisiera consultar por una recarga de aire acondicionado para mi vehículo a domicilio.';
+
+export const recargasAireAcondicionadoSite: SiteProfile = {
+  name: 'Recarga de Aire Acondicionado a domicilio',
+  tagline: '',
+  description:
+    'Recarga de aire acondicionado para vehículos a domicilio, con base en Hualpén, Bío Bío. Consulta por diagnóstico, sanitización y detección de fugas.',
+  theme: 'recargas-ac',
+  logo: '/recargas-aire-collage.png',
+  logoAlt: 'Collage del vehículo de Nuevo Aire y equipo de climatización usado en terreno',
+  logoLayout: 'poster',
+  logoWidth: 976,
+  logoHeight: 688,
+  favicon: '/recargas-aire-collage.png',
+  footer: 'Consulta por disponibilidad y cobertura a domicilio.',
+  whatsappNumber: RECARGAS_AC_WHATSAPP,
+  bookingMessage: RECARGAS_AC_MESSAGE,
+  highlights: [
+    {
+      id: 'location',
+      icon: 'location',
+      label: 'Ubicación',
+      value: 'Toulouse, Hualpén, Bío Bío',
+    },
+    {
+      id: 'service',
+      icon: 'wrench',
+      label: 'Servicio',
+      value: '',
+      items: [
+        'Diagnóstico',
+        'Sanitización',
+        'Detector de Fugas',
+        'Programa Texto',
+        'Fase Vacío Programable',
+        'Inyección Automatizada',
+      ],
+    },
+  ],
+  contactDetails: [
+    { label: '9 4222 4861', href: 'tel:+56942224861' },
+    { label: 'munos1517@gmail.com', href: 'mailto:munos1517@gmail.com' },
+  ],
+  links: [
+    {
+      label: 'Consultar por WhatsApp',
+      href: `https://wa.me/${RECARGAS_AC_WHATSAPP}?text=${encodeURIComponent(RECARGAS_AC_MESSAGE)}`,
+      icon: 'whatsapp',
+      isPrimary: true,
+    },
+    {
+      label: 'Facebook',
+      href: 'https://www.facebook.com/recargasdeaireRMenconcepcion',
+      icon: 'facebook',
+    },
+    {
+      label: 'Cómo llegar',
+      href: 'https://www.google.com/maps/search/?api=1&query=Toulouse%2C%20Hualp%C3%A9n%2C%20B%C3%ADo%20B%C3%ADo&query_place_id=ChIJlZRXSmHLaZYR2sjV-smFosQ',
+      icon: 'location',
+    },
+    {
+      label: 'Dejar reseña · Aire acondicionado y climatizador',
+      href: 'https://search.google.com/local/writereview?placeid=ChIJs_5fuuS1aZYRXTJ5F9OnD44',
+      icon: 'review',
+    },
+    {
+      label: 'Dejar reseña · Recarga a domicilio',
+      href: 'https://search.google.com/local/writereview?placeid=ChIJlZRXSmHLaZYR2sjV-smFosQ',
+      icon: 'review',
+    },
+  ],
+  transfer: {
+    label: 'Copiar datos de Tenpo',
+    logo: '/logo-tenpo-white.svg',
+    text: [
+      'RENE JOAQUIN MUNOZ GUERRERO',
+      'RUT: 15809117-8',
+      'Banco: Banco prepago Tenpo',
+      'Tipo de cuenta: Cuenta Vista',
+      'Número de cuenta: 111115809117',
+      'Correo: munos1517@gmail.com',
     ].join('\n'),
   },
 };

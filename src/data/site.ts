@@ -282,7 +282,7 @@ export const fullDrinkSite: SiteProfile = {
       'Banco Santander',
       'Cuenta Corriente',
       'N°83900997',
-      'ventas@fulldrink.cl',
+      'fulldrinklicores@gmail.com',
     ].join('\n'),
   },
   productShowcase: {

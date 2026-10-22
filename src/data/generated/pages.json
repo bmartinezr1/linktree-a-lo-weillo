@@ -324,6 +324,57 @@
             }
         },
         {
+            "slug": "emporio-las-hadas",
+            "name": "Emporio las Hadas",
+            "tagline": null,
+            "description": "🥐🥖🍞Panadería y pastelería artesanal🍰🧁🍩",
+            "theme": "default",
+            "logo": "/generated/logos/emporio-las-hadas.jpg",
+            "logoAlt": "Logo de Emporio las Hadas",
+            "favicon": "/generated/logos/emporio-las-hadas.jpg",
+            "footer": null,
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "📍Ejercito 1390, Concepción"
+                }
+            ],
+            "links": [
+                {
+                    "type": "instagram",
+                    "icon": "instagram",
+                    "label": "Entra a nuestro perfil de instagram",
+                    "href": "https://www.instagram.com/emporiolashadasccp/",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "icon": "review",
+                    "label": "Deja una reseña de la pasteleria",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJofYZJre1aZYRzlE21RfpZrM",
+                    "copyText": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "icon": "contact",
+                    "label": "Copia los datos de transferencia",
+                    "href": null,
+                    "copyText": null,
+                    "isDisabled": true
+                }
+            ],
+            "colors": {
+                "background": "#f8f4ef",
+                "text": "#111827",
+                "button": "#d0b090",
+                "buttonText": "#111827"
+            }
+        },
+        {
             "slug": "flores-de-frida",
             "name": "Flores de Frida",
             "tagline": null,

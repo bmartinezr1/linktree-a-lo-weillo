@@ -1,0 +1,35 @@
+---
+import LinkPage from '../components/LinkPage.astro';
+import { generatedPages } from '../data/public-pages';
+import type { SiteProfile } from '../data/site';
+
+export function getStaticPaths() {
+  const manualSlugs = new Set([
+    '7e-barber-shop',
+    'barberia-cj',
+    'barbero',
+    'botilleria-dona-flor',
+    'cj',
+    'dona-flor-supermercado',
+    'el_bajon_del_marley',
+    'el-bajon-del-marley',
+    'flores-de-frida',
+    'full-drink-juan-de-dios-rivera',
+    'full-drink',
+    'ignacio-parada',
+    'la-dinastia-china',
+  ]);
+
+  return generatedPages
+    .filter((site) => site.slug && !manualSlugs.has(site.slug.toLowerCase()))
+    .map((site) => ({ params: { slug: site.slug }, props: { site } }));
+}
+
+interface Props {
+  site: SiteProfile;
+}
+
+const { site } = Astro.props;
+---
+
+<LinkPage site={site} />

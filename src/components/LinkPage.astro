@@ -1,5 +1,6 @@
 ---
 import { site as defaultSite, type SiteProfile } from '../data/site';
+import { validateSite } from '../data/validate-site';
 import TransferButton from './TransferButton.astro';
 import '../styles/global.css';
 
@@ -10,9 +11,15 @@ interface Props {
 
 const site: SiteProfile = Astro.props.site ?? Astro.props.profile ?? defaultSite;
 const transfers = site.transfer ? (Array.isArray(site.transfer) ? site.transfer : [site.transfer]) : [];
+validateSite(site);
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
+const imageUrl = site.logo ? new URL(site.logo, Astro.site ?? Astro.url) : undefined;
+const customStyle = site.colors
+  ? `--background:${site.colors.background};--surface:${site.colors.button};--surface-hover:${site.colors.button};--gold:${site.colors.button};--gold-light:${site.colors.button};--border:${site.colors.button};--text:${site.colors.text};--muted:${site.colors.text};--button-text:${site.colors.buttonText};`
+  : undefined;
 const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.jpeg')
   ? 'image/jpeg'
-  : (site.favicon?.endsWith('.svg') ? 'image/svg+xml' : 'image/png');
+  : (site.favicon?.endsWith('.svg') ? 'image/svg+xml' : (site.favicon?.endsWith('.webp') ? 'image/webp' : 'image/png'));
 ---
 
 <!doctype html>
@@ -21,15 +28,18 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={site.description} />
-    <meta name="theme-color" content="#080808" />
+    <meta name="theme-color" content={site.colors?.background ?? '#080808'} />
     <link rel="icon" type={faviconType} href={site.favicon} />
+    <link rel="canonical" href={canonicalUrl} />
     <meta property="og:title" content={site.name} />
     <meta property="og:description" content={site.description} />
-    <meta property="og:image" content={site.logo} />
+    <meta property="og:url" content={canonicalUrl} />
+    {imageUrl && <meta property="og:image" content={imageUrl} />}
+    {imageUrl && <meta property="og:image:alt" content={site.logoAlt ?? `Logo de ${site.name}`} />}
     <meta property="og:type" content="website" />
     <title>{site.name}</title>
   </head>
-  <body class={`business-page theme-${site.theme ?? 'barber'}`}>
+  <body class={`business-page ${site.colors ? 'generated-page' : ''} theme-${site.theme ?? 'barber'}`} style={customStyle}>
     <main class="page-shell">
       <article class="profile" aria-labelledby="business-name">
         <header
@@ -67,6 +77,10 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
           <h1 id="business-name">{site.name}</h1>
           {site.tagline && <p class="tagline">{site.tagline}</p>}
         </header>
+
+        {site.description && site.theme !== 'recargas-ac' && (
+          <p class="profile-description">{site.description}</p>
+        )}
 
         {site.branches && site.branches.length > 0 && (
           <section class="branches-showcase" aria-labelledby="branches-heading">
@@ -205,6 +219,12 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
                       <line x1="7" y1="15" x2="10" y2="15" />
                     </svg>
                   )}
+                  {(item.icon === 'contact' || item.id === 'contact') && (
+                    <svg viewBox="0 0 24 24" role="presentation">
+                      <path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-5l-3 3v-3H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
+                      <path d="M7 8h10M7 12h6" />
+                    </svg>
+                  )}
                   {item.icon === 'wrench' && (
                     <svg viewBox="0 0 24 24" role="presentation">
                       <path d="M14.7 6.3a5 5 0 0 0-6.5 6.5l-5.3 5.3a2 2 0 0 0 2.8 2.8l5.3-5.3a5 5 0 0 0 6.5-6.5l-3.2 3.2-2.9-.6-.6-2.9 3.2-3.2Z" />
@@ -240,9 +260,11 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
           </section>
         )}
 
-        <nav class="links" aria-label={`Enlaces y acciones de ${site.name}`}>
+        <nav class:list={['links', { 'links-7e': site === defaultSite }]} aria-label={`Enlaces y acciones de ${site.name}`}>
           {site.links.map((link) => (
-            link.isDisabled ? (
+            link.copyText ? (
+              <TransferButton details={{ text: link.copyText }} label={link.label} />
+            ) : link.isDisabled ? (
               <span
                 class={`link-button link-button-disabled ${link.icon === 'whatsapp' ? 'link-button-whatsapp' : ''} ${link.icon === 'facebook' ? 'link-button-facebook' : ''}`}
                 aria-disabled="true"
@@ -258,10 +280,18 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
             <a
               class={`link-button ${link.icon === 'whatsapp' ? 'link-button-whatsapp' : ''} ${link.icon === 'facebook' ? 'link-button-facebook' : ''} ${link.icon === 'promotions' ? 'link-button-promotions' : ''} ${link.icon === 'review' ? 'link-button-review' : ''}`}
               href={link.href}
-              target={/^https?:\/\//.test(link.href) ? '_blank' : undefined}
-              rel={/^https?:\/\//.test(link.href) ? 'noopener noreferrer' : undefined}
+              target={link.href?.startsWith('/') ? undefined : '_blank'}
+              rel={link.href?.startsWith('/') ? undefined : 'noopener noreferrer'}
             >
               <span class="link-icon" aria-hidden="true">
+                {link.icon === 'calendar' && (
+                  <svg viewBox="0 0 24 24" class="brand-svg" role="presentation" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="17" rx="3" />
+                    <path d="M16 2v4M8 2v4M3 9.5h18" />
+                    <circle cx="12" cy="15" r="3.2" />
+                    <path d="M12 13.5V15l1.4 1" />
+                  </svg>
+                )}
                 {link.icon === 'whatsapp' && (
                   <svg viewBox="0 0 24 24" class="brand-svg" role="presentation">
                     <path

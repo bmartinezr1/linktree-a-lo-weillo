@@ -974,7 +974,49 @@ h1 {
   color: rgba(201, 189, 162, 0.7);
 }
 
-/* Las páginas administradas usan colores sólidos configurados en el panel. */
+/* Managed pages follow the appearance selected in the admin panel. */
+.generated-page {
+  font-family: var(--page-font, Inter, ui-sans-serif, system-ui, sans-serif);
+}
+
+.generated-page .logo {
+  width: min(var(--logo-width, 160px), 100%);
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.generated-page .logo-poster {
+  width: min(var(--logo-width, 160px), 100%);
+  max-width: 25rem;
+  aspect-ratio: auto;
+  object-fit: contain;
+  border-radius: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.generated-page .logo.logo-round {
+  width: min(var(--logo-width, 160px), 100%);
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.generated-page .logo.logo-rounded {
+  width: min(var(--logo-width, 160px), 100%);
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  border-radius: 1rem;
+  background: #fff;
+  padding: 0.5rem;
+}
+
+
 .generated-page,
 .generated-page .page-shell {
   background: var(--background);
@@ -983,7 +1025,8 @@ h1 {
 .generated-page .link-button,
 .generated-page .link-button-whatsapp,
 .generated-page .link-button-facebook,
-.generated-page .link-button-disabled {
+.generated-page .link-button-disabled,
+.generated-page .link-button:first-child {
   background: var(--surface);
   border-color: var(--border);
 }
@@ -991,7 +1034,8 @@ h1 {
 .generated-page .link-button:hover,
 .generated-page .link-button-whatsapp:hover,
 .generated-page .link-button-facebook:hover,
-.generated-page .link-button-disabled:hover {
+.generated-page .link-button-disabled:hover,
+.generated-page .link-button:first-child:hover {
   background: var(--surface-hover);
 }
 
@@ -1245,6 +1289,12 @@ h1 {
 .theme-recargas-ac .info-item-contact {
   grid-column: 2;
   grid-row: 1;
+}
+
+.theme-recargas-ac .info-showcase-contact-only .info-item-contact {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  justify-content: center;
 }
 
 .theme-recargas-ac .info-item-location,

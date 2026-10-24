@@ -1,0 +1,55 @@
+---
+import { getImage } from 'astro:assets';
+import LinkPage from '../components/LinkPage.astro';
+import type { SiteProfile } from '../data/site';
+import fachada from '../assets/don-carlos.jpg';
+
+const photo = await getImage({ src: fachada, width: 1445, format: 'webp', quality: 85 });
+const site: SiteProfile = {
+  name: 'Supermercado y Alcoholes Don Carlos',
+  description: 'Supermercado y Alcoholes Don Carlos en Ejército 1799, Concepción, Bío Bío. Consulta la ubicación y deja tu reseña.',
+  theme: 'recargas-ac',
+  typography: 'system',
+  logo: photo.src,
+  logoAlt: 'Fachada del Supermercado Don Carlos en Concepción',
+  logoLayout: 'poster',
+  logoWidth: photo.attributes.width,
+  logoHeight: photo.attributes.height,
+  favicon: photo.src,
+  footer: '',
+  highlights: [
+    {
+      id: 'location',
+      icon: 'location',
+      label: 'Ubicación',
+      value: 'Ejército 1799\n4060307 Concepción, Bío Bío',
+    },
+  ],
+  contactDetails: [
+    { label: '(41) 221 7865', href: 'tel:+56412217865' },
+  ],
+  links: [
+    {
+      label: 'Dejar una reseña',
+      href: 'https://search.google.com/local/writereview?placeid=ChIJo9AG7rO1aZYR1KvOGchSxgw',
+      icon: 'review',
+    },
+  ],
+  transfer: {
+    label: 'Copiar datos de transferencia',
+    logo: '/logo-bancoestado.svg',
+    text: [
+      'EJEMPLO — DATOS POR CONFIRMAR',
+      'Comercio: Supermercado y Alcoholes Don Carlos',
+      'Titular: [por confirmar]',
+      'RUT: [por confirmar]',
+      'Banco: BancoEstado',
+      'Tipo de cuenta: [por confirmar]',
+      'Número de cuenta: [por confirmar]',
+      'Correo: [por confirmar]',
+    ].join('\n'),
+  },
+};
+---
+
+<LinkPage site={site} />

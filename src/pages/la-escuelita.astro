@@ -1,0 +1,78 @@
+---
+import { getImage } from 'astro:assets';
+import LinkPage from '../components/LinkPage.astro';
+import type { SiteProfile } from '../data/site';
+import fachada from '../assets/la-escuelita.png';
+
+const photo = await getImage({ src: fachada, width: 1312, format: 'webp', quality: 85 });
+const placeId = 'ChIJ3X1sC7e1aZYRTRIo77PTfn8';
+const site: SiteProfile = {
+  name: 'La Escuelita',
+  tagline: 'Comercial Ferrada',
+  description: 'La Escuelita / Comercial Ferrada en Brasil 1549, Concepción, Bío Bío. Encuentra nuestra ubicación, teléfono de contacto y reseñas.',
+  theme: 'recargas-ac',
+  typography: 'system',
+  logo: photo.src,
+  logoAlt: 'Fachada de La Escuelita / Comercial Ferrada en Brasil 1549, Concepción',
+  logoLayout: 'poster',
+  logoWidth: photo.attributes.width,
+  logoHeight: photo.attributes.height,
+  favicon: photo.src,
+  footer: '',
+  highlights: [
+    {
+      id: 'location',
+      icon: 'location',
+      label: 'Ubicación',
+      value: 'Brasil 1549\n4060564 Concepción, Bío Bío',
+    },
+  ],
+  contactDetails: [
+    { label: '(41) 293 3391', href: 'tel:+56412933391' },
+  ],
+  links: [
+    {
+      label: 'TikTok',
+      href: 'https://www.tiktok.com/@comercializadorferrada',
+      icon: 'tiktok',
+    },
+    {
+      label: 'Dejar una reseña',
+      href: `https://search.google.com/local/writereview?placeid=${placeId}`,
+      icon: 'review',
+    },
+  ],
+  transfer: [
+    {
+      label: 'Copiar datos de transferencia',
+      logo: '/logo-bancoestado.svg',
+      text: [
+        'EJEMPLO — DATOS POR CONFIRMAR',
+        'Comercio: La Escuelita / Comercial Ferrada',
+        'Titular: [por confirmar]',
+        'RUT: [por confirmar]',
+        'Banco: BancoEstado',
+        'Tipo de cuenta: [por confirmar]',
+        'Número de cuenta: [por confirmar]',
+        'Correo: [por confirmar]',
+      ].join('\n'),
+    },
+    {
+      label: 'Copiar datos de transferencia',
+      logo: '/logo-mercado-libre.png',
+      text: [
+        'EJEMPLO — DATOS POR CONFIRMAR',
+        'Comercio: La Escuelita / Comercial Ferrada',
+        'Titular: [por confirmar]',
+        'RUT: [por confirmar]',
+        'Entidad de la cuenta: [por confirmar]',
+        'Tipo de cuenta: [por confirmar]',
+        'Número de cuenta: [por confirmar]',
+        'Correo: [por confirmar]',
+      ].join('\n'),
+    },
+  ],
+};
+---
+
+<LinkPage site={site} />

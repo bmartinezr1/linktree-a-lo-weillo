@@ -1,7 +1,7 @@
 export type SiteLink = {
   label: string;
   href?: string | null;
-  icon: 'whatsapp' | 'instagram' | 'facebook' | 'review' | 'location' | 'team' | 'contact' | 'promotions' | 'calendar';
+  icon: 'whatsapp' | 'instagram' | 'facebook' | 'tiktok' | 'review' | 'location' | 'team' | 'contact' | 'promotions' | 'calendar';
   isDisabled?: boolean;
   copyText?: string | null;
 };
@@ -58,8 +58,9 @@ export type SiteProfile = {
   theme?: 'barber' | 'floral' | string;
   logo?: string | null;
   logoAlt?: string;
-  logoLayout?: 'round' | 'poster';
+  logoLayout?: 'round' | 'poster' | 'original' | 'rounded';
   logoWidth?: number;
+  typography?: string;
   logoHeight?: number;
   heroBanner?: string;
   heroBannerAlt?: string;
@@ -78,6 +79,7 @@ export type SiteProfile = {
     text: string;
     button: string;
     buttonText: string;
+    accent?: string;
   };
 };
 

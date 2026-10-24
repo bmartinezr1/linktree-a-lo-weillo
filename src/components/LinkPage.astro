@@ -14,8 +14,30 @@ const transfers = site.transfer ? (Array.isArray(site.transfer) ? site.transfer 
 validateSite(site);
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
 const imageUrl = site.logo ? new URL(site.logo, Astro.site ?? Astro.url) : undefined;
+const typography = site.typography ?? 'inter';
+const typographyStyles: Record<string, { family: string; google?: string }> = {
+  inter: { family: "'Inter', ui-sans-serif, system-ui, sans-serif", google: 'Inter:wght@400;500;600;700' },
+  poppins: { family: "'Poppins', ui-sans-serif, system-ui, sans-serif", google: 'Poppins:wght@400;500;600;700' },
+  montserrat: { family: "'Montserrat', ui-sans-serif, system-ui, sans-serif", google: 'Montserrat:wght@400;500;600;700' },
+  roboto: { family: "'Roboto', ui-sans-serif, system-ui, sans-serif", google: 'Roboto:wght@400;500;700' },
+  'plus-jakarta-sans': { family: "'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif", google: 'Plus+Jakarta+Sans:wght@400;500;600;700' },
+  outfit: { family: "'Outfit', ui-sans-serif, system-ui, sans-serif", google: 'Outfit:wght@400;500;600;700' },
+  'playfair-display': { family: "'Playfair Display', Georgia, serif", google: 'Playfair+Display:wght@400;600;700' },
+  merriweather: { family: "'Merriweather', Georgia, serif", google: 'Merriweather:wght@400;700' },
+  oswald: { family: "'Oswald', Impact, sans-serif", google: 'Oswald:wght@400;600;700' },
+  system: { family: "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" },
+};
+const font = typographyStyles[typography] ?? typographyStyles.inter;
+const googleFontUrl = font.google
+  ? 'https://fonts.googleapis.com/css2?family=' + font.google + '&display=swap'
+  : undefined;
 const customStyle = site.colors
-  ? `--background:${site.colors.background};--surface:${site.colors.button};--surface-hover:${site.colors.button};--gold:${site.colors.button};--gold-light:${site.colors.button};--border:${site.colors.button};--text:${site.colors.text};--muted:${site.colors.text};--button-text:${site.colors.buttonText};`
+  ? '--background:' + site.colors.background + ';--surface:' + site.colors.button +
+    ';--surface-hover:' + site.colors.button + ';--gold:' + (site.colors.accent ?? site.colors.button) +
+    ';--gold-light:' + (site.colors.accent ?? site.colors.button) + ';--border:' + site.colors.button +
+    ';--text:' + site.colors.text + ';--muted:' + site.colors.text + ';--button-text:' +
+    site.colors.buttonText + ';--page-font:' + font.family + ';--logo-width:' +
+    (site.logoWidth ?? 160) + 'px;'
   : undefined;
 const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.jpeg')
   ? 'image/jpeg'
@@ -28,6 +50,9 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={site.description} />
+    {googleFontUrl && <link rel="preconnect" href="https://fonts.googleapis.com" />}
+    {googleFontUrl && <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />}
+    {googleFontUrl && <link href={googleFontUrl} rel="stylesheet" />}
     <meta name="theme-color" content={site.colors?.background ?? '#080808'} />
     <link rel="icon" type={faviconType} href={site.favicon} />
     <link rel="canonical" href={canonicalUrl} />
@@ -48,7 +73,7 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
         >
           {site.logo ? (
             <img
-              class={`logo ${site.logoLayout === 'poster' ? 'logo-poster' : ''}`}
+              class={['logo', (site.logoLayout === 'poster' || site.logoLayout === 'original' ? 'logo-poster' : ''), (site.logoLayout === 'round' ? 'logo-round' : ''), (site.logoLayout === 'rounded' ? 'logo-rounded' : '')].filter(Boolean).join(' ')}
               src={site.logo}
               alt={site.logoAlt ?? `Logo de ${site.name}`}
               width={site.logoWidth ?? 512}
@@ -168,8 +193,8 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
           </section>
         )}
 
-        {site.highlights && site.highlights.length > 0 && (
-          <section class="info-showcase" aria-label={`Información de ${site.name}`}>
+        {(site.highlights.length > 0 || (site.contactDetails?.length ?? 0) > 0) && (
+          <section class:list={['info-showcase', { 'info-showcase-contact-only': site.highlights.length === 0 }]} aria-label={`Información de ${site.name}`}>
             {site.highlights.map((item) => (
               <div class={`info-item info-item-${item.id}`}>
                 <span class="info-icon" aria-hidden="true">
@@ -261,6 +286,7 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
         )}
 
         <nav class:list={['links', { 'links-7e': site === defaultSite }]} aria-label={`Enlaces y acciones de ${site.name}`}>
+          <slot name="before-links" />
           {site.links.map((link) => (
             link.copyText ? (
               <TransferButton details={{ text: link.copyText }} label={link.label} />
@@ -318,6 +344,11 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
                     <rect x="5.2" y="5.2" width="13.6" height="13.6" rx="3.4" fill="none" stroke="#FFFFFF" stroke-width="1.6" />
                     <circle cx="12" cy="12" r="3.4" fill="none" stroke="#FFFFFF" stroke-width="1.6" />
                     <circle cx="16.2" cy="7.8" r="0.8" fill="#FFFFFF" />
+                  </svg>
+                )}
+                {link.icon === 'tiktok' && (
+                  <svg viewBox="0 0 24 24" class="brand-svg" role="presentation">
+                    <path fill="currentColor" d="M16.6 2h-3.4v13.2a3 3 0 1 1-2.6-3V8.8a6.4 6.4 0 1 0 6 6.4V8.6a8.3 8.3 0 0 0 5 1.7V6.9A5 5 0 0 1 16.6 2Z" />
                   </svg>
                 )}
                 {link.icon === 'facebook' && (

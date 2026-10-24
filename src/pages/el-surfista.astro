@@ -1,0 +1,99 @@
+---
+import { getImage } from 'astro:assets';
+import LinkPage from '../components/LinkPage.astro';
+import type { SiteProfile } from '../data/site';
+import surfista from '../assets/surfista.png';
+
+const logo = await getImage({ src: surfista, format: 'webp', quality: 90 });
+const site: SiteProfile = {
+  name: 'Botillería El Surfista',
+  description: 'Botillería El Surfista en Paicaví 1145, Local 3, Concepción. Haz tu pedido en nuestra página, contáctanos por WhatsApp o deja una reseña.',
+  theme: 'recargas-ac',
+  typography: 'system',
+  logo: logo.src,
+  logoAlt: 'Logo de El Surfista',
+  logoLayout: 'rounded',
+  logoWidth: logo.attributes.width,
+  logoHeight: logo.attributes.height,
+  favicon: logo.src,
+  footer: '',
+  highlights: [
+    {
+      id: 'location',
+      icon: 'location',
+      label: 'Ubicación',
+      value: 'Paicaví 1145, Local 3\nConcepción',
+    },
+  ],
+  contactDetails: [
+    { label: '+56 9 9675 4921', href: 'tel:+56996754921' },
+  ],
+  links: [
+    {
+      label: 'WhatsApp',
+      href: 'https://wa.me/56996754921',
+      icon: 'whatsapp',
+    },
+    {
+      label: 'Dejar una reseña',
+      href: 'https://search.google.com/local/writereview?placeid=ChIJj5r728m1aZYRyM6PrFO-5Ms',
+      icon: 'review',
+    },
+  ],
+  transfer: {
+    label: 'Copiar datos de transferencia',
+    logo: '/logo-banco-de-chile.png',
+    text: [
+      'EJEMPLO — DATOS POR CONFIRMAR',
+      'Comercio: Botillería El Surfista',
+      'Titular: [por confirmar]',
+      'RUT: [por confirmar]',
+      'Banco: Banco de Chile',
+      'Tipo de cuenta: [por confirmar]',
+      'Número de cuenta: [por confirmar]',
+      'Correo: [por confirmar]',
+    ].join('\n'),
+  },
+};
+---
+
+<LinkPage site={site}>
+  <a
+    slot="before-links"
+    class="link-button surfista-order-link"
+    href="https://www.botilleriaelsurfista.cl/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span class="link-icon" aria-hidden="true">
+      <img src={logo.src} alt="" width="36" height="36" decoding="async" />
+    </span>
+    <span>Hacer un pedido en la página</span>
+  </a>
+</LinkPage>
+
+<style is:global>
+  .surfista-order-link .link-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+  }
+
+  .surfista-order-link .link-icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+
+  .theme-recargas-ac .logo.logo-rounded {
+    width: clamp(8.5rem, 38vw, 11rem);
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: contain;
+    border-radius: 1rem;
+    background: #211e1d;
+    box-shadow: 0 0.75rem 1.75rem rgba(0, 0, 0, 0.25);
+  }
+</style>

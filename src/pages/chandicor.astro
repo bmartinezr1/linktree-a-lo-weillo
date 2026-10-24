@@ -1,0 +1,79 @@
+---
+import { getImage } from 'astro:assets';
+import LinkPage from '../components/LinkPage.astro';
+import type { SiteProfile } from '../data/site';
+import fachada from '../assets/chandicor.png';
+
+const photo = await getImage({ src: fachada, width: 1368, format: 'webp', quality: 85 });
+const transferExample = [
+  'EJEMPLO — DATOS POR CONFIRMAR',
+  'Comercio: Chandicor · La esquinita del sabor',
+  'Titular: [por confirmar]',
+  'RUT: [por confirmar]',
+  'Banco: [por confirmar]',
+  'Tipo de cuenta: [por confirmar]',
+  'Número de cuenta: [por confirmar]',
+  'Correo: [por confirmar]',
+].join('\n');
+const site: SiteProfile = {
+  name: 'Chandicor',
+  tagline: 'La esquinita del sabor',
+  description: 'Chandicor, la esquinita del sabor. Encuentra nuestro teléfono de contacto, Instagram y enlace de reseñas.',
+  theme: 'recargas-ac',
+  typography: 'system',
+  logo: photo.src,
+  logoAlt: 'Fachada de Chandicor con el letrero La esquinita del sabor',
+  logoLayout: 'poster',
+  logoWidth: photo.attributes.width,
+  logoHeight: photo.attributes.height,
+  favicon: photo.src,
+  footer: '',
+  highlights: [
+    {
+      id: 'location',
+      icon: 'location',
+      label: 'Ubicación',
+      value: 'Ejército 1516\nConcepción, Bío Bío',
+    },
+  ],
+  contactDetails: [
+    { label: '+56 9 7857 3838', href: 'tel:+56978573838' },
+  ],
+  links: [
+    {
+      label: 'Instagram',
+      href: 'https://www.instagram.com/chandicor/',
+      icon: 'instagram',
+    },
+    {
+      label: 'Dejar una reseña',
+      href: 'https://search.google.com/local/writereview?placeid=ChIJgypZgzS1aZYRWmCBxTXkMi8',
+      icon: 'review',
+    },
+  ],
+  transfer: [
+    {
+      label: 'Copiar datos de transferencia',
+      logo: '/logo-bancoestado.svg',
+      text: transferExample,
+    },
+    {
+      label: 'Copiar datos de transferencia',
+      logo: '/logo-mercado-libre.png',
+      text: transferExample,
+    },
+  ],
+};
+---
+
+<LinkPage site={site}>
+  <button slot="before-links" type="button" class="link-button" aria-disabled="true">
+    <span class="link-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" class="brand-svg" role="presentation" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 5c-3-2-6-2-9-1v15c3-1 6-1 9 1 3-2 6-2 9-1V4c-3-1-6-1-9 1Z" />
+        <path d="M12 5v15M6 8h3M6 12h3M15 8h3M15 12h3" />
+      </svg>
+    </span>
+    <span>Ver carta</span>
+  </button>
+</LinkPage>

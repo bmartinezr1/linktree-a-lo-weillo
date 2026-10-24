@@ -1,0 +1,152 @@
+---
+import { getImage } from 'astro:assets';
+import LinkPage from '../components/LinkPage.astro';
+import type { SiteProfile } from '../data/site';
+import tommy from '../assets/tommy.jpeg';
+
+const logo = await getImage({ src: tommy, format: 'webp', quality: 90 });
+const site: SiteProfile = {
+  name: 'Tommy Rolls',
+  tagline: 'Hecho con hambre, hecho en Conce',
+  description: 'Tommy en Ejército 1635, Concepción. Consulta nuestros horarios, contáctanos por WhatsApp, síguenos en Instagram y deja tu reseña.',
+  theme: 'recargas-ac',
+  typography: 'system',
+  logo: logo.src,
+  logoAlt: 'Logo de Tommy',
+  logoLayout: 'rounded',
+  logoWidth: logo.attributes.width,
+  logoHeight: logo.attributes.height,
+  favicon: logo.src,
+  footer: '',
+  highlights: [
+    {
+      id: 'location',
+      icon: 'location',
+      label: 'Ubicación',
+      value: 'Ejército 1635\nConcepción',
+    },
+    {
+      id: 'schedule',
+      icon: 'schedule',
+      label: 'Horario de atención',
+      value: 'Lunes a viernes: 14:30 a 23:00\nSábado: 15:00 a 23:00',
+    },
+  ],
+  contactDetails: [
+    { label: '+56 9 2620 3542', href: 'tel:+56926203542' },
+  ],
+  links: [
+    {
+      label: 'WhatsApp',
+      href: 'https://wa.me/56926203542',
+      icon: 'whatsapp',
+    },
+    {
+      label: 'Instagram',
+      href: 'https://www.instagram.com/tommyrolls.cl/',
+      icon: 'instagram',
+    },
+    {
+      label: 'Visitar página web',
+      href: 'https://www.tommyrolls.cl/',
+      icon: 'promotions',
+    },
+    {
+      label: 'Dejar una reseña',
+      href: 'https://search.google.com/local/writereview?placeid=ChIJBb6wSvO1aZYRWg67KQFvrdE',
+      icon: 'review',
+    },
+  ],
+  transfer: {
+    label: 'Copiar datos de transferencia',
+    logo: '/logo-bancoestado.svg',
+    text: [
+      'EJEMPLO — DATOS POR CONFIRMAR',
+      'Comercio: Tommy Rolls',
+      'Titular: [por confirmar]',
+      'RUT: [por confirmar]',
+      'Banco: BancoEstado',
+      'Tipo de cuenta: [por confirmar]',
+      'Número de cuenta: [por confirmar]',
+      'Correo: [por confirmar]',
+    ].join('\n'),
+  },
+};
+---
+
+<LinkPage site={site} />
+
+<style is:global>
+  .theme-recargas-ac .logo.logo-rounded {
+    width: clamp(8.5rem, 38vw, 11rem);
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: contain;
+    border-radius: 1rem;
+    background: #050505;
+    box-shadow: 0 0.75rem 1.75rem rgba(0, 0, 0, 0.25);
+  }
+
+  .theme-recargas-ac .tagline {
+    font-size: clamp(0.65rem, 2.8vw, 0.85rem);
+    overflow-wrap: anywhere;
+  }
+
+  .theme-recargas-ac .info-item-schedule {
+    grid-column: auto;
+    grid-row: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding-top: 0.85rem;
+    text-align: left;
+  }
+
+  .theme-recargas-ac .info-showcase:has(.info-item-schedule) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+
+  .theme-recargas-ac .info-showcase:has(.info-item-schedule) .info-item-location {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .theme-recargas-ac .info-showcase:has(.info-item-schedule) .info-item-contact {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .theme-recargas-ac .info-showcase:has(.info-item-schedule) .info-item-schedule {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .theme-recargas-ac .info-showcase:has(.info-item-schedule) .info-item-location,
+  .theme-recargas-ac .info-showcase:has(.info-item-schedule) .info-item-contact,
+  .theme-recargas-ac .info-showcase:has(.info-item-schedule) .info-item-schedule {
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: flex-start;
+  }
+
+  .theme-recargas-ac .info-item-schedule .info-icon {
+    margin-top: 0.1rem;
+  }
+
+  .theme-recargas-ac .info-item-schedule .info-icon svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .theme-recargas-ac .links .link-button.link-button-review {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 380px) {
+    .theme-recargas-ac .info-item-schedule {
+      gap: 0.35rem;
+    }
+  }
+</style>

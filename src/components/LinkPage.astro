@@ -103,7 +103,7 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
           {site.tagline && <p class="tagline">{site.tagline}</p>}
         </header>
 
-        {site.description && site.theme !== 'recargas-ac' && (
+        {site.description && site.theme !== 'recargas-ac' && site.theme !== 'comercio' && (
           <p class="profile-description">{site.description}</p>
         )}
 
@@ -289,7 +289,7 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
           <slot name="before-links" />
           {site.links.map((link) => (
             link.copyText ? (
-              <TransferButton details={{ text: link.copyText }} label={link.label} />
+              <TransferButton details={{ text: link.copyText, logo: link.logo ?? undefined }} label={link.label} />
             ) : link.isDisabled ? (
               <span
                 class={`link-button link-button-disabled ${link.icon === 'whatsapp' ? 'link-button-whatsapp' : ''} ${link.icon === 'facebook' ? 'link-button-facebook' : ''}`}

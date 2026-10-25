@@ -4,6 +4,7 @@ export type SiteLink = {
   icon: 'whatsapp' | 'instagram' | 'facebook' | 'tiktok' | 'review' | 'location' | 'team' | 'contact' | 'promotions' | 'calendar';
   isDisabled?: boolean;
   copyText?: string | null;
+  logo?: string | null;
 };
 
 export type InfoHighlight = {
@@ -55,7 +56,7 @@ export type SiteProfile = {
   name: string;
   tagline?: string | null;
   description: string;
-  theme?: 'barber' | 'floral' | string;
+  theme?: 'barber' | 'floral' | 'comercio' | string;
   logo?: string | null;
   logoAlt?: string;
   logoLayout?: 'round' | 'poster' | 'original' | 'rounded';

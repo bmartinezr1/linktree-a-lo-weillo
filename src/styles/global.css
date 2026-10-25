@@ -1212,8 +1212,9 @@ h1 {
   }
 }
 
-/* Recargas A/C: imagen principal sin recorte y datos en filas simples. */
-.theme-recargas-ac {
+/* Comercio: imagen principal sin recorte y datos en filas simples. */
+.theme-recargas-ac,
+.theme-comercio {
   --background: #081321;
   --surface: #102339;
   --surface-hover: #17314b;
@@ -1225,17 +1226,87 @@ h1 {
   background:
     radial-gradient(circle at 50% -4%, rgba(61, 122, 173, 0.27), transparent 28rem),
     linear-gradient(180deg, #0b1b2d, #081321 36rem);
+  background-color: #081321;
+  color: #f6f9fd;
+  min-height: 100vh;
 }
 
-.theme-recargas-ac .page-shell {
+html:has(body.theme-comercio) {
+  min-height: 100%;
+  background-color: #081321;
+}
+
+body.theme-comercio {
+  background-color: #081321 !important;
+  color: #f6f9fd;
+}
+
+.theme-recargas-ac .page-shell,
+.theme-comercio .page-shell {
   padding-top: 1.25rem;
 }
 
-.theme-recargas-ac .profile {
+.theme-comercio .page-shell {
+  background: transparent !important;
+}
+
+.theme-recargas-ac .profile,
+.theme-comercio .profile {
   width: min(100%, 31rem);
 }
 
-.theme-recargas-ac .logo-poster {
+.theme-comercio.generated-page .page-shell {
+  background: transparent !important;
+}
+
+.theme-comercio.generated-page .link-button:first-child:not(.link-button-whatsapp) {
+  background: linear-gradient(115deg, rgba(244, 107, 94, 0.14), rgba(139, 187, 217, 0.2)), #122a43;
+  border-color: rgba(139, 187, 217, 0.48);
+  color: #f6f9fd;
+}
+
+.theme-comercio.generated-page .link-button:first-child:not(.link-button-whatsapp):hover {
+  border-color: rgba(244, 139, 127, 0.78);
+  background: linear-gradient(115deg, rgba(244, 107, 94, 0.24), rgba(139, 187, 217, 0.28)), #1b3b59;
+}
+
+.theme-comercio.generated-page .link-button.link-button-review {
+  border-color: rgba(251, 188, 4, 0.58);
+  background: linear-gradient(115deg, rgba(251, 188, 4, 0.2), rgba(244, 107, 94, 0.12)), #122a43;
+}
+
+.theme-comercio.generated-page .link-button-whatsapp {
+  border-color: rgba(37, 211, 102, 0.48);
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.2), #122a43 86%);
+}
+
+.theme-comercio.generated-page .link-button-whatsapp:hover {
+  border-color: rgba(37, 211, 102, 0.72);
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.29), #173851 86%);
+}
+
+.theme-comercio .tagline {
+  max-width: 100%;
+  margin: 0 auto 1rem;
+  color: #b9cadb;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.theme-comercio .logo-rounded {
+  width: min(var(--logo-width, 11rem), 100%);
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  border-radius: 1rem;
+  background: #fff;
+  padding: 0.4rem;
+  box-shadow: 0 0.75rem 1.75rem rgba(0, 0, 0, 0.25);
+}
+
+.theme-recargas-ac .logo-poster,
+.theme-comercio .logo-poster {
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -1246,7 +1317,8 @@ h1 {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 
-.theme-recargas-ac h1 {
+.theme-recargas-ac h1,
+.theme-comercio h1 {
   color: #f7f9fc;
   font-family: "Aptos Display", "Segoe UI Variable Display", "Segoe UI", sans-serif;
   font-size: clamp(1.85rem, 6.5vw, 2.35rem);
@@ -1259,7 +1331,8 @@ h1 {
   text-wrap: balance;
 }
 
-.theme-recargas-ac h1::after {
+.theme-recargas-ac h1::after,
+.theme-comercio h1::after {
   content: '';
   display: block;
   width: 3.5rem;
@@ -1269,7 +1342,8 @@ h1 {
   background: linear-gradient(90deg, #ee786e, #8bbbd9);
 }
 
-.theme-recargas-ac .info-showcase {
+.theme-recargas-ac .info-showcase,
+.theme-comercio .info-showcase {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
   gap: 0.25rem 0.55rem;
@@ -1277,63 +1351,87 @@ h1 {
   margin: 1.4rem 0;
 }
 
-.theme-recargas-ac .info-item {
+.theme-recargas-ac .info-item,
+.theme-comercio .info-item {
   padding: 0.65rem 0.25rem;
 }
 
-.theme-recargas-ac .info-item-location {
+.theme-recargas-ac .info-item-location,
+.theme-comercio .info-item-location {
   grid-column: 1;
   grid-row: 1;
 }
 
-.theme-recargas-ac .info-item-contact {
+.theme-recargas-ac .info-item-contact,
+.theme-comercio .info-item-contact {
   grid-column: 2;
   grid-row: 1;
 }
 
-.theme-recargas-ac .info-showcase-contact-only .info-item-contact {
+.theme-comercio .info-item-schedule {
+  grid-column: 1 / -1;
+  align-items: flex-start;
+}
+
+.theme-recargas-ac .info-showcase-contact-only .info-item-contact,
+.theme-comercio .info-showcase-contact-only .info-item-contact {
   grid-column: 1 / -1;
   grid-row: 1;
   justify-content: center;
 }
 
 .theme-recargas-ac .info-item-location,
-.theme-recargas-ac .info-item-contact {
+.theme-recargas-ac .info-item-contact,
+.theme-comercio .info-item-location,
+.theme-comercio .info-item-contact {
   align-items: flex-start;
   gap: 0.5rem;
   min-width: 0;
 }
 
 .theme-recargas-ac .info-item-location .info-icon svg,
-.theme-recargas-ac .info-item-contact .info-icon svg {
+.theme-recargas-ac .info-item-contact .info-icon svg,
+.theme-comercio .info-item-location .info-icon svg,
+.theme-comercio .info-item-contact .info-icon svg {
   width: 1.2rem;
   height: 1.2rem;
 }
 
-.theme-recargas-ac .info-item-contact .info-value {
+.theme-recargas-ac .info-item-contact .info-value,
+.theme-comercio .info-item-contact .info-value {
   font-size: 0.82rem;
 }
 
+.theme-comercio .info-value {
+  color: #f6f9fd;
+}
+
 .theme-recargas-ac .info-label,
-.theme-recargas-ac .info-icon {
+.theme-recargas-ac .info-icon,
+.theme-comercio .info-label,
+.theme-comercio .info-icon {
   color: #ff8b7f;
 }
 
-.theme-recargas-ac .info-item-service .info-content {
+.theme-recargas-ac .info-item-service .info-content,
+.theme-comercio .info-item-service .info-content {
   flex: 1;
 }
 
-.theme-recargas-ac .info-item-service {
+.theme-recargas-ac .info-item-service,
+.theme-comercio .info-item-service {
   align-items: flex-start;
   grid-column: 1 / -1;
   grid-row: 2;
 }
 
-.theme-recargas-ac .info-item-service .info-icon {
+.theme-recargas-ac .info-item-service .info-icon,
+.theme-comercio .info-item-service .info-icon {
   margin-top: -0.2rem;
 }
 
-.theme-recargas-ac .info-bullet-grid {
+.theme-recargas-ac .info-bullet-grid,
+.theme-comercio .info-bullet-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.55rem 0.7rem;
@@ -1344,7 +1442,8 @@ h1 {
   text-align: left;
 }
 
-.theme-recargas-ac .info-bullet-grid li {
+.theme-recargas-ac .info-bullet-grid li,
+.theme-comercio .info-bullet-grid li {
   display: flex;
   align-items: baseline;
   gap: 0.4rem;
@@ -1355,7 +1454,8 @@ h1 {
   overflow-wrap: anywhere;
 }
 
-.theme-recargas-ac .info-bullet-grid li::before {
+.theme-recargas-ac .info-bullet-grid li::before,
+.theme-comercio .info-bullet-grid li::before {
   content: '•';
   flex: 0 0 auto;
   color: #ff8b7f;
@@ -1363,115 +1463,201 @@ h1 {
   line-height: 1;
 }
 
-.theme-recargas-ac .contact-detail {
+.theme-recargas-ac .contact-detail,
+.theme-comercio .contact-detail {
   width: fit-content;
   max-width: 100%;
   text-decoration: none;
   overflow-wrap: anywhere;
 }
 
-.theme-recargas-ac .contact-detail:hover {
+.theme-recargas-ac .contact-detail:hover,
+.theme-comercio .contact-detail:hover {
   color: #ff8b7f;
   text-decoration: underline;
 }
 
-.theme-recargas-ac .contact-detail:focus-visible {
+.theme-recargas-ac .contact-detail:focus-visible,
+.theme-comercio .contact-detail:focus-visible {
   outline: 3px solid #ff8b7f;
   outline-offset: 3px;
 }
 
-.theme-recargas-ac .link-button {
-  background: #122a43;
+.theme-recargas-ac .link-button,
+.theme-comercio .link-button {
+  border-color: rgba(139, 187, 217, 0.48);
+  background: linear-gradient(115deg, rgba(244, 107, 94, 0.14), rgba(139, 187, 217, 0.2)), #122a43;
+  color: #f6f9fd;
 }
 
-.theme-recargas-ac .link-button:hover {
-  border-color: #8fbfe5;
-  background: #1b3b59;
+.theme-recargas-ac .link-button:hover,
+.theme-comercio .link-button:hover {
+  border-color: rgba(244, 139, 127, 0.78);
+  background: linear-gradient(115deg, rgba(244, 107, 94, 0.24), rgba(139, 187, 217, 0.28)), #1b3b59;
 }
 
-.theme-recargas-ac .link-button-whatsapp {
-  border-color: rgba(37, 211, 102, 0.6);
-  background: linear-gradient(135deg, #174b3b, #12344a);
+.theme-recargas-ac .link-button-whatsapp,
+.theme-comercio .link-button-whatsapp {
+  border-color: rgba(75, 190, 116, 0.42);
+  background: linear-gradient(135deg, rgba(75, 190, 116, 0.16), #122a43 86%);
 }
 
-.theme-recargas-ac .link-button-whatsapp:hover {
-  border-color: #25d366;
-  background: linear-gradient(135deg, #1e6847, #16415a);
+.theme-recargas-ac .link-button-whatsapp:hover,
+.theme-comercio .link-button-whatsapp:hover {
+  border-color: rgba(75, 190, 116, 0.62);
+  background: linear-gradient(135deg, rgba(75, 190, 116, 0.24), #173851 86%);
 }
 
-.theme-recargas-ac .link-button.link-button-review {
+.theme-recargas-ac .link-button.link-button-review,
+.theme-comercio .link-button.link-button-review {
   position: relative;
   min-height: 3.35rem;
   padding: 0.5rem 2.8rem;
   font-size: 0.85rem;
+  border-color: rgba(251, 188, 4, 0.58);
+  background: linear-gradient(115deg, rgba(251, 188, 4, 0.2), rgba(244, 107, 94, 0.12)), #122a43;
 }
 
-.theme-recargas-ac .link-button-review .link-icon {
+.theme-recargas-ac .link-button-review .link-icon,
+.theme-comercio .link-button-review .link-icon {
+  color: #facc15;
+}
+
+.theme-recargas-ac .link-button-review .link-icon,
+.theme-comercio .link-button-review .link-icon {
   position: absolute;
   top: 50%;
   left: 1rem;
   transform: translateY(-50%);
 }
 
-.theme-recargas-ac .link-button-review > span:last-child {
+.theme-recargas-ac .link-button-review > span:last-child,
+.theme-comercio .link-button-review > span:last-child {
   width: 100%;
   line-height: 1.2;
 }
 
 .theme-recargas-ac .transfer-logo-wrap,
-.theme-recargas-ac .transfer-logo {
+.theme-recargas-ac .transfer-logo,
+.theme-comercio .transfer-logo-wrap,
+.theme-comercio .transfer-logo {
   width: 4rem;
   height: 2rem;
 }
 
-.theme-recargas-ac .footer {
-  color: var(--muted);
+.theme-comercio .transfer-logo-wrap,
+.theme-comercio .transfer-logo {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.theme-recargas-ac .footer,
+.theme-comercio .footer {
+  color: #b9cadb;
   line-height: 1.45;
 }
 
+.theme-comercio .transfer-status,
+.theme-comercio .transfer-note,
+.theme-comercio .transfer-manual {
+  color: #b9cadb;
+}
+
 @media (max-width: 380px) {
-  .theme-recargas-ac .page-shell {
+  .theme-recargas-ac .page-shell,
+  .theme-comercio .page-shell {
     padding-inline: 0.65rem;
   }
 
-  .theme-recargas-ac .info-showcase {
+  .theme-recargas-ac .info-showcase,
+  .theme-comercio .info-showcase {
     column-gap: 0.35rem;
   }
 
   .theme-recargas-ac .info-item-location,
-  .theme-recargas-ac .info-item-contact {
+  .theme-recargas-ac .info-item-contact,
+  .theme-comercio .info-item-location,
+  .theme-comercio .info-item-contact {
     gap: 0.35rem;
   }
 
   .theme-recargas-ac .info-item-location .info-value,
-  .theme-recargas-ac .info-item-contact .info-value {
+  .theme-recargas-ac .info-item-contact .info-value,
+  .theme-comercio .info-item-location .info-value,
+  .theme-comercio .info-item-contact .info-value {
     font-size: 0.79rem;
   }
 
-  .theme-recargas-ac .link-button {
+  .theme-recargas-ac .link-button,
+  .theme-comercio .link-button {
     padding-inline: 0.7rem;
     font-size: 0.95rem;
   }
 
   .theme-recargas-ac .transfer-logo-wrap,
-  .theme-recargas-ac .transfer-logo {
+  .theme-recargas-ac .transfer-logo,
+  .theme-comercio .transfer-logo-wrap,
+  .theme-comercio .transfer-logo {
     width: 3.5rem;
     height: 1.8rem;
   }
 }
 
+@media (max-width: 639px) {
+  .theme-comercio .page-shell {
+    padding: 0.8rem 0.75rem 0.9rem;
+  }
+
+  .theme-comercio .logo {
+    margin-bottom: 0.75rem;
+  }
+
+  .theme-comercio .logo-poster {
+    margin-bottom: 0.85rem;
+  }
+
+  .theme-comercio h1::after {
+    margin-top: 0.55rem;
+  }
+
+  .theme-comercio .tagline {
+    margin-bottom: 0.55rem;
+  }
+
+  .theme-comercio .info-showcase {
+    gap: 0;
+    margin: 0.8rem 0 0.9rem;
+  }
+
+  .theme-comercio .info-item {
+    padding: 0.35rem 0.2rem;
+  }
+
+  .theme-comercio .links {
+    gap: 0.5rem;
+  }
+
+  .theme-comercio .link-button {
+    min-height: 3rem;
+    padding-block: 0.55rem;
+  }
+}
+
 @media (max-width: 350px) {
-  .theme-recargas-ac .info-showcase {
+  .theme-recargas-ac .info-showcase,
+  .theme-comercio .info-showcase {
     grid-template-columns: minmax(0, 1fr);
     gap: 0;
   }
 
-  .theme-recargas-ac .info-item-contact {
+  .theme-recargas-ac .info-item-contact,
+  .theme-comercio .info-item-contact {
     grid-column: 1;
     grid-row: 2;
   }
 
-  .theme-recargas-ac .info-item-service {
+  .theme-recargas-ac .info-item-service,
+  .theme-comercio .info-item-service {
     grid-column: 1;
     grid-row: 3;
   }

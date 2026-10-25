@@ -1,7 +1,7 @@
 export type SiteLink = {
   label: string;
   href?: string | null;
-  icon: 'whatsapp' | 'instagram' | 'facebook' | 'tiktok' | 'review' | 'location' | 'team' | 'contact' | 'promotions' | 'calendar';
+  icon: 'whatsapp' | 'instagram' | 'tiktok' | 'facebook' | 'review' | 'location' | 'team' | 'contact' | 'promotions' | 'calendar';
   isDisabled?: boolean;
   copyText?: string | null;
   logo?: string | null;

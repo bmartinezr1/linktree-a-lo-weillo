@@ -260,14 +260,12 @@ export const laDinastiaChinaSite: SiteProfile = {
 const FULL_DRINK_INSTAGRAM = 'https://www.instagram.com/fulldrink.licores/';
 const FULL_DRINK_REVIEWS_URL = 'https://search.google.com/local/writereview?placeid=ChIJQQP_Y_W1aZYRJLhvrcY8_h0';
 const FULL_DRINK_SAN_PEDRO_REVIEWS_URL = 'https://search.google.com/local/writereview?placeid=ChIJk3_OHADJaZYRQeRKKtVx7v8';
-const FULL_DRINK_CONCEPCION_LOCATION_URL = 'https://www.google.com/maps/search/?api=1&query=Juan+de+Dios+Rivera+1235%2C+Concepci%C3%B3n';
-const FULL_DRINK_SAN_PEDRO_LOCATION_URL = 'https://www.google.com/maps/search/?api=1&query=Los+Aromos+1465%2C+San+Pedro+de+la+Paz';
 
 export const fullDrinkSite: SiteProfile = {
   name: 'Full Drink',
   tagline: 'Distribuidora de cervezas, vinos y licores',
   description:
-    'Full Drink: distribuidora de cervezas, vinos y licores. Conoce nuestras sucursales en Concepción y San Pedro de la Paz, horarios y promociones.',
+    'Full Drink: distribuidora de cervezas, vinos y licores en Concepción y San Pedro de la Paz.',
   theme: 'fulldrink',
   logo: '/full-drink.jpg',
   logoAlt: 'Logo de Full Drink',
@@ -276,24 +274,6 @@ export const fullDrinkSite: SiteProfile = {
   favicon: '/full-drink.jpg',
   footer: 'Full Drink · Vinos, cervezas y licores.',
   highlights: [],
-  branches: [
-    {
-      id: 'concepcion',
-      name: 'Sucursal Concepción',
-      address: 'Juan de Dios Rivera 1235',
-      schedule: 'Martes a sábado: 12:00–22:00\nDomingo y lunes: cerrado',
-      locationUrl: FULL_DRINK_CONCEPCION_LOCATION_URL,
-      reviewUrl: FULL_DRINK_REVIEWS_URL,
-    },
-    {
-      id: 'san-pedro',
-      name: 'Sucursal San Pedro de la Paz',
-      address: 'Los Aromos #1465',
-      schedule: '12:00–01:00 hrs.',
-      locationUrl: FULL_DRINK_SAN_PEDRO_LOCATION_URL,
-      reviewUrl: FULL_DRINK_SAN_PEDRO_REVIEWS_URL,
-    },
-  ],
   links: [
     {
       label: 'Consultar por Instagram',

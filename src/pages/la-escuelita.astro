@@ -2,9 +2,9 @@
 import { getImage } from 'astro:assets';
 import LinkPage from '../components/LinkPage.astro';
 import type { SiteProfile } from '../data/site';
-import fachada from '../assets/la-escuelita.png';
+import logoSource from '../assets/comercializadora-ferrada.jpeg';
 
-const photo = await getImage({ src: fachada, width: 1312, format: 'webp', quality: 85 });
+const logo = await getImage({ src: logoSource, width: 640, format: 'webp', quality: 90 });
 const placeId = 'ChIJ3X1sC7e1aZYRTRIo77PTfn8';
 const site: SiteProfile = {
   name: 'La Escuelita',
@@ -12,12 +12,12 @@ const site: SiteProfile = {
   description: 'La Escuelita / Comercial Ferrada en Brasil 1549, Concepción, Bío Bío. Encuentra nuestra ubicación, teléfono de contacto y reseñas.',
   theme: 'recargas-ac',
   typography: 'system',
-  logo: photo.src,
-  logoAlt: 'Fachada de La Escuelita / Comercial Ferrada en Brasil 1549, Concepción',
-  logoLayout: 'poster',
-  logoWidth: photo.attributes.width,
-  logoHeight: photo.attributes.height,
-  favicon: photo.src,
+  logo: logo.src,
+  logoAlt: 'Logo de Comercializadora Ferrada',
+  logoLayout: 'rounded',
+  logoWidth: logo.attributes.width,
+  logoHeight: logo.attributes.height,
+  favicon: logo.src,
   footer: '',
   highlights: [
     {
@@ -76,3 +76,16 @@ const site: SiteProfile = {
 ---
 
 <LinkPage site={site} />
+
+<style is:global>
+  .theme-recargas-ac .logo.logo-rounded[alt='Logo de Comercializadora Ferrada'] {
+    width: clamp(8.5rem, 38vw, 11rem);
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: contain;
+    border-radius: 1rem;
+    background: #fff;
+    padding: 0.4rem;
+    box-shadow: 0 0.75rem 1.75rem rgba(0, 0, 0, 0.25);
+  }
+</style>

@@ -3,6 +3,7 @@ import { createSupabaseClient } from '../lib/supabase';
 
 let mensaje = '';
 let nombres: string[] = [];
+type FilaPrueba = { nombre: string | null };
 try {
   const { data, error } = await createSupabaseClient()
     .from('prueba_conexion')
@@ -13,7 +14,7 @@ try {
       ? 'Supabase responde. Falta ejecutar el SQL de prueba en Supabase.'
       : `La consulta no pudo completarse (${error.code || 'red'}). Revisa la configuración y los permisos de la tabla de prueba.`;
   } else {
-    nombres = (data ?? []).map((fila) => fila.nombre);
+    nombres = (data as FilaPrueba[] ?? []).flatMap((fila) => fila.nombre ? [fila.nombre] : []);
     mensaje = nombres.length ? 'Lectura de Supabase verificada.' : 'Consulta completada sin filas visibles. Revisa el dato de prueba y su política RLS.';
   }
 } catch {

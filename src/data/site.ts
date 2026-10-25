@@ -301,20 +301,6 @@ export const fullDrinkSite: SiteProfile = {
       'fulldrinklicores@gmail.com',
     ].join('\n'),
   },
-  productShowcase: {
-    heading: 'Encuentra en Full Drink',
-    items: [
-      'Vinos',
-      'Cervezas',
-      'Pisco',
-      'Whisky',
-      'Gin',
-      'Ramazzotti',
-      'Tequilas',
-      'Ron',
-      'Y más...',
-    ],
-  },
 };
 
 const DONA_FLOR_INSTAGRAM = 'https://www.instagram.com/donaflor.supermercado/';

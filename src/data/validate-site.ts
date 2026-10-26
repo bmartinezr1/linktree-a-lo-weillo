@@ -26,7 +26,7 @@ export function validateSite(site: SiteProfile): void {
   for (const link of site.links) {
     if (!link.label.trim()) throw new Error(`${site.name}: un enlace no tiene título.`);
     if (!link.href) {
-      if (link.isDisabled) continue;
+      if (link.isDisabled || link.copyText || link.type === 'transferencia') continue;
       throw new Error(`${site.name} / ${link.label}: falta la dirección.`);
     }
     validateUrl(link.href, `${site.name} / ${link.label}`);

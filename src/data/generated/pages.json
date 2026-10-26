@@ -4,11 +4,14 @@
         {
             "slug": "7e-barber-shop",
             "name": "7E Barber Shop",
-            "tagline": null,
+            "tagline": "Barbería · Concepción",
             "description": "Barbería en Ejército 1282, Concepción, especializada en cortes modernos y clásicos, fades y arreglo de barba. Atención personalizada solo con agenda.",
             "theme": "barber",
+            "typography": "inter",
             "logo": "/generated/logos/7e-barber-shop.webp",
             "logoAlt": "Logo de 7E Barber Shop",
+            "logoLayout": "original",
+            "logoWidth": 160,
             "favicon": "/generated/logos/7e-barber-shop.webp",
             "footer": null,
             "highlights": [
@@ -19,37 +22,46 @@
                     "value": "Ejército 1282, Concepción"
                 }
             ],
+            "contactDetails": [],
             "links": [
                 {
                     "type": "whatsapp",
+                    "name": null,
                     "icon": "whatsapp",
                     "label": "Agendar Cita",
                     "href": "https://wa.me/56957422166?text=Hola%2C%20quisiera%20agendar%20una%20cita%20en%207E%20Barber%20Shop%20%F0%9F%92%88%E2%9C%82%EF%B8%8F",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "instagram",
+                    "name": null,
                     "icon": "instagram",
                     "label": "Instagram",
                     "href": "https://www.instagram.com/7ebarber.shop/",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "review",
+                    "name": null,
                     "icon": "review",
                     "label": "Escribir una reseña",
                     "href": "https://search.google.com/local/writereview?placeid=ChIJXUBOt-W1aZYRSAx0tUT21_8",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "location",
+                    "name": null,
                     "icon": "location",
                     "label": "Cómo llegar",
                     "href": "https://share.google/c8CL7NE4vXPv9ftCl",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 }
             ],
@@ -57,17 +69,275 @@
                 "background": "#ffffff",
                 "text": "#000000",
                 "button": "#111827",
-                "buttonText": "#ffffff"
+                "buttonText": "#ffffff",
+                "accent": "#111827"
+            }
+        },
+        {
+            "slug": "agroconce",
+            "name": "AgroConce",
+            "tagline": null,
+            "description": "💥| Venta al detalle y por mayor de huevos | Quesos | Abarrotes | Alimento, Arenas y snacks de mascotas",
+            "theme": "default",
+            "typography": "inter",
+            "logo": "/generated/logos/agroconce.jpg",
+            "logoAlt": "Logo de AgroConce",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/agroconce.jpg",
+            "footer": null,
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Paicavi 1795, Concepción, Chile 4030000"
+                },
+                {
+                    "id": "contact",
+                    "icon": "contact",
+                    "label": "Contacto",
+                    "value": "+56957413333",
+                    "phone": "+56957413333",
+                    "email": null
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copia los datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Escribe una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJC9yvPDa1aZYRBi-Ut1pir4s",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "whatsapp",
+                    "name": "Whatsapp",
+                    "icon": "whatsapp",
+                    "label": "Escríbenos en Whatsapp",
+                    "href": "https://wa.me/56957413333",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Siguenos en nuestro instagram",
+                    "href": "https://www.instagram.com/agroconcepcion/?hl=es",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": "Facebook",
+                    "icon": "facebook",
+                    "label": "Síguenos en nuestro Facebook",
+                    "href": "https://www.facebook.com/Agroconcepcion.spa/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "tiktok",
+                    "name": "Tiktok",
+                    "icon": "tiktok",
+                    "label": "Siguenos en nuestro TikTok",
+                    "href": "https://www.tiktok.com/@agroconcepcion",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fdfdf8",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
+        },
+        {
+            "slug": "automotora-leslie-figueroa",
+            "name": "Automotora Leslie Figueroa",
+            "tagline": null,
+            "description": "🔧 Serviteca Automotriz\n🚙 Mantenimiento y reparación\n🛢️ Cambio de aceite • Frenos • Alineación\n🔋 Neumáticos • Diagnósticos",
+            "theme": "default",
+            "typography": "inter",
+            "logo": "/generated/logos/automotora-leslie-figueroa.jpg",
+            "logoAlt": "Logo de Automotora Leslie Figueroa",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/automotora-leslie-figueroa.jpg",
+            "footer": null,
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Ejército 1265, Concepción, Chile"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en nuestro Instagram",
+                    "href": "https://www.instagram.com/automotoralesliefigueroa/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": "Facebook",
+                    "icon": "facebook",
+                    "label": "Síguenos en nuestro Facebook",
+                    "href": "https://www.facebook.com/profile.php?id=100040874176181",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Reseñas",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJcY7QsJC1aZYRXdELE3i0QBw",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": "transferencia",
+                    "icon": "contact",
+                    "label": "Copia los datos de transferencia!",
+                    "href": null,
+                    "copyText": "",
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fdf8e7",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
+        },
+        {
+            "slug": "azafran-pollos",
+            "name": "Azafran Pollos",
+            "tagline": "De las Brasas🔥🔥 a tu mesa 🍽️ Nuestro horario es de martes a domingos! Tucapel 1606 ccp 📌",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/azafran-pollos.jpg",
+            "logoAlt": "Logo de Azafran Pollos",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/azafran-pollos.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Martes a jueves 13-22 hrs\nViernes a domingo 13-23 hrs"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Transferencias",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJXYUUHMy1aZYRC8f7L-FD8FY",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/azafran_alpaso/?hl=es",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "otro",
+                    "name": "Menu",
+                    "icon": "contact",
+                    "label": "Menu",
+                    "href": "https://toteat.shop/r/cl/Azafran-Concepcion/22637",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": "Facebook",
+                    "icon": "facebook",
+                    "label": "Visita nuestro Facebook",
+                    "href": "https://www.facebook.com/profile.php?id=100063572980662#",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#e7dede",
+                "text": "#111827",
+                "button": "#501010",
+                "buttonText": "#ffffff",
+                "accent": "#501010"
             }
         },
         {
             "slug": "barberia-cj",
             "name": "Barbería CJ",
-            "tagline": null,
+            "tagline": "Barbería · Janequeo 1501, Concepción",
             "description": "Barbería CJ en Janequeo 1501, 2do piso, Concepción. Cortes modernos y clásicos, perfilado de barba y el mejor estilo. Agenda tu hora por WhatsApp o visítanos.",
             "theme": "default",
+            "typography": "inter",
             "logo": "/generated/logos/barberia-cj.png",
             "logoAlt": "Logo de Barbería CJ",
+            "logoLayout": "original",
+            "logoWidth": 160,
             "favicon": "/generated/logos/barberia-cj.png",
             "footer": null,
             "highlights": [
@@ -78,45 +348,56 @@
                     "value": "Janequeo 1501, 2do piso, Concepción"
                 }
             ],
+            "contactDetails": [],
             "links": [
                 {
                     "type": "whatsapp",
+                    "name": null,
                     "icon": "whatsapp",
                     "label": "Agendar Hora por WhatsApp",
                     "href": "https://api.whatsapp.com/send?phone=56972082844&text=hola%20buenas%20nesesitas%20agendar%20alguna%20hora%20%3F",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "instagram",
+                    "name": null,
                     "icon": "instagram",
                     "label": "Instagram (@barberia_cj_)",
                     "href": "https://www.instagram.com/barberia_cj_/#",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "facebook",
+                    "name": null,
                     "icon": "facebook",
                     "label": "Facebook Oficial",
                     "href": "https://www.facebook.com/barberiamoacj?mibextid=LQQJ4d&utm_source=ig&utm_medium=social&utm_content=link_in_bio",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "review",
+                    "name": null,
                     "icon": "review",
                     "label": "Escribir una reseña en Google",
                     "href": "https://search.google.com/local/writereview?placeid=ChIJtbLkBgO1aZYRV61ZwUhdp1A",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "location",
+                    "name": null,
                     "icon": "location",
                     "label": "Cómo llegar (Google Maps)",
                     "href": "https://www.google.com/maps/search/?api=1&query=Barber%C3%ADa%20CJ%2C%20Janequeo%201501%2C%20Concepci%C3%B3n%2C%20Chile",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 }
             ],
@@ -124,17 +405,21 @@
                 "background": "#ffffff",
                 "text": "#000000",
                 "button": "#111827",
-                "buttonText": "#ffffff"
+                "buttonText": "#ffffff",
+                "accent": "#111827"
             }
         },
         {
             "slug": "bronto-pizza",
             "name": "Bronto Pizza",
-            "tagline": null,
+            "tagline": "Tradicionales y veganas · Delivery",
             "description": "Bronto Pizza en Ejército 1238, Local 3, Concepción. Pizzas tradicionales y veganas con delivery y pedidos directos por WhatsApp.",
             "theme": "bronto",
+            "typography": "inter",
             "logo": "/generated/logos/bronto-pizza.png",
             "logoAlt": "Logo de Bronto Pizza",
+            "logoLayout": "original",
+            "logoWidth": 160,
             "favicon": "/generated/logos/bronto-pizza.png",
             "footer": null,
             "highlights": [
@@ -145,29 +430,36 @@
                     "value": "Ejército 1238, Local 3, Concepción"
                 }
             ],
+            "contactDetails": [],
             "links": [
                 {
                     "type": "whatsapp",
+                    "name": null,
                     "icon": "whatsapp",
                     "label": "Pedir por WhatsApp",
                     "href": "https://api.whatsapp.com/message/J464646QPBI2A1?autoload=1&app_absent=0",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "instagram",
+                    "name": null,
                     "icon": "instagram",
                     "label": "Instagram",
                     "href": "https://www.instagram.com/brontopizza/?hl=es",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "review",
+                    "name": null,
                     "icon": "review",
                     "label": "Escribir una reseña",
                     "href": "https://search.google.com/local/writereview?placeid=ChIJv-K0_M21aZYRhQkY3igQSXg",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 }
             ],
@@ -175,7 +467,8 @@
                 "background": "#ffffff",
                 "text": "#000000",
                 "button": "#111827",
-                "buttonText": "#ffffff"
+                "buttonText": "#ffffff",
+                "accent": "#111827"
             }
         },
         {
@@ -184,8 +477,11 @@
             "tagline": null,
             "description": "Clinica dental OPB\nLunes a viernes\n9:30 a.m.–1:30 p.m., 3–7 p.m.",
             "theme": "default",
+            "typography": "inter",
             "logo": "/generated/logos/clinica-opb.jpg",
             "logoAlt": "Logo de Clínica OPB",
+            "logoLayout": "original",
+            "logoWidth": 160,
             "favicon": "/generated/logos/clinica-opb.jpg",
             "footer": null,
             "highlights": [
@@ -196,47 +492,225 @@
                     "value": "Ejército 1370"
                 }
             ],
+            "contactDetails": [],
             "links": [
                 {
                     "type": "instagram",
+                    "name": null,
                     "icon": "instagram",
                     "label": "Instagram",
                     "href": "https://www.instagram.com/clinicaopb/",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "review",
+                    "name": null,
                     "icon": "review",
                     "label": "Deja tu reseña aquí",
                     "href": "https://search.google.com/local/writereview?placeid=ChIJ4UtAH461aZYRQmkgzLJXMbI",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "transferencia",
+                    "name": null,
                     "icon": "contact",
                     "label": "Copia los datos de transferencia",
                     "href": null,
-                    "copyText": null,
-                    "isDisabled": true
+                    "copyText": "",
+                    "logo": null,
+                    "isDisabled": false
                 }
             ],
             "colors": {
                 "background": "#ffffff",
                 "text": "#111827",
-                "button": "#b09070",
-                "buttonText": "#111827"
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
+        },
+        {
+            "slug": "club-de-boxeo-jv-concepcion",
+            "name": "Club De Boxeo JV Concepción",
+            "tagline": "Club de Boxeo JV Concepción🥊 estamos ubicados en tucapel 1609 💪 anímate a entrenar con nosotros!!!",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/club-de-boxeo-jv-concepcion.jpg",
+            "logoAlt": "Logo de Club De Boxeo JV Concepción",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/club-de-boxeo-jv-concepcion.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Tucapel 1609"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56935463014",
+                    "href": "tel:+56935463014"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseña",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJY9pBFbi1aZYRTBaPAaK2U5g",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/boxeojvconcepcion",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": "Facebook",
+                    "icon": "facebook",
+                    "label": "Visita nuestro Facebook",
+                    "href": "https://www.facebook.com/jvboxeo/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#e2dede",
+                "text": "#111827",
+                "button": "#301010",
+                "buttonText": "#ffffff",
+                "accent": "#301010"
+            }
+        },
+        {
+            "slug": "comercializadora-vialto",
+            "name": "Comercializadora Vialto",
+            "tagline": "Venta e instalación de accesorios automotrices. Radios, alarmas, cámaras, pantallas, seguridad",
+            "description": "Venta e instalación de accesorios automotrices. Radios, alarmas, cámaras, pantallas, seguridad",
+            "theme": "default",
+            "typography": "inter",
+            "logo": "/generated/logos/comercializadora-vialto.jpg",
+            "logoAlt": "Logo de Comercializadora Vialto",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/comercializadora-vialto.jpg",
+            "footer": null,
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Tucapel 1652"
+                },
+                {
+                    "id": "contact",
+                    "icon": "contact",
+                    "label": "Contacto",
+                    "value": "+56 9 4267 9220",
+                    "phone": "+56 9 4267 9220",
+                    "email": null
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJ1WIQAPu1aZYRUV6_YprSgME",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/importadora_vialto/?hl=es",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": "Facebook",
+                    "icon": "facebook",
+                    "label": "Visita nuestro Facebook",
+                    "href": "https://www.facebook.com/p/vialto-equipamiento-automotriz-61557903990324/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "tiktok",
+                    "name": "Tiktok",
+                    "icon": "tiktok",
+                    "label": "Síguenos en TikTok",
+                    "href": "https://www.tiktok.com/@vialto.equipamien",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#dee2e7",
+                "text": "#111827",
+                "button": "#103050",
+                "buttonText": "#ffffff",
+                "accent": "#103050"
             }
         },
         {
             "slug": "dona-flor-supermercado",
             "name": "Doña Flor Supermercado",
-            "tagline": null,
+            "tagline": "Supermercado · Concepción",
             "description": "Doña Flor Supermercado en Concepción. Encuentra su ubicación, horarios, Instagram y enlace para dejar una reseña en Google.",
             "theme": "dona-flor",
+            "typography": "inter",
             "logo": "/generated/logos/dona-flor-supermercado.png",
             "logoAlt": "Logo de Doña Flor Supermercado",
+            "logoLayout": "original",
+            "logoWidth": 160,
             "favicon": "/generated/logos/dona-flor-supermercado.png",
             "footer": null,
             "highlights": [
@@ -247,21 +721,26 @@
                     "value": "Bandera #1321, Concepción"
                 }
             ],
+            "contactDetails": [],
             "links": [
                 {
                     "type": "instagram",
+                    "name": null,
                     "icon": "instagram",
                     "label": "Instagram",
                     "href": "https://www.instagram.com/donaflor.supermercado/",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "review",
+                    "name": null,
                     "icon": "review",
                     "label": "Escribir una reseña",
                     "href": "https://search.google.com/local/writereview?placeid=ChIJAQgpIwC1aZYR8bhIeN5ohSs",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 }
             ],
@@ -269,17 +748,21 @@
                 "background": "#ffffff",
                 "text": "#000000",
                 "button": "#111827",
-                "buttonText": "#ffffff"
+                "buttonText": "#ffffff",
+                "accent": "#111827"
             }
         },
         {
             "slug": "el-bajon-del-marley",
             "name": "El Bajón Del Marley",
-            "tagline": null,
+            "tagline": "Restaurante · Concepción",
             "description": "El Bajón Del Marley en Ejército 1238, Concepción. Comida rápida, reparto a domicilio y pedidos directos por WhatsApp.",
             "theme": "marley",
+            "typography": "inter",
             "logo": "/generated/logos/el-bajon-del-marley.png",
             "logoAlt": "Logo de El Bajón Del Marley",
+            "logoLayout": "original",
+            "logoWidth": 160,
             "favicon": "/generated/logos/el-bajon-del-marley.png",
             "footer": null,
             "highlights": [
@@ -290,29 +773,36 @@
                     "value": "Ejército #1238, entre Ongolmo y Paicaví, Concepción"
                 }
             ],
+            "contactDetails": [],
             "links": [
                 {
                     "type": "whatsapp",
+                    "name": null,
                     "icon": "whatsapp",
                     "label": "Pedir por WhatsApp",
                     "href": "https://wa.me/56990238871?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20El%20Baj%C3%B3n%20del%20Marley%20%F0%9F%8D%94%F0%9F%8D%9F",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "instagram",
+                    "name": null,
                     "icon": "instagram",
                     "label": "Instagram",
                     "href": "https://www.instagram.com/el_bajon_del_marley/?hl=es",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "review",
+                    "name": null,
                     "icon": "review",
                     "label": "Escribir una reseña",
                     "href": "https://search.google.com/local/writereview?placeid=ChIJm755RgC1aZYRkD0An946IvE",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 }
             ],
@@ -320,68 +810,161 @@
                 "background": "#ffffff",
                 "text": "#000000",
                 "button": "#111827",
-                "buttonText": "#ffffff"
+                "buttonText": "#ffffff",
+                "accent": "#111827"
             }
         },
         {
-            "slug": "emporio-las-hadas",
-            "name": "Emporio las Hadas",
+            "slug": "el-rey-del-bajon-food-truck",
+            "name": "EL Rey Del Bajón Food Truck",
             "tagline": null,
-            "description": "🥐🥖🍞Panadería y pastelería artesanal🍰🧁🍩",
+            "description": "Completos🌭 Sandwich🍔 papitas🍟\nHorario de atención de 08:00 - 23:00 horas",
             "theme": "default",
-            "logo": "/generated/logos/emporio-las-hadas.jpg",
-            "logoAlt": "Logo de Emporio las Hadas",
-            "favicon": "/generated/logos/emporio-las-hadas.jpg",
+            "typography": "inter",
+            "logo": "/generated/logos/el-rey-del-bajon-food-truck.jpg",
+            "logoAlt": "Logo de EL Rey Del Bajón Food Truck",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/el-rey-del-bajon-food-truck.jpg",
             "footer": null,
             "highlights": [
                 {
                     "id": "location",
                     "icon": "location",
                     "label": "Ubicación",
-                    "value": "📍Ejercito 1390, Concepción"
+                    "value": "📍Ejercito esquina ainavillo, barrio norte"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Horario de atención de 08:00 hasta las 23:00 horas"
                 }
             ],
+            "contactDetails": [],
             "links": [
                 {
-                    "type": "instagram",
-                    "icon": "instagram",
-                    "label": "Entra a nuestro perfil de instagram",
-                    "href": "https://www.instagram.com/emporiolashadasccp/",
-                    "copyText": null,
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "si",
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "review",
+                    "name": "Reseñas",
                     "icon": "review",
-                    "label": "Deja una reseña de la pasteleria",
-                    "href": "https://search.google.com/local/writereview?placeid=ChIJofYZJre1aZYRzlE21RfpZrM",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJD2W4Kia1aZYRgfxidNebSNY",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
-                    "type": "transferencia",
-                    "icon": "contact",
-                    "label": "Copia los datos de transferencia",
-                    "href": null,
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/elreydelbajon.foodtruck/",
                     "copyText": null,
-                    "isDisabled": true
+                    "logo": null,
+                    "isDisabled": false
                 }
             ],
             "colors": {
-                "background": "#f8f4ef",
+                "background": "#f4efe2",
                 "text": "#111827",
-                "button": "#d0b090",
-                "buttonText": "#111827"
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
+        },
+        {
+            "slug": "ferreteria-los-monos",
+            "name": "Ferretería Los monos",
+            "tagline": null,
+            "description": "Tienda de materiales de construcción 🛠️ \nHorario:\nLunes a viernes 8-19 hrs\nSábado 8-13:30 hrs",
+            "theme": "default",
+            "typography": "inter",
+            "logo": "/generated/logos/ferreteria-los-monos.jpg",
+            "logoAlt": "Logo de Ferretería Los monos",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/ferreteria-los-monos.jpg",
+            "footer": null,
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Ongolmo 1701, Concepción"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copia los datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña!",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJJdu1cLe1aZYRb8dZCz0JDOk",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/ferreterialosmonos/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": null,
+                    "icon": "facebook",
+                    "label": "Síguenos en nuestro Facebook",
+                    "href": "https://www.facebook.com/p/Ferreteria-Los-Monos-100063575026411/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#e2efef",
+                "text": "#111827",
+                "button": "#309090",
+                "buttonText": "#000000",
+                "accent": "#000000"
             }
         },
         {
             "slug": "flores-de-frida",
             "name": "Flores de Frida",
-            "tagline": null,
+            "tagline": "Florería · Concepción",
             "description": "Florería ubicada en Ejército 1286, Concepción. Consulta por disponibilidad, pedidos y arreglos florales a través de WhatsApp.",
             "theme": "floral",
+            "typography": "inter",
             "logo": "/generated/logos/flores-de-frida.jpg",
             "logoAlt": "Logo de Flores de Frida",
+            "logoLayout": "original",
+            "logoWidth": 160,
             "favicon": "/generated/logos/flores-de-frida.jpg",
             "footer": null,
             "highlights": [
@@ -392,37 +975,46 @@
                     "value": "Ejército 1286, Concepción"
                 }
             ],
+            "contactDetails": [],
             "links": [
                 {
                     "type": "whatsapp",
+                    "name": null,
                     "icon": "whatsapp",
                     "label": "Consultar por WhatsApp",
                     "href": "https://wa.me/56936870591?text=Hola%2C%20quisiera%20hacer%20una%20consulta%20en%20Flores%20de%20Frida%20%F0%9F%8C%B8",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "instagram",
+                    "name": null,
                     "icon": "instagram",
                     "label": "Instagram",
                     "href": "https://www.instagram.com/floreria.floresdefrida.cl/",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "review",
+                    "name": null,
                     "icon": "review",
                     "label": "Escribir una reseña",
                     "href": "https://search.google.com/local/writereview?placeid=ChIJWSCZJEa1aZYREZ_DalijKGE",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "location",
+                    "name": null,
                     "icon": "location",
                     "label": "Cómo llegar",
                     "href": "https://www.google.com/maps/search/?api=1&query=Ej%C3%A9rcito%201286%2C%20Concepci%C3%B3n",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 }
             ],
@@ -430,43 +1022,54 @@
                 "background": "#ffffff",
                 "text": "#000000",
                 "button": "#111827",
-                "buttonText": "#ffffff"
+                "buttonText": "#ffffff",
+                "accent": "#111827"
             }
         },
         {
             "slug": "full-drink",
             "name": "Full Drink",
-            "tagline": null,
+            "tagline": "Distribuidora de cervezas, vinos y licores",
             "description": "Full Drink: distribuidora de cervezas, vinos y licores. Conoce nuestras sucursales en Concepción y San Pedro de la Paz, horarios y promociones.",
             "theme": "fulldrink",
+            "typography": "inter",
             "logo": "/generated/logos/full-drink.jpg",
             "logoAlt": "Logo de Full Drink",
+            "logoLayout": "original",
+            "logoWidth": 160,
             "favicon": "/generated/logos/full-drink.jpg",
             "footer": null,
             "highlights": [],
+            "contactDetails": [],
             "links": [
                 {
                     "type": "instagram",
+                    "name": null,
                     "icon": "instagram",
                     "label": "Consultar por Instagram",
                     "href": "https://www.instagram.com/fulldrink.licores/",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "review",
+                    "name": null,
                     "icon": "review",
                     "label": "Reseña Google · Sucursal Concepción",
                     "href": "https://search.google.com/local/writereview?placeid=ChIJQQP_Y_W1aZYRJLhvrcY8_h0",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "review",
+                    "name": null,
                     "icon": "review",
                     "label": "Reseña Google · Sucursal San Pedro de la Paz",
                     "href": "https://search.google.com/local/writereview?placeid=ChIJk3_OHADJaZYRQeRKKtVx7v8",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 }
             ],
@@ -474,17 +1077,21 @@
                 "background": "#ffffff",
                 "text": "#000000",
                 "button": "#111827",
-                "buttonText": "#ffffff"
+                "buttonText": "#ffffff",
+                "accent": "#111827"
             }
         },
         {
             "slug": "ignacio-parada",
             "name": "Ignacio Parada",
-            "tagline": null,
+            "tagline": "Barbero profesional · Concepción",
             "description": "Ignacio Parada, barbero profesional en Barbería CJ, Janequeo 1501, segundo piso, Concepción. Agenda por DM en Instagram. Débito, crédito y efectivo.",
             "theme": "default",
+            "typography": "inter",
             "logo": "/generated/logos/ignacio-parada.jpg",
             "logoAlt": "Logo de Ignacio Parada",
+            "logoLayout": "original",
+            "logoWidth": 160,
             "favicon": "/generated/logos/ignacio-parada.jpg",
             "footer": null,
             "highlights": [
@@ -495,29 +1102,36 @@
                     "value": "Barbería CJ · Janequeo 1501, 2do piso, Concepción"
                 }
             ],
+            "contactDetails": [],
             "links": [
                 {
                     "type": "instagram",
+                    "name": null,
                     "icon": "instagram",
                     "label": "Agendar por Instagram",
                     "href": "https://www.instagram.com/ignaciobarberoo0/",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "review",
+                    "name": null,
                     "icon": "review",
                     "label": "Reseñas de Barbería CJ",
                     "href": "https://search.google.com/local/writereview?placeid=ChIJtbLkBgO1aZYRV61ZwUhdp1A",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "location",
+                    "name": null,
                     "icon": "location",
                     "label": "Cómo llegar a la Barbería",
                     "href": "https://www.google.com/maps/search/?api=1&query=Barber%C3%ADa%20CJ%2C%20Janequeo%201501%2C%20Concepci%C3%B3n%2C%20Chile",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 }
             ],
@@ -525,7 +1139,8 @@
                 "background": "#ffffff",
                 "text": "#000000",
                 "button": "#111827",
-                "buttonText": "#ffffff"
+                "buttonText": "#ffffff",
+                "accent": "#111827"
             }
         },
         {
@@ -534,8 +1149,11 @@
             "tagline": null,
             "description": "Horario de atención\n\nLunes a sábado: 12:00–21:00\nDomingo: Cerrado",
             "theme": "default",
+            "typography": "inter",
             "logo": "/generated/logos/jesushi.jpg",
             "logoAlt": "Logo de Jesushi",
+            "logoLayout": "original",
+            "logoWidth": 160,
             "favicon": "/generated/logos/jesushi.jpg",
             "footer": null,
             "highlights": [
@@ -546,89 +1164,111 @@
                     "value": "Ejercito 1798"
                 }
             ],
+            "contactDetails": [],
             "links": [
                 {
                     "type": "whatsapp",
+                    "name": null,
                     "icon": "whatsapp",
                     "label": "Agenda tu pedido!",
                     "href": "https://api.whatsapp.com/send/?phone=56966821552&text&type=phone_number&app_absent=0",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "instagram",
+                    "name": null,
                     "icon": "instagram",
                     "label": "Visita nuestro perfil",
                     "href": "https://www.instagram.com/jesushi.concepcion/?hl=es",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "review",
+                    "name": null,
                     "icon": "review",
                     "label": "Deja tu reseña",
                     "href": "https://search.google.com/local/writereview?placeid=ChIJaVDqXbe1aZYR3bV0RNoqqnA",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "transferencia",
+                    "name": null,
                     "icon": "contact",
                     "label": "Copia los datos de transferencia",
                     "href": null,
-                    "copyText": null,
-                    "isDisabled": true
+                    "copyText": "",
+                    "logo": null,
+                    "isDisabled": false
                 }
             ],
             "colors": {
                 "background": "#fae9c7",
                 "text": "#111827",
-                "button": "#f7a602",
-                "buttonText": "#111827"
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
             }
         },
         {
             "slug": "la-dinastia-china",
             "name": "La Dinastía China",
-            "tagline": null,
+            "tagline": "Comida china · Pedidos por WhatsApp",
             "description": "La Dinastía China: sabores de la cocina china para disfrutar en casa. Haz tu pedido directamente por WhatsApp.",
             "theme": "china",
+            "typography": "inter",
             "logo": "/generated/logos/la-dinastia-china.png",
             "logoAlt": "Logo de La Dinastía China",
+            "logoLayout": "original",
+            "logoWidth": 160,
             "favicon": "/generated/logos/la-dinastia-china.png",
             "footer": null,
             "highlights": [],
+            "contactDetails": [],
             "links": [
                 {
                     "type": "whatsapp",
+                    "name": null,
                     "icon": "whatsapp",
                     "label": "Hacer un pedido por WhatsApp",
                     "href": "https://wa.me/56945668297?text=Hola%2C%20quisiera%20hacer%20un%20pedido%20en%20La%20Dinast%C3%ADa%20China%20%F0%9F%A5%A1",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "instagram",
+                    "name": null,
                     "icon": "instagram",
                     "label": "Instagram",
                     "href": "https://www.instagram.com/la_dinastia_china/?hl=es-la",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "review",
+                    "name": null,
                     "icon": "review",
                     "label": "Escribir una reseña",
                     "href": "https://search.google.com/local/writereview?placeid=ChIJ_fFzTsi1aZYRiCLQE5g2p2E",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "contact",
+                    "name": null,
                     "icon": "contact",
                     "label": "Menú",
                     "href": "/la-dinastia-china/menu",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 }
             ],
@@ -636,7 +1276,514 @@
                 "background": "#ffffff",
                 "text": "#000000",
                 "button": "#111827",
-                "buttonText": "#ffffff"
+                "buttonText": "#ffffff",
+                "accent": "#111827"
+            }
+        },
+        {
+            "slug": "licoreria-punto-clave",
+            "name": "Licoreria Punto Clave",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/licoreria-punto-clave.jpg",
+            "logoAlt": "Logo de Licoreria Punto Clave",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/licoreria-punto-clave.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Tucapel 1662, Concepción, Chile"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes - Miércoles: 13:00 - 00:00\nJueves: 13:00 - 1:00\nViernes y Sábado: 16:00 - 3:00"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos unas reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJV5e6KwC1aZYRsLGMe2PmLDk",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/licoreria.puntoclave/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fdf8ef",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
+        },
+        {
+            "slug": "minimarket-rayun-newen",
+            "name": "Minimarket Rayun Newen",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/minimarket-rayun-newen.jpg",
+            "logoAlt": "Logo de Minimarket Rayun Newen",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/minimarket-rayun-newen.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Ejército 1667"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJGU4e-7O1aZYRp-sFA2Fz2BU",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#efe2e2",
+                "text": "#111827",
+                "button": "#903030",
+                "buttonText": "#ffffff",
+                "accent": "#903030"
+            }
+        },
+        {
+            "slug": "minimarket-will",
+            "name": "Minimarket Will",
+            "tagline": "Horario de atención de lunes a domingo De 8:00am a 11:00pm 🩷",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/minimarket-will.jpg",
+            "logoAlt": "Logo de Minimarket Will",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/minimarket-will.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Tucapel 1748, Concepcion 📍"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56 9 4559 5406",
+                    "href": "tel:+56945595406"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/minimarketwill",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseñas",
+                    "href": null,
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": true
+                }
+            ],
+            "colors": {
+                "background": "#fddeef",
+                "text": "#111827",
+                "button": "#f01090",
+                "buttonText": "#000000",
+                "accent": "#000000"
+            }
+        },
+        {
+            "slug": "panaderia-el-almendral",
+            "name": "Panadería El Almendral",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/panaderia-el-almendral.jpg",
+            "logoAlt": "Logo de Panadería El Almendral",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/panaderia-el-almendral.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Ejército 1907"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "• Lunes a viernes: 08:00 – 20:00\n• Sábados: 08:00 – 19:00\n• Domingos: Cerrado"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56 9 7777 3854",
+                    "href": "tel:+56977773854"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJcQpudbO1aZYRvopkuoKeINA",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "whatsapp",
+                    "name": "Wsp",
+                    "icon": "whatsapp",
+                    "label": "Encarga por WhatsApp",
+                    "href": "https://wa.me/56977773854",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#ebebef",
+                "text": "#111827",
+                "button": "#707090",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
+        },
+        {
+            "slug": "panaderia-y-pasteleria-saez-hidalgo",
+            "name": "Panadería y Pastelería Sáez Hidalgo",
+            "tagline": null,
+            "description": "Pastelería y panadería familiar de la ciudad de Concepción",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/panaderia-y-pasteleria-saez-hidalgo.jpg",
+            "logoAlt": "Logo de Panadería y Pastelería Sáez Hidalgo",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/panaderia-y-pasteleria-saez-hidalgo.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Ejercito 2010"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes a Domingo de 9am-9pm"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJMyeqcrO1aZYR140W4SWzrhs",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/pasteleriasaezhidalgo/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": "Facebook",
+                    "icon": "facebook",
+                    "label": "Visita nuestro Facebook",
+                    "href": "https://www.facebook.com/pasteleriasaezhidalgo/?locale=es_LA",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "web",
+                    "name": "Pagina web",
+                    "icon": "contact",
+                    "label": "Visita nuestra pagina web",
+                    "href": "https://www.saezhidalgo.com/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fdebeb",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
+        },
+        {
+            "slug": "pollos-zulia",
+            "name": "Pollos Zulia",
+            "tagline": null,
+            "description": "🍗 El sabor que reúne familias\n📍 Brasil 1190, Concepción\n🔥 Pollos a la brasa recién hechos\n💛 Aquí se comparten momentos",
+            "theme": "default",
+            "typography": "inter",
+            "logo": "/generated/logos/pollos-zulia.jpg",
+            "logoAlt": "Logo de Pollos Zulia",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/pollos-zulia.jpg",
+            "footer": null,
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Brasil 1190"
+                },
+                {
+                    "id": "contact",
+                    "icon": "contact",
+                    "label": "Contacto",
+                    "value": "+56 9 7999 4099",
+                    "phone": "+56 9 7999 4099",
+                    "email": null
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copia los datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Escribe tu reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJw5scX0O1aZYRzdKbWIk56WE",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/pollos.zulia/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "tiktok",
+                    "name": "Tiktok",
+                    "icon": "tiktok",
+                    "label": "Síguenos en Tiktok",
+                    "href": "https://www.tiktok.com/@pollos.zulia?_r=1",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#e2dede",
+                "text": "#111827",
+                "button": "#301010",
+                "buttonText": "#ffffff",
+                "accent": "#301010"
+            }
+        },
+        {
+            "slug": "sb-studios-barberia",
+            "name": "SB Studios Barberia",
+            "tagline": null,
+            "description": "SB Studio 💈\nBarbería & Estilo\n📍 Ejército 2145 Concepción, Chile\n🔥 Tu mejor versión empieza aquí",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/sb-studios-barberia.jpg",
+            "logoAlt": "Logo de SB Studios Barberia",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/sb-studios-barberia.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Ejército 2145"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes 10am-8pm\nMartes a Sábado 9:30 am- 8pm\nDomingo 10am-4pm"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJ826hvyy1aZYRcXXR4iQkt3U",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/sbstudio01/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "whatsapp",
+                    "name": "Whatsapp",
+                    "icon": "whatsapp",
+                    "label": "Agenda tu hora por Whatsapp",
+                    "href": "https://wa.me/56971067741",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fdfdfd",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
             }
         },
         {
@@ -645,8 +1792,11 @@
             "tagline": null,
             "description": "",
             "theme": "default",
+            "typography": "inter",
             "logo": "/generated/logos/zona-mechada.jpg",
             "logoAlt": "Logo de Zona Mechada",
+            "logoLayout": "original",
+            "logoWidth": 160,
             "favicon": "/generated/logos/zona-mechada.jpg",
             "footer": null,
             "highlights": [
@@ -657,45 +1807,55 @@
                     "value": "Tucapel 1736"
                 }
             ],
+            "contactDetails": [],
             "links": [
                 {
                     "type": "whatsapp",
+                    "name": null,
                     "icon": "whatsapp",
                     "label": "Agenda tu pedido aqui",
                     "href": "https://api.whatsapp.com/send/?phone=56936106266",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "instagram",
+                    "name": null,
                     "icon": "instagram",
                     "label": "Instagram",
                     "href": "https://www.instagram.com/zonamechada1/",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "review",
+                    "name": null,
                     "icon": "review",
                     "label": "Deja tu reseña aqui ⭐",
                     "href": "https://search.google.com/local/writereview?placeid=ChIJ2X-Wyc-1aZYR_WcsD3vn9vM",
                     "copyText": null,
+                    "logo": null,
                     "isDisabled": false
                 },
                 {
                     "type": "transferencia",
+                    "name": null,
                     "icon": "contact",
                     "label": "Copia los datos de transferencia!",
                     "href": null,
-                    "copyText": null,
-                    "isDisabled": true
+                    "copyText": "",
+                    "logo": null,
+                    "isDisabled": false
                 }
             ],
             "colors": {
                 "background": "#f8dede",
                 "text": "#111827",
                 "button": "#d01010",
-                "buttonText": "#ffffff"
+                "buttonText": "#ffffff",
+                "accent": "#000000"
             }
         }
     ]

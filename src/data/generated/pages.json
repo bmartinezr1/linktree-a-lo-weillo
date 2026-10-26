@@ -1716,6 +1716,94 @@
             }
         },
         {
+            "slug": "la-casa-sanguchera",
+            "name": "La casa sanguchera",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/la-casa-sanguchera.jpg",
+            "logoAlt": "Logo de La casa sanguchera",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/la-casa-sanguchera.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "📍Bremen 1170 - Hualpén"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "⏰Lunes a sábado 5:30-10:30pm\nDomingo y festivos cerrado."
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Ignacio Santos Martinez\n18388015-2\nBanco Estado\nCuenta Corriente\n53500023488\nLacasasanguchera@gmail.com",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/lcsanguchera/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": "Facebook",
+                    "icon": "facebook",
+                    "label": "Visita Nuestro Facebook",
+                    "href": "https://www.facebook.com/Lacasasanguchera/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "web",
+                    "name": "Sitio web",
+                    "icon": "contact",
+                    "label": "Pide por nuestro sitio web",
+                    "href": "https://lacasasanguchera.cl/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJwQYvHo_KaZYRB_bvTpKF45w",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fdf8e2",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
+        },
+        {
             "slug": "la-dinastia-china",
             "name": "La Dinastía China",
             "tagline": "Comida china · Pedidos por WhatsApp",

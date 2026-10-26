@@ -52,3 +52,17 @@ test('las páginas de contenido incluyen direcciones completas al compartir en r
     }
   }
 });
+
+test('la prueba visual de Comercio solo se activa en Saez Hidalgo', async () => {
+  const pilotPath = '/panaderia-y-pasteleria-saez-hidalgo/index.html';
+  assert.ok(files.has(pilotPath));
+  for (const path of files) {
+    if (!path.endsWith('.html')) continue;
+    const html = await readFile(new URL(path.slice(1), dist), 'utf8');
+    const bodyClass = html.match(/<body[^>]*class="([^"]*)"/)?.[1] ?? '';
+    assert.equal(bodyClass.split(/\s+/).includes('comercio-panel'), path === pilotPath, path);
+    if (path === pilotPath) {
+      assert.match(html, /class="profile-description"[^>]*>Pastelería y panadería familiar de la ciudad de Concepción</);
+    }
+  }
+});

@@ -1,0 +1,159 @@
+/* Keep panel-managed Comercio pages aligned with paginas/mini-preview.blade.php. */
+html:has(body.generated-page.theme-comercio.comercio-panel) {
+  background: var(--background);
+}
+body.generated-page.theme-comercio.comercio-panel {
+  background: var(--background) !important;
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+body.generated-page.theme-comercio.comercio-panel .page-shell {
+  padding: 12px 12px 20px;
+}
+body.generated-page.theme-comercio.comercio-panel .profile {
+  width: min(100%, 496px);
+  text-align: left;
+}
+body.generated-page.theme-comercio.comercio-panel .logo {
+  margin: 0 auto 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+}
+body.generated-page.theme-comercio.comercio-panel .logo-poster {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 14px;
+}
+body.generated-page.theme-comercio.comercio-panel .logo-rounded {
+  padding: 7px;
+}
+body.generated-page.theme-comercio.comercio-panel h1 {
+  margin: 0 0 6px;
+  color: var(--text);
+  font-size: clamp(27px, 6.5vw, 34px);
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+body.generated-page.theme-comercio.comercio-panel h1::after {
+  height: 3px;
+  margin: 8px auto 0;
+  background: var(--gold);
+}
+body.generated-page.theme-comercio.comercio-panel .tagline {
+  margin: 0 auto 10px;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.45;
+  letter-spacing: normal;
+  text-transform: none;
+  text-align: center;
+}
+body.generated-page.theme-comercio.comercio-panel .profile-description {
+  max-width: 100%;
+  margin: 0 0 14px;
+  color: var(--text);
+  font-size: 13px;
+  text-align: justify;
+  overflow-wrap: anywhere;
+}
+body.generated-page.theme-comercio.comercio-panel .info-showcase {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px 9px;
+  margin: 10px 0;
+}
+body.generated-page.theme-comercio.comercio-panel .info-item {
+  gap: 8px;
+  padding: 6px 3px;
+  align-items: flex-start;
+}
+body.generated-page.theme-comercio.comercio-panel .info-showcase-contact-only .info-item-contact {
+  grid-column: 1;
+  justify-content: flex-start;
+}
+body.generated-page.theme-comercio.comercio-panel .info-content {
+  gap: 0;
+}
+body.generated-page.theme-comercio.comercio-panel .info-label {
+  margin: 0 0 5px;
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: .04em;
+}
+body.generated-page.theme-comercio.comercio-panel .info-icon {
+  color: var(--gold);
+}
+body.generated-page.theme-comercio.comercio-panel .info-icon svg {
+  width: 19px;
+  height: 19px;
+}
+body.generated-page.theme-comercio.comercio-panel .info-value {
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+body.generated-page.theme-comercio.comercio-panel .contact-detail + .contact-detail {
+  margin-top: 4px;
+}
+body.generated-page.theme-comercio.comercio-panel .links {
+  width: 100%;
+  gap: 8px;
+  margin: 10px auto 0;
+}
+body.generated-page.theme-comercio.comercio-panel .links .link-button {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) 28px;
+  gap: 8px;
+  width: 100%;
+  min-height: 52px;
+  padding: 10px 15px;
+  border: 1px solid var(--surface);
+  border-radius: 14px;
+  background: var(--surface);
+  color: var(--button-text);
+  font-size: 16px;
+  box-shadow: none;
+}
+body.generated-page.theme-comercio.comercio-panel .links .link-button:hover {
+  border-color: var(--surface);
+  background: var(--surface);
+  box-shadow: 0 0 0 2px var(--background), 0 0 0 3px var(--gold);
+  transform: translateY(-1px);
+}
+body.generated-page.theme-comercio.comercio-panel .link-button > span:last-child {
+  width: auto;
+  padding: 0;
+  line-height: 1.25;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-wrap: wrap;
+}
+body.generated-page.theme-comercio.comercio-panel .link-icon {
+  position: static;
+  transform: none;
+  width: 28px;
+  height: 28px;
+  color: inherit;
+}
+body.generated-page.theme-comercio.comercio-panel .link-icon svg {
+  width: 28px;
+  height: 28px;
+  color: inherit;
+}
+body.generated-page.theme-comercio.comercio-panel .transfer-logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  background: #fff;
+}
+body.generated-page.theme-comercio.comercio-panel .transfer-status,
+body.generated-page.theme-comercio.comercio-panel .transfer-note,
+body.generated-page.theme-comercio.comercio-panel .transfer-manual {
+  color: var(--text);
+}
+@media (max-width: 350px) {
+  body.generated-page.theme-comercio.comercio-panel .info-showcase {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+}

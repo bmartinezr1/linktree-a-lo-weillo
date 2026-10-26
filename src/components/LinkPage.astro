@@ -3,6 +3,7 @@ import { site as defaultSite, type SiteProfile } from '../data/site';
 import { validateSite } from '../data/validate-site';
 import TransferButton from './TransferButton.astro';
 import '../styles/global.css';
+import '../styles/comercio-panel.css';
 
 interface Props {
   site?: SiteProfile;
@@ -10,6 +11,8 @@ interface Props {
 }
 
 const site: SiteProfile = Astro.props.site ?? Astro.props.profile ?? defaultSite;
+// Pilot rollout: expand only after the bakery page is approved.
+const usePanelComercio = site.theme === 'comercio' && site.slug === 'panaderia-y-pasteleria-saez-hidalgo';
 const transfers = site.transfer ? (Array.isArray(site.transfer) ? site.transfer : [site.transfer]) : [];
 validateSite(site);
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
@@ -45,7 +48,7 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" style={usePanelComercio ? customStyle : undefined}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -64,7 +67,7 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
     <meta property="og:type" content="website" />
     <title>{site.name}</title>
   </head>
-  <body class={`business-page ${site.colors ? 'generated-page' : ''} theme-${site.theme ?? 'barber'}`} style={customStyle}>
+  <body class={`business-page ${site.colors ? 'generated-page' : ''} theme-${site.theme ?? 'barber'} ${usePanelComercio ? 'comercio-panel' : ''}`} style={customStyle}>
     <main class="page-shell">
       <article class="profile" aria-labelledby="business-name">
         <header
@@ -103,7 +106,7 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
           {site.tagline && <p class="tagline">{site.tagline}</p>}
         </header>
 
-        {site.description && site.theme !== 'recargas-ac' && site.theme !== 'comercio' && (
+        {site.description && site.theme !== 'recargas-ac' && (site.theme !== 'comercio' || usePanelComercio) && (
           <p class="profile-description">{site.description}</p>
         )}
 

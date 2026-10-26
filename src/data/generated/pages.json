@@ -1260,11 +1260,11 @@
             "description": "",
             "theme": "comercio",
             "typography": "inter",
-            "logo": "/generated/logos/fefigas.jpg",
+            "logo": null,
             "logoAlt": "Logo de FEFIGAS",
             "logoLayout": "original",
             "logoWidth": 160,
-            "favicon": "/generated/logos/fefigas.jpg",
+            "favicon": "/favicon.png",
             "footer": "",
             "highlights": [
                 {
@@ -1282,16 +1282,6 @@
             ],
             "links": [
                 {
-                    "type": "transferencia",
-                    "name": null,
-                    "icon": "contact",
-                    "label": "Copiar datos de transferencia",
-                    "href": null,
-                    "copyText": "si",
-                    "logo": "/logo-bancoestado.svg",
-                    "isDisabled": false
-                },
-                {
                     "type": "review",
                     "name": "Reseña",
                     "icon": "review",
@@ -1299,6 +1289,36 @@
                     "href": "https://search.google.com/local/writereview?placeid=ChIJMw0wX0W1aZYRMnJD47Zef2w",
                     "copyText": null,
                     "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": "Banco estado",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Claudio Cabrera Melgarejo\n77119922-4\nBanco Estado\nCuenta vista\n53372105816\nfefigas2020@gmail.com",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": "Banco Santander",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Claudio Cabrera Melgarejo\n77119922-4\nBanco Santander\nCuenta Corriente\n87682668\nfefigas2020@gmail.com",
+                    "logo": "/bank-logos/santander.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": "BCI",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Claudio Cabrera\n77119922-4\nCuenta Corriente\n78402111\nfefigas2020@gmail.com",
+                    "logo": "/bank-logos/bci.png",
                     "isDisabled": false
                 }
             ],

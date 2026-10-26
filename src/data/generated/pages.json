@@ -1857,6 +1857,946 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "automotriz-briceno",
+            "name": "Automotriz Briceño",
+            "tagline": "Taller de reparación de automóviles",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/automotriz-briceno.jpg",
+            "logoAlt": "Logo de Automotriz Briceño",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/automotriz-briceno.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Ainavillo 1920, 4030000 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56971075186",
+                    "href": "tel:+56971075186"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Dejanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJPchmYh61aZYRhuxgve0eWew",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Síguenos",
+                    "href": "https://www.instagram.com/aut.briceno/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#dee2eb",
+                "text": "#111827",
+                "button": "#103070",
+                "buttonText": "#ffffff",
+                "accent": "#103070"
+            }
+        },
+        {
+            "slug": "barber-brothers",
+            "name": "BARBER BROTHERS",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/barber-brothers.jpg",
+            "logoAlt": "Logo de BARBER BROTHERS",
+            "logoLayout": "original",
+            "logoWidth": 128,
+            "favicon": "/generated/logos/barber-brothers.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "4060225 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Escribir una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJs--EaLG1aZYREBU2_ysRS7c",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#f4efe7",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
+        },
+        {
+            "slug": "carnes-san-andres",
+            "name": "Carnes San Andrés",
+            "tagline": "Carnicería",
+            "description": "",
+            "theme": "comercio",
+            "typography": "roboto",
+            "logo": "/generated/logos/carnes-san-andres.png",
+            "logoAlt": "Logo de Carnes San Andrés",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/carnes-san-andres.png",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Juan de Dios Rivera 1777, 4060226 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56976700863",
+                    "href": "tel:+56976700863"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Dejanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJOSzmvxW1aZYReBEnLqh6BAw",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#dee2eb",
+                "text": "#111827",
+                "button": "#103070",
+                "buttonText": "#ffffff",
+                "accent": "#103070"
+            }
+        },
+        {
+            "slug": "centro-medico-veterinario",
+            "name": "Centro médico veterinario",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/centro-medico-veterinario.png",
+            "logoAlt": "Logo de Centro médico veterinario",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/centro-medico-veterinario.png",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Juan de Dios Rivera 1757, 4060226 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56 9 95352781",
+                    "href": "tel:+56995352781"
+                },
+                {
+                    "label": "contacto.cmvc@gmail.com",
+                    "href": "mailto:contacto.cmvc@gmail.com"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Dejanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJp7SojPa1aZYRVSyMLp6ganE",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": null,
+                    "icon": "facebook",
+                    "label": "Visita nuestro Facebook",
+                    "href": "https://www.facebook.com/cenmevet/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#e2e7eb",
+                "text": "#111827",
+                "button": "#305070",
+                "buttonText": "#ffffff",
+                "accent": "#305070"
+            }
+        },
+        {
+            "slug": "electricidad-automotriz",
+            "name": "Electricidad Automotriz",
+            "tagline": "Diagnóstico de Vehículos a todas las marcas",
+            "description": "",
+            "theme": "comercio",
+            "typography": "montserrat",
+            "logo": "/generated/logos/electricidad-automotriz.jpg",
+            "logoAlt": "Logo de Electricidad Automotriz",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/electricidad-automotriz.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Juan de Dios Rivera 1703, 4060293 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56975346560",
+                    "href": "tel:+56975346560"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseña",
+                    "icon": "review",
+                    "label": "Dejanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJb__EZ7G1aZYRzlhdd_y36tw",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#f4fdde",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
+        },
+        {
+            "slug": "estacion-vip",
+            "name": "Estación VIP",
+            "tagline": "Barbería",
+            "description": "",
+            "theme": "comercio",
+            "typography": "montserrat",
+            "logo": "/generated/logos/estacion-vip.jpg",
+            "logoAlt": "Logo de Estación VIP",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/estacion-vip.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Juan de Dios Rivera 1480, 4030000 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56982564129",
+                    "href": "tel:+56982564129"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Dejanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJlxAoilW1aZYRx0WhM2_FeE8",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Síguenos",
+                    "href": "https://www.instagram.com/estacion_vip_?igsh=dzR4MGt2eWEwcmtv",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#efebe7",
+                "text": "#111827",
+                "button": "#907050",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
+        },
+        {
+            "slug": "fefigas",
+            "name": "FEFIGAS",
+            "tagline": "Compañia de Gas",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/fefigas.jpg",
+            "logoAlt": "Logo de FEFIGAS",
+            "logoLayout": "rounded",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/fefigas.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Juan de Dios Rivera 1902, Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56986987181",
+                    "href": "tel:+56986987181"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "si",
+                    "logo": "/logo-bancoestado.svg",
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseña",
+                    "icon": "review",
+                    "label": "Dejanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJMw0wX0W1aZYRMnJD47Zef2w",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#eff4fd",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
+        },
+        {
+            "slug": "koniko-can-can",
+            "name": "Koniko Can Can",
+            "tagline": "Tienda de alimentación",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/koniko-can-can.jpg",
+            "logoAlt": "Logo de Koniko Can Can",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/koniko-can-can.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Juan de Dios Rivera 1611, 4030000 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJ1TawQrG1aZYRVdja6W1BtUk",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#dee2ef",
+                "text": "#111827",
+                "button": "#103090",
+                "buttonText": "#ffffff",
+                "accent": "#103090"
+            }
+        },
+        {
+            "slug": "la-patito",
+            "name": "La Patito",
+            "tagline": "Librería y paquetería Patito",
+            "description": "",
+            "theme": "comercio",
+            "typography": "poppins",
+            "logo": "/generated/logos/la-patito.jpg",
+            "logoAlt": "Logo de La Patito",
+            "logoLayout": "original",
+            "logoWidth": 240,
+            "favicon": "/generated/logos/la-patito.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Pelantaro 1860-1890, 4060150 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Dejanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJGYe6vLO1aZYRNSI4WIfH9tI",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#e7dede",
+                "text": "#111827",
+                "button": "#501010",
+                "buttonText": "#ffffff",
+                "accent": "#501010"
+            }
+        },
+        {
+            "slug": "motomundi",
+            "name": "MotoMundi",
+            "tagline": "Tu mundo sobre las dos ruedas",
+            "description": "",
+            "theme": "comercio",
+            "typography": "montserrat",
+            "logo": "/generated/logos/motomundi.jpg",
+            "logoAlt": "Logo de MotoMundi",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/motomundi.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Juan de Dios Rivera 1298, Loc 2, 4060695 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "(2) 2666 0690",
+                    "href": "tel:226660690"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJCU9xrbC1aZYRUST0p7SaWbU",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Síguenos",
+                    "href": "https://www.instagram.com/motomundi/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "web",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Visita nuestra página",
+                    "href": "https://www.motomundi.cl/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fddee2",
+                "text": "#111827",
+                "button": "#f01030",
+                "buttonText": "#000000",
+                "accent": "#000000"
+            }
+        },
+        {
+            "slug": "panaderia-el-pastelito",
+            "name": "Panadería \"El Pastelito\"",
+            "tagline": "Tienda de alimentación",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/panaderia-el-pastelito.jpg",
+            "logoAlt": "Logo de Panadería \"El Pastelito\"",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/panaderia-el-pastelito.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Juan de Dios Rivera 1960, 4060230 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56929033480",
+                    "href": "tel:+56929033480"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Dejanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJ6dMruLO1aZYRmr9jcWq0b",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": "Facebook",
+                    "icon": "facebook",
+                    "label": "Visita nuestro Facebook",
+                    "href": "https://www.facebook.com/pastelito.almacen",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fddede",
+                "text": "#111827",
+                "button": "#f01010",
+                "buttonText": "#000000",
+                "accent": "#000000"
+            }
+        },
+        {
+            "slug": "pollos-school",
+            "name": "Pollos School",
+            "tagline": "Restaurante",
+            "description": "",
+            "theme": "comercio",
+            "typography": "plus-jakarta-sans",
+            "logo": "/generated/logos/pollos-school.jpg",
+            "logoAlt": "Logo de Pollos School",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/pollos-school.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Carriel Sur 1883, Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "banco estado",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Dejanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJ5QsQx7O1aZYR1ap16X1DsFE",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#f4f8fd",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
+        },
+        {
+            "slug": "ralph-service",
+            "name": "RALPH SERVICE",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/ralph-service.png",
+            "logoAlt": "Logo de RALPH SERVICE",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/ralph-service.png",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Ainavillo 1920, 4060225 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56954760177",
+                    "href": "tel:+56954760177"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": null,
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": true
+                },
+                {
+                    "type": "facebook",
+                    "name": null,
+                    "icon": "facebook",
+                    "label": "Facebook",
+                    "href": "https://www.facebook.com/profile.php?id=100063563114255&ref=PROFILE_EDIT_xav_ig_profile_page_web#",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/ralph.service/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fde7de",
+                "text": "#111827",
+                "button": "#f05010",
+                "buttonText": "#000000",
+                "accent": "#000000"
+            }
+        },
+        {
+            "slug": "san-daniel",
+            "name": "Botilleria y Supermercado San Daniel",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/san-daniel.jpg",
+            "logoAlt": "Logo de Botilleria y Supermercado San Daniel",
+            "logoLayout": "original",
+            "logoWidth": 128,
+            "favicon": "/generated/logos/san-daniel.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Juan de Dios Rivera 1560, 4060430 Concepción, Bío Bío"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes a Sábado, 9 a.m.–9:30 p.m.\nDomingo, 11 a.m.–9 p.m."
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJG22Ej2O1aZYRSh34R-EFQqQ",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#e2efe7",
+                "text": "#111827",
+                "button": "#309050",
+                "buttonText": "#000000",
+                "accent": "#000000"
+            }
+        },
+        {
+            "slug": "taller-80s",
+            "name": "Taller 80's SpA",
+            "tagline": "Taller de reparación de automóviles",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/taller-80s.jpg",
+            "logoAlt": "Logo de Taller 80's SpA",
+            "logoLayout": "original",
+            "logoWidth": 128,
+            "favicon": "/generated/logos/taller-80s.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Lautaro 1914, 4030000 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56937768961",
+                    "href": "tel:+56937768961"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/logo-bancoestado.svg",
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJvfXf54G1aZYRngS_1FqhcDE",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/80s_spa/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "web",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Visitanos",
+                    "href": "https://www.80sspa.cl/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#f8e7e2",
+                "text": "#111827",
+                "button": "#d05030",
+                "buttonText": "#000000",
+                "accent": "#000000"
+            }
         }
     ]
 }

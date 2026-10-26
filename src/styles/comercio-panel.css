@@ -91,6 +91,7 @@ body.generated-page.theme-comercio.comercio-panel .info-value {
   font-size: 13px;
   line-height: 1.5;
   overflow-wrap: anywhere;
+  white-space: pre-line;
 }
 body.generated-page.theme-comercio.comercio-panel .contact-detail + .contact-detail {
   margin-top: 4px;

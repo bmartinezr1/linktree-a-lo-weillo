@@ -2238,7 +2238,7 @@
             "typography": "inter",
             "logo": "/generated/logos/fefigas.jpg",
             "logoAlt": "Logo de FEFIGAS",
-            "logoLayout": "rounded",
+            "logoLayout": "original",
             "logoWidth": 160,
             "favicon": "/generated/logos/fefigas.jpg",
             "footer": "",

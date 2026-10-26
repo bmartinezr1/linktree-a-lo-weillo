@@ -824,28 +824,62 @@ h1 {
 
 .footer-powered-by {
   margin-top: 0.65rem;
+  margin-inline: auto;
   font-size: 0.7rem;
   letter-spacing: 0.02em;
   opacity: 0.8;
+  text-align: center;
 }
 
 @keyframes clicktap-page-enter {
   from {
     opacity: 0;
-    transform: translateY(0.5rem);
+    filter: blur(0.45rem);
+    transform: translateY(1rem) scale(0.985);
   }
   to {
     opacity: 1;
+    filter: blur(0);
     transform: translateY(0);
   }
 }
 
 .business-page .page-shell {
-  animation: clicktap-page-enter 420ms ease-out both;
+  animation: clicktap-page-enter 720ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.business-page .profile-header,
+.business-page .profile-description,
+.business-page .info-showcase,
+.business-page .links,
+.business-page .product-showcase,
+.business-page .team-showcase,
+.business-page .footer {
+  animation: clicktap-page-enter 620ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.business-page .profile-header { animation-delay: 80ms; }
+.business-page .profile-description,
+.business-page .info-showcase { animation-delay: 160ms; }
+.business-page .links { animation-delay: 240ms; }
+.business-page .product-showcase,
+.business-page .team-showcase { animation-delay: 320ms; }
+.business-page .footer { animation-delay: 400ms; }
+
+body.theme-comercio .footer-powered-by {
+  width: 100%;
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .business-page .page-shell {
+  .business-page .page-shell,
+  .business-page .profile-header,
+  .business-page .profile-description,
+  .business-page .info-showcase,
+  .business-page .links,
+  .business-page .product-showcase,
+  .business-page .team-showcase,
+  .business-page .footer {
     animation: none;
   }
 }

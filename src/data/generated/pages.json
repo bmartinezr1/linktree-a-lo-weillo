@@ -91,7 +91,7 @@
                     "id": "location",
                     "icon": "location",
                     "label": "Ubicación",
-                    "value": "Paicavi 1795, Concepción, Chile 4030000"
+                    "value": "📍Paicaví #1795, Concepción\n📍 Osorno #85 Barrio Norte"
                 },
                 {
                     "id": "contact",
@@ -116,13 +116,23 @@
                 },
                 {
                     "type": "review",
-                    "name": "Reseñas",
+                    "name": "Reseñas Paicavi",
                     "icon": "review",
-                    "label": "Escribe una reseña",
+                    "label": "Déjanos una reseña sucursal (Paicaví 1795)",
                     "href": "https://search.google.com/local/writereview?placeid=ChIJC9yvPDa1aZYRBi-Ut1pir4s",
                     "copyText": null,
                     "logo": null,
                     "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas osorno",
+                    "icon": "review",
+                    "label": "Déjanos una reseña sucursal (Osorno 85)",
+                    "href": null,
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": true
                 },
                 {
                     "type": "whatsapp",

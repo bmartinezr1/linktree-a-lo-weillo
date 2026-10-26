@@ -129,10 +129,10 @@
                     "name": "Reseñas osorno",
                     "icon": "review",
                     "label": "Déjanos una reseña sucursal (Osorno 85)",
-                    "href": null,
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJw0FEEwC1aZYR6HLhxjpzHy4",
                     "copyText": null,
                     "logo": null,
-                    "isDisabled": true
+                    "isDisabled": false
                 },
                 {
                     "type": "whatsapp",

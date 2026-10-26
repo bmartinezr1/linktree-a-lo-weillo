@@ -1563,6 +1563,61 @@ body.theme-comercio {
   color: #b9cadb;
 }
 
+/* Las páginas generadas usan los colores guardados en el panel.
+   Comercio aporta la distribución, no debe reemplazar el diseño elegido. */
+html:has(body.theme-comercio.generated-page) {
+  background-color: var(--background);
+}
+
+body.theme-comercio.generated-page {
+  background: var(--background) !important;
+  background-color: var(--background) !important;
+  color: var(--text);
+}
+
+body.theme-comercio.generated-page .page-shell {
+  background: var(--background) !important;
+}
+
+body.theme-comercio.generated-page h1,
+body.theme-comercio.generated-page .info-value {
+  color: var(--text);
+}
+
+body.theme-comercio.generated-page .tagline,
+body.theme-comercio.generated-page .footer,
+body.theme-comercio.generated-page .transfer-status,
+body.theme-comercio.generated-page .transfer-note,
+body.theme-comercio.generated-page .transfer-manual {
+  color: var(--muted);
+}
+
+body.theme-comercio.generated-page .info-label,
+body.theme-comercio.generated-page .info-icon,
+body.theme-comercio.generated-page h1::after {
+  color: var(--gold);
+}
+
+body.theme-comercio.generated-page h1::after {
+  background: var(--gold);
+}
+
+body.theme-comercio.generated-page .link-button,
+body.theme-comercio.generated-page .link-button-whatsapp,
+body.theme-comercio.generated-page .link-button-review,
+body.theme-comercio.generated-page .link-button-disabled {
+  background: var(--surface) !important;
+  border-color: var(--border);
+  color: var(--button-text);
+}
+
+body.theme-comercio.generated-page .link-button:hover,
+body.theme-comercio.generated-page .link-button-whatsapp:hover,
+body.theme-comercio.generated-page .link-button-review:hover,
+body.theme-comercio.generated-page .link-button-disabled:hover {
+  background: var(--surface-hover) !important;
+}
+
 @media (max-width: 380px) {
   .theme-recargas-ac .page-shell,
   .theme-comercio .page-shell {

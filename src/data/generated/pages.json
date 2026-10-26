@@ -2797,6 +2797,83 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "ralph-service-whatsapp",
+            "name": "RALPH SERVICE",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/ralph-service-whatsapp.png",
+            "logoAlt": "Logo de RALPH SERVICE",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/ralph-service-whatsapp.png",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Ainavillo 1920, 4060225 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56954760177",
+                    "href": "tel:+56954760177"
+                }
+            ],
+            "links": [
+                {
+                    "type": "whatsapp",
+                    "name": null,
+                    "icon": "whatsapp",
+                    "label": "WhatsApp",
+                    "href": "https://wa.me/56954760177",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": null,
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": true
+                },
+                {
+                    "type": "facebook",
+                    "name": null,
+                    "icon": "facebook",
+                    "label": "Facebook",
+                    "href": "https://www.facebook.com/profile.php?id=100063563114255&ref=PROFILE_EDIT_xav_ig_profile_page_web#",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/ralph.service/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fde7de",
+                "text": "#111827",
+                "button": "#f05010",
+                "buttonText": "#000000",
+                "accent": "#000000"
+            }
         }
     ]
 }

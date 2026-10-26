@@ -822,6 +822,34 @@ h1 {
   font-size: 0.76rem;
 }
 
+.footer-powered-by {
+  margin-top: 0.65rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.02em;
+  opacity: 0.8;
+}
+
+@keyframes clicktap-page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.business-page .page-shell {
+  animation: clicktap-page-enter 420ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .business-page .page-shell {
+    animation: none;
+  }
+}
+
 .theme-floral {
   --background: #060208;
   --surface: #150a18;

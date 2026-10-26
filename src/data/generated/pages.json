@@ -110,7 +110,7 @@
                     "icon": "contact",
                     "label": "Copia los datos de transferencia",
                     "href": null,
-                    "copyText": "",
+                    "copyText": "si",
                     "logo": null,
                     "isDisabled": false
                 },

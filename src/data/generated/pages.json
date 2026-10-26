@@ -1984,11 +1984,11 @@
                     "type": "review",
                     "name": "Reseñas",
                     "icon": "review",
-                    "label": "Déjanos una reseñas",
-                    "href": null,
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJJ3Zws7m1aZYRZ_cLn90TsFY",
                     "copyText": null,
                     "logo": null,
-                    "isDisabled": true
+                    "isDisabled": false
                 }
             ],
             "colors": {

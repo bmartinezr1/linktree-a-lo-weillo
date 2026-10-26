@@ -1260,11 +1260,11 @@
             "description": "",
             "theme": "comercio",
             "typography": "inter",
-            "logo": null,
+            "logo": "/generated/logos/fefigas.jpg",
             "logoAlt": "Logo de FEFIGAS",
             "logoLayout": "original",
             "logoWidth": 160,
-            "favicon": "/favicon.png",
+            "favicon": "/generated/logos/fefigas.jpg",
             "footer": "",
             "highlights": [
                 {
@@ -1317,7 +1317,7 @@
                     "icon": "contact",
                     "label": "Copiar datos de transferencia",
                     "href": null,
-                    "copyText": "Claudio Cabrera\n77119922-4\nCuenta Corriente\n78402111\nfefigas2020@gmail.com",
+                    "copyText": "Claudio Cabrera\n77119922-4\nBanco BCI\nCuenta Corriente\n78402111\nfefigas2020@gmail.com",
                     "logo": "/bank-logos/bci.png",
                     "isDisabled": false
                 }

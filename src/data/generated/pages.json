@@ -2479,10 +2479,10 @@
                     "name": null,
                     "icon": "review",
                     "label": "Déjanos una reseña",
-                    "href": null,
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJ29eubgC1aZYRSFJ2LzTlOdg",
                     "copyText": null,
                     "logo": null,
-                    "isDisabled": true
+                    "isDisabled": false
                 },
                 {
                     "type": "facebook",
@@ -2841,10 +2841,10 @@
                     "name": null,
                     "icon": "review",
                     "label": "Déjanos una reseña",
-                    "href": null,
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJ29eubgC1aZYRSFJ2LzTlOdg",
                     "copyText": null,
                     "logo": null,
-                    "isDisabled": true
+                    "isDisabled": false
                 },
                 {
                     "type": "facebook",

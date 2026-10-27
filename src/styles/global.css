@@ -871,6 +871,42 @@ body.theme-comercio .footer-powered-by {
   text-align: center;
 }
 
+/* Entrada más liviana para teléfonos: conserva el efecto sin forzar blur en cada fotograma. */
+@media (max-width: 640px) {
+  @keyframes clicktap-page-enter-mobile {
+    from {
+      opacity: 0;
+      transform: translateY(0.75rem) scale(0.99);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .business-page .page-shell {
+    animation: clicktap-page-enter-mobile 520ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .business-page .profile-header,
+  .business-page .profile-description,
+  .business-page .info-showcase,
+  .business-page .links,
+  .business-page .product-showcase,
+  .business-page .team-showcase,
+  .business-page .footer {
+    animation: clicktap-page-enter-mobile 440ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .business-page .profile-header { animation-delay: 50ms; }
+  .business-page .profile-description,
+  .business-page .info-showcase { animation-delay: 100ms; }
+  .business-page .links { animation-delay: 150ms; }
+  .business-page .product-showcase,
+  .business-page .team-showcase { animation-delay: 200ms; }
+  .business-page .footer { animation-delay: 250ms; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .business-page .page-shell,
   .business-page .profile-header,

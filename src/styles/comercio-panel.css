@@ -103,7 +103,7 @@ body.generated-page.theme-comercio.comercio-panel .links {
 }
 body.generated-page.theme-comercio.comercio-panel .links .link-button {
   display: grid;
-  grid-template-columns: 28px minmax(0, 1fr) 28px;
+  grid-template-columns: 32px minmax(0, 1fr) 32px;
   gap: 8px;
   width: 100%;
   min-height: 52px;
@@ -132,20 +132,21 @@ body.generated-page.theme-comercio.comercio-panel .link-button > span:last-child
 body.generated-page.theme-comercio.comercio-panel .link-icon {
   position: static;
   transform: none;
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   color: inherit;
 }
 body.generated-page.theme-comercio.comercio-panel .link-icon svg {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   color: inherit;
 }
 body.generated-page.theme-comercio.comercio-panel .transfer-logo {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   border-radius: 4px;
   background: #fff;
+  object-fit: contain;
 }
 body.generated-page.theme-comercio.comercio-panel .transfer-status,
 body.generated-page.theme-comercio.comercio-panel .transfer-note,

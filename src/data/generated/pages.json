@@ -1999,6 +1999,74 @@
             }
         },
         {
+            "slug": "minimarket-con-alcoholes-de-todo-un-poco",
+            "name": "Minimarket con Alcoholes DE TODO UN POCO",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/minimarket-con-alcoholes-de-todo-un-poco.webp",
+            "logoAlt": "Logo de Minimarket con Alcoholes DE TODO UN POCO",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/minimarket-con-alcoholes-de-todo-un-poco.webp",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Paicaví 1145"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes a viernes 1pm-1am"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJn61iXgC1aZYRwIzV-kg_63E",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/detodounpocopaicavi/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#ffffff",
+                "text": "#000000",
+                "button": "#111827",
+                "buttonText": "#ffffff",
+                "accent": "#111827"
+            }
+        },
+        {
             "slug": "minimarket-rayun-newen",
             "name": "Minimarket Rayun Newen",
             "tagline": null,

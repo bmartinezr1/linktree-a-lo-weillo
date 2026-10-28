@@ -539,6 +539,83 @@
             }
         },
         {
+            "slug": "bellino-pastas",
+            "name": "Bellino Pastas",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/bellino-pastas.png",
+            "logoAlt": "Logo de Bellino Pastas",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/bellino-pastas.png",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Paicaví 1255"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56 9 5220 8047",
+                    "href": "tel:+56952208047"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña!",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJvd5NSAC1aZYR-QFDeRG6J7A",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/bellinopastas/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "web",
+                    "name": "Sitio web",
+                    "icon": "contact",
+                    "label": "Visita nuestra pagina web!",
+                    "href": "https://www.bellino.cl/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#f4dede",
+                "text": "#111827",
+                "button": "#b01010",
+                "buttonText": "#ffffff",
+                "accent": "#b01010"
+            }
+        },
+        {
             "slug": "bronto-pizza",
             "name": "Bronto Pizza",
             "tagline": "Tradicionales y veganas · Delivery",

@@ -2921,6 +2921,73 @@
             }
         },
         {
+            "slug": "ruta-150-burger",
+            "name": "Ruta 150 Burger",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/ruta-150-burger.png",
+            "logoAlt": "Logo de Ruta 150 Burger",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/ruta-150-burger.png",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Paicaví 1221"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56 9 8120 5801",
+                    "href": "tel:+56981205801"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Dejanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJCSPun9e1aZYRzR3pFfgD6UU",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/ruta150burger/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#dedee2",
+                "text": "#111827",
+                "button": "#101030",
+                "buttonText": "#ffffff",
+                "accent": "#101030"
+            }
+        },
+        {
             "slug": "san-daniel",
             "name": "Botilleria y Supermercado San Daniel",
             "tagline": null,

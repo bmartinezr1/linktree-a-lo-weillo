@@ -616,6 +616,73 @@
             }
         },
         {
+            "slug": "botilleria-y-cantina-el-puerto",
+            "name": "Botillería y cantina el puerto",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/botilleria-y-cantina-el-puerto.jpg",
+            "logoAlt": "Logo de Botillería y cantina el puerto",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/botilleria-y-cantina-el-puerto.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Bandera 1285"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56 9 7513 5934",
+                    "href": "tel:+56975135934"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJE_DWM7a1aZYRPDDy68S4oto",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": "Facebook",
+                    "icon": "facebook",
+                    "label": "Visita nuestro Facebook",
+                    "href": "https://www.facebook.com/p/Botiller%C3%ADa-El-Puerto-100075308260670/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#dedee2",
+                "text": "#111827",
+                "button": "#101030",
+                "buttonText": "#ffffff",
+                "accent": "#101030"
+            }
+        },
+        {
             "slug": "bronto-pizza",
             "name": "Bronto Pizza",
             "tagline": "Tradicionales y veganas · Delivery",

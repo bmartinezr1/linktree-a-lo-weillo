@@ -3271,6 +3271,63 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "lipigas-benito-henriquez",
+            "name": "Distribuidor Lipigas Benito Henríquez",
+            "tagline": "Distribución de gas licuado",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/lipigas-benito-henriquez.jpg",
+            "logoAlt": "Logo de Distribuidor Lipigas Benito Henríquez",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/lipigas-benito-henriquez.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Montriou 1375, Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56 9 3399 9000",
+                    "href": "tel:+56933999000"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": "Reseña",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJa5P-noK1aZYRdxqWPKN2-5U",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": "Banco estado",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#dee2eb",
+                "text": "#111827",
+                "button": "#103070",
+                "buttonText": "#ffffff",
+                "accent": "#103070"
+            }
         }
     ]
 }

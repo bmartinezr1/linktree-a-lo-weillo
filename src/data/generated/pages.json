@@ -3556,6 +3556,63 @@
                 "buttonText": "#ffffff",
                 "accent": "#301010"
             }
+        },
+        {
+            "slug": "henri-car",
+            "name": "Henri Car",
+            "tagline": "Servicio automotriz",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/henri-car.jpg",
+            "logoAlt": "Logo de Henri Car",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/henri-car.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Lautaro 1910, Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56999917486",
+                    "href": "tel:+56999917486"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJu6QvhoO1aZYRm6SrAVgtoHQ",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#eff4fd",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

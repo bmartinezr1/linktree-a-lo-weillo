@@ -3444,63 +3444,6 @@
             }
         },
         {
-            "slug": "celmi-motos",
-            "name": "Celmi'Motos",
-            "tagline": "Servicio de motos",
-            "description": "",
-            "theme": "comercio",
-            "typography": "inter",
-            "logo": "/generated/logos/celmi-motos.jpg",
-            "logoAlt": "Logo de Celmi'Motos",
-            "logoLayout": "original",
-            "logoWidth": 160,
-            "favicon": "/generated/logos/celmi-motos.jpg",
-            "footer": "",
-            "highlights": [
-                {
-                    "id": "location",
-                    "icon": "location",
-                    "label": "Ubicación",
-                    "value": "Juan de Dios Rivera 1915, Concepción, Bío Bío"
-                }
-            ],
-            "contactDetails": [
-                {
-                    "label": "+56952265793",
-                    "href": "tel:+56952265793"
-                }
-            ],
-            "links": [
-                {
-                    "type": "review",
-                    "name": null,
-                    "icon": "review",
-                    "label": "Déjanos una reseña",
-                    "href": "https://search.google.com/local/writereview?placeid=ChIJtaE5U6S1aZYRJWJiXcKuKkY",
-                    "copyText": null,
-                    "logo": null,
-                    "isDisabled": false
-                },
-                {
-                    "type": "transferencia",
-                    "name": null,
-                    "icon": "contact",
-                    "label": "Copiar datos de transferencia",
-                    "href": null,
-                    "copyText": "",
-                    "logo": "/bank-logos/bancoestado.png",
-                    "isDisabled": false
-                }
-            ],
-            "colors": {
-                "background": "#dedee2",
-                "text": "#111827",
-                "button": "#101030",
-                "buttonText": "#ffffff",
-                "accent": "#101030"
-            }
-        },
-        {
             "slug": "radiadores-el-indio",
             "name": "Radiadores El Indio",
             "tagline": "Reparación de radiadores",

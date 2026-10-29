@@ -3613,6 +3613,63 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "alta-bandera",
+            "name": "Alta Bandera Servicio Automotriz",
+            "tagline": "Servicio automotriz",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/alta-bandera.jpg",
+            "logoAlt": "Logo de Alta Bandera Servicio Automotriz",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/alta-bandera.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Tucapel 1498, Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56961516839",
+                    "href": "tel:+56961516839"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJ3V-xSmq1aZYRFcjRjq-3D_o",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#e2e2eb",
+                "text": "#111827",
+                "button": "#303070",
+                "buttonText": "#ffffff",
+                "accent": "#303070"
+            }
         }
     ]
 }

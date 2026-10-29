@@ -3385,6 +3385,63 @@
                 "buttonText": "#ffffff",
                 "accent": "#101030"
             }
+        },
+        {
+            "slug": "10-car",
+            "name": "10 Car Mecánica Automotriz Integral",
+            "tagline": "Mecánica automotriz",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/10-car.jpg",
+            "logoAlt": "Logo de 10 Car Mecánica Automotriz Integral",
+            "logoLayout": "original",
+            "logoWidth": 128,
+            "favicon": "/generated/logos/10-car.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Ejército 1507, Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56967321422",
+                    "href": "tel:+56967321422"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJrzvHkA21aZYRFzBI1SUmLiI",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#e7e7eb",
+                "text": "#111827",
+                "button": "#505070",
+                "buttonText": "#ffffff",
+                "accent": "#505070"
+            }
         }
     ]
 }

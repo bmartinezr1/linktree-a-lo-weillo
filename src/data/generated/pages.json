@@ -3499,6 +3499,63 @@
                 "buttonText": "#ffffff",
                 "accent": "#101030"
             }
+        },
+        {
+            "slug": "radiadores-el-indio",
+            "name": "Radiadores El Indio",
+            "tagline": "Reparación de radiadores",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/radiadores-el-indio.jpg",
+            "logoAlt": "Logo de Radiadores El Indio",
+            "logoLayout": "original",
+            "logoWidth": 128,
+            "favicon": "/generated/logos/radiadores-el-indio.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Lautaro 1802, Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56997781403",
+                    "href": "tel:+56997781403"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJ85IHzLa1aZYRjkj5z_OEHlo",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#e2dede",
+                "text": "#111827",
+                "button": "#301010",
+                "buttonText": "#ffffff",
+                "accent": "#301010"
+            }
         }
     ]
 }

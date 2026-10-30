@@ -3330,63 +3330,6 @@
             }
         },
         {
-            "slug": "moreno-munoz",
-            "name": "Moreno Muñoz",
-            "tagline": "Servicio automotriz",
-            "description": "",
-            "theme": "comercio",
-            "typography": "inter",
-            "logo": "/generated/logos/moreno-munoz.jpg",
-            "logoAlt": "Logo de Moreno Muñoz",
-            "logoLayout": "original",
-            "logoWidth": 128,
-            "favicon": "/generated/logos/moreno-munoz.jpg",
-            "footer": "",
-            "highlights": [
-                {
-                    "id": "location",
-                    "icon": "location",
-                    "label": "Ubicación",
-                    "value": "Lautaro 1971, Concepción, Bío Bío"
-                }
-            ],
-            "contactDetails": [
-                {
-                    "label": "+56412913724",
-                    "href": "tel:+56412913724"
-                }
-            ],
-            "links": [
-                {
-                    "type": "review",
-                    "name": null,
-                    "icon": "review",
-                    "label": "Déjanos una reseña",
-                    "href": "https://search.google.com/local/writereview?placeid=ChIJaSqW4bC1aZYRvl-Qr7Wa-RE",
-                    "copyText": null,
-                    "logo": null,
-                    "isDisabled": false
-                },
-                {
-                    "type": "transferencia",
-                    "name": null,
-                    "icon": "contact",
-                    "label": "Copiar datos de transferencia",
-                    "href": null,
-                    "copyText": "",
-                    "logo": "/bank-logos/bancoestado.png",
-                    "isDisabled": false
-                }
-            ],
-            "colors": {
-                "background": "#dedee2",
-                "text": "#111827",
-                "button": "#101030",
-                "buttonText": "#ffffff",
-                "accent": "#101030"
-            }
-        },
-        {
             "slug": "10-car",
             "name": "10 Car Mecánica Automotriz Integral",
             "tagline": "Mecánica automotriz",

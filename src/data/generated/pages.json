@@ -4619,6 +4619,69 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "senor-pollo",
+            "name": "Señor Pollo",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/senor-pollo.webp",
+            "logoAlt": "Logo de Señor Pollo",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/senor-pollo.webp",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Tucapel 1802"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes a Viernes 10:30 a. m.–7 p. m\nSábado 10:30 a. m.–4 p. m\nDomingo 10:30 a. m.–3:30 p. m"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56 9 4687 4889",
+                    "href": "tel:+56946874889"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJf-IKpbm1aZYRjjhAhUZP7dE",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#ffffff",
+                "text": "#000000",
+                "button": "#111827",
+                "buttonText": "#ffffff",
+                "accent": "#111827"
+            }
         }
     ]
 }

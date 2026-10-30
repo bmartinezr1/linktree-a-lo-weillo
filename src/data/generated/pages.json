@@ -4283,6 +4283,78 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "tacos-la-wera",
+            "name": "Tacos la Wera",
+            "tagline": "Taquería",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/tacos-la-wera.jpg",
+            "logoAlt": "Logo de Tacos la Wera",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/tacos-la-wera.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Tucapel 1143, 4030214 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJ6TltwzW1aZYRvpcAg8PNOAg",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "tiktok",
+                    "name": null,
+                    "icon": "tiktok",
+                    "label": "TikTok",
+                    "href": "https://www.tiktok.com/@tacoslawera_oficial?is_from_webapp=1&sender_device=pc",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/tacoslawera.oficial/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fddeeb",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

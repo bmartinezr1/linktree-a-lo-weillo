@@ -4072,6 +4072,73 @@
                 "buttonText": "#000000",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "gonchos-vip",
+            "name": "Gonchos VIP",
+            "tagline": "Restaurante de comida rápida",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/gonchos-vip.jpg",
+            "logoAlt": "Logo de Gonchos VIP",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/gonchos-vip.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Manuel Bulnes 475, 4030000 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56936186729",
+                    "href": "tel:+56936186729"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJOTfxbwC1aZYRB3xX-K8c7OY",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/gochosvip/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#dedede",
+                "text": "#111827",
+                "button": "#101010",
+                "buttonText": "#ffffff",
+                "accent": "#101010"
+            }
         }
     ]
 }

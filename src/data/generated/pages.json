@@ -3670,6 +3670,73 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "pasteleria-barazek",
+            "name": "Pastelería Barazek",
+            "tagline": "Panadería y Pastelería Artesanal",
+            "description": "",
+            "theme": "comercio",
+            "typography": "system",
+            "logo": "/generated/logos/pasteleria-barazek.jpg",
+            "logoAlt": "Logo de Pastelería Barazek",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/pasteleria-barazek.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Anibal Pinto 1285, 4030758 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56957445772",
+                    "href": "tel:+56957445772"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJLVpDXsa1aZYRXSGdpItxaNU",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Síguenos",
+                    "href": "https://www.instagram.com/pasteleria.barazek/?hl=es",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#f8f4ef",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

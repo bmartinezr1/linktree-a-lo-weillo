@@ -3804,6 +3804,73 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "nori-nigiri",
+            "name": "Nori & nigiri",
+            "tagline": "Comida Peruana - Japonesa",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/nori-nigiri.jpg",
+            "logoAlt": "Logo de Nori & nigiri",
+            "logoLayout": "round",
+            "logoWidth": 128,
+            "favicon": "/generated/logos/nori-nigiri.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Tucapel 976, 4030000 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56 9 49444910",
+                    "href": "tel:+56949444910"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJm1_tanXJaZYRjmFKlpC8D6E",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Síguenos",
+                    "href": "https://www.instagram.com/nori.nigiri/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fde2e2",
+                "text": "#111827",
+                "button": "#6e2424",
+                "buttonText": "#ffffff",
+                "accent": "#6e2424"
+            }
         }
     ]
 }

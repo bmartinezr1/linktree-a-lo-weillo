@@ -4858,6 +4858,79 @@
                 "buttonText": "#ffffff",
                 "accent": "#303010"
             }
+        },
+        {
+            "slug": "rebecar-lubricentro",
+            "name": "REBECAR",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/rebecar-lubricentro.jpg",
+            "logoAlt": "Logo de REBECAR",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/rebecar-lubricentro.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Aníbal Pinto 1788"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes - Viernes 9:30 a. m.–6 p. m\nSábado 10:30 a. m.–2 p. m"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56 9 9002 3056",
+                    "href": "tel:+56990023056"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos unas reseñas",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJk2yL3ty1aZYRJOvmlSEFOsQ",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "whatsapp",
+                    "name": "WSP",
+                    "icon": "whatsapp",
+                    "label": "Escríbenos por Whatsapp",
+                    "href": "https://wa.me/56990023056",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#efebde",
+                "text": "#111827",
+                "button": "#907010",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

@@ -4998,6 +4998,74 @@
                 "buttonText": "#ffffff",
                 "accent": "#107090"
             }
+        },
+        {
+            "slug": "botilleria-luan",
+            "name": "Botillería luan",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/botilleria-luan.jpg",
+            "logoAlt": "Logo de Botillería luan",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/botilleria-luan.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Rengo 1593"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes a jueves 13:00 a 1:00am\nviernes y sábado de 14:30 a 3:00am"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transfernecia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJ82uBAgC1aZYR48zsiLLxK2A",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/luan.botilleria/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#ebe7e7",
+                "text": "#111827",
+                "button": "#705050",
+                "buttonText": "#ffffff",
+                "accent": "#705050"
+            }
         }
     ]
 }

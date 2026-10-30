@@ -5232,6 +5232,73 @@
                 "buttonText": "#ffffff",
                 "accent": "#101030"
             }
+        },
+        {
+            "slug": "cosmo-sandwich",
+            "name": "cosmo sandwich",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/cosmo-sandwich.jpg",
+            "logoAlt": "Logo de cosmo sandwich",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/cosmo-sandwich.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Av. Los Carrera 1530, 4081473 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "(41) 360 1598",
+                    "href": "tel:413601598"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJN-fki8y1aZYRGGs7jMWx_MQ",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/cosmo_sandwich/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#dee2ef",
+                "text": "#111827",
+                "button": "#103090",
+                "buttonText": "#ffffff",
+                "accent": "#103090"
+            }
         }
     ]
 }

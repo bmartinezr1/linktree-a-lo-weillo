@@ -5149,6 +5149,89 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "calaka-mantenciones",
+            "name": "Calaka Mantenciones",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/calaka-mantenciones.jpg",
+            "logoAlt": "Logo de Calaka Mantenciones",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/calaka-mantenciones.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Av. Los Carrera 1409"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes - Viernes 10:30 a. m.–6 p. m\nSábado 10 a. m.–2 p. m"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56 9 5104 8369",
+                    "href": "tel:+56951048369"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJnUMMTgC1aZYRDvXmhCMdDc0",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/calaka_mantenciones/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": "Facebook",
+                    "icon": "facebook",
+                    "label": "Visita nuestro Facebook",
+                    "href": "https://www.facebook.com/p/Calaka-Mantenciones-100085945945608/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#dedee2",
+                "text": "#111827",
+                "button": "#101030",
+                "buttonText": "#ffffff",
+                "accent": "#101030"
+            }
         }
     ]
 }

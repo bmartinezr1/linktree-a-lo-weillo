@@ -3489,6 +3489,63 @@
                 "buttonText": "#ffffff",
                 "accent": "#303070"
             }
+        },
+        {
+            "slug": "gasco-jorge-alarcon",
+            "name": "Gasco Jorge Alarcón",
+            "tagline": "Proveedor de cilindros de gas",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/gasco-jorge-alarcon.jpg",
+            "logoAlt": "Logo de Gasco Jorge Alarcón",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/gasco-jorge-alarcon.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Colo Colo, Av. Manuel Rodríguez &, Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56988855231",
+                    "href": "tel:+56988855231"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJFz42NgC1aZYRkLIkiy9ZM0g",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#f8f4f4",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

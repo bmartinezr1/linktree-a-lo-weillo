@@ -4931,6 +4931,73 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "beforlab-laboratorio-dental",
+            "name": "Beforlab Laboratorio Dental",
+            "tagline": "¡Bienvenidos a Clínica Befordent🦷! Comprometidos con la salud bucal de nuestros pacientes.",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/beforlab-laboratorio-dental.jpg",
+            "logoAlt": "Logo de Beforlab Laboratorio Dental",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/beforlab-laboratorio-dental.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "📍Ejército 675"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "(41) 222 8455",
+                    "href": "tel:412228455"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJeWqLMb-1aZYRIqjFOMSlZRg",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/befordent_clinica/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#deebef",
+                "text": "#111827",
+                "button": "#107090",
+                "buttonText": "#ffffff",
+                "accent": "#107090"
+            }
         }
     ]
 }

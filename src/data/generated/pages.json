@@ -4355,6 +4355,73 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "julian-food",
+            "name": "Julian Food",
+            "tagline": "Restaurante de comida rápida",
+            "description": "",
+            "theme": "comercio",
+            "typography": "montserrat",
+            "logo": "/generated/logos/julian-food.jpg",
+            "logoAlt": "Logo de Julian Food",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/julian-food.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Ongolmo 1293, 4081398 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56977701551",
+                    "href": "tel:+56977701551"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJf7DrWAC1aZYR-kxfo3sZXDY",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/julianfood.ccp/?hl=es",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fdfdf8",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

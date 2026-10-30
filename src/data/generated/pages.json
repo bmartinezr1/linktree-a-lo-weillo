@@ -4489,6 +4489,73 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "sushi-kyodai",
+            "name": "Sushi kyodai",
+            "tagline": "🍣Sushi y lo mejor de la comida rápida 🍔🍟 🌱Tenemos Vegan Sushi",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/sushi-kyodai.jpg",
+            "logoAlt": "Logo de Sushi kyodai",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/sushi-kyodai.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "📍Aníbal Pinto 1553"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56 9 8174 0809",
+                    "href": "tel:+56981740809"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJidqEW7u1aZYR0EcZ1MKP5D8",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/sushikyodai7/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#f4e2e2",
+                "text": "#111827",
+                "button": "#b03030",
+                "buttonText": "#ffffff",
+                "accent": "#b03030"
+            }
         }
     ]
 }

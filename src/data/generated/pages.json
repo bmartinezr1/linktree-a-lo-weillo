@@ -3871,6 +3871,73 @@
                 "buttonText": "#ffffff",
                 "accent": "#6e2424"
             }
+        },
+        {
+            "slug": "bbq-burguer",
+            "name": "BBQ Burguer",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/bbq-burguer.jpg",
+            "logoAlt": "Logo de BBQ Burguer",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/bbq-burguer.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Anibal Pinto 1063, 4030000 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56934003124",
+                    "href": "tel:+56934003124"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJkTA6JsC1aZYRGX0lXAZSCZo",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/bbqburger1/?hl=es",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#e2dede",
+                "text": "#111827",
+                "button": "#301010",
+                "buttonText": "#ffffff",
+                "accent": "#301010"
+            }
         }
     ]
 }

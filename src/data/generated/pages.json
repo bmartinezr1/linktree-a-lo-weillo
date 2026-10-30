@@ -4556,6 +4556,69 @@
                 "buttonText": "#ffffff",
                 "accent": "#b03030"
             }
+        },
+        {
+            "slug": "lubricentro-seguel-orompello",
+            "name": "Lubricentro Seguel",
+            "tagline": "Cambio de Aceite y Accesorios de Automóviles",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/lubricentro-seguel-orompello.jpg",
+            "logoAlt": "Logo de Lubricentro Seguel",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/lubricentro-seguel-orompello.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Orompello 1838"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes - Viernes 9:15 a. m.–1:30 p. m., 3:15–6:45 p. m\nSábado 10 a. m.–1 p. m."
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "(41) 291 4234",
+                    "href": "tel:412914234"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJ1QTmUiu0aZYRhMmmRkFrUJw",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#f8f8f4",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

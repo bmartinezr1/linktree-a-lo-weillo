@@ -4422,6 +4422,73 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "chicken-dinner",
+            "name": "Chicken Dinner",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/chicken-dinner.jpg",
+            "logoAlt": "Logo de Chicken Dinner",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/chicken-dinner.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Las Heras 825, 4030000 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56961682095",
+                    "href": "tel:+56961682095"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJpR5QGnu1aZYR6dC6_2H4QxI",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Síguenos",
+                    "href": "https://www.instagram.com/chickendinnerccp/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fdf4de",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

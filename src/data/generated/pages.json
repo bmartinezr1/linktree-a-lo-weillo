@@ -3715,8 +3715,8 @@
                     "icon": "contact",
                     "label": "Copiar datos de transferencia",
                     "href": null,
-                    "copyText": "",
-                    "logo": "/bank-logos/bancoestado.png",
+                    "copyText": "Titular: Sebastián Vergara\nRUT: 77.093.463-K\nBanco: MACH / Bci\nTipo de cuenta: Cuenta corriente\nNúmero de cuenta: 71892540\nCorreo: contacto@barazek.cl",
+                    "logo": "/bank-logos/bci.png",
                     "isDisabled": false
                 },
                 {

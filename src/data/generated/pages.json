@@ -4775,6 +4775,89 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "papasone",
+            "name": "PAPASONE",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/papasone.jpg",
+            "logoAlt": "Logo de PAPASONE",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/papasone.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "📍Brasil 702"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes a Jueves 12–11 p. m\nViernes-Sábado 12 p. m.–12 a. m."
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "(41) 318 2181",
+                    "href": "tel:413182181"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Datos de transferencia",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJZ3kWt7i1aZYREg4jVqffg_o",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/papasoneconce/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "whatsapp",
+                    "name": "Whatsapp",
+                    "icon": "whatsapp",
+                    "label": "Haz tu pedido por Whatsapp",
+                    "href": "https://wa.me/56413182181",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#e2e2de",
+                "text": "#111827",
+                "button": "#303010",
+                "buttonText": "#ffffff",
+                "accent": "#303010"
+            }
         }
     ]
 }

@@ -3938,6 +3938,73 @@
                 "buttonText": "#ffffff",
                 "accent": "#301010"
             }
+        },
+        {
+            "slug": "panbook-sandwich",
+            "name": "Panbook Sandwich",
+            "tagline": "Los mejores Sándwiches de Conce",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/panbook-sandwich.jpg",
+            "logoAlt": "Logo de Panbook Sandwich",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/panbook-sandwich.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Manuel Bulnes 477, Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56941686373",
+                    "href": "tel:+56941686373"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJmffOOMS1aZYRsDxKvVJy8JU",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/panbook.ccp/?hl=es-la",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#dee7ef",
+                "text": "#111827",
+                "button": "#105090",
+                "buttonText": "#ffffff",
+                "accent": "#105090"
+            }
         }
     ]
 }

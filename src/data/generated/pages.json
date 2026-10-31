@@ -4462,16 +4462,6 @@
                     "isDisabled": false
                 },
                 {
-                    "type": "transferencia",
-                    "name": null,
-                    "icon": "contact",
-                    "label": "Copiar datos de transferencia",
-                    "href": null,
-                    "copyText": "",
-                    "logo": "/bank-logos/bancoestado.png",
-                    "isDisabled": false
-                },
-                {
                     "type": "instagram",
                     "name": null,
                     "icon": "instagram",

@@ -1,5 +1,196 @@
----
-import ProductLanding from '../components/ProductLanding.astro';
----
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1559ee">
+  <meta name="description" content="Conecta tu negocio con tus clientes. Tarjetas NFC, NFC + QR y soportes personalizados ClickTap en Concepción.">
+  <link rel="canonical" href="https://clicktap.app/">
+  <meta property="og:url" content="https://clicktap.app/">
+  <title>ClickTap — Tu negocio, a un toque</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/landing-styles.css">
+  <script is:inline src="/landing-app.js" defer></script>
+  <script is:inline src="/landing-checkout.js" defer></script>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="header">
+    <a class="brand" href="#" aria-label="ClickTap, inicio">clicktap<span class="brand-dot">.</span></a>
+    <nav class="desktop-nav" aria-label="Navegación principal"><a href="#como-funciona">Cómo funciona</a><a href="#productos">Productos</a><a href="#ejemplos">Pruébalo</a></nav>
+    <button class="btn btn-small btn-dark" data-contact="ClickTap">Hablemos <span aria-hidden="true">↗</span></button>
+  </header>
+  <main id="contenido" tabindex="-1">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> PEQUEÑO FORMATO. GRANDES CONEXIONES.</p>
+        <h1>Tu negocio,<br>a un <span class="blue">toque.</span></h1>
+        <p class="lead">Las reseñas, las transferencias y tus redes.<br class="desktop-only"> Todo a mano, en una sola página.</p>
+        <div class="hero-actions"><a class="btn btn-blue" href="#productos">Encuentra tu ClickTap <span aria-hidden="true">↗</span></a><a class="text-link" href="#como-funciona"><span class="play-icon" aria-hidden="true">▶</span> Así funciona</a></div>
+        <div class="hero-notes"><span>✓ Página de tu negocio</span><span>✓ Listo para conectar</span></div>
+      </div>
+      <div class="hero-stage" aria-label="Los tres formatos ClickTap: original, NFC con QR y personalizado en acrílico">
+        <div class="stage-orbit orbit-one"></div><div class="stage-orbit orbit-two"></div>
+        <span class="stage-caption">UN TOQUE. MUCHAS POSIBILIDADES.</span>
+        <div class="acrylic hero-acrylic"><div class="acrylic-glass"><img src="assets/personalizado.webp" alt="Diseño personalizado negro y blanco dentro de un soporte de acrílico transparente" fetchpriority="high" width="378" height="567" decoding="async"></div><div class="acrylic-base"></div></div>
+        <div class="physical original hero-original"><img src="assets/nfc_solo.webp" alt="ClickTap original azul y blanco con NFC y sin QR" width="269" height="307" decoding="async"></div>
+        <div class="physical qr-card hero-qr"><img src="assets/nfc_qr.webp" alt="ClickTap azul y blanco con NFC a la izquierda y QR a la derecha" width="399" height="399" decoding="async"></div>
+        <div class="floating-note"><span class="note-icon" aria-hidden="true">↗</span><span>Tu marca.<br><strong>Siempre a mano.</strong></span></div>
+        <span class="stage-footnote">NFC · QR · TU PÁGINA</span>
+      </div>
+    </section>
+    <div class="benefit-strip"><div class="section-wrap strip-inner"><span>Menos pasos para tus clientes.</span><strong>Reseñas de Google</strong><i>✳</i><strong>Datos de transferencia</strong><i>✳</i><strong>WhatsApp y redes</strong></div></div>
+    <section class="section-wrap how-section" id="como-funciona">
+      <div class="section-heading reveal"><div><p class="eyebrow">01 / ASÍ DE SIMPLE</p><h2>Acerca. Abre.<br><span class="muted">Conecta.</span></h2></div><p>Sin dictar usuarios ni buscar enlaces.<br>Tu información, justo cuando la necesitan.</p></div>
+      <div class="nfc-demo reveal">
 
-<ProductLanding />
+        <div class="checkout-demo">
+          <svg id="checkout-animation" viewBox="0 0 640 420" role="img" aria-labelledby="checkout-title checkout-description">
+            <title id="checkout-title">Un cliente usa ClickTap en caja</title>
+            <desc id="checkout-description">El cliente camina hasta el cajero, se detiene, acerca su teléfono a la tarjeta del mesón y abre el enlace a la página del negocio.</desc>
+            <defs><linearGradient id="checkout-wall" x2="0" y2="1"><stop stop-color="#f7faff"/><stop offset="1" stop-color="#e7effb"/></linearGradient><linearGradient id="checkout-wood" x2="1" y2="0"><stop stop-color="#cda473"/><stop offset="1" stop-color="#b58655"/></linearGradient></defs>
+            <rect width="640" height="420" fill="url(#checkout-wall)"/>
+            <g id="checkout-world">
+              <path d="M0 316H640V420H0Z" fill="#dbe5f1"/><path d="M0 316H640" stroke="#c9d6e6"/>
+              <path d="M260 316L70 420M420 316L515 420M0 359H640" stroke="#c7d5e6" stroke-width="1" opacity=".65"/>
+              <rect x="58" y="65" width="133" height="39" rx="9" fill="#fff"/><text x="124" y="90" text-anchor="middle" fill="#64758e" font-size="14" font-weight="700" letter-spacing="3">CAJA</text>
+              <g id="checkout-cashier">
+                <path d="M116 218Q117 184 146 181Q177 184 185 219L192 275H110Z" fill="#34455e"/>
+                <path d="M131 189L128 262H170L166 189" fill="#f5f8ff"/><path d="M138 189V207H160V189" fill="none" stroke="#1559ee" stroke-width="4"/>
+                <rect x="141" y="170" width="17" height="19" rx="6" fill="#c58d68"/>
+                <rect x="127" y="127" width="45" height="50" rx="20" fill="#dda47f"/>
+                <path d="M124 146V135Q126 115 149 118Q174 118 176 139L170 146L165 133Q147 144 124 146Z" fill="#332b29"/>
+                <circle cx="141" cy="151" r="2" fill="#263243"/><circle cx="158" cy="151" r="2" fill="#263243"/>
+                <path d="M150 153L149 157" fill="none" stroke="#b77756" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M142 163Q150 169 158 163" fill="none" stroke="#875f47" stroke-width="2" stroke-linecap="round"/>
+                <path d="M121 207L115 224L138 230" fill="none" stroke="#dda47f" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M121 207L118 220" fill="none" stroke="#34455e" stroke-width="18" stroke-linecap="round"/>
+                <path d="M176 207L194 226L234 221" fill="none" stroke="#dda47f" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M176 207L184 215" stroke="#34455e" stroke-width="18" stroke-linecap="round"/>
+                <g id="checkout-cashier-hand">
+                  <ellipse cx="235" cy="221" rx="9" ry="8" fill="#dda47f"/>
+                </g>
+              </g>
+              <path d="M44 373L314 373L365 351L394 368L319 389L68 389Z" fill="#9aadc5" opacity=".22"/>
+              <path d="M50 261H315V376H50Z" fill="url(#checkout-wood)"/>
+              <path d="M315 261L350 241V354L315 376Z" fill="#9d724c"/>
+              <path d="M74 281V358M95 281V358M116 281V358" stroke="#af7e4e" opacity=".35"/>
+              <path d="M44 254L79 234H350L315 254Z" fill="#d7b38b"/>
+              <path d="M44 254H315V266H44Z" fill="#866145"/>
+              <path d="M315 254L350 234V246L315 266Z" fill="#684b36"/>
+              <path d="M46 254H315L347 236" fill="none" stroke="#ead1b3" stroke-width="2"/>
+              <g transform="translate(91 222)"><path d="M0 25L8 3H43L50 25L39 30H-7Z" fill="#2e3c51"/><path d="M12 6H39L35 20H8Z" fill="#92adc2"/><path d="M-7 25H40V30H-7Z" fill="#202c40"/></g>
+              <g id="checkout-clicktap" aria-label="ClickTap NFC sobre el mesón">
+                <ellipse cx="293" cy="249" rx="31" ry="5" fill="#513b2c" opacity=".17"/>
+                <g transform="matrix(.95 -.15 .25 .30 265 236)">
+                  <rect x="2" y="2" width="43" height="47" rx="3" fill="#7f624b" opacity=".24"/>
+                  <rect width="43" height="47" rx="3" fill="#fff" stroke="#aebdcb" stroke-width="1.2"/>
+                  <path d="M3 0H40Q43 0 43 3V25Q31 29 20 24Q9 20 0 25V3Q0 0 3 0Z" fill="#1559ee"/>
+                  <circle cx="11" cy="11" r="7.3" fill="white"/>
+                  <g transform="translate(5.4 5.4) scale(.47)">
+                    <path fill="#4285f4" d="M24 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.7c-.3 1.5-1.2 2.8-2.5 3.6V21h4c2.3-2.1 3.8-5.2 3.8-8.7Z"/>
+                    <path fill="#34a853" d="M12 24c3.2 0 5.9-1.1 8-3l-4-2.9c-1.1.7-2.4 1.1-4 1.1-3.1 0-5.8-2.1-6.8-4.9H1.1v3.1C3.2 21.3 7.3 24 12 24Z"/>
+                    <path fill="#fbbc05" d="M5.2 14.3a7.3 7.3 0 0 1 0-4.6V6.6H1.1a12 12 0 0 0 0 10.8Z"/>
+                    <path fill="#ea4335" d="M12 4.8c1.8 0 3.3.6 4.5 1.8l3.4-3.4A11.5 11.5 0 0 0 12 0C7.3 0 3.2 2.7 1.1 6.6l4.1 3.1C6.2 6.9 8.9 4.8 12 4.8Z"/>
+                  </g>
+                  <text x="29" y="9" fill="white" font-size="3.8" text-anchor="middle">Review us</text>
+                  <text x="29" y="14" fill="white" font-size="3.8" text-anchor="middle">on Google</text>
+                  <text x="29" y="20" fill="#ffda44" font-size="4.5" text-anchor="middle">★★★★★</text>
+                  <g fill="none" stroke="#253449" stroke-linecap="round">
+                    <rect x="6" y="31" width="7" height="11" rx="1.3" stroke-width="1.1"/>
+                    <path d="M15 32Q18 35 15 38M17 30Q22 35 17 40" stroke-width="1"/>
+                  </g>
+                  <rect x="26" y="30" width="12" height="12" rx="3" fill="#253449"/>
+                  <text x="32" y="38" text-anchor="middle" fill="white" font-size="4.2" font-weight="700">NFC</text>
+                </g>
+              </g>
+              <g id="checkout-signal" opacity="0" fill="none" stroke="#1559ee" stroke-width="2.5"><ellipse cx="293" cy="239" rx="27" ry="10"/><ellipse cx="293" cy="239" rx="39" ry="15" opacity=".5"/></g>
+              <g id="checkout-customer">
+                <ellipse cx="5" cy="377" rx="41" ry="8" fill="#8e9fb8" opacity=".24"/>
+                <path id="checkout-leg-back" d="M14 278L21 323L20 368" fill="none" stroke="#33435b" stroke-width="19" stroke-linecap="round"/>
+                <path id="checkout-leg-front" d="M-12 278L-15 323L-16 368" fill="none" stroke="#243249" stroke-width="20" stroke-linecap="round"/>
+                <g id="checkout-far-arm"><path d="M18 211L29 243L20 271" fill="none" stroke="#ca9777" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 211L23 225" stroke="#1049ca" stroke-width="19" stroke-linecap="round"/></g>
+                <path d="M-26 206Q-24 186 0 184Q25 187 29 209L30 285H-28Z" fill="#1559ee"/>
+                <path d="M17 193Q26 200 27 219L30 285H17Z" fill="#104bd0"/>
+                <rect x="-9" y="170" width="19" height="20" rx="6" fill="#c98d67"/>
+                <rect x="-24" y="126" width="47" height="52" rx="21" fill="#e4ae88"/>
+                <path d="M-26 144Q-32 123-15 117Q18 109 25 131L22 147L14 135Q-4 143-26 144Z" fill="#202a38"/>
+                <circle cx="-11" cy="151" r="2" fill="#263243"/><circle cx="7" cy="151" r="2" fill="#263243"/>
+                <path d="M-2 153L-3 157" fill="none" stroke="#bd7e5b" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M-11 164Q-2 170 7 163" stroke="#946447" stroke-width="2" stroke-linecap="round" fill="none"/>
+                <path id="checkout-arm" d="M-18 211L-3 248L-44 266" fill="none" stroke="#e4ae88" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+                <path id="checkout-sleeve" d="M-18 211L-12 226" fill="none" stroke="#1559ee" stroke-width="21" stroke-linecap="round"/>
+                <g id="checkout-handset"><ellipse cx="4" cy="5" rx="10" ry="9" fill="#e4ae88"/><g transform="skewY(-7)"><rect x="-13" y="-37" width="26" height="51" rx="5" fill="#53657c"/><rect x="-15" y="-39" width="25" height="51" rx="5" fill="#202a38"/><rect x="-12" y="-34" width="19" height="39" rx="2" fill="#e5edfc"/><rect x="-6" y="-32" width="8" height="2" rx="1" fill="#202a38"/><rect id="checkout-phone-link" x="-10" y="-23" width="15" height="13" rx="2" fill="#1559ee" opacity="0"/></g></g>
+              </g>
+              <g id="checkout-notification" opacity="0"><rect x="345" y="57" width="213" height="59" rx="13" fill="white" stroke="#ccdaee"/><text x="361" y="80" font-size="12" font-weight="700" fill="#1559ee">Enlace detectado</text><text x="361" y="100" font-size="11" fill="#53647d">Toca para abrir clicktap.app ↗</text></g>
+            </g>
+            <g id="checkout-page" opacity="0">
+              <rect x="0" y="0" width="640" height="420" fill="#edf3fd"/>
+              <rect x="222" y="27" width="196" height="330" rx="27" fill="#202a38"/>
+              <rect x="229" y="34" width="182" height="316" rx="21" fill="white"/>
+              <rect x="290" y="40" width="60" height="12" rx="6" fill="#202a38"/>
+              <text x="320" y="75" text-anchor="middle" font-size="9" fill="#7a879c">clicktap.app/tu-negocio</text>
+              <circle cx="320" cy="113" r="24" fill="#1559ee"/><text x="320" y="118" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">TN</text>
+              <text x="320" y="155" text-anchor="middle" font-size="16" font-weight="700" fill="#1a283c">Tu Negocio</text><text x="320" y="172" text-anchor="middle" font-size="9" fill="#7a879c">Todo lo que necesitas, aquí.</text>
+              <g fill="#edf3ff"><rect x="244" y="187" width="152" height="33" rx="7"/><rect x="244" y="229" width="152" height="33" rx="7"/><rect x="244" y="271" width="152" height="33" rx="7"/></g>
+              <g fill="#26436c" font-size="11" text-anchor="middle"><text x="320" y="208">★ Dejar una reseña</text><text x="320" y="250">Copiar datos de pago</text><text x="320" y="292">Ver nuestras redes</text></g>
+              <text x="320" y="329" text-anchor="middle" font-size="10" font-weight="700" fill="#1559ee">clicktap.</text>
+            </g>
+            <text id="checkout-caption" x="320" y="405" text-anchor="middle" fill="#405574" font-size="13" font-weight="600">El cliente llega a caja</text>
+          </svg>
+          <div class="checkout-progress"><span id="checkout-progress-fill"></span></div>
+          <div class="scan-controls"><button type="button" id="scan-pause">Pausar</button><button type="button" id="scan-replay">Repetir ↻</button></div>
+        </div>
+      </div>
+      <div class="steps">
+        <article class="step reveal"><div class="step-art tap-art" aria-hidden="true"><div class="mini-plaque"><span class="g-letter">G</span><span>ClickTap</span></div><div class="tap-waves">)))</div><div class="tap-customer"><i class="customer-head"></i><i class="customer-body"></i><i class="customer-arm"></i><div class="mini-phone"><span></span><b>↗</b></div></div></div><span class="step-number">01</span><h3>Acerca o escanea</h3><p>Usa el NFC con un celular compatible o escanea el QR en los modelos que lo incluyen.</p></article>
+        <article class="step reveal"><div class="step-art open-art" aria-hidden="true"><div class="mini-browser"><div class="browser-bar"><i></i><i></i><i></i><span>tu negocio</span></div><b>Tu marca</b><span class="browser-row"></span><span class="browser-row"></span><span class="browser-row short"></span></div><span class="pop-check">✓</span></div><span class="step-number">02</span><h3>Abre tu página</h3><p>El cliente entra desde su navegador y encuentra los enlaces de tu negocio en un solo lugar.</p></article>
+        <article class="step reveal"><div class="step-art connect-art" aria-hidden="true"><span class="connection-chip chip-a">★ Reseñas</span><span class="connection-chip chip-b">↗ WhatsApp</span><span class="connection-chip chip-c">⇄ Transferencias</span></div><span class="step-number">03</span><h3>Hazlo fácil</h3><p>Dejar una opinión, copiar tus datos o seguir tus redes. El cliente elige qué hacer.</p></article>
+      </div>
+    </section>
+    <section class="products-section" id="productos"><div class="section-wrap">
+      <div class="section-heading reveal"><div><p class="eyebrow">02 / ENCUENTRA EL TUYO</p><h2>Tres formatos.<br>La misma conexión.</h2></div><p>Elige cómo quieres estar presente<br>en el día a día de tu negocio.</p></div>
+      <div class="products">
+        <article class="product reveal"><div class="product-visual visual-original"><span class="product-badge">EL ORIGINAL</span><div class="physical original"><img src="assets/nfc_solo.webp" alt="Producto original Google azul y blanco, NFC sin QR" loading="lazy" width="269" height="307" decoding="async"></div><span class="product-motion motion-tap" aria-hidden="true"><i></i><b>)))</b></span><span class="product-index">01</span></div><div class="product-body"><div class="product-title"><h3>Original NFC</h3><span class="tech-pill">NFC</span></div><p>La conexión empieza con un toque.</p><div class="product-price"><strong>$11.990</strong><span>Pago único</span></div><ul><li>Diseño original azul y blanco</li><li>Acceso por NFC en celulares compatibles</li><li>Página con los enlaces de tu negocio</li></ul><button class="btn btn-outline" data-contact="Original NFC — $11.990">Quiero el original <span aria-hidden="true">↗</span></button></div></article>
+        <article class="product product-popular reveal"><div class="product-visual visual-qr"><span class="product-badge">MÁS ELEGIDO</span><div class="physical qr-card"><img src="assets/nfc_qr.webp" alt="Modelo con NFC y código QR" loading="lazy" width="399" height="399" decoding="async"></div><span class="product-motion motion-scan" aria-hidden="true"><i></i></span><span class="product-index">02</span></div><div class="product-body"><div class="product-title"><h3>NFC + QR</h3><span class="tech-pill">NFC + QR</span></div><p>Un toque o un escaneo. Tú eliges.</p><div class="product-price"><strong>$15.990</strong><span>Pago único</span></div><ul><li>Diseño azul y blanco con QR</li><li>Dos accesos a la misma página</li><li>Página con los enlaces de tu negocio</li></ul><button class="btn btn-outline" data-contact="NFC + QR — $15.990">Quiero NFC + QR <span aria-hidden="true">↗</span></button></div></article>
+        <article class="product product-featured reveal"><div class="product-visual visual-custom"><span class="product-badge">CON TU IDENTIDAD</span><div class="acrylic product-acrylic"><div class="acrylic-glass"><img src="assets/personalizado.webp" alt="Diseño personalizable con logo, NFC y QR en acrílico transparente" loading="lazy" width="378" height="567" decoding="async"></div><div class="acrylic-base"></div></div><span class="product-motion motion-brand" aria-hidden="true">TU LOGO <i>✓</i></span><span class="product-index">03</span></div><div class="product-body"><div class="product-title"><h3>Personalizado</h3><span class="tech-pill">10 × 15 cm</span></div><p>Tu marca también está en los detalles.</p><div class="product-price"><strong>$19.990</strong><span>Pago único</span></div><ul><li>Soporte de acrílico transparente</li><li>Diseño con tu logo, NFC y QR</li><li>Página con los enlaces de tu negocio</li></ul><button class="btn btn-blue" data-contact="Personalizado en acrílico — $19.990">Quiero personalizarlo <span aria-hidden="true">↗</span></button></div></article>
+      </div><p class="products-note"><strong>Pago único · Incluye tu página ClickTap · Sin mensualidad.</strong><br>Los tres formatos conectan con tu página ClickTap. Elige la presentación que va contigo.</p>
+    </div></section>
+    <section class="section-wrap experience" id="ejemplos">
+      <div class="experience-copy reveal"><p class="eyebrow">03 / MÁS QUE UNA TARJETA</p><h2>Todo tu negocio.<br><span class="blue">Un solo lugar.</span></h2><p class="lead">Una página con las acciones que tus clientes más necesitan. Presiona una opción para descubrir cómo funciona.</p>
+        <div class="feature-explainer" id="feature-explainer" aria-live="polite">
+          <span class="explainer-kicker" id="feature-kicker">RESEÑAS DE GOOGLE</span>
+          <div class="explainer-heading"><span class="explainer-icon" id="feature-icon" aria-hidden="true">★</span><h3 id="feature-title">Convierte una buena atención en una reseña</h3></div>
+          <p id="feature-description">Lleva al cliente directamente al perfil de Google del negocio para que pueda dejar su opinión con menos pasos.</p>
+          <span class="explainer-result" id="feature-result">Ideal para: facilitar que más clientes recuerden dejar su reseña.</span>
+        </div>
+        <a class="text-link real-example" href="https://clicktap.app/full-drink/" target="_blank" rel="noopener noreferrer">Visita una página real: Full Drink <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="phone-scene reveal"><span class="demo-label">PRESIONA UNA OPCIÓN ↓</span><div class="phone link-page"><div class="phone-island"></div><div class="phone-top"><span>9:41</span><span>▮▮▮ ▰</span></div><div class="phone-cover"><span>HECHO CON CARIÑO</span><b>café<br>central<span>®</span></b></div><div class="phone-content"><div class="cafe-avatar">cc.</div><h3>Café Central</h3><p>Tu pausa favorita, en el centro.</p><span class="demo-caption">Página de ejemplo</span>
+          <div class="business-links" role="group" aria-label="Funciones disponibles en la página ClickTap">
+            <button class="business-link active" type="button" data-feature="reviews" aria-pressed="true"><span class="business-link-icon google-icon">G</span><span><strong>Déjanos una reseña</strong><small>Cuéntanos tu experiencia</small></span><b aria-hidden="true">↗</b></button>
+            <button class="business-link" type="button" data-feature="transfer" aria-pressed="false"><span class="business-link-icon">⇄</span><span><strong>Datos de transferencia</strong><small>Copia los datos para pagar</small></span><b aria-hidden="true">⧉</b></button>
+            <button class="business-link" type="button" data-feature="whatsapp" aria-pressed="false"><span class="business-link-icon whatsapp-icon">●</span><span><strong>Escríbenos por WhatsApp</strong><small>Consulta directamente</small></span><b aria-hidden="true">↗</b></button>
+            <button class="business-link" type="button" data-feature="instagram" aria-pressed="false"><span class="business-link-icon instagram-icon">◎</span><span><strong>Síguenos en Instagram</strong><small>Mira novedades y trabajos</small></span><b aria-hidden="true">↗</b></button>
+            <button class="business-link" type="button" data-feature="location" aria-pressed="false"><span class="business-link-icon location-icon">⌖</span><span><strong>Cómo llegar</strong><small>Abre la ubicación del local</small></span><b aria-hidden="true">↗</b></button>
+          </div>
+          <p class="link-page-status" id="feature-status" role="status">Esta opción llevaría a las reseñas de Google del negocio.</p>
+          <span class="phone-footer">conecta con <b>clicktap.</b></span>
+        </div></div><span class="phone-scene-note">Demostración interactiva. Los enlaces finales se preparan con la información de cada negocio.</span></div>
+    </section>
+    <section class="order-section"><div class="section-wrap order-inner reveal"><div><p class="eyebrow">DE LA IDEA AL MESÓN</p><h2>Lo preparamos<br>para tu negocio.</h2></div><ol class="order-list"><li><span>1</span><div><strong>Elige tu formato</strong><p>Cuéntanos cuál te gusta y resolvemos tus dudas.</p></div></li><li><span>2</span><div><strong>Envíanos tu información</strong><p>Tu logo, enlaces y los datos que quieres compartir.</p></div></li><li><span>3</span><div><strong>Coordinamos la entrega</strong><p>Preparamos tu ClickTap para que empieces a usarlo.</p></div></li></ol></div></section>
+    <section class="section-wrap faq-section"><div class="reveal"><p class="eyebrow">SIN VUELTAS</p><h2>Quizás te estás<br>preguntando…</h2><p>Si te queda alguna duda,<br><button class="inline-button" data-contact="Tengo una consulta">conversemos ↗</button></p></div><div class="faqs reveal">
+      <details><summary>¿Mis clientes necesitan instalar una aplicación?<span>+</span></summary><p>No necesitan una aplicación de ClickTap. La página se abre en el navegador; algunos servicios externos pueden pedir iniciar sesión, como Google para publicar una reseña.</p></details>
+      <details><summary>¿Qué pasa si el celular no tiene NFC?<span>+</span></summary><p>En los modelos con QR, el cliente puede escanearlo con la cámara de su celular. El modelo original no incluye QR y necesita un celular con lectura NFC compatible.</p></details>
+      <details><summary>¿Se necesita conexión a internet?<span>+</span></summary><p>Sí, el celular necesita internet para abrir la página y acceder a las reseñas, redes y otros enlaces.</p></details>
+      <details><summary>¿Solo sirve para las reseñas de Google?<span>+</span></summary><p>No. Aunque los modelos originales tienen un diseño de Google, pueden abrir tu página ClickTap con reseñas, datos de transferencia, WhatsApp, redes y otros enlaces.</p></details>
+      <details><summary>¿Puedo elegir el diseño y actualizar mis enlaces?<span>+</span></summary><p>El modelo personalizado se prepara con el logo y estilo de tu negocio. Para cambios posteriores en la página, escríbenos y revisamos lo que necesitas.</p></details>
+    </div></section>
+    <section class="closing section-wrap reveal"><div class="closing-orbit"></div><p class="eyebrow">TU PRÓXIMA CONEXIÓN EMPIEZA AQUÍ</p><h2>Hazlo fácil.<br>Hazlo <span>ClickTap.</span></h2><button class="btn btn-white" data-contact="ClickTap para mi negocio">Lo quiero para mi negocio <span aria-hidden="true">↗</span></button><p>Hecho para conectar negocios y personas.</p></section>
+  </main>
+  <a class="whatsapp-float" href="https://wa.me/56961610609?text=Hola%20ClickTap%2C%20quiero%20informaci%C3%B3n%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer" aria-label="Hablar con ClickTap por WhatsApp"><span aria-hidden="true"><svg class="whatsapp-logo" viewBox="0 0 16 16" focusable="false"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144l-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931a6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646c-.182-.065-.315-.099-.445.099c-.133.197-.513.646-.627.775c-.114.133-.232.148-.43.05c-.197-.1-.836-.308-1.592-.985c-.59-.525-.985-1.175-1.103-1.372c-.114-.198-.011-.304.088-.403c.087-.088.197-.232.296-.346c.1-.114.133-.198.198-.33c.065-.134.034-.248-.015-.347c-.05-.099-.445-1.076-.612-1.47c-.16-.389-.323-.335-.445-.34c-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654c0 .977.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992c.47.205.84.326 1.129.418c.475.152.904.129 1.246.08c.38-.058 1.171-.48 1.338-.943c.164-.464.164-.86.114-.943c-.049-.084-.182-.133-.38-.232z"/></svg></span></a>
+  <footer class="footer section-wrap"><a class="brand" href="#">clicktap<span class="brand-dot">.</span></a><span>Desde Concepción, Chile.</span><a href="https://www.instagram.com/clicktap.cl/" target="_blank" rel="noopener noreferrer">@clicktap.cl ↗</a></footer>
+  <dialog id="contact-dialog" aria-labelledby="contact-title"><button class="dialog-close" aria-label="Cerrar">×</button><span class="dialog-icon">↗</span><p class="eyebrow">CONVERSEMOS</p><h2 id="contact-title">Tu próximo ClickTap.</h2><p>Te ayudamos con el precio, la personalización y la entrega.</p><div class="chosen-product"><small>TE INTERESA</small><strong id="selected-product">ClickTap</strong></div><a class="btn btn-whatsapp" id="whatsapp-contact" href="https://wa.me/56961610609" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp ↗</a><button class="copy-inquiry" id="copy-inquiry">Copiar mensaje de consulta</button><p id="contact-status" role="status"></p></dialog>
+</body>
+</html>

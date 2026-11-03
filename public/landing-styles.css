@@ -26,6 +26,7 @@
 .motion-scan:after{bottom:7px;opacity:.25}
 .motion-brand{right:34px;bottom:30px;padding:9px 11px;border-radius:8px;background:#fff;color:#1559ee;box-shadow:0 8px 18px #22365c1f;font-size:8px;font-weight:800;letter-spacing:1px;animation:brandBadge 3.2s ease-in-out infinite}
 .motion-brand i{font-style:normal;display:inline-grid;place-items:center;width:17px;height:17px;margin-left:5px;border-radius:50%;background:#1559ee;color:#fff}
+.motion-brand svg{display:block;width:10px;height:10px}
 .product-acrylic .acrylic-glass{overflow:hidden}
 .product-acrylic .acrylic-glass:after,.hero-acrylic .acrylic-glass:after{content:'';position:absolute;inset:-35% auto -35% -70%;width:34%;background:linear-gradient(90deg,transparent,#fff9,transparent);transform:skewX(-16deg);animation:acrylicShine 3.6s ease-in-out infinite}
 @keyframes productNfc{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}

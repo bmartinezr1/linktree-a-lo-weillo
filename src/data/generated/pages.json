@@ -5289,6 +5289,84 @@
                 "buttonText": "#ffffff",
                 "accent": "#103090"
             }
+        },
+        {
+            "slug": "salon-de-belleza-canela",
+            "name": "Salon de belleza Canela",
+            "tagline": null,
+            "description": "✨️Realzamos tu belleza y cuidamos tu cabello\n💇‍♀️Color, Balayage, Alisados & Keratina\n💈Barbería, Depilación & Manicure\n📲Reserva tu hora por WhatsApp",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/salon-de-belleza-canela.jpg",
+            "logoAlt": "Logo de Salon de belleza Canela",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/salon-de-belleza-canela.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "📍Freire 522, Loc 136, Concepción, Bío Bío"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes a Sábado 10 a. m.–7 p. m"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJlX1JBFq1aZYRz3WPKDldKSs",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/saloncanela136/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": "Facebook",
+                    "icon": "facebook",
+                    "label": "Visita nuestro Facebook",
+                    "href": "https://www.facebook.com/p/Salon-de-belleza-Canela-136-100094464974418/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fdfdf8",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

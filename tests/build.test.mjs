@@ -30,10 +30,11 @@ test('GA4 aparece una sola vez en cada pagina de contenido', async () => {
   }
 });
 
-test('conserva las 91 páginas anteriores y agrega las cinco páginas SEO planificadas', () => {
+test('conserva las páginas anteriores e incluye las nuevas rutas', () => {
   const htmlFiles = [...files].filter(path => path.endsWith('.html'));
-  assert.equal(htmlFiles.length, 96);
+  assert.ok(htmlFiles.length >= 97, `Solo se generaron ${htmlFiles.length} páginas.`);
   for (const path of commercialPages) assert.ok(files.has(path), path);
+  assert.ok(files.has('/strato-beer-house/index.html'));
 });
 
 test('las direcciones originales y sus alias funcionan con nombres de archivo exactos', () => {

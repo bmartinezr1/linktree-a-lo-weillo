@@ -305,6 +305,40 @@ export const fullDrinkSite: SiteProfile = {
   },
 };
 
+export const stratoBeerHouseSite: SiteProfile = {
+  name: 'Strato Beer House',
+  tagline: 'Bar cervecero · Concepción',
+  description: 'Cervezas artesanales, coctelería y cocina para compartir en Caupolicán 1745, Concepción.',
+  theme: 'strato',
+  logo: '/logo-strato-beer-house.png',
+  logoAlt: 'Logo de Strato Beer House en blanco y dorado sobre fondo negro',
+  logoLayout: 'original',
+  logoWidth: 250,
+  logoHeight: 201,
+  favicon: '/logo-strato-beer-house.png',
+  footer: 'Strato Beer House · Concepción.',
+  highlights: [
+    {
+      id: 'location',
+      icon: 'location',
+      label: 'Ubicación',
+      value: 'Caupolicán 1745, Concepción',
+    },
+  ],
+  links: [
+    {
+      label: 'Instagram',
+      href: 'https://www.instagram.com/stratobeerhouse/',
+      icon: 'instagram',
+    },
+    {
+      label: 'Escribir una reseña',
+      href: 'https://search.google.com/local/writereview?placeid=ChIJq4lR6nK1aZYRrGLqycHl4Ss',
+      icon: 'review',
+    },
+  ],
+};
+
 const DONA_FLOR_INSTAGRAM = 'https://www.instagram.com/donaflor.supermercado/';
 const DONA_FLOR_REVIEWS_URL = 'https://search.google.com/local/writereview?placeid=ChIJAQgpIwC1aZYR8bhIeN5ohSs';
 

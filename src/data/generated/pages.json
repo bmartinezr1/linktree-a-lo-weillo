@@ -6244,6 +6244,73 @@
                 "buttonText": "#ffffff",
                 "accent": "#852163"
             }
+        },
+        {
+            "slug": "8va-cafeteria",
+            "name": "8va Cafeteria",
+            "tagline": "Cafetería",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/8va-cafeteria.jpg",
+            "logoAlt": "Logo de 8va Cafeteria",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/8va-cafeteria.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Freire 522, Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56964477518",
+                    "href": "tel:+56964477518"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJSRhDxK-1aZYRKabSLPq7uls",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/8va.cafeteria/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#e2dede",
+                "text": "#111827",
+                "button": "#301010",
+                "buttonText": "#ffffff",
+                "accent": "#301010"
+            }
         }
     ]
 }

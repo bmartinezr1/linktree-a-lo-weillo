@@ -5845,6 +5845,84 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "nails-beauty",
+            "name": "Nails & Beauty",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/nails-beauty.jpg",
+            "logoAlt": "Logo de Nails & Beauty",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/nails-beauty.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "📍Rengo 578 ,local 019 , Concepcion"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "🕙L a V 10:00 a 19:00 y S 10:00 a 14:00"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJ9b3Eboe1aZYRxunmFXyTgIA",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/nailsbeautyconcepcion/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": "Facebook",
+                    "icon": "facebook",
+                    "label": "Visita Nuestro Facebook",
+                    "href": "https://www.facebook.com/nailsbeautyconcepcion/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#deebf4",
+                "text": "#111827",
+                "button": "#1070b0",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

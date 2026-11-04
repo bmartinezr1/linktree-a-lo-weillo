@@ -1,4 +1,5 @@
 ---
+import GoogleAnalytics from './GoogleAnalytics.astro';
 import { site as defaultSite, type SiteProfile } from '../data/site';
 import { validateSite } from '../data/validate-site';
 import TransferButton from './TransferButton.astro';
@@ -50,6 +51,7 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
 <!doctype html>
 <html lang="es" style={usePanelComercio ? customStyle : undefined}>
   <head>
+    <GoogleAnalytics />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={site.description} />

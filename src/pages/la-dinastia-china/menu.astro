@@ -1,4 +1,5 @@
 ---
+import GoogleAnalytics from '../../components/GoogleAnalytics.astro';
 import { laDinastiaChinaSite } from '../../data/site';
 
 const menuImages = [
@@ -24,6 +25,7 @@ const imageUrl = new URL(menuImages[0].src, Astro.site ?? Astro.url);
 <!doctype html>
 <html lang="es">
   <head>
+    <GoogleAnalytics />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menú | La Dinastía China</title>

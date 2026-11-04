@@ -1,4 +1,5 @@
 ---
+import GoogleAnalytics from './GoogleAnalytics.astro';
 import '../styles/global.css';
 const title = 'ClickTap | Tu negocio en un toque';
 const description = 'ClickTap crea placas NFC personalizadas y páginas de enlaces para que tus clientes encuentren todo tu negocio con un toque.';
@@ -9,6 +10,7 @@ const imageUrl = new URL('/clicktap-social.png', Astro.site ?? Astro.url);
 <!doctype html>
 <html lang="es">
   <head>
+    <GoogleAnalytics />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "npm test && astro check && astro build && node --test tests/build.test.mjs",
-    "test": "node --experimental-strip-types --test tests/site-validation.test.mjs",
+    "test": "node --experimental-strip-types --test tests/site-validation.test.mjs tests/analytics.test.mjs",
     "preview": "astro preview"
   },
   "dependencies": {

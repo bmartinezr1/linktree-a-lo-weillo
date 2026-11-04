@@ -1,5 +1,14 @@
 # Linktree espejo
 
+## Google Analytics 4
+
+La etiqueta `G-Y3D0K1612Y` se incluye una vez por página de contenido en compilaciones de producción; no se carga con `npm run dev`.
+`src/components/GoogleAnalytics.astro` y `public/analytics.js` registran visitas, `click_whatsapp`, `click_instagram`,
+`select_item` (selección de producto) y `view_item` (página de producto). El clic en WhatsApp del diálogo incluye el producto seleccionado,
+sin enviar el número ni el mensaje del enlace como parámetros del evento. Un clic representa intención de contacto, no una solicitud completada.
+Actualmente no hay formulario de solicitudes. La procedencia Google se consulta en Adquisición de tráfico de GA4.
+Después de publicar, abrir el sitio y comprobar las visitas y eventos en Tiempo real de Google Analytics.
+
 Sitio público de ClickTap y páginas de enlaces para negocios, construido con Astro y TypeScript.
 
 ## Desarrollo local

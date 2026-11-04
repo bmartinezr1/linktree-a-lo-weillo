@@ -18,6 +18,16 @@ const commercialPages = [
   '/concepcion/tarjetas-nfc-concepcion/index.html',
 ];
 
+test('GA4 aparece una sola vez en cada pagina de contenido', async () => {
+  for (const path of files) {
+    if (!path.endsWith('.html') || path === '/404.html') continue;
+    const html = await readFile(new URL(path.slice(1), dist), 'utf8');
+    if (html.includes('http-equiv="refresh"')) continue;
+    assert.equal((html.match(/googletagmanager\.com\/gtag\/js\?id=G-Y3D0K1612Y/g) ?? []).length, 1, path);
+    assert.equal((html.match(/src="\/analytics\.js"/g) ?? []).length, 1, path);
+  }
+});
+
 test('conserva las 91 páginas anteriores y agrega solo las tres páginas SEO planificadas', () => {
   const htmlFiles = [...files].filter(path => path.endsWith('.html'));
   assert.equal(htmlFiles.length, 94);

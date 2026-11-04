@@ -6311,6 +6311,68 @@
                 "buttonText": "#ffffff",
                 "accent": "#301010"
             }
+        },
+        {
+            "slug": "perfumeria-agua-luna",
+            "name": "Perfumeria Agua Luna",
+            "tagline": "Tienda de productos de belleza",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/perfumeria-agua-luna.jpg",
+            "logoAlt": "Logo de Perfumeria Agua Luna",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/perfumeria-agua-luna.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Galeria Caracol Local 203 5to Nivel, Concepción"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJkbXGyaa1aZYRdwjVjlKMjQ8",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/agualuna_perfumes/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fde7ef",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

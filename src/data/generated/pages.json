@@ -5783,6 +5783,68 @@
                 "buttonText": "#ffffff",
                 "accent": "#b01030"
             }
+        },
+        {
+            "slug": "peluqueria-piolin",
+            "name": "Peluquería Piolín",
+            "tagline": null,
+            "description": "Los mejores cortes y peinados para los/as pequeños/as de la casa 💇‍♂️❤💇‍♀️",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/peluqueria-piolin.jpg",
+            "logoAlt": "Logo de Peluquería Piolín",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/peluqueria-piolin.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes - Viernes 10 a. m.–6 p. m\nSábado 10 a. m.–2 p. m"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJH15uctC1aZYR9h-hvmmmzpw",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/peluqueriapiolin",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fdfde7",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

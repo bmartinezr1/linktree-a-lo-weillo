@@ -5455,6 +5455,64 @@
                 "buttonText": "#ffffff",
                 "accent": "#305090"
             }
+        },
+        {
+            "slug": "la-ollita",
+            "name": "La Ollita",
+            "tagline": null,
+            "description": "Tienda de instrumentos musicales",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/la-ollita.webp",
+            "logoAlt": "Logo de La Ollita",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/la-ollita.webp",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "📍Galería Caracol planta baja - Rengo 578, Local 036"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes a Viernes 10 a. m.–6 p. m\nSábado 10 a. m.–3 p. m"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJD5RNC9C1aZYRPT63BMW8c6w",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#ffffff",
+                "text": "#000000",
+                "button": "#111827",
+                "buttonText": "#ffffff",
+                "accent": "#111827"
+            }
         }
     ]
 }

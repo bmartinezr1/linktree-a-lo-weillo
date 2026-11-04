@@ -7137,6 +7137,58 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "tienda-panini-galeria-caracol",
+            "name": "Panini Point Concepción",
+            "tagline": "Álbumes y coleccionables",
+            "description": "",
+            "theme": "default",
+            "typography": "inter",
+            "logo": "/generated/logos/tienda-panini-galeria-caracol.jpg",
+            "logoAlt": "Logo de Panini Point Concepción",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/tienda-panini-galeria-caracol.jpg",
+            "footer": null,
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Freire 522, local 156, Galería Caracol, Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJn2afGY21aZYRG961bvcVeTM",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/panini_concepcion/?hl=es",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fdfdf8",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

@@ -6808,6 +6808,73 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "peluqueria-adeluimar-sanchez",
+            "name": "Peluquería Adeluimar Sánchez",
+            "tagline": "Peluquería",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/peluqueria-adeluimar-sanchez.jpg",
+            "logoAlt": "Logo de Peluquería Adeluimar Sánchez",
+            "logoLayout": "round",
+            "logoWidth": 240,
+            "favicon": "/generated/logos/peluqueria-adeluimar-sanchez.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Galería Caracol - Freire 522 \nLocal 174 Piso 4 Concepción"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56940685366",
+                    "href": "tel:+56940685366"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJs9IvewK1aZYR8Smq2EyFQJo",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/adeluimarsanchezpeluqueria?igsi=MWt2c2UzbjZuMHd0OQ%3D%3D",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#e7e2e2",
+                "text": "#111827",
+                "button": "#503030",
+                "buttonText": "#ffffff",
+                "accent": "#503030"
+            }
         }
     ]
 }

@@ -6011,6 +6011,99 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "joyas-nevada",
+            "name": "Joyas Nevada",
+            "tagline": null,
+            "description": "Joyas de Plata para Emprender\nVenta Mayorista",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/joyas-nevada.jpg",
+            "logoAlt": "Logo de Joyas Nevada",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/joyas-nevada.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Rengo 578, Loc 9, Concepción, Bío Bío"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes a Viernes \t10 a. m.–7 p. m\nSábado \t10 a. m.–3 p. m"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56973923598",
+                    "href": "tel:+56973923598"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas de google",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJWy2bvlW1aZYRqbG_fPcJ_Hw",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/joyasnevada",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "whatsapp",
+                    "name": "Whatsapp",
+                    "icon": "whatsapp",
+                    "label": "Haz tus consultas por Whatsapp",
+                    "href": "https://wa.me/56973923598",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "web",
+                    "name": "Sitio web",
+                    "icon": "contact",
+                    "label": "Visita nuestra pagina web",
+                    "href": "https://misjoyas.cl/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#dee2e7",
+                "text": "#111827",
+                "button": "#103050",
+                "buttonText": "#ffffff",
+                "accent": "#103050"
+            }
         }
     ]
 }

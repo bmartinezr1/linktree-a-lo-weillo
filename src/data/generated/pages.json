@@ -6182,6 +6182,68 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "comercial-dyc",
+            "name": "Comercial DyC",
+            "tagline": "Comercial D&C Caracol",
+            "description": "",
+            "theme": "comercio",
+            "typography": "roboto",
+            "logo": "/generated/logos/comercial-dyc.jpg",
+            "logoAlt": "Logo de Comercial DyC",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/comercial-dyc.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Freire 522, Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJWWwBm9q1aZYRuF0zNcS18to",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/comercialdyc/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fde2f4",
+                "text": "#111827",
+                "button": "#852163",
+                "buttonText": "#ffffff",
+                "accent": "#852163"
+            }
         }
     ]
 }

@@ -1,0 +1,121 @@
+---
+import SeoPage from '../../components/SeoPage.astro';
+
+const title = 'Soporte acrílico NFC con QR personalizado | ClickTap';
+const description = 'Soporte de acrílico personalizado con tu logo, NFC y QR. Incluye página digital para reseñas, transferencias, WhatsApp y redes. Valor: $19.990.';
+const canonicalPath = '/productos/soporte-acrilico-nfc-qr/';
+const schema = {
+  '@type': 'Product',
+  '@id': `https://clicktap.app${canonicalPath}#product`,
+  name: 'Soporte personalizado en acrílico con NFC + QR',
+  description,
+  image: 'https://clicktap.app/assets/personalizado.webp',
+  url: `https://clicktap.app${canonicalPath}`,
+  brand: { '@type': 'Brand', name: 'ClickTap' },
+  offers: {
+    '@type': 'Offer',
+    url: `https://clicktap.app${canonicalPath}`,
+    price: '19990',
+    priceCurrency: 'CLP',
+  },
+};
+---
+
+<SeoPage
+  title={title}
+  description={description}
+  canonicalPath={canonicalPath}
+  eyebrow="SOPORTE PERSONALIZADO · NFC + QR"
+  heading="Tu marca visible en cada conexión"
+  intro="Un soporte de acrílico de 10 × 15 cm con tu diseño, NFC y código QR. Déjalo en caja, recepción o mesón para que tus clientes abran la página de tu negocio con un toque o un escaneo."
+  image="/assets/personalizado.webp"
+  imageAlt="Soporte personalizado ClickTap de acrílico con NFC y código QR"
+  imageWidth={378}
+  imageHeight={567}
+  breadcrumbs={[{ label: 'Inicio', href: '/' }, { label: 'Soporte acrílico NFC + QR' }]}
+  schema={schema}
+  ctaTitle="Lleva tu marca al mesón"
+  ctaText="Envíanos tu logo y los enlaces que necesitas. Revisamos contigo el diseño y coordinamos la entrega."
+  whatsappMessage="Hola ClickTap, quiero cotizar el soporte personalizado de acrílico con NFC y QR de $19.990."
+>
+  <section class="content-section soft">
+    <div class="shell split-content">
+      <div>
+        <p class="eyebrow">QUÉ INCLUYE</p>
+        <h2>Un soporte físico y una página digital para tu negocio</h2>
+        <p>El NFC y el QR llevan a la misma página. Ahí puedes ordenar las acciones que tu clientela necesita encontrar rápido, con la identidad de tu negocio.</p>
+      </div>
+      <div class="info-panel">
+        <h3>Soporte personalizado — $19.990</h3>
+        <ul class="feature-list">
+          <li>Acrílico transparente de 10 × 15 cm</li>
+          <li>Diseño preparado con tu logo</li>
+          <li>Acceso mediante NFC y código QR</li>
+          <li>Página ClickTap con tus enlaces</li>
+          <li>Pago único, sin mensualidad</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section shell">
+    <div class="section-heading">
+      <p class="eyebrow">DE LA IDEA AL MESÓN</p>
+      <h2>Así preparamos tu soporte</h2>
+      <p>Antes de producirlo revisamos la información necesaria para que el diseño y los enlaces correspondan a tu negocio.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <span class="card-number">01</span>
+        <h3>Nos cuentas qué necesitas</h3>
+        <p>Definimos el objetivo principal: reseñas, pagos, contacto, redes, ubicación u otra acción.</p>
+      </article>
+      <article class="card">
+        <span class="card-number">02</span>
+        <h3>Envías tu material</h3>
+        <p>Recibimos tu logo, colores, enlaces y los datos que deben aparecer en la página digital.</p>
+      </article>
+      <article class="card">
+        <span class="card-number">03</span>
+        <h3>Preparamos y coordinamos</h3>
+        <p>Configuramos el NFC y el QR, preparamos tu soporte y coordinamos contigo la entrega.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="content-section soft">
+    <div class="shell">
+      <div class="section-heading">
+        <p class="eyebrow">USOS HABITUALES</p>
+        <h2>Una pieza pequeña para resolver acciones repetidas</h2>
+        <p>El contenido se adapta a tu negocio. Estas son algunas de las opciones que puedes reunir en la página incluida.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><h3>Reseñas de Google</h3><p>Lleva al cliente al perfil correcto y evita que tenga que buscar el nombre del negocio.</p></article>
+        <article class="card"><h3>Pagos y consultas</h3><p>Muestra datos de transferencia y acceso directo a WhatsApp para consultas o reservas.</p></article>
+        <article class="card"><h3>Redes y ubicación</h3><p>Reúne Instagram, TikTok, mapa y otros enlaces útiles en una página clara.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section shell">
+    <div class="section-heading">
+      <p class="eyebrow">PREGUNTAS FRECUENTES</p>
+      <h2>Detalles del soporte personalizado</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>¿El valor incluye la página digital?</summary>
+        <p>Sí. El valor informado de $19.990 incluye el soporte personalizado y la página ClickTap con los enlaces que se definan para tu negocio.</p>
+      </details>
+      <details>
+        <summary>¿El NFC y el QR abren contenidos distintos?</summary>
+        <p>Normalmente ambos llevan a la misma página ClickTap, para que el cliente elija la forma de acceso que le resulte más cómoda.</p>
+      </details>
+      <details>
+        <summary>¿Necesito pagar una mensualidad?</summary>
+        <p>No. El producto se ofrece con pago único y sin mensualidad. Si más adelante necesitas cambios, puedes escribirnos para revisar el alcance.</p>
+      </details>
+    </div>
+  </section>
+</SeoPage>

@@ -167,3 +167,11 @@ html,body{overflow-x:hidden}
 .product-popular .product-badge{background:#1559ee;color:#fff}
 .products-note strong{color:#16213a}
 @media(max-width:760px){.product-price strong{font-size:29px}}
+
+/* Crawlable product details and commercial footer links. */
+.product-detail-link{display:inline-block;margin:-6px 0 17px;color:#1559ee;font-size:11px;font-weight:750;line-height:1.55;text-decoration:underline;text-underline-offset:4px}
+.product-detail-link:hover{color:#0b45bd}
+.footer-links{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;font-size:10px;color:#667080}
+.footer-links a:hover{color:#1559ee}
+@media(max-width:1050px){.footer-links{order:4;flex-basis:100%}}
+@media(max-width:760px){.product-detail-link{font-size:12px}.footer-links{display:grid;grid-template-columns:1fr;gap:10px;text-align:left;order:4;flex-basis:100%}}

@@ -1,0 +1,122 @@
+---
+import SeoPage from '../../components/SeoPage.astro';
+
+const title = 'Tarjetas NFC en Concepción para negocios | ClickTap';
+const description = 'Tarjetas NFC, modelos con QR y soportes personalizados para negocios de Concepción y el Gran Concepción. Página digital incluida desde $11.990.';
+const canonicalPath = '/concepcion/tarjetas-nfc-concepcion/';
+const schema = {
+  '@type': 'Service',
+  '@id': `https://clicktap.app${canonicalPath}#service`,
+  name: 'Tarjetas NFC para negocios en Concepción',
+  description,
+  url: `https://clicktap.app${canonicalPath}`,
+  serviceType: 'Tarjetas y soportes NFC con página digital para negocios',
+  provider: { '@id': 'https://clicktap.app/#organization' },
+  areaServed: [
+    { '@type': 'City', name: 'Concepción' },
+    { '@type': 'City', name: 'San Pedro de la Paz' },
+    { '@type': 'City', name: 'Chiguayante' },
+    { '@type': 'City', name: 'Talcahuano' },
+    { '@type': 'AdministrativeArea', name: 'Región del Biobío' },
+  ],
+  offers: { '@type': 'AggregateOffer', lowPrice: '11990', highPrice: '19990', priceCurrency: 'CLP', offerCount: '3' },
+};
+---
+
+<SeoPage
+  title={title}
+  description={description}
+  canonicalPath={canonicalPath}
+  eyebrow="CLICKTAP · CONCEPCIÓN Y BIOBÍO"
+  heading="Tarjetas NFC para negocios de Concepción"
+  intro="Ayuda a tus clientes a encontrar reseñas de Google, datos de transferencia, WhatsApp, redes, ubicación y otros enlaces desde una sola página. Preparamos tarjetas NFC, modelos con QR y soportes personalizados desde Concepción."
+  image="/assets/nfc_solo.webp"
+  imageAlt="Tarjeta NFC ClickTap para negocios de Concepción"
+  imageWidth={269}
+  imageHeight={307}
+  breadcrumbs={[{ label: 'Inicio', href: '/' }, { label: 'Tarjetas NFC en Concepción' }]}
+  schema={schema}
+  ctaTitle="Conversemos desde Concepción"
+  ctaText="Cuéntanos dónde está tu negocio y qué acción quieres facilitar. Te orientamos con el formato y coordinamos la entrega."
+  whatsappMessage="Hola ClickTap, tengo un negocio en el Gran Concepción y quiero información sobre las tarjetas NFC."
+>
+  <section class="content-section soft">
+    <div class="shell">
+      <div class="section-heading">
+        <p class="eyebrow">PARA NEGOCIOS LOCALES</p>
+        <h2>Menos instrucciones en caja, más acciones directas</h2>
+        <p>ClickTap sirve para locales que repiten las mismas indicaciones: “búscanos en Google”, “anota estos datos” o “háblanos por Instagram”. La tarjeta abre una página preparada para tu negocio.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><span class="card-number">01</span><h3>Reseñas y reputación</h3><p>Facilita que el cliente llegue al perfil correcto de Google después de una buena experiencia.</p></article>
+        <article class="card"><span class="card-number">02</span><h3>Pagos y contacto</h3><p>Reúne datos de transferencia y un botón directo a WhatsApp para consultas, reservas o pedidos.</p></article>
+        <article class="card"><span class="card-number">03</span><h3>Redes y ubicación</h3><p>Comparte Instagram, TikTok, dirección, mapa y otros enlaces sin dictarlos uno por uno.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section shell">
+    <div class="split-content">
+      <div>
+        <p class="eyebrow">GRAN CONCEPCIÓN</p>
+        <h2>Atención cercana para coordinar tu ClickTap</h2>
+        <p>Trabajamos desde Concepción y coordinamos cada pedido directamente. Si tu negocio está en otra comuna del Biobío, escríbenos para revisar la entrega.</p>
+        <div class="communes" aria-label="Comunas consideradas">
+          <span>Concepción</span>
+          <span>San Pedro de la Paz</span>
+          <span>Chiguayante</span>
+          <span>Talcahuano</span>
+          <span>Hualpén</span>
+          <span>Coronel</span>
+          <span>Penco</span>
+        </div>
+      </div>
+      <div class="info-panel">
+        <h3>Formatos disponibles</h3>
+        <ul class="feature-list">
+          <li>Tarjeta NFC normal: $11.990</li>
+          <li>Tarjeta NFC + QR: $15.990</li>
+          <li>Soporte acrílico personalizado con NFC + QR: $19.990</li>
+          <li>Página digital incluida</li>
+          <li>Pago único, sin mensualidad</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section soft">
+    <div class="shell">
+      <div class="section-heading">
+        <p class="eyebrow">EJEMPLOS REALES</p>
+        <h2>Negocios que ya usan una página ClickTap</h2>
+        <p>Puedes revisar páginas publicadas para entender cómo se organizan los enlaces y las acciones de cada negocio.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><h3>Full Drink</h3><p>Botillería con información de sucursales, ubicación y contacto.</p><p><a class="text-link" href="/full-drink/">Ver página real ↗</a></p></article>
+        <article class="card"><h3>7E Barber Shop</h3><p>Barbería con accesos útiles para sus clientes.</p><p><a class="text-link" href="/7E-barber-shop/">Ver página real ↗</a></p></article>
+        <article class="card"><h3>Más negocios locales</h3><p>Cada página se prepara con los datos, colores y acciones que correspondan al negocio.</p><p><a class="text-link" href="/#ejemplos">Probar la demostración ↗</a></p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section shell">
+    <div class="section-heading">
+      <p class="eyebrow">PREGUNTAS FRECUENTES</p>
+      <h2>Pedidos en Concepción y alrededores</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>¿ClickTap está ubicado en Concepción?</summary>
+        <p>Sí. ClickTap trabaja desde Concepción, Chile, y coordina directamente los pedidos y la entrega con cada negocio.</p>
+      </details>
+      <details>
+        <summary>¿Atienden San Pedro, Chiguayante o Talcahuano?</summary>
+        <p>Estas comunas forman parte del foco local de ClickTap. Escríbenos con la ubicación de tu negocio para coordinar las condiciones de entrega.</p>
+      </details>
+      <details>
+        <summary>¿Puedo pedir una tarjeta si estoy en otra comuna del Biobío?</summary>
+        <p>Sí puedes consultar. Revisamos contigo la comuna, el formato que necesitas y la forma de entrega disponible.</p>
+      </details>
+    </div>
+  </section>
+</SeoPage>

@@ -11,6 +11,18 @@ const files = new Set(entries.filter(entry => entry.isFile()).map(entry =>
 const redirects = new Map((await readFile(new URL('_redirects', dist), 'utf8')).trim().split(/\r?\n/).map(line => line.split(/\s+/)));
 const hasPage = path => files.has(path) || files.has(path.replace(/\/$/, '') + '/index.html');
 const resolves = path => hasPage(redirects.get(path) ?? path);
+const commercialPages = [
+  '/index.html',
+  '/soluciones/resenas-google/index.html',
+  '/productos/soporte-acrilico-nfc-qr/index.html',
+  '/concepcion/tarjetas-nfc-concepcion/index.html',
+];
+
+test('conserva las 91 páginas anteriores y agrega solo las tres páginas SEO planificadas', () => {
+  const htmlFiles = [...files].filter(path => path.endsWith('.html'));
+  assert.equal(htmlFiles.length, 94);
+  for (const path of commercialPages) assert.ok(files.has(path), path);
+});
 
 test('las direcciones originales y sus alias funcionan con nombres de archivo exactos', () => {
   for (const path of ['/7E-barber-shop', '/7E-barber-shop/', '/7e-barber-shop', '/7e-barber-shop/']) {
@@ -26,6 +38,38 @@ test('incluye una página 404 para desactivar la portada como respuesta a rutas 
   const html = await readFile(new URL('404.html', dist), 'utf8');
   assert.match(html, /Página no encontrada/);
   assert.match(html, /name="robots" content="noindex"/);
+});
+
+test('publica robots.txt y un sitemap solo con direcciones canónicas seleccionadas', async () => {
+  assert.ok(files.has('/robots.txt'));
+  assert.ok(files.has('/sitemap.xml'));
+  const robots = await readFile(new URL('robots.txt', dist), 'utf8');
+  const sitemap = await readFile(new URL('sitemap.xml', dist), 'utf8');
+  assert.match(robots, /User-agent: \*/);
+  assert.match(robots, /Sitemap: https:\/\/clicktap\.app\/sitemap\.xml/);
+  for (const path of ['/', '/soluciones/resenas-google/', '/productos/soporte-acrilico-nfc-qr/', '/concepcion/tarjetas-nfc-concepcion/']) {
+    assert.match(sitemap, new RegExp(`<loc>https://clicktap\\.app${path.replaceAll('/', '\\/')}</loc>`));
+  }
+  assert.doesNotMatch(sitemap, /\/404/);
+  assert.doesNotMatch(sitemap, /el_bajon_del_marley/);
+  assert.doesNotMatch(sitemap, /7e-barber-shop/);
+  assert.match(sitemap, /https:\/\/clicktap\.app\/7E-barber-shop\//);
+});
+
+test('las páginas comerciales tienen metadatos sociales, canonical y datos estructurados', async () => {
+  for (const path of commercialPages) {
+    const html = await readFile(new URL(path.slice(1), dist), 'utf8');
+    assert.match(html, /<title>[^<]+ClickTap<\/title>/, path);
+    assert.match(html, /<meta name="description" content="[^"]+"/, path);
+    assert.match(html, /<link rel="canonical" href="https:\/\/clicktap\.app\//, path);
+    assert.match(html, /property="og:title" content="[^"]+"/, path);
+    assert.match(html, /property="og:description" content="[^"]+"/, path);
+    assert.match(html, /property="og:image" content="https:\/\/clicktap\.app\/clicktap-social\.png"/, path);
+    assert.match(html, /name="twitter:card" content="summary_large_image"/, path);
+    const jsonLd = html.match(/<script type="application\/ld\+json"[^>]*>(.*?)<\/script>/s)?.[1];
+    assert.ok(jsonLd, `${path}: faltan datos estructurados`);
+    assert.doesNotThrow(() => JSON.parse(jsonLd), `${path}: JSON-LD inválido`);
+  }
 });
 
 test('todos los enlaces y recursos internos publicados existen', async () => {

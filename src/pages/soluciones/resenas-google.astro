@@ -1,0 +1,137 @@
+---
+import SeoPage from '../../components/SeoPage.astro';
+
+const title = 'Tarjetas para reseñas de Google en Chile | ClickTap';
+const description = 'Facilita que tus clientes lleguen a tus reseñas de Google con una tarjeta NFC o un código QR. Incluye página digital y atención desde Concepción.';
+const canonicalPath = '/soluciones/resenas-google/';
+const schema = {
+  '@type': 'Service',
+  '@id': `https://clicktap.app${canonicalPath}#service`,
+  name: 'Tarjetas NFC y QR para reseñas de Google',
+  description,
+  url: `https://clicktap.app${canonicalPath}`,
+  serviceType: 'Solución NFC y QR para facilitar reseñas de Google',
+  provider: { '@id': 'https://clicktap.app/#organization' },
+  areaServed: { '@type': 'Country', name: 'Chile' },
+  offers: [
+    { '@type': 'Offer', name: 'Tarjeta NFC normal', price: '11990', priceCurrency: 'CLP' },
+    { '@type': 'Offer', name: 'Tarjeta NFC + QR', price: '15990', priceCurrency: 'CLP' },
+    { '@type': 'Offer', name: 'Soporte personalizado en acrílico con NFC + QR', price: '19990', priceCurrency: 'CLP' },
+  ],
+};
+---
+
+<SeoPage
+  title={title}
+  description={description}
+  canonicalPath={canonicalPath}
+  eyebrow="RESEÑAS DE GOOGLE · NFC + QR"
+  heading="Haz que dejar una reseña sea mucho más simple"
+  intro="Tu cliente acerca el celular o escanea el QR y llega al enlace que preparaste para tu negocio. Menos pasos, menos confusión y una invitación clara justo después de una buena atención."
+  image="/assets/nfc_qr.webp"
+  imageAlt="Tarjeta ClickTap con NFC y código QR para acceder a reseñas de Google"
+  imageWidth={399}
+  imageHeight={399}
+  breadcrumbs={[{ label: 'Inicio', href: '/' }, { label: 'Reseñas de Google' }]}
+  schema={schema}
+  ctaTitle="Facilita las reseñas de tu negocio"
+  ctaText="Te ayudamos a elegir entre NFC, NFC + QR o un soporte personalizado, según cómo atiendes a tus clientes."
+  whatsappMessage="Hola ClickTap, quiero una tarjeta para facilitar las reseñas de Google de mi negocio."
+>
+  <section class="content-section soft">
+    <div class="shell">
+      <div class="section-heading">
+        <p class="eyebrow">CÓMO FUNCIONA</p>
+        <h2>De una buena experiencia al formulario de Google</h2>
+        <p>ClickTap no publica reseñas ni promete una cantidad determinada. Lo que hace es reducir los pasos para que un cliente que ya quiere opinar encuentre el lugar correcto.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="card-number">01</span>
+          <h3>Acerca o escanea</h3>
+          <p>El cliente usa el NFC en un celular compatible o escanea el código QR en los modelos que lo incluyen.</p>
+        </article>
+        <article class="card">
+          <span class="card-number">02</span>
+          <h3>Abre el enlace</h3>
+          <p>La página de tu negocio muestra una acción clara para llegar a tu perfil de Google y dejar una opinión.</p>
+        </article>
+        <article class="card">
+          <span class="card-number">03</span>
+          <h3>El cliente decide</h3>
+          <p>La opinión siempre depende del cliente. ClickTap solamente hace más corto y entendible el camino para escribirla.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section shell">
+    <div class="section-heading">
+      <p class="eyebrow">TRES FORMATOS</p>
+      <h2>Elige la forma que mejor calza con tu atención</h2>
+      <p>Los tres formatos pueden abrir la página digital de tu negocio. La diferencia está en la forma de acceso y en cómo quieres mostrar tu marca.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <h3>Tarjeta NFC normal</h3>
+        <div class="price"><strong>$11.990</strong><span>Pago único</span></div>
+        <p>Para usar con celulares compatibles con lectura NFC. No incluye código QR.</p>
+      </article>
+      <article class="card">
+        <h3>Tarjeta NFC + QR</h3>
+        <div class="price"><strong>$15.990</strong><span>Pago único</span></div>
+        <p>Entrega dos formas de acceso a la misma página: acercar el celular o escanear.</p>
+      </article>
+      <article class="card">
+        <h3>Soporte personalizado</h3>
+        <div class="price"><strong>$19.990</strong><span>Pago único</span></div>
+        <p>Acrílico con tu logo, NFC y QR, pensado para dejar visible en caja, recepción o mesón.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="content-section soft">
+    <div class="shell split-content">
+      <div>
+        <p class="eyebrow">MÁS QUE RESEÑAS</p>
+        <h2>La misma página puede reunir tus enlaces útiles</h2>
+        <p>No tienes que limitarla a Google. Puedes ordenar las acciones que más usa tu clientela y mantenerlas en un solo lugar.</p>
+      </div>
+      <div class="info-panel">
+        <h3>Tu página ClickTap puede incluir</h3>
+        <ul class="feature-list">
+          <li>Enlace para dejar una reseña en Google</li>
+          <li>Datos de transferencia</li>
+          <li>WhatsApp e Instagram</li>
+          <li>Ubicación y cómo llegar</li>
+          <li>Otros enlaces relevantes para tu negocio</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section shell">
+    <div class="section-heading">
+      <p class="eyebrow">PREGUNTAS FRECUENTES</p>
+      <h2>Lo importante antes de pedir tu tarjeta</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>¿ClickTap garantiza que voy a recibir más reseñas?</summary>
+        <p>No. Ninguna herramienta puede garantizar cuántas personas dejarán una opinión. ClickTap reduce pasos y hace más visible la invitación para quienes sí quieren hacerlo.</p>
+      </details>
+      <details>
+        <summary>¿El cliente necesita instalar una aplicación?</summary>
+        <p>No necesita una aplicación de ClickTap. La página se abre en el navegador; Google puede pedirle iniciar sesión para publicar la reseña.</p>
+      </details>
+      <details>
+        <summary>¿Qué ocurre si el celular no tiene NFC?</summary>
+        <p>Puede escanear el QR si eliges un formato que lo incluya. La tarjeta NFC normal requiere un celular compatible con lectura NFC.</p>
+      </details>
+      <details>
+        <summary>¿Puedo usar la tarjeta para WhatsApp o transferencias?</summary>
+        <p>Sí. La tarjeta abre tu página ClickTap, donde puedes reunir reseñas, WhatsApp, redes, ubicación, datos de transferencia y otros enlaces.</p>
+      </details>
+    </div>
+  </section>
+</SeoPage>

@@ -6607,6 +6607,73 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "mandarakemiyu",
+            "name": "Mandarakemiyu",
+            "tagline": "Ramen | Snacks asiaticos| Soju en Conce",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/mandarakemiyu.jpg",
+            "logoAlt": "Logo de Mandarakemiyu",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/mandarakemiyu.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Freire 522, Loc 184, Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56949032405",
+                    "href": "tel:+56949032405"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJwUPMN-G1aZYRkWia_8DfdNo",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/mandarakemiyu",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#e2dee7",
+                "text": "#111827",
+                "button": "#301050",
+                "buttonText": "#ffffff",
+                "accent": "#301050"
+            }
         }
     ]
 }

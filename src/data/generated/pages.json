@@ -6741,6 +6741,73 @@
                 "buttonText": "#ffffff",
                 "accent": "#662043"
             }
+        },
+        {
+            "slug": "joyas-allmin",
+            "name": "Joyas Allmin",
+            "tagline": "Joyería",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/joyas-allmin.jpg",
+            "logoAlt": "Logo de Joyas Allmin",
+            "logoLayout": "round",
+            "logoWidth": 128,
+            "favicon": "/generated/logos/joyas-allmin.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Freire 522, galería caracol, 4to piso, local 179 Concepción, Biobío, Concepción"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56979969180",
+                    "href": "tel:+56979969180"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJC8Pi7KW1aZYRSq0Z0byChFI",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/joyasallmin",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fdfdf8",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

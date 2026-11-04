@@ -5923,6 +5923,94 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "marisio-bijoux-joyeria",
+            "name": "Marisio Bijoux Joyeria",
+            "tagline": null,
+            "description": "Joyería Concepción ✨¡Única cuenta!\nJoyas tendencia de plata, baño de oro, acero, y Oro 18 K✨",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/marisio-bijoux-joyeria.jpg",
+            "logoAlt": "Logo de Marisio Bijoux Joyeria",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/marisio-bijoux-joyeria.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "📍Galería Caracol local 012, Concepción."
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes - Viernes 10 a. m.–6:30 p. m\nSábado 10 a. m.–2:30 p. m"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJjbCoDru1aZYRDEpDhzmOo2o",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/marisiobijoux/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": "Facebook",
+                    "icon": "facebook",
+                    "label": "Visita nuestro Facebook",
+                    "href": "https://www.facebook.com/marisiobijoux/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "web",
+                    "name": "Sitio web",
+                    "icon": "contact",
+                    "label": "Visita nuestra pagina web",
+                    "href": "https://marisiobijoux.cl/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#efebe7",
+                "text": "#111827",
+                "button": "#907050",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

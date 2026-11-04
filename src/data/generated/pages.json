@@ -5721,6 +5721,68 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "mary-xime",
+            "name": "Mary & Xime",
+            "tagline": null,
+            "description": "✂️Salón de Belleza y Venta de Productos Capilares KERASTASE LOREAL WELLA.",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/mary-xime.jpg",
+            "logoAlt": "Logo de Mary & Xime",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/mary-xime.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "📌Galería Caracol, Rengo 578 local 023"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJH15uctC1aZYRtQY3hQpOpH8",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/maryyxime.estilistas/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#f4dee2",
+                "text": "#111827",
+                "button": "#b01030",
+                "buttonText": "#ffffff",
+                "accent": "#b01030"
+            }
         }
     ]
 }

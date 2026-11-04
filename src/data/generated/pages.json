@@ -6529,6 +6529,84 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "kori-manga-store",
+            "name": "Kori Manga Store",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "roboto",
+            "logo": "/generated/logos/kori-manga-store.jpg",
+            "logoAlt": "Logo de Kori Manga Store",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/kori-manga-store.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Freire 522, Loc 185, Concepción, Bío Bío"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "11:00 a 19:00 Lunes a Viernes\n11:00 a 15:30 Sábado"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJe_WQDpa1aZYRzjkJd0mJLP0",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/korimangastore",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "web",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Sitio web",
+                    "href": "https://www.korimangastore.cl/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#eff8fd",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

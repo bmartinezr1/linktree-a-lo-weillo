@@ -5513,6 +5513,74 @@
                 "buttonText": "#ffffff",
                 "accent": "#111827"
             }
+        },
+        {
+            "slug": "pelucas-calderon",
+            "name": "Pelucas Calderón",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/pelucas-calderon.jpg",
+            "logoAlt": "Logo de Pelucas Calderón",
+            "logoLayout": "rounded",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/pelucas-calderon.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "📍RENGO 578 LOCAL 032, PLANTA BAJA, EDIFICIO CARACOL."
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "LUNES A VIERNES 10:00-18:00/ SAB 10:00-15:00 ⏰"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferncia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "reseñas",
+                    "icon": "review",
+                    "label": "Dejanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJm1ab-F21aZYR0VTceMOflzk",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/pelucascalderon/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#e7dede",
+                "text": "#111827",
+                "button": "#501010",
+                "buttonText": "#ffffff",
+                "accent": "#501010"
+            }
         }
     ]
 }

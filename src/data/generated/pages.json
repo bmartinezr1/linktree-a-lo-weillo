@@ -6994,6 +6994,76 @@
                 "buttonText": "#ffffff",
                 "accent": "#503030"
             }
+        },
+        {
+            "slug": "djoyas-distribuidora-de-joyas-caracol",
+            "name": "DJOYAS - Distribuidora de Joyas Caracol",
+            "tagline": "Joyería mayorista",
+            "description": "",
+            "theme": "default",
+            "typography": "inter",
+            "logo": "/generated/logos/djoyas-distribuidora-de-joyas-caracol.jpg",
+            "logoAlt": "Logo de DJOYAS - Distribuidora de Joyas Caracol",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/djoyas-distribuidora-de-joyas-caracol.jpg",
+            "footer": null,
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Centro Comercial Caracol - Freire 522, Loc 155, 4030000 Concepción, Bío Bío"
+                },
+                {
+                    "id": "contact",
+                    "icon": "contact",
+                    "label": "Contacto",
+                    "value": "+56968460632",
+                    "phone": "+56968460632",
+                    "email": null
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Escribir una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJh0U-RKC1aZYRgjTezQ1-Fgc",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "whatsapp",
+                    "name": null,
+                    "icon": "whatsapp",
+                    "label": "Escríbenos por WhatsApp",
+                    "href": "https://wa.me/56963907000",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fdfdfd",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

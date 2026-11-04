@@ -5367,6 +5367,94 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "optica-vision-360",
+            "name": "Óptica Visión 360",
+            "tagline": null,
+            "description": "👀 Examen Visual GRATIS\n🔬 Cristales Rodenstock",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/optica-vision-360.jpg",
+            "logoAlt": "Logo de Óptica Visión 360",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/optica-vision-360.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "📍 Galería Caracol L104, Concepción"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes-Viernes 10:30am-6:30pm\nSábado 10:30am-4pm"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJoxmwAAC1aZYRHh1X8XQiMdg",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/opticavision360.cl/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "web",
+                    "name": "Sitio web",
+                    "icon": "contact",
+                    "label": "Visita  nuestro sitio web",
+                    "href": "https://opticavision360.cl/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": "Facebook",
+                    "icon": "facebook",
+                    "label": "Visita nuestro Facebook",
+                    "href": "https://www.facebook.com/opticavision360.cl/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#e2e7ef",
+                "text": "#111827",
+                "button": "#305090",
+                "buttonText": "#ffffff",
+                "accent": "#305090"
+            }
         }
     ]
 }

@@ -6875,6 +6875,58 @@
                 "buttonText": "#ffffff",
                 "accent": "#503030"
             }
+        },
+        {
+            "slug": "sm-peluqueria",
+            "name": "SM Peluquería",
+            "tagline": "Peluquería",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/sm-peluqueria.jpg",
+            "logoAlt": "Logo de SM Peluquería",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/sm-peluqueria.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Freire 522, Local 173, 4030560 Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Escribir una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJAzESzG61aZYRzYZFzzHcnPY",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#f8f4ef",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

@@ -1,0 +1,109 @@
+---
+import SeoPage from '../../components/SeoPage.astro';
+
+const title = 'Tarjeta NFC + QR para negocios en Chile | ClickTap';
+const description = 'Tarjeta NFC + QR para abrir la página digital de tu negocio de dos formas. Reseñas de Google, transferencias, WhatsApp y redes por $15.990.';
+const canonicalPath = '/productos/tarjeta-nfc-qr/';
+const schema = {
+  '@type': 'Product',
+  '@id': `https://clicktap.app${canonicalPath}#product`,
+  name: 'Tarjeta NFC + QR ClickTap para negocios',
+  description,
+  image: 'https://clicktap.app/assets/nfc_qr.webp',
+  url: `https://clicktap.app${canonicalPath}`,
+  brand: { '@type': 'Brand', name: 'ClickTap' },
+  offers: {
+    '@type': 'Offer',
+    url: `https://clicktap.app${canonicalPath}`,
+    price: '15990',
+    priceCurrency: 'CLP',
+  },
+};
+---
+
+<SeoPage
+  title={title}
+  description={description}
+  canonicalPath={canonicalPath}
+  eyebrow="TARJETA NFC + QR · DOS FORMAS DE ACCESO"
+  heading="Un toque o un escaneo para abrir tu negocio"
+  intro="La misma página digital se abre acercando un celular compatible o escaneando el código QR. Así tus clientes pueden elegir la opción que les resulte más cómoda."
+  image="/assets/nfc_qr.webp"
+  imageAlt="Tarjeta ClickTap azul y blanca con NFC y código QR"
+  imageWidth={399}
+  imageHeight={399}
+  breadcrumbs={[{ label: 'Inicio', href: '/' }, { label: 'Tarjeta NFC + QR' }]}
+  schema={schema}
+  ctaTitle="Lleva NFC y QR a tu negocio"
+  ctaText="Envíanos los enlaces que necesitas y preparamos tu tarjeta con la página digital lista para compartir."
+  whatsappMessage="Hola ClickTap, quiero la tarjeta NFC con QR para mi negocio de $15.990."
+>
+  <section class="content-section soft">
+    <div class="shell split-content">
+      <div>
+        <p class="eyebrow">QUÉ INCLUYE</p>
+        <h2>Dos accesos a una misma página digital</h2>
+        <p>El NFC y el QR llevan al mismo contenido. Puedes reunir reseñas de Google, transferencias, WhatsApp, redes, ubicación y otros enlaces sin pedirle al cliente que instale una aplicación.</p>
+      </div>
+      <div class="info-panel">
+        <h3>Tarjeta NFC + QR - $15.990</h3>
+        <ul class="feature-list">
+          <li>Acceso mediante NFC en celulares compatibles</li>
+          <li>Código QR impreso en la tarjeta</li>
+          <li>Página ClickTap con tus enlaces</li>
+          <li>Configuración lista para usar</li>
+          <li>Pago único, sin mensualidad</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section shell">
+    <div class="section-heading">
+      <p class="eyebrow">CÓMO SE USA</p>
+      <h2>El cliente elige cómo entrar</h2>
+      <p>Las dos opciones reducen los pasos para llegar a la información correcta de tu negocio.</p>
+    </div>
+    <div class="cards">
+      <article class="card"><span class="card-number">01</span><h3>Acerca el celular</h3><p>En un equipo compatible, basta acercarlo a la tarjeta para recibir el aviso y abrir la página.</p></article>
+      <article class="card"><span class="card-number">02</span><h3>O escanea el QR</h3><p>La cámara del celular reconoce el código y ofrece abrir la misma página ClickTap.</p></article>
+      <article class="card"><span class="card-number">03</span><h3>Encuentra la acción</h3><p>El cliente puede dejar una reseña, copiar datos, escribir por WhatsApp o abrir otro enlace.</p></article>
+    </div>
+  </section>
+
+  <section class="content-section soft">
+    <div class="shell">
+      <div class="section-heading">
+        <p class="eyebrow">ELIGE TU FORMATO</p>
+        <h2>¿Tarjeta o soporte para el mesón?</h2>
+        <p>La tarjeta es fácil de mover y entregar en mano. El soporte personalizado queda visible con la identidad de tu negocio.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><h3>Tarjeta NFC normal</h3><p>La alternativa más simple si tus clientes usan celulares compatibles con NFC.</p><a class="text-link" href="/productos/tarjeta-nfc/">Ver tarjeta NFC</a></article>
+        <article class="card"><h3>Soporte personalizado</h3><p>Acrílico de 10 × 15 cm con tu logo, NFC y QR para caja, recepción o mesón.</p><a class="text-link" href="/productos/soporte-acrilico-nfc-qr/">Ver soporte personalizado</a></article>
+        <article class="card"><h3>Reseñas de Google</h3><p>Conoce cómo ClickTap reduce los pasos para llegar al perfil correcto del negocio.</p><a class="text-link" href="/soluciones/resenas-google/">Ver solución para reseñas</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section shell">
+    <div class="section-heading">
+      <p class="eyebrow">PREGUNTAS FRECUENTES</p>
+      <h2>Lo importante sobre NFC y QR</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>¿El NFC y el QR abren páginas diferentes?</summary>
+        <p>No. Ambos llevan a la misma página ClickTap para que el cliente pueda elegir la forma de acceso.</p>
+      </details>
+      <details>
+        <summary>¿La página digital está incluida?</summary>
+        <p>Sí. El valor de $15.990 incluye la tarjeta NFC + QR y la página configurada con los enlaces definidos para tu negocio.</p>
+      </details>
+      <details>
+        <summary>¿El cliente necesita instalar una aplicación?</summary>
+        <p>No necesita una aplicación de ClickTap. La página se abre directamente en el navegador del celular.</p>
+      </details>
+    </div>
+  </section>
+</SeoPage>

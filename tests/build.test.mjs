@@ -14,6 +14,8 @@ const resolves = path => hasPage(redirects.get(path) ?? path);
 const commercialPages = [
   '/index.html',
   '/soluciones/resenas-google/index.html',
+  '/productos/tarjeta-nfc/index.html',
+  '/productos/tarjeta-nfc-qr/index.html',
   '/productos/soporte-acrilico-nfc-qr/index.html',
   '/concepcion/tarjetas-nfc-concepcion/index.html',
 ];
@@ -28,9 +30,9 @@ test('GA4 aparece una sola vez en cada pagina de contenido', async () => {
   }
 });
 
-test('conserva las 91 páginas anteriores y agrega solo las tres páginas SEO planificadas', () => {
+test('conserva las 91 páginas anteriores y agrega las cinco páginas SEO planificadas', () => {
   const htmlFiles = [...files].filter(path => path.endsWith('.html'));
-  assert.equal(htmlFiles.length, 94);
+  assert.equal(htmlFiles.length, 96);
   for (const path of commercialPages) assert.ok(files.has(path), path);
 });
 
@@ -57,7 +59,7 @@ test('publica robots.txt y un sitemap solo con direcciones canónicas selecciona
   const sitemap = await readFile(new URL('sitemap.xml', dist), 'utf8');
   assert.match(robots, /User-agent: \*/);
   assert.match(robots, /Sitemap: https:\/\/clicktap\.app\/sitemap\.xml/);
-  for (const path of ['/', '/soluciones/resenas-google/', '/productos/soporte-acrilico-nfc-qr/', '/concepcion/tarjetas-nfc-concepcion/']) {
+  for (const path of ['/', '/soluciones/resenas-google/', '/productos/tarjeta-nfc/', '/productos/tarjeta-nfc-qr/', '/productos/soporte-acrilico-nfc-qr/', '/concepcion/tarjetas-nfc-concepcion/']) {
     assert.match(sitemap, new RegExp(`<loc>https://clicktap\\.app${path.replaceAll('/', '\\/')}</loc>`));
   }
   assert.doesNotMatch(sitemap, /\/404/);

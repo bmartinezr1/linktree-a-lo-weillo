@@ -4,6 +4,8 @@ import { generatedPages } from '../data/public-pages';
 const commercialPaths = [
   '/',
   '/soluciones/resenas-google/',
+  '/productos/tarjeta-nfc/',
+  '/productos/tarjeta-nfc-qr/',
   '/productos/soporte-acrilico-nfc-qr/',
   '/concepcion/tarjetas-nfc-concepcion/',
 ];

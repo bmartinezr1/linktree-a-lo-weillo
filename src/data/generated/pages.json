@@ -6674,6 +6674,73 @@
                 "buttonText": "#ffffff",
                 "accent": "#301050"
             }
+        },
+        {
+            "slug": "tsuki-manga-store",
+            "name": "Tsuki Manga Store",
+            "tagline": "Librería",
+            "description": "",
+            "theme": "comercio",
+            "typography": "poppins",
+            "logo": "/generated/logos/tsuki-manga-store.jpg",
+            "logoAlt": "Logo de Tsuki Manga Store",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/tsuki-manga-store.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Freire 522, Loc 181, Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56985264494",
+                    "href": "tel:+56985264494"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJH6QfCwC1aZYRIcfn3d4nHVU",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/tsuki.mangastore/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#f8e7ef",
+                "text": "#111827",
+                "button": "#662043",
+                "buttonText": "#ffffff",
+                "accent": "#662043"
+            }
         }
     ]
 }

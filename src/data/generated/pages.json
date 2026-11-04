@@ -6104,6 +6104,84 @@
                 "buttonText": "#ffffff",
                 "accent": "#103050"
             }
+        },
+        {
+            "slug": "salon-de-belleza-revive",
+            "name": "Salón de belleza Revive",
+            "tagline": null,
+            "description": "Salón de belleza ubicado en la galería caracol",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/salon-de-belleza-revive.jpg",
+            "logoAlt": "Logo de Salón de belleza Revive",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/salon-de-belleza-revive.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Rengo 578, local 4, Caracol, Concepción"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes a Viernes   11:30 a. m.–7 p. m\nSábado  11:30 a. m.–3 p. m"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": "Datos de transferencia",
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Si",
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJD_8jw9C1aZYRSwhuwohuKzw",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "whatsapp",
+                    "name": "Whatsapp",
+                    "icon": "whatsapp",
+                    "label": "Agenda tu hora por Whatsapp",
+                    "href": "http://wa.me/56987578846",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Siguenos en Instagram",
+                    "href": "https://www.instagram.com/salon.revivehair/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#def4f8",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

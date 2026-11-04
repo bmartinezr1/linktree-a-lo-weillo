@@ -6927,6 +6927,73 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "topsy",
+            "name": "Salon Topsy",
+            "tagline": "Centro de estética",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/topsy.jpg",
+            "logoAlt": "Logo de Salon Topsy",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/topsy.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Horario: 10:00am-7:00pm"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56988160048",
+                    "href": "tel:+56988160048"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJWWwBm9q1aZYRSEKjzqD_V00",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": null,
+                    "icon": "facebook",
+                    "label": "Facebook",
+                    "href": "https://www.facebook.com/profile.php?id=100063722284611",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#e7e2e2",
+                "text": "#111827",
+                "button": "#503030",
+                "buttonText": "#ffffff",
+                "accent": "#503030"
+            }
         }
     ]
 }

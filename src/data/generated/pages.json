@@ -6456,6 +6456,79 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "salon-jessica-spa",
+            "name": "Salon Jessica SpA",
+            "tagline": "Centro de Estética",
+            "description": "",
+            "theme": "comercio",
+            "typography": "roboto",
+            "logo": "/generated/logos/salon-jessica-spa.jpg",
+            "logoAlt": "Logo de Salon Jessica SpA",
+            "logoLayout": "round",
+            "logoWidth": 128,
+            "favicon": "/generated/logos/salon-jessica-spa.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "local 193 Freire 522 Concepción, Biobío, Concepción, Bío Bío"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes a Viernes 10:00-18:00\nSábado 10:00-15:00"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56968362373",
+                    "href": "tel:+56968362373"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJW79TgNq1aZYR-XNAXmV4oR0",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/salondebellezajessica/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#f4fdfd",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

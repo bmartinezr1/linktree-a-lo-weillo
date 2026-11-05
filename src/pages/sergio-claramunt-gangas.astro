@@ -9,14 +9,14 @@ const panel = generatedPages.find(page => page.slug?.toLowerCase() === sergioSlu
 const profile = createSergioProfile(panel);
 const images = [
   { src: `${sergioAssets}charla.jpeg`, alt: 'Sergio junto a los asistentes a una charla', width: 1600, height: 720 },
-  { src: `${sergioAssets}auditorio-optimizado.webp`, alt: 'Sergio acompañado frente a un auditorio lleno', width: 863, height: 389 },
-  { src: `${sergioAssets}charla-estudiantes.webp`, alt: 'Sergio junto a estudiantes después de una charla', width: 1280, height: 576 },
-  { src: `${sergioAssets}encuentros-charlas.webp`, alt: 'Dos encuentros de Sergio con asistentes a sus charlas', width: 1440, height: 1440 },
-  { src: `${sergioAssets}afiche-charlas.webp`, alt: 'Afiche informativo de las charlas motivacionales de Sergio', width: 1080, height: 1527 },
-  { src: `${sergioAssets}libro-optimizado.webp`, alt: 'Afiche de Antes de Volver a Vivir, de Sergio Claramunt Gangas', width: 925, height: 1152 },
-  { src: `${sergioAssets}portada-libro.webp`, alt: 'Portada del libro Antes de Volver a Vivir', width: 576, height: 864 },
-  { src: `${sergioAssets}cubierta-libro.webp`, alt: 'Cubierta completa del libro Antes de Volver a Vivir', width: 1242, height: 864 },
-  { src: `${sergioAssets}collage-libro.webp`, alt: 'Collage de fotos de la historia de Sergio y su libro', width: 1600, height: 1600 },
+  { src: `${sergioAssets}auditorio-optimizado.webp`, mobileSrc: `${sergioAssets}auditorio-optimizado-mobile.webp`, alt: 'Sergio acompañado frente a un auditorio lleno', width: 863, height: 389 },
+  { src: `${sergioAssets}charla-estudiantes.webp`, mobileSrc: `${sergioAssets}charla-estudiantes-mobile.webp`, alt: 'Sergio junto a estudiantes después de una charla', width: 1280, height: 576 },
+  { src: `${sergioAssets}encuentros-charlas.webp`, mobileSrc: `${sergioAssets}encuentros-charlas-mobile.webp`, alt: 'Dos encuentros de Sergio con asistentes a sus charlas', width: 1440, height: 1440 },
+  { src: `${sergioAssets}afiche-charlas.webp`, mobileSrc: `${sergioAssets}afiche-charlas-mobile.webp`, alt: 'Afiche informativo de las charlas motivacionales de Sergio', width: 1080, height: 1527 },
+  { src: `${sergioAssets}libro-optimizado.webp`, mobileSrc: `${sergioAssets}libro-optimizado-mobile.webp`, alt: 'Afiche de Antes de Volver a Vivir, de Sergio Claramunt Gangas', width: 925, height: 1152 },
+  { src: `${sergioAssets}portada-libro.webp`, mobileSrc: `${sergioAssets}portada-libro-mobile.webp`, alt: 'Portada del libro Antes de Volver a Vivir', width: 576, height: 864 },
+  { src: `${sergioAssets}cubierta-libro.webp`, mobileSrc: `${sergioAssets}cubierta-libro-mobile.webp`, alt: 'Cubierta completa del libro Antes de Volver a Vivir', width: 1242, height: 864 },
+  { src: `${sergioAssets}collage-libro.webp`, mobileSrc: `${sergioAssets}collage-libro-mobile.webp`, alt: 'Collage de fotos de la historia de Sergio y su libro', width: 1600, height: 1600 },
 ];
 ---
 <LinkPage site={profile}>

@@ -151,6 +151,13 @@ test('Sergio muestra una portada ligera y carga las demás fotos desde el visor'
   assert.ok(positions.every(position => position >= 0));
   assert.ok(positions.every((position, index) => index === 0 || positions[index - 1] < position));
   await Promise.all(galleryFiles.map(name => readFile(new URL('sergio/' + name, dist))));
+  assert.doesNotMatch(html, /<img[^>]+class="modal-image"[^>]+src=/);
+  await Promise.all(galleryFiles.slice(1).map(async name => {
+    const mobileName = name.replace('.webp', '-mobile.webp');
+    assert.ok(html.includes('data-mobile-src="/sergio/' + mobileName + '"'));
+    const mobile = await readFile(new URL('sergio/' + mobileName, dist));
+    assert.ok(mobile.byteLength < 100_000, `${mobileName} excede 100 KB`);
+  }));
   assert.match(html, /srcset="\/sergio\/charla-portada-640.webp 640w, \/sergio\/charla-portada-1024.webp 1024w"/);
 
   const button1 = html.indexOf('Consulta sobre el libro');

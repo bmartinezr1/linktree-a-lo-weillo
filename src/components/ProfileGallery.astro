@@ -1,5 +1,5 @@
 ---
-interface Photo { src: string; alt: string; width: number; height: number; }
+interface Photo { src: string; mobileSrc?: string; alt: string; width: number; height: number; }
 interface Props { images: Photo[]; }
 const { images } = Astro.props;
 const cover = images[0];
@@ -19,12 +19,12 @@ const cover = images[0];
   />
   <dialog id="sergio-photo-dialog" class="photo-modal" aria-label="Galería de Sergio">
     <div class="modal-frame">
-      <div class="photo-viewport"><img class="modal-image" alt="" draggable="false" /></div>
+      <div class="photo-viewport"><img class="modal-image" alt="" draggable="false" decoding="async" /></div>
       <button type="button" class="modal-close" aria-label="Cerrar fotografías" title="Cerrar fotografías">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 3v4H3v2h6V3zm8 0v6h6V7h-4V3zM3 15v2h4v4h2v-6zm12 0v6h2v-4h4v-2z" fill="currentColor"/></svg>
       </button>
       <div class="modal-controls" aria-label="Elegir foto">
-        {images.map((photo, index) => <button type="button" data-modal-index={index} data-src={photo.src} data-alt={photo.alt} data-width={photo.width} data-height={photo.height} aria-label={`Mostrar foto ${index + 1}: ${photo.alt}`} aria-pressed={index === 0}><span></span></button>)}
+        {images.map((photo, index) => <button type="button" data-modal-index={index} data-src={photo.src} data-mobile-src={photo.mobileSrc} data-alt={photo.alt} data-width={photo.width} data-height={photo.height} aria-label={`Mostrar foto ${index + 1}: ${photo.alt}`} aria-pressed={index === 0}><span></span></button>)}
       </div>
     </div>
   </dialog>
@@ -35,12 +35,22 @@ document.querySelectorAll<HTMLElement>('.profile-gallery').forEach(gallery => {
   const modal = gallery.querySelector<HTMLDialogElement>('.photo-modal')!;
   const viewport = gallery.querySelector<HTMLElement>('.photo-viewport')!;
   const image = gallery.querySelector<HTMLImageElement>('.modal-image')!;
+  const cover = gallery.querySelector<HTMLImageElement>('.gallery-cover')!;
   const dots = [...gallery.querySelectorAll<HTMLButtonElement>('[data-modal-index]')];
   if (!openButton || !dots.length) return;
   let selected = 0, scale = 1, x = 0, y = 0, oldOverflow = '';
   const pointers = new Map<number, { x: number; y: number }>();
   let prior: { x: number; y: number; distance: number } | null = null;
   let swipeStart: { id: number; x: number; y: number } | null = null;
+  let requestedFull = -1;
+
+  const requestFullIfZoomed = () => {
+    if (scale <= 1.2 || requestedFull === selected) return;
+    const fullSrc = dots[selected].dataset.src;
+    if (!fullSrc || image.getAttribute('src') === fullSrc) return;
+    requestedFull = selected;
+    image.src = fullSrc;
+  };
 
   const resetZoom = () => { scale = 1; x = 0; y = 0; image.style.transform = ''; };
   const paint = () => {
@@ -63,14 +73,25 @@ document.querySelectorAll<HTMLElement>('.profile-gallery').forEach(gallery => {
   };
   const select = (index: number) => {
     selected = Math.max(0, Math.min(dots.length - 1, index));
+    requestedFull = -1;
     dots.forEach((dot, i) => dot.setAttribute('aria-pressed', String(i === selected)));
     dots[selected].scrollIntoView({ block: 'nearest', inline: 'center' });
     resetZoom();
+    const dot = dots[selected];
+    const selectedSrc = selected === 0
+      ? cover.currentSrc || cover.src
+      : window.innerWidth <= 600 && dot.dataset.mobileSrc || dot.dataset.src!;
+    viewport.dataset.loading = 'true';
+    viewport.setAttribute('aria-busy', 'true');
     image.style.visibility = 'hidden';
-    image.src = dots[selected].dataset.src!;
+    image.src = selectedSrc;
     image.alt = dots[selected].dataset.alt!;
     sizePhoto();
-    if (image.complete && image.naturalWidth) image.style.visibility = 'visible';
+    if (image.complete && image.naturalWidth) {
+      image.style.visibility = 'visible';
+      delete viewport.dataset.loading;
+      viewport.removeAttribute('aria-busy');
+    }
   };
   const gesture = () => {
     const p = [...pointers.values()];
@@ -99,13 +120,27 @@ document.querySelectorAll<HTMLElement>('.profile-gallery').forEach(gallery => {
     resetZoom();
     openButton.focus();
   });
-  image.addEventListener('load', () => { image.style.visibility = 'visible'; paint(); });
+  image.addEventListener('load', () => {
+    image.style.visibility = 'visible';
+    delete viewport.dataset.loading;
+    viewport.removeAttribute('aria-busy');
+    paint();
+  });
+  image.addEventListener('error', () => {
+    const fullSrc = dots[selected].dataset.src;
+    if (fullSrc && image.getAttribute('src') !== fullSrc) image.src = fullSrc;
+    else {
+      delete viewport.dataset.loading;
+      viewport.removeAttribute('aria-busy');
+    }
+  });
   window.addEventListener('resize', () => { if (modal.open) sizePhoto(); });
-  viewport.addEventListener('dblclick', () => { scale = scale > 1 ? 1 : 2; x = 0; y = 0; paint(); });
+  viewport.addEventListener('dblclick', () => { scale = scale > 1 ? 1 : 2; x = 0; y = 0; paint(); requestFullIfZoomed(); });
   viewport.addEventListener('wheel', event => {
     event.preventDefault();
     scale = Math.max(1, Math.min(5, scale - event.deltaY * .002));
     paint();
+    requestFullIfZoomed();
   }, { passive: false });
   viewport.addEventListener('pointerdown', event => {
     if (event.pointerType === 'mouse' && event.button !== 0) return;
@@ -138,6 +173,7 @@ document.querySelectorAll<HTMLElement>('.profile-gallery').forEach(gallery => {
         image.style.transform = atEnd ? '' : `translateX(${Math.max(-90, Math.min(90, dx))}px)`;
       } else {
         paint();
+        requestFullIfZoomed();
       }
     }
     prior = next;
@@ -181,9 +217,11 @@ button{font:inherit;cursor:pointer}
 .photo-modal{width:min(94vw,1000px);max-width:none;max-height:none;padding:0;border:0;border-radius:0;background:transparent;color:white;overflow:visible;overscroll-behavior:none}
 .photo-modal::backdrop{background:#080605eb}
 .modal-frame{position:relative;display:flex;flex-direction:column;align-items:center;width:100%}
-.photo-viewport{display:flex;align-items:center;justify-content:center;overflow:hidden;touch-action:none;cursor:grab;user-select:none;overscroll-behavior:none}
+.photo-viewport{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;touch-action:none;cursor:grab;user-select:none;overscroll-behavior:none}
+.photo-viewport[data-loading=true]::after{content:'';position:absolute;width:24px;height:24px;border:3px solid #ffffff55;border-top-color:white;border-radius:50%;animation:sergio-photo-loading .7s linear infinite}
+@keyframes sergio-photo-loading{to{transform:rotate(360deg)}}
 .photo-viewport:active{cursor:grabbing}
 .modal-image{display:block;width:100%;height:100%;object-fit:contain;flex-shrink:0;transform-origin:center;user-select:none;pointer-events:none}
 button:focus-visible{outline:3px solid #bb935d;outline-offset:-3px}
-@media(prefers-reduced-motion:reduce){.modal-controls span{transition:none}}
+@media(prefers-reduced-motion:reduce){.modal-controls span{transition:none}.photo-viewport[data-loading=true]::after{animation:none}}
 </style>

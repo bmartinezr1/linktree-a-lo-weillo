@@ -1,0 +1,36 @@
+---
+import LinkPage from '../components/LinkPage.astro';
+import ProfileGallery from '../components/ProfileGallery.astro';
+import { generatedPages } from '../data/public-pages';
+import { createSergioProfile, sergioSlug, sergioAssets } from '../data/sergio';
+import '../styles/sergio.css';
+
+const panel = generatedPages.find(page => page.slug?.toLowerCase() === sergioSlug);
+const profile = createSergioProfile(panel);
+const images = [
+  { src: `${sergioAssets}charla.jpeg`, alt: 'Sergio junto a los asistentes a una charla', width: 1600, height: 720 },
+  { src: `${sergioAssets}auditorio-optimizado.webp`, alt: 'Sergio acompañado frente a un auditorio lleno', width: 863, height: 389 },
+  { src: `${sergioAssets}charla-estudiantes.webp`, alt: 'Sergio junto a estudiantes después de una charla', width: 1280, height: 576 },
+  { src: `${sergioAssets}encuentros-charlas.webp`, alt: 'Dos encuentros de Sergio con asistentes a sus charlas', width: 1440, height: 1440 },
+  { src: `${sergioAssets}afiche-charlas.webp`, alt: 'Afiche informativo de las charlas motivacionales de Sergio', width: 1080, height: 1527 },
+  { src: `${sergioAssets}libro-optimizado.webp`, alt: 'Afiche de Antes de Volver a Vivir, de Sergio Claramunt Gangas', width: 925, height: 1152 },
+  { src: `${sergioAssets}portada-libro.webp`, alt: 'Portada del libro Antes de Volver a Vivir', width: 576, height: 864 },
+  { src: `${sergioAssets}cubierta-libro.webp`, alt: 'Cubierta completa del libro Antes de Volver a Vivir', width: 1242, height: 864 },
+  { src: `${sergioAssets}collage-libro.webp`, alt: 'Collage de fotos de la historia de Sergio y su libro', width: 1600, height: 1600 },
+];
+---
+<LinkPage site={profile}>
+  <div slot="profile-image" class="sergio-media">
+    <ProfileGallery images={images} />
+  </div>
+  <button slot="after-tiktok" type="button" class="link-button sergio-photos-button" data-open-sergio-gallery aria-haspopup="dialog" aria-controls="sergio-photo-dialog">
+    <span class="link-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <circle cx="9" cy="10" r="1.5" />
+        <path d="m5 17 5-4 3 2 3-3 3 3" />
+      </svg>
+    </span>
+    <span>Galería</span>
+  </button>
+</LinkPage>

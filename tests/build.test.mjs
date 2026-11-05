@@ -123,3 +123,43 @@ test('la prueba visual de Comercio solo se activa en Saez Hidalgo', async () => 
     }
   }
 });
+
+test('Sergio muestra una portada ligera y carga las demás fotos desde el visor', async () => {
+  const html = await readFile(new URL('sergio-claramunt-gangas/index.html', dist), 'utf8');
+  assert.match(html, /theme-sergio/);
+  assert.match(html, /Sergio Claramunt Gangas/);
+  assert.match(html, /Copiar datos · BancoEstado/);
+  assert.match(html, /Copiar datos · Banco de Chile/);
+  assert.match(html, /Antes de Volver a Vivir/);
+  assert.doesNotMatch(html, /Autor de:|&quot;Antes de Volver a Vivir&quot;/);
+  assert.match(html, /https:\/\/wa\.me\/56993468945/);
+  assert.match(html, /<dialog[^>]+photo-modal/);
+  assert.match(html, /data-open-sergio-gallery/);
+  assert.equal((html.match(/class="gallery-cover"/g) ?? []).length, 1);
+  assert.equal((html.match(/data-modal-index=/g) ?? []).length, 9);
+  assert.doesNotMatch(html, /data-gallery-index=|gallery-expand/);
+  assert.doesNotMatch(html, /Compartiendo mi historia|Desliza para explorar|\(WhatsApp\)|\(Correo\)/);
+  assert.doesNotMatch(html, /link-button-review|writereview|Déjanos una reseña/);
+  assert.doesNotMatch(html, /Una historia para compartir/);
+  assert.doesNotMatch(html, /Mi historia, mi libro y un espacio para conectar contigo/);
+  const galleryFiles = [
+    'charla.jpeg', 'auditorio-optimizado.webp', 'charla-estudiantes.webp',
+    'encuentros-charlas.webp', 'afiche-charlas.webp', 'libro-optimizado.webp',
+    'portada-libro.webp', 'cubierta-libro.webp', 'collage-libro.webp'
+  ];
+  const positions = galleryFiles.map(name => html.indexOf('data-src="/sergio/' + name + '"'));
+  assert.ok(positions.every(position => position >= 0));
+  assert.ok(positions.every((position, index) => index === 0 || positions[index - 1] < position));
+  await Promise.all(galleryFiles.map(name => readFile(new URL('sergio/' + name, dist))));
+  assert.match(html, /srcset="\/sergio\/charla-portada-640.webp 640w, \/sergio\/charla-portada-1024.webp 1024w"/);
+
+  const button1 = html.indexOf('Consulta sobre el libro');
+  const button2 = html.indexOf('Consulta sobre charlas');
+  const button3 = html.indexOf('Instagram');
+  const button4 = html.indexOf('TikTok');
+  const galleryButton = html.indexOf('>Galería</span>');
+  const button5 = html.indexOf('Copiar datos · BancoEstado');
+  const button6 = html.indexOf('Copiar datos · Banco de Chile');
+  assert.ok(button1 >= 0 && button2 >= 0 && button3 >= 0 && button4 >= 0 && galleryButton >= 0 && button5 >= 0 && button6 >= 0);
+  assert.ok(button1 < button2 && button2 < button3 && button3 < button4 && button4 < galleryButton && galleryButton < button5 && button5 < button6);
+});

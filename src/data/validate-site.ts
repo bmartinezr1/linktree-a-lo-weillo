@@ -2,8 +2,9 @@ import type { SiteProfile } from './site';
 
 function validateUrl(href: string, field: string): void {
   const internal = href.startsWith('/') && !href.startsWith('//');
-  if (/[\u0000-\u0020\u007f\\]/.test(href) || (!internal && !/^https:\/\//i.test(href))) {
-    throw new Error(`${field}: usa una dirección HTTPS completa o una ruta interna desde /.`);
+  const isMailto = href.startsWith('mailto:');
+  if (/[\u0000-\u0020\u007f\\]/.test(href) || (!internal && !isMailto && !/^https:\/\//i.test(href))) {
+    throw new Error(`${field}: usa una dirección HTTPS completa, correo mailto o una ruta interna desde /.`);
   }
 
   let url: URL;
@@ -12,6 +13,14 @@ function validateUrl(href: string, field: string): void {
   } catch {
     throw new Error(`${field}: dirección inválida.`);
   }
+
+  if (isMailto) {
+    if (url.protocol !== 'mailto:' || !url.pathname.includes('@')) {
+      throw new Error(`${field}: dirección de correo inválida.`);
+    }
+    return;
+  }
+
   if (url.protocol !== 'https:' || !url.hostname || url.username || url.password ||
       (internal && url.origin !== 'https://clicktap.app')) {
     throw new Error(`${field}: la dirección debe ser HTTPS y no contener credenciales.`);

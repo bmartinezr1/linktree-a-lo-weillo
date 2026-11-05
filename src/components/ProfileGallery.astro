@@ -1,0 +1,189 @@
+---
+interface Photo { src: string; alt: string; width: number; height: number; }
+interface Props { images: Photo[]; }
+const { images } = Astro.props;
+const cover = images[0];
+---
+<section class="profile-gallery" aria-label="Foto de Sergio">
+  <img
+    class="gallery-cover"
+    src="/sergio/charla-portada-1024.webp"
+    srcset="/sergio/charla-portada-640.webp 640w, /sergio/charla-portada-1024.webp 1024w"
+    sizes="(max-width: 560px) calc(100vw - 56px), 496px"
+    alt={cover.alt}
+    width={cover.width}
+    height={cover.height}
+    loading="eager"
+    fetchpriority="high"
+    decoding="async"
+  />
+  <dialog id="sergio-photo-dialog" class="photo-modal" aria-label="Galería de Sergio">
+    <div class="modal-frame">
+      <div class="photo-viewport"><img class="modal-image" alt="" draggable="false" /></div>
+      <button type="button" class="modal-close" aria-label="Cerrar fotografías" title="Cerrar fotografías">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 3v4H3v2h6V3zm8 0v6h6V7h-4V3zM3 15v2h4v4h2v-6zm12 0v6h2v-4h4v-2z" fill="currentColor"/></svg>
+      </button>
+      <div class="modal-controls" aria-label="Elegir foto">
+        {images.map((photo, index) => <button type="button" data-modal-index={index} data-src={photo.src} data-alt={photo.alt} data-width={photo.width} data-height={photo.height} aria-label={`Mostrar foto ${index + 1}: ${photo.alt}`} aria-pressed={index === 0}><span></span></button>)}
+      </div>
+    </div>
+  </dialog>
+</section>
+<script>
+document.querySelectorAll<HTMLElement>('.profile-gallery').forEach(gallery => {
+  const openButton = document.querySelector<HTMLButtonElement>('[data-open-sergio-gallery]');
+  const modal = gallery.querySelector<HTMLDialogElement>('.photo-modal')!;
+  const viewport = gallery.querySelector<HTMLElement>('.photo-viewport')!;
+  const image = gallery.querySelector<HTMLImageElement>('.modal-image')!;
+  const dots = [...gallery.querySelectorAll<HTMLButtonElement>('[data-modal-index]')];
+  if (!openButton || !dots.length) return;
+  let selected = 0, scale = 1, x = 0, y = 0, oldOverflow = '';
+  const pointers = new Map<number, { x: number; y: number }>();
+  let prior: { x: number; y: number; distance: number } | null = null;
+  let swipeStart: { id: number; x: number; y: number } | null = null;
+
+  const resetZoom = () => { scale = 1; x = 0; y = 0; image.style.transform = ''; };
+  const paint = () => {
+    const mx = Math.max(0, (image.clientWidth * scale - viewport.clientWidth) / 2);
+    const my = Math.max(0, (image.clientHeight * scale - viewport.clientHeight) / 2);
+    x = Math.max(-mx, Math.min(mx, x));
+    y = Math.max(-my, Math.min(my, y));
+    image.style.transform = `translate(${x}px, ${y}px) scale(${scale})`;
+  };
+  const sizePhoto = () => {
+    const dot = dots[selected];
+    const ratio = Number(dot.dataset.width) / Number(dot.dataset.height);
+    const maxWidth = Math.min(window.innerWidth - 24, 1000);
+    const maxHeight = Math.min(window.innerHeight * .76, 680);
+    const width = Math.min(maxWidth, maxHeight * ratio);
+    modal.style.width = `${Math.round(width)}px`;
+    viewport.style.width = `${Math.round(width)}px`;
+    viewport.style.height = `${Math.round(width / ratio)}px`;
+    paint();
+  };
+  const select = (index: number) => {
+    selected = Math.max(0, Math.min(dots.length - 1, index));
+    dots.forEach((dot, i) => dot.setAttribute('aria-pressed', String(i === selected)));
+    dots[selected].scrollIntoView({ block: 'nearest', inline: 'center' });
+    resetZoom();
+    image.style.visibility = 'hidden';
+    image.src = dots[selected].dataset.src!;
+    image.alt = dots[selected].dataset.alt!;
+    sizePhoto();
+    if (image.complete && image.naturalWidth) image.style.visibility = 'visible';
+  };
+  const gesture = () => {
+    const p = [...pointers.values()];
+    if (!p.length) return null;
+    return p.length === 1 ? { ...p[0], distance: 0 } : {
+      x: (p[0].x + p[1].x) / 2,
+      y: (p[0].y + p[1].y) / 2,
+      distance: Math.hypot(p[1].x - p[0].x, p[1].y - p[0].y)
+    };
+  };
+
+  openButton.addEventListener('click', () => {
+    oldOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    modal.showModal();
+    select(0);
+  });
+  dots.forEach((dot, index) => dot.addEventListener('click', () => select(index)));
+  gallery.querySelector<HTMLButtonElement>('.modal-close')!.addEventListener('click', () => modal.close());
+  modal.addEventListener('click', event => { if (event.target === modal) modal.close(); });
+  modal.addEventListener('close', () => {
+    document.body.style.overflow = oldOverflow;
+    pointers.clear();
+    prior = null;
+    swipeStart = null;
+    resetZoom();
+    openButton.focus();
+  });
+  image.addEventListener('load', () => { image.style.visibility = 'visible'; paint(); });
+  window.addEventListener('resize', () => { if (modal.open) sizePhoto(); });
+  viewport.addEventListener('dblclick', () => { scale = scale > 1 ? 1 : 2; x = 0; y = 0; paint(); });
+  viewport.addEventListener('wheel', event => {
+    event.preventDefault();
+    scale = Math.max(1, Math.min(5, scale - event.deltaY * .002));
+    paint();
+  }, { passive: false });
+  viewport.addEventListener('pointerdown', event => {
+    if (event.pointerType === 'mouse' && event.button !== 0) return;
+    viewport.setPointerCapture(event.pointerId);
+    pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+    swipeStart = pointers.size === 1 && scale === 1
+      ? { id: event.pointerId, x: event.clientX, y: event.clientY }
+      : null;
+    prior = gesture();
+  });
+  viewport.addEventListener('pointermove', event => {
+    if (!pointers.has(event.pointerId)) return;
+    pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+    const next = gesture();
+    if (prior && next) {
+      if (prior.distance && next.distance) {
+        const bounds = viewport.getBoundingClientRect();
+        const nextScale = Math.max(1, Math.min(5, scale * next.distance / prior.distance));
+        const ratio = nextScale / scale;
+        x = next.x - bounds.left - bounds.width / 2 - (prior.x - bounds.left - bounds.width / 2 - x) * ratio;
+        y = next.y - bounds.top - bounds.height / 2 - (prior.y - bounds.top - bounds.height / 2 - y) * ratio;
+        scale = nextScale;
+      } else if (scale > 1) {
+        x += next.x - prior.x;
+        y += next.y - prior.y;
+      }
+      if (scale === 1 && swipeStart && pointers.size === 1) {
+        const dx = event.clientX - swipeStart.x;
+        const atEnd = (selected === 0 && dx > 0) || (selected === dots.length - 1 && dx < 0);
+        image.style.transform = atEnd ? '' : `translateX(${Math.max(-90, Math.min(90, dx))}px)`;
+      } else {
+        paint();
+      }
+    }
+    prior = next;
+  });
+  const end = (event: PointerEvent) => {
+    if (!pointers.has(event.pointerId)) return;
+    if (event.type === 'pointerup' && swipeStart?.id === event.pointerId && pointers.size === 1 && scale === 1) {
+      const dx = event.clientX - swipeStart.x;
+      const dy = event.clientY - swipeStart.y;
+      const hasNext = dx < 0 ? selected < dots.length - 1 : selected > 0;
+      if (hasNext && Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy) * 1.2) {
+        select(selected + (dx < 0 ? 1 : -1));
+      } else {
+        paint();
+      }
+    }
+    pointers.delete(event.pointerId);
+    swipeStart = null;
+    prior = gesture();
+  };
+  viewport.addEventListener('pointerup', end);
+  viewport.addEventListener('pointercancel', end);
+  viewport.addEventListener('lostpointercapture', end);
+  modal.addEventListener('keydown', event => {
+    if (event.key === 'ArrowRight') { event.preventDefault(); select(selected + 1); }
+    if (event.key === 'ArrowLeft') { event.preventDefault(); select(selected - 1); }
+  });
+});
+</script>
+<style>
+.profile-gallery{position:relative;width:100%;margin:0 0 1.6rem;border-radius:1.1rem;overflow:hidden;background:transparent}
+.gallery-cover{display:block;width:100%;height:auto;aspect-ratio:1600/720}
+button{font:inherit;cursor:pointer}
+.modal-close{position:absolute;top:10px;right:10px;display:grid;place-items:center;width:44px;height:44px;padding:10px;border:0;border-radius:12px;background:#211611d9;color:white}
+.modal-close svg{display:block;width:20px;height:20px}
+.modal-controls{display:flex;width:min(100%,402px);margin:8px auto 0;overflow-x:auto;overscroll-behavior-inline:contain;scrollbar-width:none;border-radius:30px;background:#211611b3;padding:0 3px}
+.modal-controls::-webkit-scrollbar{display:none}
+.modal-controls button{display:grid;place-items:center;flex:0 0 44px;width:44px;height:44px;padding:0;border:0;background:none}
+.modal-controls span{width:7px;height:7px;border-radius:9px;background:#ffffff70;transition:width .15s}
+.modal-controls button[aria-pressed=true] span{width:23px;background:white}
+.photo-modal{width:min(94vw,1000px);max-width:none;max-height:none;padding:0;border:0;border-radius:0;background:transparent;color:white;overflow:visible;overscroll-behavior:none}
+.photo-modal::backdrop{background:#080605eb}
+.modal-frame{position:relative;display:flex;flex-direction:column;align-items:center;width:100%}
+.photo-viewport{display:flex;align-items:center;justify-content:center;overflow:hidden;touch-action:none;cursor:grab;user-select:none;overscroll-behavior:none}
+.photo-viewport:active{cursor:grabbing}
+.modal-image{display:block;width:100%;height:100%;object-fit:contain;flex-shrink:0;transform-origin:center;user-select:none;pointer-events:none}
+button:focus-visible{outline:3px solid #bb935d;outline-offset:-3px}
+@media(prefers-reduced-motion:reduce){.modal-controls span{transition:none}}
+</style>

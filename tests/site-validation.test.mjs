@@ -12,7 +12,7 @@ test('todos los negocios actuales tienen enlaces válidos', () => {
 });
 
 test('acepta HTTPS y rutas internas, incluyendo consultas y fragmentos', () => {
-  for (const href of ['https://example.com/?text=Hola%20mundo#contacto', '/la-dinastia-china/menu', '/?consulta=1#contacto']) {
+  for (const href of ['https://example.com/?text=Hola%20mundo#contacto', '/la-dinastia-china/menu', '/?consulta=1#contacto', 'mailto:contacto@example.com?subject=Consulta']) {
     assert.doesNotThrow(() => validateSite({ ...profiles.site, links: [{ label: 'Contacto', href }] }));
   }
 });
@@ -20,7 +20,7 @@ test('acepta HTTPS y rutas internas, incluyendo consultas y fragmentos', () => {
 test('rechaza direcciones ejecutables, incompletas, credenciales y falsos enlaces internos', () => {
   for (const href of ['', 'https://', 'javascript:alert(1)', 'data:text/html,test', 'file:///tmp/test',
     'http://example.com', '//example.com', '/\\example.com', 'https://user:pass@example.com',
-    'https://example.com/a b', 'https://example.com/\n', 'example.com']) {
+    'https://example.com/a b', 'https://example.com/\n', 'example.com', 'mailto:', 'mailto:sin-arroba']) {
     assert.throws(() => validateSite({ ...profiles.site, links: [{ label: 'Contacto', href }] }), Error, href);
   }
 });

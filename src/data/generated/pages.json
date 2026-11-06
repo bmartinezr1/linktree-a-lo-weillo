@@ -7121,6 +7121,74 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "marfrut",
+            "name": "Marfrut",
+            "tagline": null,
+            "description": "✨ Frutos secos premium 🥜\n🌿 Calidad, sabor y frescura\n📦 Envíos a todo Chile",
+            "theme": "default",
+            "typography": "inter",
+            "logo": "/generated/logos/marfrut.png",
+            "logoAlt": "Logo de Marfrut",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/marfrut.png",
+            "footer": null,
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "📍Aníbal pinto 695, Concepción"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes a Viernes 10 am - 19 pm\nSábado 10 am - 4 pm"
+                }
+            ],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "review",
+                    "name": "Reseñas",
+                    "icon": "review",
+                    "label": "Déjanos una reseña!",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJv48YDIy1aZYRU9gY1s7cjXU",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://www.instagram.com/marfrut.spa/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "whatsapp",
+                    "name": "Whatsapp",
+                    "icon": "whatsapp",
+                    "label": "Escríbenos por Whatsapp",
+                    "href": "http://wa.me/56987294271",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#deefe2",
+                "text": "#111827",
+                "button": "#109030",
+                "buttonText": "#000000",
+                "accent": "#000000"
+            }
         }
     ]
 }

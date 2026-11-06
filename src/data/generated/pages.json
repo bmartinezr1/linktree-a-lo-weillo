@@ -7189,51 +7189,6 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
-        },
-        {
-            "slug": "jjj",
-            "name": "jjj",
-            "tagline": null,
-            "description": "",
-            "theme": "comercio",
-            "typography": "inter",
-            "logo": null,
-            "logoAlt": "Logo de jjj",
-            "logoLayout": "original",
-            "logoWidth": 160,
-            "favicon": "/favicon.png",
-            "footer": "",
-            "highlights": [],
-            "contactDetails": [],
-            "links": [
-                {
-                    "type": "review",
-                    "name": null,
-                    "icon": "review",
-                    "label": "Déjanos una reseña",
-                    "href": null,
-                    "copyText": null,
-                    "logo": null,
-                    "isDisabled": true
-                },
-                {
-                    "type": "transferencia",
-                    "name": null,
-                    "icon": "contact",
-                    "label": "Copiar datos de transferencia",
-                    "href": null,
-                    "copyText": "",
-                    "logo": "/bank-logos/bancoestado.png",
-                    "isDisabled": false
-                }
-            ],
-            "colors": {
-                "background": "#ffffff",
-                "text": "#000000",
-                "button": "#111827",
-                "buttonText": "#ffffff",
-                "accent": "#111827"
-            }
         }
     ]
 }

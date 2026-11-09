@@ -539,68 +539,6 @@
             }
         },
         {
-            "slug": "bronto-pizza",
-            "name": "Bronto Pizza",
-            "tagline": "Tradicionales y veganas · Delivery",
-            "description": "Bronto Pizza en Ejército 1238, Local 3, Concepción. Pizzas tradicionales y veganas con delivery y pedidos directos por WhatsApp.",
-            "theme": "bronto",
-            "typography": "inter",
-            "logo": "/generated/logos/bronto-pizza.png",
-            "logoAlt": "Logo de Bronto Pizza",
-            "logoLayout": "original",
-            "logoWidth": 160,
-            "favicon": "/generated/logos/bronto-pizza.png",
-            "footer": null,
-            "highlights": [
-                {
-                    "id": "location",
-                    "icon": "location",
-                    "label": "Ubicación",
-                    "value": "Ejército 1238, Local 3, Concepción"
-                }
-            ],
-            "contactDetails": [],
-            "links": [
-                {
-                    "type": "whatsapp",
-                    "name": null,
-                    "icon": "whatsapp",
-                    "label": "Pedir por WhatsApp",
-                    "href": "https://api.whatsapp.com/message/J464646QPBI2A1?autoload=1&app_absent=0",
-                    "copyText": null,
-                    "logo": null,
-                    "isDisabled": false
-                },
-                {
-                    "type": "instagram",
-                    "name": null,
-                    "icon": "instagram",
-                    "label": "Instagram",
-                    "href": "https://www.instagram.com/brontopizza/?hl=es",
-                    "copyText": null,
-                    "logo": null,
-                    "isDisabled": false
-                },
-                {
-                    "type": "review",
-                    "name": null,
-                    "icon": "review",
-                    "label": "Escribir una reseña",
-                    "href": "https://search.google.com/local/writereview?placeid=ChIJv-K0_M21aZYRhQkY3igQSXg",
-                    "copyText": null,
-                    "logo": null,
-                    "isDisabled": false
-                }
-            ],
-            "colors": {
-                "background": "#ffffff",
-                "text": "#000000",
-                "button": "#111827",
-                "buttonText": "#ffffff",
-                "accent": "#111827"
-            }
-        },
-        {
             "slug": "carnes-san-andres",
             "name": "Carnes San Andrés",
             "tagline": "Carnicería",

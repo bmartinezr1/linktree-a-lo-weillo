@@ -7049,6 +7049,99 @@
                 "buttonText": "#000000",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "zoulbarber-studio",
+            "name": "Zoulbarber Studio",
+            "tagline": "Barbería",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/zoulbarber-studio.jpg",
+            "logoAlt": "Logo de Zoulbarber Studio",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/zoulbarber-studio.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Barros Arana 521, 2do Piso, 4030000 Concepción, Bío Bío"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes-Viernes 10:30am - 8pm\nSábado 10:30am - 7pm\nDomingo Cerrado"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56986440225",
+                    "href": "tel:+56986440225"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJQ4GCO2y1aZYR21gZPZKrO1w",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "location",
+                    "name": null,
+                    "icon": "location",
+                    "label": "Cómo llegar",
+                    "href": "https://www.google.com/maps/place/?q=place_id:ChIJQ4GCO2y1aZYR21gZPZKrO1w",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://instagram.com/zoulbarberstudio",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": null,
+                    "icon": "facebook",
+                    "label": "Visita nuestro Facebook",
+                    "href": "https://facebook.com/people/Zoulbarberstudio/100085374645352",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#dedee2",
+                "text": "#111827",
+                "button": "#101030",
+                "buttonText": "#ffffff",
+                "accent": "#101030"
+            }
         }
     ]
 }

@@ -585,68 +585,6 @@
             }
         },
         {
-            "slug": "clinica-opb",
-            "name": "Clínica OPB",
-            "tagline": null,
-            "description": "Clinica dental OPB\nLunes a viernes\n9:30 a.m.–1:30 p.m., 3–7 p.m.",
-            "theme": "default",
-            "typography": "inter",
-            "logo": "/generated/logos/clinica-opb.jpg",
-            "logoAlt": "Logo de Clínica OPB",
-            "logoLayout": "original",
-            "logoWidth": 160,
-            "favicon": "/generated/logos/clinica-opb.jpg",
-            "footer": null,
-            "highlights": [
-                {
-                    "id": "location",
-                    "icon": "location",
-                    "label": "Ubicación",
-                    "value": "Ejército 1370"
-                }
-            ],
-            "contactDetails": [],
-            "links": [
-                {
-                    "type": "instagram",
-                    "name": null,
-                    "icon": "instagram",
-                    "label": "Instagram",
-                    "href": "https://www.instagram.com/clinicaopb/",
-                    "copyText": null,
-                    "logo": null,
-                    "isDisabled": false
-                },
-                {
-                    "type": "review",
-                    "name": null,
-                    "icon": "review",
-                    "label": "Deja tu reseña aquí",
-                    "href": "https://search.google.com/local/writereview?placeid=ChIJ4UtAH461aZYRQmkgzLJXMbI",
-                    "copyText": null,
-                    "logo": null,
-                    "isDisabled": false
-                },
-                {
-                    "type": "transferencia",
-                    "name": null,
-                    "icon": "contact",
-                    "label": "Copia los datos de transferencia",
-                    "href": null,
-                    "copyText": "",
-                    "logo": null,
-                    "isDisabled": false
-                }
-            ],
-            "colors": {
-                "background": "#ffffff",
-                "text": "#111827",
-                "button": "#000000",
-                "buttonText": "#ffffff",
-                "accent": "#000000"
-            }
-        },
-        {
             "slug": "club-de-boxeo-jv-concepcion",
             "name": "Club De Boxeo JV Concepción",
             "tagline": "Club de Boxeo JV Concepción🥊 estamos ubicados en tucapel 1609 💪 anímate a entrenar con nosotros!!!",

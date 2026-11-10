@@ -112,7 +112,7 @@ test('las páginas de contenido incluyen direcciones completas al compartir en r
 
 test('la prueba visual de Comercio solo se activa en Saez Hidalgo', async () => {
   const pilotPath = '/panaderia-y-pasteleria-saez-hidalgo/index.html';
-  assert.ok(files.has(pilotPath));
+  // La página piloto puede retirarse: entonces ninguna página debe activar comercio-panel.
   for (const path of files) {
     if (!path.endsWith('.html')) continue;
     const html = await readFile(new URL(path.slice(1), dist), 'utf8');

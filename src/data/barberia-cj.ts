@@ -40,14 +40,6 @@ export const barberiaCJ: LinkPageData = {
       href: 'https://www.facebook.com/barberiamoacj?mibextid=LQQJ4d&utm_source=ig&utm_medium=social&utm_content=link_in_bio',
       icon: 'facebook',
     },
-    {
-      // Datos aún por confirmar: con texto vacío el botón queda desactivado y no copia nada.
-      type: 'transferencia',
-      label: 'Copiar datos de transferencia',
-      icon: 'contact',
-      copyText: ' ',
-      logo: '/logo-bancoestado.svg',
-    },
   ] satisfies SiteLink[],
   footer: 'Barbería CJ · Tu estilo es nuestra prioridad.',
 };

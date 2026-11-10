@@ -36,8 +36,9 @@ test('valida los colores del contrato público', () => {
 });
 
 test('valida los enlaces del equipo y los recursos de la página', () => {
-  assert.throws(() => validateSite({ ...barberiaCJ, barbers: [{ ...barberiaCJ.barbers[0], href: '//example.com' }] }));
-  assert.throws(() => validateSite({ ...barberiaCJ, barbers: [{ ...barberiaCJ.barbers[0], avatar: 'javascript:alert(1)' }] }));
+  const member = { name: 'Test', role: 'Barbero', avatar: '/ignacio-barbero.jpg', href: '/ignacio-parada' };
+  assert.throws(() => validateSite({ ...barberiaCJ, barbers: [{ ...member, href: '//example.com' }] }));
+  assert.throws(() => validateSite({ ...barberiaCJ, barbers: [{ ...member, avatar: 'javascript:alert(1)' }] }));
   assert.throws(() => validateSite({ ...profiles.site, logo: '//example.com/logo.png' }));
   assert.throws(() => validateSite({ ...profiles.site, favicon: '' }));
 });

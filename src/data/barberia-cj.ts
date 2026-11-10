@@ -52,14 +52,5 @@ export const barberiaCJ: LinkPageData = {
       icon: 'location',
     },
   ] satisfies SiteLink[],
-  barbers: [
-    {
-      name: 'Ignacio Parada',
-      role: 'Barbero Profesional · Fades & Diseños',
-      avatar: '/ignacio-barbero.jpg',
-      href: '/ignacio-parada',
-      badge: 'Ver perfil y agenda',
-    },
-  ],
   footer: 'Barbería CJ · Tu estilo es nuestra prioridad.',
 };

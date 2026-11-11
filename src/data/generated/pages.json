@@ -6513,6 +6513,79 @@
                 "buttonText": "#ffffff",
                 "accent": "#101030"
             }
+        },
+        {
+            "slug": "lion-gym-concepcion",
+            "name": "Lion Gym Concepción",
+            "tagline": "Gimnasio",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/lion-gym-concepcion.jpg",
+            "logoAlt": "Logo de Lion Gym Concepción",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/lion-gym-concepcion.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Angol 515, 4030000 Concepción, Bío Bío"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes-Viernes 6am - 10pm\nSábado 9am - 6pm\nDomingo 10am - 2pm"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56412125172",
+                    "href": "tel:+56412125172"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJFZmoktm1aZYRYSiwTXsuXmg",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "si",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://instagram.com/liongym_concepcion",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#dedefd",
+                "text": "#111827",
+                "button": "#030387",
+                "buttonText": "#ffffff",
+                "accent": "#030387"
+            }
         }
     ]
 }

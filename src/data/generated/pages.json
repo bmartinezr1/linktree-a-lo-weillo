@@ -6586,6 +6586,61 @@
                 "buttonText": "#ffffff",
                 "accent": "#030387"
             }
+        },
+        {
+            "slug": "zagi-sushi",
+            "name": "Zagi Sushi",
+            "tagline": null,
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/zagi-sushi.png",
+            "logoAlt": "Logo de Zagi Sushi",
+            "logoLayout": "rounded",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/zagi-sushi.png",
+            "footer": "",
+            "highlights": [],
+            "contactDetails": [],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": null,
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": true
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram!",
+                    "href": "https://www.instagram.com/zagisushi/",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "otro",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Menú",
+                    "href": null,
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": true
+                }
+            ],
+            "colors": {
+                "background": "#efdee2",
+                "text": "#111827",
+                "button": "#901030",
+                "buttonText": "#ffffff",
+                "accent": "#901030"
+            }
         }
     ]
 }

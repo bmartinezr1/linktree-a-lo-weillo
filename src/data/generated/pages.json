@@ -6720,6 +6720,119 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "marsella-tarot-reiki",
+            "name": "Marsella Tarot & Reiki",
+            "tagline": "Conexión entre tu espíritu y el universo",
+            "description": "",
+            "theme": "comercio",
+            "typography": "montserrat",
+            "logo": "/generated/logos/marsella-tarot-reiki.png",
+            "logoAlt": "Logo de Marsella Tarot & Reiki",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/marsella-tarot-reiki.png",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Dirección: Colo Colo 222, Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56935700373",
+                    "href": "tel:+56935700373"
+                },
+                {
+                    "label": "marsellatarotyreiki@gmail.com",
+                    "href": "mailto:marsellatarotyreiki@gmail.com"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJFQ0GWG-1aZYRfQe4bRzkB5o",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "whatsapp",
+                    "name": null,
+                    "icon": "whatsapp",
+                    "label": "WhatsApp",
+                    "href": "https://api.whatsapp.com/send?phone=56935700373",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/marsellatarotyreiki/",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "tiktok",
+                    "name": null,
+                    "icon": "tiktok",
+                    "label": "TikTok",
+                    "href": "https://tiktok.com/@marsellatarotyreiki",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": null,
+                    "icon": "facebook",
+                    "label": "Facebook",
+                    "href": "https://www.facebook.com/marsellatarotyreiki",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "web",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Página web",
+                    "href": "https://www.marsellatarotyreiki.cl/",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#f8f4e2",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

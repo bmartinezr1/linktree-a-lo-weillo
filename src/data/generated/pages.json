@@ -6611,6 +6611,8 @@
                     "href": null,
                     "copyText": null,
                     "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
                     "isDisabled": true
                 },
                 {
@@ -6621,17 +6623,21 @@
                     "href": "https://www.instagram.com/zagisushi/",
                     "copyText": null,
                     "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
                     "isDisabled": false
                 },
                 {
-                    "type": "otro",
+                    "type": "menu",
                     "name": null,
                     "icon": "contact",
-                    "label": "Menú",
-                    "href": null,
+                    "label": "Revisa nuestro menu",
+                    "href": "/generated/menus/zagi-sushi/e0b679f4-3730-4652-b892-2ff9ef600524.jpg",
                     "copyText": null,
                     "logo": null,
-                    "isDisabled": true
+                    "fileKind": "image",
+                    "opensInNewTab": true,
+                    "isDisabled": false
                 }
             ],
             "colors": {

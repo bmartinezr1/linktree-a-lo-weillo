@@ -6390,6 +6390,8 @@
                     "href": "https://search.google.com/local/writereview?placeid=ChIJv48YDIy1aZYRU9gY1s7cjXU",
                     "copyText": null,
                     "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
                     "isDisabled": false
                 },
                 {
@@ -6400,6 +6402,8 @@
                     "href": "https://www.instagram.com/marfrut.spa/",
                     "copyText": null,
                     "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
                     "isDisabled": false
                 },
                 {
@@ -6410,6 +6414,20 @@
                     "href": "https://wa.me/56987294271",
                     "copyText": null,
                     "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "menu",
+                    "name": null,
+                    "icon": "book",
+                    "label": "Revisa nuestro catalogo digital!",
+                    "href": "https://www.canva.com/design/DAHQCVNxMyk/9bpdsfR5F69gFmhAEWUq1Q/view?utlId=h0f2fc3fa42",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": true,
                     "isDisabled": false
                 }
             ],

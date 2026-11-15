@@ -6644,12 +6644,12 @@
                     "name": null,
                     "icon": "review",
                     "label": "Déjanos una reseña",
-                    "href": null,
+                    "href": "https://search.google.com/local/writereview?placeid=CShraC0EeA4wEAI",
                     "copyText": null,
                     "logo": null,
                     "fileKind": null,
                     "opensInNewTab": null,
-                    "isDisabled": true
+                    "isDisabled": false
                 },
                 {
                     "type": "instagram",

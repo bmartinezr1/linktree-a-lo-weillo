@@ -6609,7 +6609,7 @@
             "slug": "zagi-sushi",
             "name": "Zagi Sushi",
             "tagline": null,
-            "description": "",
+            "description": "Sushi & Wok | Promos para compartir\nHand rolls · Woks · ZagiBurger",
             "theme": "comercio",
             "typography": "inter",
             "logo": "/generated/logos/zagi-sushi.png",
@@ -6618,8 +6618,26 @@
             "logoWidth": 160,
             "favicon": "/generated/logos/zagi-sushi.png",
             "footer": "",
-            "highlights": [],
-            "contactDetails": [],
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Gral. Novoa 594"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes - Jueves 12am - 22pm\nViernes - Sábado 12am- 23:30"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56921803127",
+                    "href": "tel:+56921803127"
+                }
+            ],
             "links": [
                 {
                     "type": "review",
@@ -6638,7 +6656,7 @@
                     "name": null,
                     "icon": "instagram",
                     "label": "Síguenos en Instagram!",
-                    "href": "https://www.instagram.com/zagisushi/",
+                    "href": "https://www.instagram.com/zagisushiwok/",
                     "copyText": null,
                     "logo": null,
                     "fileKind": null,

@@ -22,14 +22,16 @@ const phone = { label: '+56 9 94700748', href: 'tel:+56994700748' };
 const whatsappHref = 'https://wa.me/56994700748';
 const email = site.contactDetails?.find((c) => c.href.startsWith('mailto:'));
 
+// reviewUrl: enlace confirmado por el cliente; si falta, se usa el del panel.
 const offices = [
-  { city: 'Temuco', address: 'Bulnes 307, of. 302' },
-  { city: 'Nueva Imperial', address: 'Vicuña Mackenna 568' },
-  { city: 'Carahue', address: 'Diego Portales 320, of. 4' },
-].map((office) => ({
-  ...office,
-  review: site.links.find((link) => link.type === 'review' && link.label.toLowerCase().includes(office.city.toLowerCase())),
-}));
+  { city: 'Temuco', address: 'Bulnes 307, of. 302', reviewUrl: undefined },
+  { city: 'Nueva Imperial', address: 'Vicuña Mackenna 568', reviewUrl: 'https://g.page/r/Cc1NJywNnrjeECE/review' },
+  { city: 'Carahue', address: 'Diego Portales 320, of. 4', reviewUrl: 'https://g.page/r/CbQ7h4dUGeDwECE/review' },
+].map((office) => {
+  const panel = site.links.find((link) => link.type === 'review' && link.label.toLowerCase().includes(office.city.toLowerCase()));
+  const href = office.reviewUrl ?? (panel && !panel.isDisabled ? panel.href : null);
+  return { ...office, reviewHref: href ?? null };
+});
 
 const isOn = (link?: { href?: string | null; isDisabled?: boolean | null }) => Boolean(link?.href) && !link?.isDisabled;
 ---
@@ -95,8 +97,8 @@ const isOn = (link?: { href?: string | null; isDisabled?: boolean | null }) => B
             {office.city}
           </h3>
           <p>{office.address}</p>
-          {isOn(office.review) ? (
-            <a class="btn btn-ghost" href={office.review!.href!} target="_blank" rel="noopener noreferrer">
+          {office.reviewHref ? (
+            <a class="btn btn-ghost" href={office.reviewHref} target="_blank" rel="noopener noreferrer">
               <LinkIcon icon="review" />Déjanos una reseña
             </a>
           ) : (

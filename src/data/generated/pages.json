@@ -6857,6 +6857,119 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "soluciones-juridicas-patricio-rivas",
+            "name": "Soluciones Jurídicas Patricio Rivas",
+            "tagline": "Abogado",
+            "description": "",
+            "theme": "comercio",
+            "typography": "montserrat",
+            "logo": "/generated/logos/soluciones-juridicas-patricio-rivas.png",
+            "logoAlt": "Logo de Soluciones Jurídicas Patricio Rivas",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/soluciones-juridicas-patricio-rivas.png",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Bulnes 307 of. 302 Temuco\nVicuña Mackenna 568 Nueva Imperial\nDiego Portales 320 of. 4 Carahue"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56 94700748",
+                    "href": "tel:+5694700748"
+                },
+                {
+                    "label": "rivaspatricioab@gmail.com",
+                    "href": "mailto:rivaspatricioab@gmail.com"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña - Of. Temuco",
+                    "href": null,
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": true
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña - Of. Nueva Imperial",
+                    "href": null,
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": true
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña - Of. Carahue",
+                    "href": null,
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": true
+                },
+                {
+                    "type": "whatsapp",
+                    "name": null,
+                    "icon": "whatsapp",
+                    "label": "WhatsApp",
+                    "href": null,
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": true
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": null,
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": true
+                },
+                {
+                    "type": "facebook",
+                    "name": null,
+                    "icon": "facebook",
+                    "label": "Facebook",
+                    "href": null,
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": true
+                }
+            ],
+            "colors": {
+                "background": "#dedee7",
+                "text": "#111827",
+                "button": "#080833",
+                "buttonText": "#ffffff",
+                "accent": "#080833"
+            }
         }
     ]
 }

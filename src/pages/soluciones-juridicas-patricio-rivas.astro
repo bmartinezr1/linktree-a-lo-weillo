@@ -1,0 +1,201 @@
+---
+import GoogleAnalytics from '../components/GoogleAnalytics.astro';
+import LinkIcon from '../components/LinkIcon.astro';
+import { generatedPages } from '../data/public-pages';
+import { validateSite } from '../data/validate-site';
+
+// Los datos (enlaces, teléfono, correo) siguen viniendo del panel; aquí solo cambia el diseño.
+const slug = 'soluciones-juridicas-patricio-rivas';
+const site = generatedPages.find((page) => page.slug?.toLowerCase() === slug);
+if (!site) throw new Error(`No existe la página ${slug} en el panel.`);
+validateSite(site);
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
+const imageUrl = site.logo ? new URL(site.logo, Astro.site ?? Astro.url) : undefined;
+const description = site.description || 'Soluciones Jurídicas del abogado Patricio Rivas Gatica. Oficinas en Temuco, Nueva Imperial y Carahue.';
+
+const byType = (type: string) => site.links.find((link) => link.type === type);
+const whatsapp = byType('whatsapp');
+const instagram = byType('instagram');
+const facebook = byType('facebook');
+const phone = site.contactDetails?.find((c) => c.href.startsWith('tel:'));
+const email = site.contactDetails?.find((c) => c.href.startsWith('mailto:'));
+
+const offices = [
+  { city: 'Temuco', address: 'Bulnes 307, of. 302' },
+  { city: 'Nueva Imperial', address: 'Vicuña Mackenna 568' },
+  { city: 'Carahue', address: 'Diego Portales 320, of. 4' },
+].map((office) => ({
+  ...office,
+  review: site.links.find((link) => link.type === 'review' && link.label.toLowerCase().includes(office.city.toLowerCase())),
+}));
+
+const isOn = (link?: { href?: string | null; isDisabled?: boolean | null }) => Boolean(link?.href) && !link?.isDisabled;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <GoogleAnalytics />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <meta name="theme-color" content="#f1e9de" />
+    <link rel="icon" type="image/png" href={site.favicon} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:title" content={site.name} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    {imageUrl && <meta property="og:image" content={imageUrl} />}
+    {imageUrl && <meta property="og:image:alt" content={site.logoAlt ?? `Logo de ${site.name}`} />}
+    <meta property="og:type" content="website" />
+    <title>{site.name}</title>
+  </head>
+  <body class="patricio">
+    <main class="page">
+      <header class="hero">
+        {site.logo && <img class="logo" src={site.logo} alt={site.logoAlt ?? `Logo de ${site.name}`} width="132" height="132" loading="eager" decoding="async" />}
+        <h1 class="brand" id="business-name">Soluciones <span>Jurídicas</span></h1>
+        <div class="rule">del abogado</div>
+        <p class="name">Patricio Rivas Gatica</p>
+        <p class="tagline">Su tranquilidad también es nuestra prioridad</p>
+      </header>
+
+      {whatsapp && (
+        isOn(whatsapp) ? (
+          <a class="btn btn-main" href={whatsapp.href!} target="_blank" rel="noopener noreferrer">
+            <LinkIcon icon="whatsapp" />
+            <span>Escríbenos por WhatsApp<small>Primera consulta y orientación</small></span>
+          </a>
+        ) : (
+          <span class="btn btn-main is-off" aria-disabled="true">
+            <LinkIcon icon="whatsapp" />
+            <span>Escríbenos por WhatsApp<small>Primera consulta y orientación</small></span>
+          </span>
+        )
+      )}
+
+      {(phone || email) && (
+        <div class="contact">
+          {phone && (
+            <a class="btn btn-ghost" href={phone.href}>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" /></svg>
+              <span>{phone.label}</span>
+            </a>
+          )}
+          {email && (
+            <a class="btn btn-ghost" href={email.href}>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5" /><path d="m3 7 9 6 9-6" /></svg>
+              <span>Correo</span>
+            </a>
+          )}
+        </div>
+      )}
+
+      <h2>Nuestras oficinas</h2>
+      {offices.map((office) => (
+        <section class="office" aria-label={`Oficina ${office.city}`}>
+          <h3>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" /></svg>
+            {office.city}
+          </h3>
+          <p>{office.address}</p>
+          {isOn(office.review) ? (
+            <a class="btn btn-ghost" href={office.review!.href!} target="_blank" rel="noopener noreferrer">
+              <LinkIcon icon="review" />Déjanos una reseña
+            </a>
+          ) : (
+            <span class="btn btn-ghost is-off" aria-disabled="true">
+              <LinkIcon icon="review" />Déjanos una reseña
+            </span>
+          )}
+        </section>
+      ))}
+
+      <h2>Síguenos</h2>
+      <div class="social">
+        {isOn(instagram) ? (
+          <a class="btn btn-ghost" href={instagram!.href!} target="_blank" rel="noopener noreferrer"><LinkIcon icon="instagram" />Instagram</a>
+        ) : (
+          <span class="btn btn-ghost is-off" aria-disabled="true"><LinkIcon icon="instagram" />Instagram</span>
+        )}
+        {isOn(facebook) ? (
+          <a class="btn btn-ghost" href={facebook!.href!} target="_blank" rel="noopener noreferrer"><LinkIcon icon="facebook" />Facebook</a>
+        ) : (
+          <span class="btn btn-ghost is-off" aria-disabled="true"><LinkIcon icon="facebook" />Facebook</span>
+        )}
+      </div>
+
+      <footer>
+        <div class="places">Temuco · Nueva Imperial · Carahue</div>
+        <div class="by">clicktap.app</div>
+      </footer>
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  .patricio {
+    --cream: #f1e9de;
+    --navy: #0b1b3f;
+    --navy-2: #14295c;
+    --copper: #b5693a;
+    --ink: #1c1a18;
+    --muted: #5d5a55;
+    --serif: 'Lora', Georgia, serif;
+    --sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  .patricio *, .patricio *::before, .patricio *::after { box-sizing: border-box; }
+  .patricio h1, .patricio h2, .patricio h3, .patricio p { margin: 0; }
+  .patricio .page { max-width: 480px; margin: 0 auto; min-height: 100vh; padding: 0 16px; overflow-x: hidden; }
+
+  .patricio .hero { text-align: center; padding: 36px 8px 20px; }
+  .patricio .logo { width: 132px; height: 132px; border-radius: 50%; display: block; margin: 0 auto 18px; box-shadow: 0 6px 22px rgba(11, 27, 63, .18); object-fit: cover; }
+  .patricio .brand { font-family: var(--serif); font-weight: 700; line-height: 1.02; font-size: 2.15rem; color: var(--navy); text-transform: uppercase; }
+  .patricio .brand span { display: block; color: var(--copper); }
+  .patricio .rule { display: flex; align-items: center; gap: 12px; justify-content: center; margin: 10px 0 14px; color: var(--copper); font-size: .66rem; letter-spacing: .32em; text-transform: uppercase; }
+  .patricio .rule::before, .patricio .rule::after { content: ""; height: 1px; width: 52px; background: var(--copper); opacity: .8; }
+  .patricio .name { font-family: var(--serif); font-weight: 600; font-size: 1.12rem; letter-spacing: .16em; text-transform: uppercase; }
+  .patricio .tagline { font-family: var(--serif); font-style: italic; font-weight: 500; color: var(--navy-2); margin-top: 14px; font-size: 1.02rem; }
+
+  .patricio .btn { display: flex; align-items: center; gap: 14px; width: 100%; padding: 14px 18px; border-radius: 14px; text-decoration: none; font-weight: 600; font-size: .98rem; font-family: var(--sans); }
+  .patricio .btn .brand-svg, .patricio .btn > svg { width: 26px; height: 26px; flex: none; }
+  .patricio .btn-main { background: var(--navy); color: #fff; box-shadow: 0 8px 20px rgba(11, 27, 63, .28); margin-top: 18px; }
+  .patricio .btn-main small { display: block; font-weight: 400; font-size: .74rem; opacity: .78; margin-top: 1px; }
+  .patricio .btn-ghost { background: rgba(255, 255, 255, .55); color: var(--navy); border: 1px solid rgba(11, 27, 63, .14); }
+  .patricio a.btn:focus-visible { outline: 3px solid var(--copper); outline-offset: 3px; }
+  .patricio .is-off { opacity: .55; cursor: not-allowed; box-shadow: none; }
+
+  .patricio .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+  .patricio .contact .btn { padding: 12px; font-size: .8rem; font-weight: 500; gap: 9px; }
+  .patricio .contact .btn > svg { width: 20px; height: 20px; color: var(--copper); }
+  .patricio .contact .btn span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  .patricio h2 { font-family: var(--serif); font-size: .74rem; font-weight: 700; letter-spacing: .3em; text-transform: uppercase; color: var(--copper); text-align: center; margin: 30px 0 12px; display: flex; align-items: center; gap: 12px; }
+  .patricio h2::before, .patricio h2::after { content: ""; flex: 1; height: 1px; background: rgba(181, 105, 58, .45); }
+
+  .patricio .office { background: #fbf7f1; border: 1px solid rgba(181, 105, 58, .28); border-radius: 16px; padding: 16px 16px 14px; margin-bottom: 12px; }
+  .patricio .office h3 { font-family: var(--serif); font-size: 1.12rem; color: var(--navy); display: flex; align-items: center; gap: 8px; }
+  .patricio .office h3 svg { width: 18px; height: 18px; color: var(--copper); }
+  .patricio .office p { font-size: .84rem; color: var(--muted); margin: 4px 0 12px 26px; line-height: 1.45; }
+  .patricio .office .btn { padding: 10px 14px; font-size: .84rem; font-weight: 500; border-radius: 11px; }
+  .patricio .office .btn .brand-svg { width: 20px; height: 20px; }
+
+  .patricio .social { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .patricio .social .btn { justify-content: center; font-size: .86rem; font-weight: 500; }
+  .patricio .social .btn .brand-svg { width: 22px; height: 22px; }
+
+  .patricio footer { margin: 56px -16px 0; background: var(--navy); color: #fff; text-align: center; padding: 26px 16px 30px; position: relative; }
+  .patricio footer::before { content: ""; position: absolute; left: 0; right: 0; top: -22px; height: 44px; background: var(--navy); border-radius: 50% 50% 0 0 / 100% 100% 0 0; }
+  .patricio footer .places { position: relative; display: flex; align-items: center; gap: 12px; justify-content: center; font-size: .66rem; letter-spacing: .24em; text-transform: uppercase; }
+  .patricio footer .places::before, .patricio footer .places::after { content: ""; height: 1px; width: 24px; background: var(--copper); }
+  .patricio footer .by { position: relative; margin-top: 12px; font-size: .72rem; color: var(--copper); font-weight: 500; }
+</style>

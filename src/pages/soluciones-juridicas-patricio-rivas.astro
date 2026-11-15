@@ -15,10 +15,11 @@ const imageUrl = site.logo ? new URL(site.logo, Astro.site ?? Astro.url) : undef
 const description = site.description || 'Soluciones Jurídicas del abogado Patricio Rivas Gatica. Oficinas en Temuco, Nueva Imperial y Carahue.';
 
 const byType = (type: string) => site.links.find((link) => link.type === type);
-const whatsapp = byType('whatsapp');
 const instagram = byType('instagram');
 const facebook = byType('facebook');
-const phone = site.contactDetails?.find((c) => c.href.startsWith('tel:'));
+// Número confirmado por el cliente (el panel aún tiene "+56 94700748", sin el segundo 9).
+const phone = { label: '+56 9 94700748', href: 'tel:+56994700748' };
+const whatsappHref = 'https://wa.me/56994700748';
 const email = site.contactDetails?.find((c) => c.href.startsWith('mailto:'));
 
 const offices = [
@@ -64,19 +65,10 @@ const isOn = (link?: { href?: string | null; isDisabled?: boolean | null }) => B
         <p class="tagline">Su tranquilidad también es nuestra prioridad</p>
       </header>
 
-      {whatsapp && (
-        isOn(whatsapp) ? (
-          <a class="btn btn-main" href={whatsapp.href!} target="_blank" rel="noopener noreferrer">
-            <LinkIcon icon="whatsapp" />
-            <span>Escríbenos por WhatsApp<small>Primera consulta y orientación</small></span>
-          </a>
-        ) : (
-          <span class="btn btn-main is-off" aria-disabled="true">
-            <LinkIcon icon="whatsapp" />
-            <span>Escríbenos por WhatsApp<small>Primera consulta y orientación</small></span>
-          </span>
-        )
-      )}
+      <a class="btn btn-main" href={whatsappHref} target="_blank" rel="noopener noreferrer">
+        <LinkIcon icon="whatsapp" />
+        <span>Escríbenos por WhatsApp<small>Primera consulta y orientación</small></span>
+      </a>
 
       {(phone || email) && (
         <div class="contact">

@@ -123,7 +123,7 @@ const isOn = (link?: { href?: string | null; isDisabled?: boolean | null }) => B
 
       <footer>
         <div class="places">Temuco · Nueva Imperial · Carahue</div>
-        <div class="by">clicktap.app</div>
+        <p class="by"><a href="https://clicktap.app/" aria-label="Conoce ClickTap, tarjetas NFC y páginas digitales para negocios">Powered by ClickTap</a></p>
       </footer>
     </main>
   </body>
@@ -189,5 +189,8 @@ const isOn = (link?: { href?: string | null; isDisabled?: boolean | null }) => B
   .patricio footer::before { content: ""; position: absolute; left: 0; right: 0; top: -22px; height: 44px; background: var(--navy); border-radius: 50% 50% 0 0 / 100% 100% 0 0; }
   .patricio footer .places { position: relative; display: flex; align-items: center; gap: 12px; justify-content: center; font-size: .66rem; letter-spacing: .24em; text-transform: uppercase; }
   .patricio footer .places::before, .patricio footer .places::after { content: ""; height: 1px; width: 24px; background: var(--copper); }
-  .patricio footer .by { position: relative; margin-top: 12px; font-size: .72rem; color: var(--copper); font-weight: 500; }
+  .patricio footer .by { position: relative; margin-top: 12px; font-size: .72rem; font-weight: 500; }
+  .patricio footer .by a { color: var(--copper); text-decoration: none; padding: .35rem .5rem; display: inline-block; }
+  .patricio footer .by a:hover { text-decoration: underline; }
+  .patricio footer .by a:focus-visible { outline: 3px solid var(--copper); outline-offset: 2px; }
 </style>

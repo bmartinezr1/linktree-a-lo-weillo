@@ -7097,6 +7097,91 @@
                 "buttonText": "#ffffff",
                 "accent": "#901010"
             }
+        },
+        {
+            "slug": "pely-confecciones",
+            "name": "Pely confecciones",
+            "tagline": "Fábrica de ropa y textiles",
+            "description": "",
+            "theme": "comercio",
+            "typography": "roboto",
+            "logo": "/generated/logos/pely-confecciones.jpg",
+            "logoAlt": "Logo de Pely confecciones",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/pely-confecciones.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Jaime Atria 7013, Huelquen, Paine, Región Metropolitana"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56942166867",
+                    "href": "tel:+56942166867"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJa38ERxU7Y5YRWrTD4-hGSLQ",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://instagram.com/pely.confecciones",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "whatsapp",
+                    "name": null,
+                    "icon": "whatsapp",
+                    "label": "WhatsApp",
+                    "href": "http://wa.me/56942166867",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#f6e7e1",
+                "text": "#2a1618",
+                "button": "#9b1c2e",
+                "buttonText": "#ffffff",
+                "accent": "#9b1c2e"
+            }
         }
     ]
 }

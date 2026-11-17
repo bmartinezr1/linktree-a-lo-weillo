@@ -7107,7 +7107,7 @@
             "typography": "roboto",
             "logo": "/generated/logos/pely-confecciones.jpg",
             "logoAlt": "Logo de Pely confecciones",
-            "logoLayout": "original",
+            "logoLayout": "round",
             "logoWidth": 160,
             "favicon": "/generated/logos/pely-confecciones.jpg",
             "footer": "",
@@ -7176,11 +7176,11 @@
                 }
             ],
             "colors": {
-                "background": "#f6e7e1",
-                "text": "#2a1618",
-                "button": "#9b1c2e",
+                "background": "#ebdede",
+                "text": "#111827",
+                "button": "#701010",
                 "buttonText": "#ffffff",
-                "accent": "#9b1c2e"
+                "accent": "#701010"
             }
         }
     ]

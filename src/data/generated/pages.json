@@ -6970,6 +6970,133 @@
                 "buttonText": "#ffffff",
                 "accent": "#080833"
             }
+        },
+        {
+            "slug": "perfumeria-vimax",
+            "name": "Perfumeria Vimax",
+            "tagline": "Perfumería",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/perfumeria-vimax.jpg",
+            "logoAlt": "Logo de Perfumeria Vimax",
+            "logoLayout": "original",
+            "logoWidth": 96,
+            "favicon": "/generated/logos/perfumeria-vimax.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Illapel 10, 5504750 Puerto Montt, Los Lagos"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes-Domingo 10:30am - 8pm"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56920490650",
+                    "href": "tel:+56920490650"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJ8Z0KGIY7GJYRijO3D7yKMpE",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "web",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Visita nuestra web",
+                    "href": "http://www.perfumeriavimax.cl",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "whatsapp",
+                    "name": null,
+                    "icon": "whatsapp",
+                    "label": "Escríbenos por WhatsApp",
+                    "href": "https://wa.me/56920490650",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://instagram.com/perfumeriavimax",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": null,
+                    "icon": "facebook",
+                    "label": "Visita nuestro Facebook",
+                    "href": "https://facebook.com/vimaxdistribuidoramayorista",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "tiktok",
+                    "name": null,
+                    "icon": "tiktok",
+                    "label": "Síguenos en TikTok",
+                    "href": "https://tiktok.com/@perfumeriavimax",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#efdede",
+                "text": "#111827",
+                "button": "#901010",
+                "buttonText": "#ffffff",
+                "accent": "#901010"
+            }
         }
     ]
 }

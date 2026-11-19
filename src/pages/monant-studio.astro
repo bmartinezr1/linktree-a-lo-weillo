@@ -1,0 +1,73 @@
+---
+import LinkPage from '../components/LinkPage.astro';
+import LinkIcon from '../components/LinkIcon.astro';
+import PhotoGrid from '../components/PhotoGrid.astro';
+import { generatedPages } from '../data/public-pages';
+import { createMonantProfile, monantAssets, monantPhotos, monantServices, monantSlug } from '../data/monant';
+import '../styles/monant.css';
+
+const panel = generatedPages.find((page) => page.slug?.toLowerCase() === monantSlug);
+const profile = createMonantProfile(panel);
+const instagram = panel?.links.find((link) => link.icon === 'instagram' && link.href && !link.isDisabled)?.href ?? 'https://www.instagram.com/monant.studio';
+---
+<LinkPage site={profile}>
+  <button slot="after-tiktok" type="button" class="link-button monant-services-toggle" aria-haspopup="dialog" aria-controls="monant-services">
+    <span class="link-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8 6h12M8 12h12M8 18h12" />
+        <circle cx="4" cy="6" r="1" /><circle cx="4" cy="12" r="1" /><circle cx="4" cy="18" r="1" />
+      </svg>
+    </span>
+    <span>Servicios</span>
+  </button>
+  <img
+    slot="profile-image"
+    class="logo logo-round monant-logo"
+    src={`${monantAssets}logo-480.webp`}
+    srcset={`${monantAssets}logo-240.webp 240w, ${monantAssets}logo-480.webp 480w`}
+    sizes="200px"
+    alt={profile.logoAlt}
+    width="200"
+    height="200"
+    loading="eager"
+    fetchpriority="high"
+    decoding="async"
+  />
+  <div slot="after-links" class="monant-extra">
+    <dialog class="monant-modal" id="monant-services" aria-labelledby="monant-services-heading">
+    <button type="button" class="monant-modal-close" aria-label="Cerrar servicios">×</button>
+    <section class="monant-services">
+      <h2 id="monant-services-heading" class="section-heading">Servicios</h2>
+      {monantServices.map((group) => (
+        <div class="service-group">
+          <h3>{group.title}</h3>
+          <ul>
+            {group.items.map((item) => (
+              <li>
+                <span class="service-name">
+                  {item.name}
+                  {item.note && <small>{item.note}</small>}
+                </span>
+                {item.price ? (
+                  <span class="service-price">{item.price}</span>
+                ) : (
+                  <a class="service-ask-static" href={instagram} target="_blank" rel="noopener noreferrer" aria-label="Consultar por Instagram"><span class="ask-icon" aria-hidden="true"><LinkIcon icon="instagram" /></span>Consultar</a>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+      <div class="services-cta"><a class="service-ask-static" href={instagram} target="_blank" rel="noopener noreferrer" aria-label="Consultar por Instagram"><span class="ask-icon" aria-hidden="true"><LinkIcon icon="instagram" /></span>Consultar</a></div>
+    </section>
+    </dialog>
+    <PhotoGrid photos={monantPhotos} id="monant-trabajos" />
+  </div>
+</LinkPage>
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>('.monant-services-toggle');
+  const modal = document.getElementById('monant-services') as HTMLDialogElement | null;
+  toggle?.addEventListener('click', () => modal?.showModal());
+  modal?.querySelector('.monant-modal-close')?.addEventListener('click', () => modal.close());
+  modal?.addEventListener('click', (event) => { if (event.target === modal) modal.close(); });
+</script>

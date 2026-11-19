@@ -329,6 +329,7 @@ const faviconType = site.favicon?.endsWith('.jpg') || site.favicon?.endsWith('.j
             <TransferButton details={details} statusId={`transfer-status-${index}`} />
           ))}
         </nav>
+        <slot name="after-links" />
 
         {site.productShowcase && (
           <section class="product-showcase" aria-labelledby="product-showcase-heading">

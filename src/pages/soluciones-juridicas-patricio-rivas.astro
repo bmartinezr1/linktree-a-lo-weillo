@@ -15,7 +15,7 @@ const imageUrl = site.logo ? new URL(site.logo, Astro.site ?? Astro.url) : undef
 const description = site.description || 'Soluciones Jurídicas del abogado Patricio Rivas Gatica. Oficinas en Temuco, Nueva Imperial y Carahue.';
 
 const byType = (type: string) => site.links.find((link) => link.type === type);
-const instagram = byType('instagram');
+const instagramHref = 'https://www.instagram.com/soljuridicaspatriciorivas/';
 const facebookHref = 'https://www.facebook.com/profile.php?id=61596585364116';
 // Número confirmado por el cliente (el panel aún tiene "+56 94700748", sin el segundo 9).
 const phone = { label: '+56 9 94700748', href: 'tel:+56994700748' };
@@ -111,11 +111,7 @@ const isOn = (link?: { href?: string | null; isDisabled?: boolean | null }) => B
 
       <h2>Síguenos</h2>
       <div class="social">
-        {isOn(instagram) ? (
-          <a class="btn btn-ghost" href={instagram!.href!} target="_blank" rel="noopener noreferrer"><LinkIcon icon="instagram" />Instagram</a>
-        ) : (
-          <span class="btn btn-ghost is-off" aria-disabled="true"><LinkIcon icon="instagram" />Instagram</span>
-        )}
+        <a class="btn btn-ghost" href={instagramHref} target="_blank" rel="noopener noreferrer"><LinkIcon icon="instagram" />Instagram</a>
         <a class="btn btn-ghost" href={facebookHref} target="_blank" rel="noopener noreferrer"><LinkIcon icon="facebook" />Facebook</a>
       </div>
 

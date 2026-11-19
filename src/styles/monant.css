@@ -191,8 +191,11 @@ body.theme-monant [data-photo-grid] {
   margin-inline: -16px;
 }
 body.theme-monant [data-photo-grid] .section-heading { margin-inline: 16px; }
-body.theme-monant .photo-grid-track:hover,
-body.theme-monant .photo-grid-track:focus-within { animation-play-state: paused; }
+@media (hover: hover) {
+  body.theme-monant .photo-grid-track:hover { animation-play-state: paused; }
+}
+body.theme-monant .photo-grid-item:focus { outline: none; }
+body.theme-monant .photo-grid-item:focus-visible { outline: 2px solid var(--m-rose); outline-offset: -2px; }
 body.theme-monant .photo-grid-list {
   display: flex;
   flex: none;
@@ -261,3 +264,8 @@ body.theme-monant .footer a { color: var(--m-wine); opacity: .8; }
   body.theme-monant [data-photo-grid] { overflow-x: auto; }
   body.theme-monant .photo-grid-track { animation: none; }
 }
+
+/* Con un modal abierto, la página de atrás no se desplaza */
+html:has(body.theme-monant dialog[open]) { overflow: hidden; }
+html:has(body.theme-monant) { scrollbar-gutter: stable; }
+body.theme-monant dialog { overscroll-behavior: contain; }

@@ -6390,6 +6390,8 @@
                     "href": "https://search.google.com/local/writereview?placeid=ChIJv48YDIy1aZYRU9gY1s7cjXU",
                     "copyText": null,
                     "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
                     "isDisabled": false
                 },
                 {
@@ -6400,6 +6402,8 @@
                     "href": "https://www.instagram.com/marfrut.spa/",
                     "copyText": null,
                     "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
                     "isDisabled": false
                 },
                 {
@@ -6410,6 +6414,20 @@
                     "href": "https://wa.me/56987294271",
                     "copyText": null,
                     "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "menu",
+                    "name": null,
+                    "icon": "book",
+                    "label": "Revisa nuestro catalogo digital!",
+                    "href": "https://www.canva.com/design/DAHQCVNxMyk/9bpdsfR5F69gFmhAEWUq1Q/view?utlId=h0f2fc3fa42",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": true,
                     "isDisabled": false
                 }
             ],
@@ -6512,6 +6530,657 @@
                 "button": "#101030",
                 "buttonText": "#ffffff",
                 "accent": "#101030"
+            }
+        },
+        {
+            "slug": "lion-gym-concepcion",
+            "name": "Lion Gym Concepción",
+            "tagline": "Gimnasio",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/lion-gym-concepcion.jpg",
+            "logoAlt": "Logo de Lion Gym Concepción",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/lion-gym-concepcion.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Angol 515, 4030000 Concepción, Bío Bío"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes-Viernes 6am - 10pm\nSábado 9am - 6pm\nDomingo 10am - 2pm"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56412125172",
+                    "href": "tel:+56412125172"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJFZmoktm1aZYRYSiwTXsuXmg",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "si",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://instagram.com/liongym_concepcion",
+                    "copyText": null,
+                    "logo": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#dedefd",
+                "text": "#111827",
+                "button": "#030387",
+                "buttonText": "#ffffff",
+                "accent": "#030387"
+            }
+        },
+        {
+            "slug": "zagi-sushi",
+            "name": "Zagi Sushi",
+            "tagline": null,
+            "description": "Sushi & Wok | Promos para compartir\nHand rolls · Woks · ZagiBurger",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/zagi-sushi.png",
+            "logoAlt": "Logo de Zagi Sushi",
+            "logoLayout": "rounded",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/zagi-sushi.png",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Gral. Novoa 594"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes - Jueves 12am - 22pm\nViernes - Sábado 12am- 23:30"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56921803127",
+                    "href": "tel:+56921803127"
+                }
+            ],
+            "links": [
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram!",
+                    "href": "https://www.instagram.com/zagisushiwok/",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "menu",
+                    "name": null,
+                    "icon": "book",
+                    "label": "Revisa nuestro Carta",
+                    "href": "/generated/menus/zagi-sushi/760ab98d-ec80-470f-aa4b-41a6cd5c0fc2.jpg",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": "image",
+                    "opensInNewTab": true,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#efdee2",
+                "text": "#111827",
+                "button": "#901030",
+                "buttonText": "#ffffff",
+                "accent": "#901030"
+            }
+        },
+        {
+            "slug": "academia-bec",
+            "name": "Ballet Español Concepción",
+            "tagline": "Formación artística profesional por la danza",
+            "description": "",
+            "theme": "comercio",
+            "typography": "montserrat",
+            "logo": "/generated/logos/academia-bec.jpg",
+            "logoAlt": "Logo de Ballet Español Concepción",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/academia-bec.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Angol 543, 4to piso, Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56933454726",
+                    "href": "tel:+56933454726"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJw3KT12y1aZYRf57q1Wb1RSw",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Síguenos",
+                    "href": "https://www.instagram.com/bec.ccp",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "tiktok",
+                    "name": null,
+                    "icon": "tiktok",
+                    "label": "TikTok",
+                    "href": "https://www.tiktok.com/@bec_2026",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#dedee2",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
+        },
+        {
+            "slug": "marsella-tarot-reiki",
+            "name": "Marsella Tarot & Reiki",
+            "tagline": "Conexión entre tu espíritu y el universo",
+            "description": "",
+            "theme": "comercio",
+            "typography": "montserrat",
+            "logo": "/generated/logos/marsella-tarot-reiki.png",
+            "logoAlt": "Logo de Marsella Tarot & Reiki",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/marsella-tarot-reiki.png",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Dirección: Colo Colo 222, Concepción, Bío Bío"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56935700373",
+                    "href": "tel:+56935700373"
+                },
+                {
+                    "label": "marsellatarotyreiki@gmail.com",
+                    "href": "mailto:marsellatarotyreiki@gmail.com"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJFQ0GWG-1aZYRfQe4bRzkB5o",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "whatsapp",
+                    "name": null,
+                    "icon": "whatsapp",
+                    "label": "WhatsApp",
+                    "href": "https://api.whatsapp.com/send?phone=56935700373",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/marsellatarotyreiki/",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "tiktok",
+                    "name": null,
+                    "icon": "tiktok",
+                    "label": "TikTok",
+                    "href": "https://tiktok.com/@marsellatarotyreiki",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": null,
+                    "icon": "facebook",
+                    "label": "Facebook",
+                    "href": "https://www.facebook.com/marsellatarotyreiki",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "web",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Página web",
+                    "href": "https://www.marsellatarotyreiki.cl/",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#f8f4e2",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
+        },
+        {
+            "slug": "soluciones-juridicas-patricio-rivas",
+            "name": "Soluciones Jurídicas Patricio Rivas",
+            "tagline": "Abogado",
+            "description": "",
+            "theme": "comercio",
+            "typography": "montserrat",
+            "logo": "/generated/logos/soluciones-juridicas-patricio-rivas.png",
+            "logoAlt": "Logo de Soluciones Jurídicas Patricio Rivas",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/soluciones-juridicas-patricio-rivas.png",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Bulnes 307 of. 302 Temuco\nVicuña Mackenna 568 Nueva Imperial\nDiego Portales 320 of. 4 Carahue"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56 9 94700748",
+                    "href": "tel:+56994700748"
+                },
+                {
+                    "label": "rivaspatricioab@gmail.com",
+                    "href": "mailto:rivaspatricioab@gmail.com"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña - Of. Temuco",
+                    "href": null,
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": true
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña - Of. Nueva Imperial",
+                    "href": null,
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": true
+                },
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña - Of. Carahue",
+                    "href": null,
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": true
+                },
+                {
+                    "type": "whatsapp",
+                    "name": null,
+                    "icon": "whatsapp",
+                    "label": "WhatsApp",
+                    "href": null,
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": true
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": null,
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": true
+                },
+                {
+                    "type": "facebook",
+                    "name": null,
+                    "icon": "facebook",
+                    "label": "Facebook",
+                    "href": null,
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": true
+                }
+            ],
+            "colors": {
+                "background": "#dedee7",
+                "text": "#111827",
+                "button": "#080833",
+                "buttonText": "#ffffff",
+                "accent": "#080833"
+            }
+        },
+        {
+            "slug": "perfumeria-vimax",
+            "name": "Perfumeria Vimax",
+            "tagline": "Perfumería",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/perfumeria-vimax.jpg",
+            "logoAlt": "Logo de Perfumeria Vimax",
+            "logoLayout": "original",
+            "logoWidth": 96,
+            "favicon": "/generated/logos/perfumeria-vimax.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Illapel 10, 5504750 Puerto Montt, Los Lagos"
+                },
+                {
+                    "id": "schedule",
+                    "icon": "schedule",
+                    "label": "Horario",
+                    "value": "Lunes-Domingo 10:30am - 8pm"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56920490650",
+                    "href": "tel:+56920490650"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJ8Z0KGIY7GJYRijO3D7yKMpE",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Perfumeria Vimax\n78148373-7\nBanco santander\n98378073",
+                    "logo": "/bank-logos/santander.png",
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "web",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Visita nuestra web",
+                    "href": "https://www.perfumeriavimax.cl",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "whatsapp",
+                    "name": null,
+                    "icon": "whatsapp",
+                    "label": "Escríbenos por WhatsApp",
+                    "href": "https://wa.me/56920490650",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://instagram.com/perfumeriavimax",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "facebook",
+                    "name": null,
+                    "icon": "facebook",
+                    "label": "Visita nuestro Facebook",
+                    "href": "https://facebook.com/vimaxdistribuidoramayorista",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "tiktok",
+                    "name": null,
+                    "icon": "tiktok",
+                    "label": "Síguenos en TikTok",
+                    "href": "https://tiktok.com/@perfumeriavimax",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#efdede",
+                "text": "#111827",
+                "button": "#901010",
+                "buttonText": "#ffffff",
+                "accent": "#901010"
+            }
+        },
+        {
+            "slug": "pely-confecciones",
+            "name": "Pely confecciones",
+            "tagline": "Fábrica de ropa y textiles",
+            "description": "",
+            "theme": "comercio",
+            "typography": "roboto",
+            "logo": "/generated/logos/pely-confecciones.jpg",
+            "logoAlt": "Logo de Pely confecciones",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/pely-confecciones.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Jaime Atria 7013, Huelquen, Paine, Región Metropolitana"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "+56942166867",
+                    "href": "tel:+56942166867"
+                }
+            ],
+            "links": [
+                {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://search.google.com/local/writereview?placeid=ChIJa38ERxU7Y5YRWrTD4-hGSLQ",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Elianaa\n11653675-7\nBanco Falabella\nCuenta Corriente\n19991028500\npely.confecciones1970@gmail.com",
+                    "logo": "/bank-logos/falabella.png",
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Síguenos en Instagram",
+                    "href": "https://instagram.com/pely.confecciones",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "whatsapp",
+                    "name": null,
+                    "icon": "whatsapp",
+                    "label": "WhatsApp",
+                    "href": "https://wa.me/56942166867",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#ebdede",
+                "text": "#111827",
+                "button": "#701010",
+                "buttonText": "#ffffff",
+                "accent": "#701010"
             }
         }
     ]

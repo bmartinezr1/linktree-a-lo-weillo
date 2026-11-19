@@ -7194,6 +7194,79 @@
                 "buttonText": "#ffffff",
                 "accent": "#701010"
             }
+        },
+        {
+            "slug": "monant-studio",
+            "name": "Monant Studio",
+            "tagline": "Manicura con Estilo",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": "/generated/logos/monant-studio.jpg",
+            "logoAlt": "Logo de Monant Studio",
+            "logoLayout": "round",
+            "logoWidth": 160,
+            "favicon": "/generated/logos/monant-studio.jpg",
+            "footer": "",
+            "highlights": [
+                {
+                    "id": "location",
+                    "icon": "location",
+                    "label": "Ubicación",
+                    "value": "Pasaje 1a 5747 villa Santo Domingo, Chiguayante"
+                }
+            ],
+            "contactDetails": [
+                {
+                    "label": "antonellamichelle0204@gmail.com",
+                    "href": "mailto:antonellamichelle0204@gmail.com"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos de transferencia",
+                    "href": null,
+                    "copyText": "Antonella Michelle Martínez Torres\nRUT: 215429776\nMercado Pago\nCuenta Vista\nNúmero de cuenta: 1027708047\nantonellamichelle0204@gmail.com",
+                    "logo": "/bank-logos/mercado-pago.png",
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/monant.studio?hvrq=MTI5ZDR5aHc1bWZiNA==",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "tiktok",
+                    "name": null,
+                    "icon": "tiktok",
+                    "label": "TikTok",
+                    "href": "https://www.tiktok.com/@monant.studio?_r=1&_t=ZS-9BXS5bw8ehB",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#fac4fa",
+                "text": "#111827",
+                "button": "#000000",
+                "buttonText": "#ffffff",
+                "accent": "#000000"
+            }
         }
     ]
 }

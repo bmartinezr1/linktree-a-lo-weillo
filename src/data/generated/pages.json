@@ -6640,6 +6640,18 @@
             ],
             "links": [
                 {
+                    "type": "review",
+                    "name": null,
+                    "icon": "review",
+                    "label": "Déjanos una reseña",
+                    "href": "https://g.page/r/CShraC0EeA4wEAI/review",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
                     "type": "instagram",
                     "name": null,
                     "icon": "instagram",

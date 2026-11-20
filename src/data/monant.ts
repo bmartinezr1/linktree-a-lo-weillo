@@ -62,10 +62,30 @@ export const monantColors = {
   accent: '#d9a39b',
 };
 
-export function getMonantWhatsapp(panel?: SiteProfile) {
-  const href = panel?.links.find((link) => link.icon === 'whatsapp' && link.href)?.href ?? '';
-  const phone = href.match(/(?:phone=|wa\.me\/)(\d+)/)?.[1];
-  return phone ? `https://wa.me/${phone}` : undefined;
+export const monantWhatsappNumber = '56951723132';
+export const monantWhatsapp = `https://wa.me/${monantWhatsappNumber}`;
+export const monantReviewUrl = 'https://g.page/r/CVGWVOZUOTMdEBI/review';
+
+export function getMonantWhatsapp(_panel?: SiteProfile) {
+  return monantWhatsapp;
+}
+
+const monantLinkOrder: Record<string, number> = { instagram: 1, tiktok: 2 };
+
+function buildMonantLinks(panel?: SiteProfile): SiteProfile['links'] {
+  const panelLinks = (panel?.links ?? [])
+    .filter((link) => link.icon !== 'whatsapp' && link.icon !== 'review')
+    .map((link, index) => ({ link, index }))
+    .sort((a, b) => (monantLinkOrder[a.link.icon] ?? 3) - (monantLinkOrder[b.link.icon] ?? 3) || a.index - b.index)
+    .map(({ link }) => link);
+  return [
+    {
+      label: 'Agenda por WhatsApp',
+      href: `${monantWhatsapp}?text=${encodeURIComponent('Hola, quisiera agendar una hora 💅')}`,
+      icon: 'whatsapp',
+    },
+    ...panelLinks,
+  ];
 }
 
 export function createMonantProfile(panel?: SiteProfile): SiteProfile {
@@ -73,7 +93,6 @@ export function createMonantProfile(panel?: SiteProfile): SiteProfile {
     name: 'Monant Studio',
     description: 'Manicura con estilo: diseños, cuidado y belleza.',
     highlights: [],
-    links: [],
     ...panel,
     slug: monantSlug,
     theme: 'monant',
@@ -85,5 +104,6 @@ export function createMonantProfile(panel?: SiteProfile): SiteProfile {
     logoHeight: 200,
     favicon: `${monantAssets}logo-240.webp`,
     colors: monantColors,
+    links: buildMonantLinks(panel),
   };
 }

@@ -3,7 +3,7 @@ import LinkPage from '../components/LinkPage.astro';
 import LinkIcon from '../components/LinkIcon.astro';
 import PhotoGrid from '../components/PhotoGrid.astro';
 import { generatedPages } from '../data/public-pages';
-import { createMonantProfile, monantAssets, monantPhotos, monantServices, monantSlug } from '../data/monant';
+import { createMonantProfile, monantAssets, monantReviewUrl, monantWhatsapp, monantPhotos, monantServices, monantSlug } from '../data/monant';
 import '../styles/monant.css';
 
 const panel = generatedPages.find((page) => page.slug?.toLowerCase() === monantSlug);
@@ -11,7 +11,11 @@ const profile = createMonantProfile(panel);
 const instagram = panel?.links.find((link) => link.icon === 'instagram' && link.href && !link.isDisabled)?.href ?? 'https://www.instagram.com/monant.studio';
 ---
 <LinkPage site={profile}>
-  <button slot="after-tiktok" type="button" class="link-button monant-services-toggle" aria-haspopup="dialog" aria-controls="monant-services">
+  <a slot="before-links" class="link-button link-button-review" href={monantReviewUrl} target="_blank" rel="noopener noreferrer">
+    <span class="link-icon" aria-hidden="true"><LinkIcon icon="review" /></span>
+    <span>Déjanos tu reseña</span>
+  </a>
+  <button slot="before-links" type="button" class="link-button monant-services-toggle" aria-haspopup="dialog" aria-controls="monant-services">
     <span class="link-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
         <path d="M8 6h12M8 12h12M8 18h12" />
@@ -51,7 +55,7 @@ const instagram = panel?.links.find((link) => link.icon === 'instagram' && link.
                 {item.price ? (
                   <span class="service-price">{item.price}</span>
                 ) : (
-                  <a class="service-ask-static" href={instagram} target="_blank" rel="noopener noreferrer" aria-label="Consultar por Instagram"><span class="ask-icon" aria-hidden="true"><LinkIcon icon="instagram" /></span>Consultar</a>
+                  <a class="service-ask-static" href={monantWhatsapp} target="_blank" rel="noopener noreferrer" aria-label="Consultar por WhatsApp"><span class="ask-icon" aria-hidden="true"><LinkIcon icon="whatsapp" /></span>Consultar</a>
                 )}
               </li>
             ))}

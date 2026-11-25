@@ -56,6 +56,12 @@ export function createSergioProfile(panel?: SiteProfile): SiteProfile {
         logo: '/bank-logos/banco-de-chile.png',
         copyText: 'Sergio Claramunt\n20.277.490-3\nBanco de Chile\nCuenta Corriente\nN° 00-159-64058-10\nsergioclaramuntg@gmail.com',
       },
+      {
+        label: 'Copiar datos · BancoEstado Cuenta Corriente',
+        icon: 'contact',
+        logo: '/bank-logos/bancoestado.png',
+        copyText: 'SERGIO ANDRES CLARAMUNT GANGAS\n20277490-3\nBanco Estado\nCuenta Corriente\n53600086398',
+      },
     ],
   };
 }

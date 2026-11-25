@@ -7267,6 +7267,112 @@
                 "buttonText": "#ffffff",
                 "accent": "#000000"
             }
+        },
+        {
+            "slug": "sergio-claramunt-gangas",
+            "name": "Sergio Claramunt Gangas",
+            "tagline": "Antes de Volver a Vivir",
+            "description": "",
+            "theme": "comercio",
+            "typography": "inter",
+            "logo": null,
+            "logoAlt": "Logo de Sergio Claramunt Gangas",
+            "logoLayout": "original",
+            "logoWidth": 160,
+            "favicon": "/favicon.png",
+            "footer": "",
+            "highlights": [],
+            "contactDetails": [
+                {
+                    "label": "+56993468945",
+                    "href": "tel:+56993468945"
+                },
+                {
+                    "label": "sergioclaramuntg@gmail.com",
+                    "href": "mailto:sergioclaramuntg@gmail.com"
+                }
+            ],
+            "links": [
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos · BancoEstado",
+                    "href": null,
+                    "copyText": "Sergio Claramunt\n20.277.490-3\nBanco Estado\nCuenta RUT\nN° 20277490\nsergioclaramuntg@gmail.com",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "whatsapp",
+                    "name": null,
+                    "icon": "whatsapp",
+                    "label": "Consulta sobre el libro",
+                    "href": "https://wa.me/56993468945?text=Hola%20Sergio%2C%20te%20escribo%20para%20consultar%20sobre%20tu%20libro.",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "instagram",
+                    "name": null,
+                    "icon": "instagram",
+                    "label": "Instagram",
+                    "href": "https://www.instagram.com/sergio.claramunt13",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "tiktok",
+                    "name": null,
+                    "icon": "tiktok",
+                    "label": "TikTok",
+                    "href": "https://www.tiktok.com/@sergio.claramunt",
+                    "copyText": null,
+                    "logo": null,
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos · Banco de Chile",
+                    "href": null,
+                    "copyText": "Sergio Claramunt\n20.277.490-3\nBanco de Chile\nCuenta Corriente\nN° 00-159-64058-10\nsergioclaramuntg@gmail.com",
+                    "logo": "/bank-logos/banco-de-chile.png",
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                },
+                {
+                    "type": "transferencia",
+                    "name": null,
+                    "icon": "contact",
+                    "label": "Copiar datos · BancoEstado Cuenta Corriente",
+                    "href": null,
+                    "copyText": "SERGIO ANDRES CLARAMUNT GANGAS\n20277490-3\nBanco Estado\nCuenta Corriente\n53600086398",
+                    "logo": "/bank-logos/bancoestado.png",
+                    "fileKind": null,
+                    "opensInNewTab": null,
+                    "isDisabled": false
+                }
+            ],
+            "colors": {
+                "background": "#ffffff",
+                "text": "#000000",
+                "button": "#111827",
+                "buttonText": "#ffffff",
+                "accent": "#111827"
+            }
         }
     ]
 }
